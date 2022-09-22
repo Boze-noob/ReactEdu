@@ -1,10 +1,14 @@
+import Intro from './components/Intro';
+import {Box} from '@mui/material';
 
 const Home = () => {
 
     return (
         <>
-        <h1>Hello There</h1>
+        <Intro />
+        <Box sx={{height: 500}}/>
         </>
+        
     );
 }
 
