@@ -7,10 +7,11 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 const Intro = () => {
   return (
     <Card sx={{ height: 1, width: 1 }}>
-      <div style={{ position: "relative" }}>
+      <div style={{ position: "relative", backgroundColor: "#1E1E1E" }}>
         <CardMedia
           component="img"
           image="https://www.w3schools.com/css/img_lights.jpg"
+          sx={{ opacity: 0.7 }}
         />
         <div style={{ position: "absolute", top: "35%", left: "5%" }}>
           <Typography
