@@ -2,7 +2,6 @@ import { Typography } from "@mui/material";
 import { Box, Divider } from "@mui/material";
 
 export default function LineButton({ btnTxt, width }) {
-  console.log("This is yor message " + btnTxt);
   return (
     <Box alignItems="center" sx={{ display: "flex", flexDirection: "row" }}>
       <Divider

@@ -1,5 +1,8 @@
-import { CardMedia, CardContent, Card, Typography, Box } from "@mui/material";
+import { CardMedia, Button, Card, Typography, Box } from "@mui/material";
 import LineButton from "../../../components/ui/buttons/LineButton";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import PinterestIcon from "@mui/icons-material/Pinterest";
 
 const Intro = () => {
   return (
@@ -32,9 +35,56 @@ const Intro = () => {
             <LineButton btnTxt="Read" width="25%" />
           </Box>
         </div>
+        <Box
+          style={{ position: "absolute", bottom: "40%", right: "3%" }}
+          sx={{ display: "flex", flexDirection: "column" }}
+        >
+          <SocialMediaItem
+            icon={
+              <InstagramIcon
+                style={{ fill: "white" }}
+                sx={{ fontSize: { xs: 10, sm: 16, md: "large" } }}
+              />
+            }
+            href="https://www.youtube.com/watch?v=yRh-dzrI4Z4"
+          />
+          <SocialMediaItem
+            icon={
+              <TwitterIcon
+                style={{ fill: "white" }}
+                sx={{ fontSize: { xs: 10, sm: 16, md: "large" } }}
+              />
+            }
+            href="https://www.youtube.com/watch?v=yRh-dzrI4Z4"
+          />
+          <SocialMediaItem
+            icon={
+              <PinterestIcon
+                style={{ fill: "white" }}
+                sx={{ fontSize: { xs: 10, sm: 16, md: "large" } }}
+              />
+            }
+            href="https://www.youtube.com/watch?v=yRh-dzrI4Z4"
+          />
+        </Box>
       </div>
     </Card>
   );
 };
+
+function SocialMediaItem({ icon, href }) {
+  return (
+    <Box
+      sx={{
+        p: { xs: 0.1, sm: 1 },
+        m: { xs: 0.1, sm: 1 },
+      }}
+    >
+      <Button target="_blank" href={href}>
+        {icon}
+      </Button>
+    </Box>
+  );
+}
 
 export default Intro;
