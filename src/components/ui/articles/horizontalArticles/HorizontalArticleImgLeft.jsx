@@ -13,9 +13,10 @@ export default function HorizontalArticleImgLeft() {
             "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"
           }
           width={"90%"}
+          height={{ xs: "100%", sm: 400, md: 700 }}
         />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <Box
           sx={{
             display: "flex",
@@ -26,8 +27,10 @@ export default function HorizontalArticleImgLeft() {
           }}
         >
           <Typography sx={{ mb: 15 }}>Collages</Typography>
-          <Typography variant="h3">Must have</Typography>
-          <Typography variant="h3" sx={{ mb: 20 }}>
+          <Typography sx={{ typography: { xs: "h6", sm: "h4" } }}>
+            Must have
+          </Typography>
+          <Typography sx={{ typography: { xs: "h6", sm: "h4" }, mb: 20 }}>
             Fall essentials
           </Typography>
           <HorizontalList />
@@ -38,15 +41,16 @@ export default function HorizontalArticleImgLeft() {
   );
 }
 
-function Image({ src, width }) {
+function Image({ src, width, height }) {
   return (
     <Box
       component="img"
       sx={{
-        height: { xs: "100%", sm: 400, md: 700 },
+        height: height,
         width: { width },
       }}
       src={src}
+      style={{ objectFit: "fill" }}
     />
   );
 }
@@ -83,12 +87,12 @@ function HorizontalList() {
     >
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
-          <img
-            src={`${item.img}?h=150&w=261&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=261&fit=crop&auto=format&dpr=2 2x`}
-            alt={item.title}
-            loading="lazy"
+          <Image
+            src={item.img}
+            width={"100%"}
+            height={{ xs: "100%", sm: 100, md: 200 }}
           />
+
           <ImageListItemBar position="below" title={item.author} />
         </ImageListItem>
       ))}

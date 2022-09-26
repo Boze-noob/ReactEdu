@@ -1,13 +1,13 @@
 import Intro from "./components/Intro";
 import { Box } from "@mui/material";
-import HorizontalArticleImgLeft from "../../components/ui/articles/horizontalArticles/HorizontalArticleImgLeft";
+import HorizontalArticleImgRight from "../../components/ui/articles/horizontalArticles/HorizontalArticleImgRight";
 
 const Home = () => {
   return (
     <>
       <Intro />
       <Box sx={{ height: 50 }} />
-      <HorizontalArticleImgLeft />
+      <HorizontalArticleImgRight />
     </>
   );
 };
