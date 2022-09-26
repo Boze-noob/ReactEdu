@@ -25,7 +25,11 @@ export default function HorizontalArticleImgRight() {
             Fall essentials
           </Typography>
           <HorizontalList />
-          <CustomButton onClick={handleButtonClick} margin={20} />
+          <CustomButton
+            onClick={handleButtonClick}
+            margin={20}
+            txt="Read more"
+          />
         </Box>
       </Grid>
       <Grid item xs={12} sm={6} justifyContent="center" alignItems="center">
