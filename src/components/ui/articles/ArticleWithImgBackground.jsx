@@ -58,7 +58,7 @@ export default function ArticleWithImgBackground({ width, height }) {
             >
               IN YOUR CLOSET
             </Typography>
-            <LineButton btnTxt="Read" width="25%" />
+            <LineButton btnTxt="Read" width="100%" />
           </div>
         </Box>
       </div>
