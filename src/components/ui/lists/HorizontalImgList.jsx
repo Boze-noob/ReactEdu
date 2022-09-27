@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button, Divider } from "@mui/material";
 
-export default function HorizontalList({ bgColor, title, fontFamily }) {
+export default function HorizontalImgList({ bgColor, title, fontFamily }) {
   var items = [
     {
       name: "Random Name #1",
