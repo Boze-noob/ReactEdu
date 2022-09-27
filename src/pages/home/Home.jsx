@@ -10,10 +10,9 @@ const Home = () => {
       <Box sx={{ height: 50 }} />
       <HorizontalArticleImgRight />
       <HorizontalList
-        width={"100%"}
-        bgColor={"#f4c2c2"}
+        bgColor={"#F4EADF"}
         title={"Top of the week"}
-        fontFamily={"Marck Script"}
+        fontFamily={"Oooh baby"}
       />
     </>
   );
