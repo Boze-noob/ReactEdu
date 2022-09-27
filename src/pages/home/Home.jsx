@@ -3,6 +3,8 @@ import { Box } from "@mui/material";
 import HorizontalArticleImgRight from "../../components/ui/articles/horizontalArticles/HorizontalArticleImgRight";
 import HorizontalImgList from "../../components/ui/lists/HorizontalImgList";
 import ArticleWithImgBackground from "../../components/ui/articles/ArticleWithImgBackground";
+import VerticalGalleryArticleList from "../../components/ui/lists/VerticalGalleryArticleList";
+import InstagramGrid from "../../components/ui/grid/InstagramGrid";
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
         fontFamily={"Oooh baby"}
       />
       <ArticleWithImgBackground height={0.3} width={1} />
+      <VerticalGalleryArticleList />
+      <InstagramGrid />
     </>
   );
 };
