@@ -5,6 +5,7 @@ import HorizontalImgList from "../../components/ui/lists/HorizontalImgList";
 import ArticleWithImgBackground from "../../components/ui/articles/ArticleWithImgBackground";
 import VerticalGalleryArticleList from "../../components/ui/lists/VerticalGalleryArticleList";
 import InstagramGrid from "../../components/ui/grid/InstagramGrid";
+import Footer from "../../components/ui/footer/Footer";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <ArticleWithImgBackground height={0.3} width={1} />
       <VerticalGalleryArticleList />
       <InstagramGrid />
+      <Footer />
     </>
   );
 };
