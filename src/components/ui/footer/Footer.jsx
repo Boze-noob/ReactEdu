@@ -2,9 +2,12 @@ import { Box, Typography } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import PinterestIcon from "@mui/icons-material/Pinterest";
+import InstagramGrid from "./../grid/InstagramGrid";
 
 export default function Footer() {
   return (
+    <>
+     <InstagramGrid />
     <Box
       sx={{
         width: "100%",
@@ -20,6 +23,7 @@ export default function Footer() {
       <CopyrightBox />
       <InfoBox />
     </Box>
+    </>
   );
 }
 

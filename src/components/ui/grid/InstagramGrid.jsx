@@ -1,6 +1,13 @@
 import { Box, Typography, Divider, Grid } from "@mui/material";
+import { useSelector, useDispatch } from "react-redux";
+import { getInstagramInfo } from "../../../redux/footerRedux/actions";
+import "./css/InstagramGridOnHover.css";
 
 export default function InstagramGrid() {
+  const dispatch = useDispatch();
+  dispatch(getInstagramInfo());
+  const instagramInfoList = useSelector((state) => state.instagramInfoList);
+
   return (
     <Box style={{ background: "#f4eadf" }}>
       <Box
@@ -31,38 +38,42 @@ export default function InstagramGrid() {
           }}
         />
       </Box>
-      <ImagesGrid />
+      <ImagesGrid instagramInfoList={instagramInfoList} />
     </Box>
   );
 }
 
-function ImagesGrid() {
-  const items = ["asd", "awgfawg", "agwg", "asd", "awgfawg", "agwg"];
+function ImagesGrid({ instagramInfoList }) {
+  const instagramInfoFilteredList = instagramInfoList.slice(1, 7);
   return (
     <Box
       sx={{
         width: "100%",
-        height: 500,
+        height: 600,
         flexDirection: "row",
         display: "flex",
         mt: 20,
-        background: "blue",
       }}
     >
-      <img
-        src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"
-        width={"40%"}
-        height={"100%"}
-      />
+      {instagramInfoList.length > 0 ? (
+        <img
+          src={instagramInfoList[0].imageUrl}
+          height={600}
+          style={{ objectFit: "fill" }}
+        />
+      ) : (
+        ""
+      )}
 
-      <Grid container>
-        {items.map((item) => (
+      <Grid container spacing={0} rowSpacing={0}>
+        {instagramInfoFilteredList.map((item) => (
           <Grid item xs={4}>
-            <img
-              src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"
-              width={"100%"}
-              height={"100%"}
-            />
+            <div style={{ position: "relative" }} className={"container"}>
+              <img src={item.imageUrl} className={"image"} />
+              <div className="overlay">
+                <p className={"text"}>{item.description}</p>
+              </div>
+            </div>
           </Grid>
         ))}
       </Grid>

@@ -1,0 +1,1 @@
+export const GET_INSTAGRAM_INFO = "getInstagramInfo";
