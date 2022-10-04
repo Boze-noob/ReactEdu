@@ -13,6 +13,9 @@ const theme = createTheme({
     },
   },
   spacing: 1,
+  typography: {
+    fontFamily: ["Lora", "Roboto"].join(","),
+  },
 });
 
 export default theme;

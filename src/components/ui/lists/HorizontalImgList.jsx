@@ -130,7 +130,6 @@ function Item(props) {
                   {props.item.description}
                 </Typography>
                 <Typography
-                  sx={{ mt: 5 }}
                   style={{ textAlign: "center", fontWeight: 600 }}
                   variant="h6"
                 >
