@@ -123,15 +123,23 @@ function Item(props) {
                   style={{ objectFit: "fill", padding: 10 }}
                 />
                 <Typography
-                  sx={{ mt: 5 }}
                   style={{ textAlign: "center" }}
-                  variant="h6"
+                  sx={{
+                    mt: 5,
+
+                    fontSize: { xs: 9, sm: 14, md: 20 },
+                  }}
                 >
                   {props.item.description}
                 </Typography>
                 <Typography
-                  style={{ textAlign: "center", fontWeight: 600 }}
-                  variant="h6"
+                  style={{
+                    textAlign: "center",
+                  }}
+                  sx={{
+                    fontWeight: "bold",
+                    fontSize: { xs: 14, sm: 18, md: 25 },
+                  }}
                 >
                   {props.item.description}
                 </Typography>
