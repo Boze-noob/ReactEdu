@@ -1,14 +1,13 @@
-import Home from './pages/home/Home';
-import NavBar from './components/ui/navBar/NavBar';
-import {theme} from './common/Theme';
-import {ThemeProvider} from '@mui/material/styles';
+import Home from "./pages/home/Home";
+import NavBar from "./components/ui/navBar/NavBar";
+import Theme from "./common/Theme";
+import { ThemeProvider } from "@mui/material/styles";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-    <NavBar />
-    <Home />
-      
+    <ThemeProvider theme={Theme}>
+      <NavBar />
+      <Home />
     </ThemeProvider>
   );
 }

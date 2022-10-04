@@ -78,7 +78,12 @@ function ImagesGrid({ instagramInfoList }) {
             >
               <img src={item.imageUrl} className={"image"} />
               <div className="overlay">
-                <p className={"text"}>{item.description}</p>
+                <Typography
+                  sx={{ typography: { xs: "h6", sm: "h5" } }}
+                  className={"text"}
+                >
+                  {item.description}
+                </Typography>
               </div>
             </Box>
           </Grid>
