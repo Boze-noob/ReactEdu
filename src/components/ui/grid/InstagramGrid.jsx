@@ -2,11 +2,14 @@ import { Box, Typography, Divider, Grid } from "@mui/material";
 import { useSelector, useDispatch } from "react-redux";
 import { getInstagramInfo } from "../../../redux/footerRedux/actions";
 import "./css/GridOnHover.css";
+import { useEffect } from "react";
 
 export default function InstagramGrid() {
   const dispatch = useDispatch();
-  dispatch(getInstagramInfo());
   const instagramInfoList = useSelector((state) => state.instagramInfoList);
+  useEffect(() => {
+    dispatch(getInstagramInfo());
+  }, []);
 
   return (
     <Box style={{ background: "#f4eadf" }}>
@@ -49,7 +52,7 @@ function ImagesGrid({ instagramInfoList }) {
     <Box
       sx={{
         width: "100%",
-        height: 600,
+        height: { xs: 250, sm: 600 },
         flexDirection: "row",
         display: "flex",
         mt: 20,
@@ -58,7 +61,7 @@ function ImagesGrid({ instagramInfoList }) {
       {instagramInfoList.length > 0 ? (
         <img
           src={instagramInfoList[0].imageUrl}
-          height={600}
+          height="100%"
           style={{ objectFit: "fill" }}
         />
       ) : (
@@ -68,12 +71,16 @@ function ImagesGrid({ instagramInfoList }) {
       <Grid container spacing={0} rowSpacing={0}>
         {instagramInfoFilteredList.map((item) => (
           <Grid item xs={4}>
-            <div style={{ position: "relative" }} className={"container"}>
+            <Box
+              sx={{ height: { xs: 125, sm: 300 } }}
+              style={{ position: "relative" }}
+              className={"container"}
+            >
               <img src={item.imageUrl} className={"image"} />
               <div className="overlay">
                 <p className={"text"}>{item.description}</p>
               </div>
-            </div>
+            </Box>
           </Grid>
         ))}
       </Grid>
