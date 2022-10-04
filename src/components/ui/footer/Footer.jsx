@@ -24,7 +24,7 @@ export default function Footer() {
         <CopyrightBox />
         <InfoBox />
       </Box>
-      <Typography textAlign={"center"} sx={{ mt: 15, mb: 10 }} fontSize={10}>
+      <Typography textAlign={"center"} sx={{ mt: 15, pb: 10 }} fontSize={10}>
         @Copyright 2022 Sincerly Julies
       </Typography>
     </Box>

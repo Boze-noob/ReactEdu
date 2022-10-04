@@ -6,7 +6,7 @@ export default function LineButton({ btnTxt, width }) {
     <Box alignItems="center" sx={{ display: "flex", flexDirection: "row" }}>
       <Divider
         sx={{
-          height: 0.8,
+          height: 2,
           width: width,
           bgcolor: "white",
         }}

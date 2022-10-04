@@ -17,7 +17,7 @@ const Home = () => {
         title={"Top of the week"}
         fontFamily={"Oooh baby"}
       />
-      <ArticleWithImgBackground height={0.3} width={1} />
+      <ArticleWithImgBackground height={700} width={"100%"} />
       <VerticalGalleryArticleList />
       <Footer />
     </>

@@ -21,13 +21,13 @@ export default function VerticalGalleryArticleList() {
 
   return (
     <Box sx={{ width: 1, display: "flex", justifyContent: "center" }}>
-      <ImageList cols={3} gap={20}>
+      <ImageList cols={3} gap={40}>
         {itemData.map((item) => (
           <ImageListItem key={item}>
             <Box
               component="img"
               sx={{
-                height: 600,
+                height: { xs: 300, sm: 600 },
                 width: "100%",
               }}
               src={"https://www.w3schools.com/css/img_lights.jpg"}

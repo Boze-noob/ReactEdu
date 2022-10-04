@@ -38,7 +38,7 @@ export default function HorizontalArticleImgRight() {
             "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"
           }
           width={"90%"}
-          height={{ xs: "100%", sm: 400, md: 700 }}
+          height={{ xs: 300, sm: 400, md: 700 }}
         />
       </Grid>
     </Grid>
@@ -91,11 +91,7 @@ function HorizontalList() {
     >
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
-          <Image
-            src={item.img}
-            width={"100%"}
-            height={{ xs: "100%", sm: 100, md: 200 }}
-          />
+          <Image src={item.img} width={"100%"} height={{ xs: 150, md: 200 }} />
 
           <ImageListItemBar position="below" title={item.author} />
         </ImageListItem>
