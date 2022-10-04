@@ -1,7 +1,7 @@
 import { Box, Typography, Divider, Grid } from "@mui/material";
 import { useSelector, useDispatch } from "react-redux";
 import { getInstagramInfo } from "../../../redux/footerRedux/actions";
-import "./css/InstagramGridOnHover.css";
+import "./css/GridOnHover.css";
 
 export default function InstagramGrid() {
   const dispatch = useDispatch();
