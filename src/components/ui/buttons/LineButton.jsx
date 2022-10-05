@@ -20,8 +20,11 @@ export default function LineButton({ btnTxt, width }) {
             color: "black",
           },
         }}
+        style={{
+          fontFamily: "Work Sans",
+        }}
       >
-        {btnTxt}
+        {btnTxt.toUpperCase()}
       </Typography>
     </Box>
   );

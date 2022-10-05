@@ -10,7 +10,7 @@ const Intro = () => {
       <div style={{ position: "relative", backgroundColor: "#1E1E1E" }}>
         <CardMedia
           component="img"
-          image="https://www.w3schools.com/css/img_lights.jpg"
+          image="https://sincerelyjules.com/wp-content/uploads/2022/09/Sincerely-jules-blazer-victorias-secret-lace-bra.jpg"
           sx={{ opacity: 0.7 }}
         />
         <div style={{ position: "absolute", top: "35%", left: "5%" }}>

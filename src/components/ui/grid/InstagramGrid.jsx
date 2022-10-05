@@ -81,6 +81,7 @@ function ImagesGrid({ instagramInfoList }) {
                 <Typography
                   sx={{ typography: { xs: "h6", sm: "h5" } }}
                   className={"text"}
+                  style={{ fontWeight: 500, fontFamily: "Lora" }}
                 >
                   {item.description}
                 </Typography>

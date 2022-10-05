@@ -29,18 +29,39 @@ export default function NavBar(props) {
           }}
         >
           <IconButton>
-            <MenuIcon sx={{ fontSize: { xs: 20, sm: 30 } }} />
+            <MenuIcon
+              sx={{
+                fontSize: { xs: 20, sm: 30 },
+                color: trigger ? "black" : "white",
+              }}
+            />
           </IconButton>
           <Typography
-            sx={{ typography: { xs: "h5", sm: "h4" } }}
-            color="primary"
+            sx={{ typography: { xs: "h6", sm: "h4" } }}
+            style={{
+              fontFamily: "Work Sans",
+              color: trigger ? "black" : "white",
+            }}
           >
-            News
+            SINCERLY JULES
           </Typography>
           <Button>
-            <Typography variant="h7">Shop</Typography>
+            <Typography
+              variant="h7"
+              style={{
+                fontFamily: "Work Sans",
+                color: trigger ? "black" : "white",
+              }}
+            >
+              Shop
+            </Typography>
             <Box sx={{ width: { sm: 5, md: 10 } }} />
-            <ShoppingBasketIcon sx={{ fontSize: { xs: 20, sm: 25 } }} />
+            <ShoppingBasketIcon
+              sx={{
+                fontSize: { xs: 15, sm: 20 },
+                color: trigger ? "black" : "white",
+              }}
+            />
           </Button>
         </Toolbar>
       </AppBar>
