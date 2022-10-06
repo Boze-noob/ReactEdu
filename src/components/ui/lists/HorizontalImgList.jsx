@@ -1,65 +1,80 @@
 import { Box, Typography, Grid } from "@mui/material";
-import Carousel from "react-material-ui-carousel";
 import { Paper, Divider } from "@mui/material";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-export default function HorizontalImgList({ bgColor, title, fontFamily }) {
+export default function HorizontalImgList({
+  bgColor,
+  title,
+  fontFamily,
+  marginTop,
+}) {
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 2,
+    },
+  };
+
   var items = [
     {
-      name: "Random Name #1",
-      description: "Random Name #1",
-      imgUrl: [
-        "https://www.whatsappimages.in/wp-content/uploads/2021/07/Top-HD-sad-quotes-for-whatsapp-status-in-hindi-Pics-Images-Download-Free.gif",
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-        "https://siwi.org/wp-content/uploads/2021/07/why-water_topics-present-at-launch_rivers2.jpg",
-      ],
+      description: "WHAT TO WEAR TO",
+      subDescription: "A BEACHY DINNER!",
+      imgUrl:
+        "https://sincerelyjules.com/wp-content/uploads/2022/06/Sincerley-jules-terry-bandier-look-900x900.jpg",
     },
     {
-      name: "Random Name #2",
-      description: "Hello World!",
-      imgUrl: [
-        "https://siwi.org/wp-content/uploads/2021/07/why-water_topics-present-at-launch_rivers2.jpg",
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-        "https://www.whatsappimages.in/wp-content/uploads/2021/07/Top-HD-sad-quotes-for-whatsapp-status-in-hindi-Pics-Images-Download-Free.gif",
-      ],
+      description: "SEVEN SPRING",
+      subDescription: "OUTFIT IDEAS!",
+      imgUrl:
+        "https://sincerelyjules.com/wp-content/uploads/2022/06/Sincerely-jules-victorias-secret-swim-hat-look-900x900.jpg",
     },
     {
-      name: "Random Name #1",
-      description: "Random Name #1",
-      imgUrl: [
-        "https://www.whatsappimages.in/wp-content/uploads/2021/07/Top-HD-sad-quotes-for-whatsapp-status-in-hindi-Pics-Images-Download-Free.gif",
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-        "https://siwi.org/wp-content/uploads/2021/07/why-water_topics-present-at-launch_rivers2.jpg",
-      ],
+      description: "SUMMER ESSENTIAL",
+      subDescription: "MAXI DRESS!",
+      imgUrl:
+        "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-hat-elleme-bag-SWF-floral-dress-2-900x900.jpg",
     },
     {
-      name: "Random Name #2",
-      description: "Hello World!",
-      imgUrl: [
-        "https://siwi.org/wp-content/uploads/2021/07/why-water_topics-present-at-launch_rivers2.jpg",
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-        "https://www.whatsappimages.in/wp-content/uploads/2021/07/Top-HD-sad-quotes-for-whatsapp-status-in-hindi-Pics-Images-Download-Free.gif",
-      ],
+      description: "MY TOP FIVE",
+      subDescription: "BEACH ESSENTIALS!",
+      imgUrl:
+        "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-siedres-groovy-dress-orange-jwpei-official-bag-chanel-slides-1-900x900.jpg",
     },
     {
-      name: "Random Name #1",
-      description: "Random Name #1",
-      imgUrl: [
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-        "https://siwi.org/wp-content/uploads/2021/07/why-water_topics-present-at-launch_rivers2.jpg",
-      ],
+      description: "SEVEN SPRING",
+      subDescription: "OUTFIT IDEAS!",
+      imgUrl:
+        "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-nanushka-top-linen-trouser-celine-bag-siedres-scarf-look-900x900.jpg",
     },
     {
-      name: "Random Name #2",
-      description: "Hello World!",
-      imgUrl: [
-        "https://siwi.org/wp-content/uploads/2021/07/why-water_topics-present-at-launch_rivers2.jpg",
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-      ],
+      description: "MY TOP FIVE",
+      subDescription: "BEACH ESSENTIALS!",
+      imgUrl:
+        "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-sezane-spring-dress-scarf-espadrilles-look-900x900.jpg",
     },
   ];
 
   return (
-    <Box sx={{ background: bgColor, p: 30 }}>
+    <Box
+      sx={{
+        background: bgColor ?? "#F4EADF",
+        p: 30,
+        marginTop: marginTop ?? 10,
+      }}
+    >
       <Box
         style={{ marginLeft: "5%", marginBottom: 10 }}
         sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}
@@ -67,7 +82,7 @@ export default function HorizontalImgList({ bgColor, title, fontFamily }) {
         <Typography
           sx={{ typography: { xs: "h4", sm: "h3" } }}
           style={{
-            fontFamily: fontFamily,
+            fontFamily: fontFamily ?? "Oooh baby",
           }}
         >
           {title}
@@ -81,73 +96,50 @@ export default function HorizontalImgList({ bgColor, title, fontFamily }) {
           }}
         />
       </Box>
-      <Carousel
-        navButtonsAlwaysVisible="true"
-        navButtonsProps={{
-          style: {
-            backgroundColor: "transparent",
-            borderRadius: 0,
-            color: "black",
-          },
-        }}
-        indicators={false}
-      >
+      <Carousel responsive={responsive}>
         {items.map((item, i) => (
           <Item key={i} item={item} />
         ))}
       </Carousel>
+      ;
     </Box>
   );
 }
 
 function Item(props) {
   return (
-    <Paper style={{ background: "transparent" }}>
+    <Box sx={{ flexDirection: "column" }}>
       <Box
+        component="img"
         sx={{
-          display: "flex",
-          justifyContent: "center",
+          height: { xs: 100, sm: 300, md: 450 },
+          width: "95%",
+        }}
+        src={props.item.imgUrl}
+        style={{ objectFit: "fill", padding: 10 }}
+      />
+      <Typography
+        style={{ textAlign: "center" }}
+        sx={{
+          mt: 5,
+
+          fontSize: { xs: 9, sm: 14, md: 20 },
         }}
       >
-        <Grid container spacing={2}>
-          {props.item.imgUrl.map((item, i) => (
-            <Grid item xs={4}>
-              <Box sx={{ flexDirection: "column" }}>
-                <Box
-                  component="img"
-                  sx={{
-                    height: { xs: 140, sm: 340, md: 490 },
-                    width: "100%",
-                  }}
-                  src={item}
-                  style={{ objectFit: "fill", padding: 10 }}
-                />
-                <Typography
-                  style={{ textAlign: "center" }}
-                  sx={{
-                    mt: 5,
-
-                    fontSize: { xs: 9, sm: 14, md: 20 },
-                  }}
-                >
-                  {props.item.description}
-                </Typography>
-                <Typography
-                  style={{
-                    textAlign: "center",
-                  }}
-                  sx={{
-                    fontWeight: "bold",
-                    fontSize: { xs: 14, sm: 18, md: 25 },
-                  }}
-                >
-                  {props.item.description}
-                </Typography>
-              </Box>
-            </Grid>
-          ))}
-        </Grid>
-      </Box>
-    </Paper>
+        {props.item.description}
+      </Typography>
+      <Typography
+        style={{
+          textAlign: "center",
+        }}
+        sx={{
+          fontWeight: "bold",
+          fontSize: { xs: 13, sm: 15, md: 21 },
+          fontFamily: "Work Sans",
+        }}
+      >
+        {props.item.subDescription}
+      </Typography>
+    </Box>
   );
 }

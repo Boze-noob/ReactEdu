@@ -1,27 +1,36 @@
-import { CardMedia, Button, Card, Typography, Box } from "@mui/material";
+import { CardMedia, Button, Card, Typography, Box, Link } from "@mui/material";
 import LineButton from "../buttons/LineButton";
 
-export default function ArticleWithImgBackground({ width, height }) {
+export default function ArticleWithImgBackground({ marginTop }) {
   return (
     <Card
       style={{
-        height: height,
-        width: width,
         position: "relative",
         backgroundColor: "#1f1f1f",
+        width: "100%",
+        marginTop: marginTop ?? 10,
+      }}
+      sx={{
+        height: { xs: 350, sm: 650 },
       }}
     >
       <CardMedia
         component="img"
-        image="https://www.w3schools.com/css/img_lights.jpg"
-        sx={{ opacity: 0.7 }}
-        style={{ objectFit: "fill", height: height, width: width }}
+        image="https://sincerelyjules.com/wp-content/uploads/2022/09/Sincerely-jules-ronny-kobo-dress-scaled.jpg"
+        style={{
+          objectFit: "fill",
+
+          width: "100%",
+        }}
+        sx={{
+          height: { xs: 350, sm: 650 },
+          opacity: 0.7,
+        }}
       />
 
       <Box
         style={{
-          width: width,
-          height: height,
+          width: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -31,33 +40,62 @@ export default function ArticleWithImgBackground({ width, height }) {
           top: "0%",
           left: "0%",
         }}
+        sx={{
+          height: { xs: 350, sm: 650 },
+        }}
       >
-        <Typography
-          style={{
-            color: "white",
-          }}
-        >
-          FASHION
-        </Typography>
+        <Link underline="none" href="https://mui.com/material-ui/react-link/">
+          <Typography
+            style={{
+              marginBottom: 15,
+              fontFamily: "Work Sans",
+              fontWeight: "bold",
+            }}
+            sx={{
+              color: "white",
+              fontSize: { xs: 9, sm: 11, md: 13 },
+              "&:hover": {
+                color: "black",
+              },
+            }}
+          >
+            FASHION
+          </Typography>
+        </Link>
 
-        <Typography
-          style={{
-            color: "white",
-            fontFamily: "Helvetica Neue",
-          }}
-          sx={{ fontSize: { xs: 12, sm: 25, md: 38 } }}
-        >
-          THE MOST VERSATILE ITEM
-        </Typography>
-        <Typography
-          style={{
-            color: "white",
-            fontFamily: "Helvetica Neue",
-          }}
-          sx={{ fontSize: { xs: 12, sm: 25, md: 38 } }}
-        >
-          IN YOUR CLOSET
-        </Typography>
+        <Link underline="none" href="https://mui.com/material-ui/react-link/">
+          <Typography
+            sx={{
+              fontSize: { xs: 12, sm: 25, md: 38 },
+              "&:hover": {
+                color: "black",
+              },
+              color: "white",
+            }}
+          >
+            A CUTE DATE NIGHT
+          </Typography>
+        </Link>
+
+        <Link underline="none" href="https://mui.com/material-ui/react-link/">
+          <Typography
+            style={{
+              fontFamily: "Work Sans",
+              fontWeight: "bold",
+            }}
+            sx={{
+              fontSize: { xs: 14, sm: 27, md: 40 },
+              "&:hover": {
+                color: "black",
+              },
+              color: "white",
+            }}
+          >
+            LOOK IDEA!
+          </Typography>
+        </Link>
+
+        <Box height={20} />
         <LineButton btnTxt="Read" width={80} />
       </Box>
     </Card>
