@@ -11,7 +11,8 @@ const Home = () => {
   return (
     <>
       <Intro />
-      <HorizontalArticleImgLeft />
+      <HorizontalArticleImgLeft marginTop={60} />
+      <HorizontalArticleImgRight marginTop={-40} />
     </>
   );
 };

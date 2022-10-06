@@ -5,9 +5,9 @@ import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import { width } from "@mui/system";
 
-export default function HorizontalArticleImgLeft() {
+export default function HorizontalArticleImgLeft({ marginTop }) {
   return (
-    <Grid container spacing={0} style={{ marginTop: 60 }}>
+    <Grid container spacing={0} style={{ marginTop: marginTop }}>
       <Grid item xs={12} sm={6}>
         <Image
           src={
@@ -46,7 +46,7 @@ export default function HorizontalArticleImgLeft() {
             PARISIAN LOOK
           </Typography>
           <Typography
-            style={{ fontWeight: 500, marginLeft: 50, marginRight: 50 }}
+            style={{ fontWeight: 600, marginLeft: 50, marginRight: 50 }}
             align="center"
           >
             If you're looking for ways to add a fall touch to your printed mini
