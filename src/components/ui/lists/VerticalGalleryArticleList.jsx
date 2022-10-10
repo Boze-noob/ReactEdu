@@ -1,13 +1,19 @@
 import { Typography, Box, Grid } from "@mui/material";
-import { fontFamily, fontWeight, textAlign, width } from "@mui/system";
 import VerticalLineButton from "../buttons/VerticalLineButton";
+import { useState } from "react";
 
 export default function VerticalGalleryArticleList({ marginTop }) {
-  const itemData = [
+  const fakeData = [
     "https://sincerelyjules.com/wp-content/uploads/2022/05/SJxCANVA1-1000x1500.jpg",
     "https://sincerelyjules.com/wp-content/uploads/2022/06/Sincerely-jules-provence-1-1000x1500.jpg",
     "https://sincerelyjules.com/wp-content/uploads/2022/06/Sincerely-jules-travis-mathews-new-balance-shoes-Fendi-bag-levis-shorts-ensemble-1000x1500.jpg",
   ];
+
+  const [itemData, setItemData] = useState(fakeData);
+
+  const loadMore = () => {
+    setItemData((items) => items.concat(fakeData));
+  };
 
   return (
     <Box
@@ -72,7 +78,7 @@ export default function VerticalGalleryArticleList({ marginTop }) {
           </Grid>
         ))}
       </Grid>
-      <VerticalLineButton marginTop={"15%"} />
+      <VerticalLineButton marginTop={"15%"} onClick={loadMore} />
     </Box>
   );
 }

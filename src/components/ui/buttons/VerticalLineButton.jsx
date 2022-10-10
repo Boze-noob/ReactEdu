@@ -1,6 +1,6 @@
-import { Box, Typography, Divider } from "@mui/material";
+import { Box, Button, Divider } from "@mui/material";
 
-export default function VerticalLineButton({ marginTop }) {
+export default function VerticalLineButton({ marginTop, onClick }) {
   return (
     <Box
       sx={{
@@ -10,7 +10,8 @@ export default function VerticalLineButton({ marginTop }) {
         display: "flex",
       }}
     >
-      <Typography
+      <Button
+        variant="text"
         sx={{
           fontWeight: "bold",
           fontFamily: "Work Sans",
@@ -19,9 +20,10 @@ export default function VerticalLineButton({ marginTop }) {
           },
           transition: "0.7s",
         }}
+        onClick={onClick}
       >
         LOAD MORE
-      </Typography>
+      </Button>
       <Box height={20}></Box>
       <Divider orientation="vertical" sx={{ height: 50, bgcolor: "black" }} />
     </Box>
