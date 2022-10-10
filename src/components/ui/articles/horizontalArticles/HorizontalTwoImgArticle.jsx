@@ -8,7 +8,7 @@ export default function HorizontalTwoImgArticle({ marginTop }) {
       <Grid item xs>
         <ImageWithDesc
           src={
-            "https://sincerelyjules.com/wp-content/uploads/2022/09/Sincerely-jules-nanushka-top-levis-sandals-wicker-bag-sunnies-white-sandals-look_-1000x1500.jpg"
+            "https://sincerelyjules.com/wp-content/uploads/2022/08/Sincerely-jules-bandier-stripe-set.jpg"
           }
           desc={"HOW TO STYLE AN ACTIVE SET"}
           type={"FASHION"}
@@ -17,7 +17,7 @@ export default function HorizontalTwoImgArticle({ marginTop }) {
       <Grid item xs={6}>
         <ImageWithDesc
           src={
-            "https://sincerelyjules.com/wp-content/uploads/2022/09/Sincerely-jules-nanushka-top-levis-sandals-wicker-bag-sunnies-white-sandals-look_-1000x1500.jpg"
+            "https://sincerelyjules.com/wp-content/uploads/2022/07/Sincerely-jules-ysl-sandals-skirt-look.jpg"
           }
           desc={"HOW TO STYLE AN ACTIVE SET"}
           type={"FASHION"}
@@ -32,11 +32,11 @@ function ImageWithDesc({ src, desc, type }) {
     <Card
       style={{
         position: "relative",
-        backgroundColor: "#1f1f1f",
+        backgroundColor: "black",
         width: "100%",
       }}
       sx={{
-        height: { xs: 450, md: 900 },
+        height: { xs: 400, md: 900 },
       }}
     >
       <CardMedia
@@ -44,11 +44,12 @@ function ImageWithDesc({ src, desc, type }) {
         image={src}
         style={{
           objectFit: "fill",
-          height: { xs: 450, md: 900 },
+
           width: "100%",
         }}
         sx={{
-          opacity: 0.7,
+          opacity: 0.6,
+          height: { xs: 400, md: 900 },
         }}
       />
 
@@ -65,18 +66,35 @@ function ImageWithDesc({ src, desc, type }) {
           left: "0%",
         }}
         sx={{
-          height: { xs: 450, md: 900 },
+          height: { xs: 400, md: 900 },
         }}
       >
         <CustomLink
           url={"https://www.youtube.com/watch?v=iPsRG0-RQSg&t=49s"}
           fontFamily={"Work Sans"}
           fontSize={{ xs: 9, sm: 11, md: 13 }}
-          text={"hey"}
+          text={type}
         />
-        <CustomLink />
+        <Box width={"60%"}>
+          <CustomLink
+            url={"https://www.youtube.com/watch?v=iPsRG0-RQSg&t=49s"}
+            fontSize={{ xs: 12, sm: 25, md: 38 }}
+            text={desc}
+            fontFamily={"Lora"}
+          />
+        </Box>
+
         <Box height={20} />
-        <LineButton btnTxt="Read" width={80} />
+        <Box
+          width={"80%"}
+          sx={{ display: "flex", flexDirection: "row-reverse" }}
+        >
+          <LineButton
+            btnTxt="Read"
+            width={{ xs: 30, sm: 80 }}
+            url={"https://developer.mozilla.org/en-US/docs/Web/CSS/word-break"}
+          />
+        </Box>
       </Box>
     </Card>
   );
@@ -97,7 +115,9 @@ function CustomLink({ url, fontFamily, fontSize, text }) {
           "&:hover": {
             color: "black",
           },
+          transition: "0.7s",
         }}
+        textAlign={"center"}
       >
         {text}
       </Typography>
