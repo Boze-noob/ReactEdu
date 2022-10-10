@@ -4,9 +4,9 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import InstagramGrid from "./../grid/InstagramGrid";
 
-export default function Footer() {
+export default function Footer({ marginTop }) {
   return (
-    <Box style={{ background: "#f4eadf" }}>
+    <Box style={{ background: "#f4eadf", marginTop: marginTop ?? 10 }}>
       <InstagramGrid />
       <Box
         sx={{

@@ -1,59 +1,78 @@
-import { Typography, Box } from "@mui/material";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-import ImageListItemBar from "@mui/material/ImageListItemBar";
+import { Typography, Box, Grid } from "@mui/material";
+import { fontFamily, fontWeight, textAlign, width } from "@mui/system";
+import VerticalLineButton from "../buttons/VerticalLineButton";
 
-export default function VerticalGalleryArticleList() {
+export default function VerticalGalleryArticleList({ marginTop }) {
   const itemData = [
-    "hey",
-    "asd",
-    "asfaw",
-    "afw",
-    "asf",
-    "aw",
-    "hesy",
-    "assd",
-    "assfaw",
-    "asfw",
-    "assf",
-    "aws",
+    "https://sincerelyjules.com/wp-content/uploads/2022/05/SJxCANVA1-1000x1500.jpg",
+    "https://sincerelyjules.com/wp-content/uploads/2022/06/Sincerely-jules-provence-1-1000x1500.jpg",
+    "https://sincerelyjules.com/wp-content/uploads/2022/06/Sincerely-jules-travis-mathews-new-balance-shoes-Fendi-bag-levis-shorts-ensemble-1000x1500.jpg",
   ];
 
   return (
-    <Box sx={{ width: 1, display: "flex", justifyContent: "center" }}>
-      <ImageList cols={3} gap={40}>
+    <Box
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
+      <Grid container spacing={35} marginTop={marginTop ?? 10}>
         {itemData.map((item) => (
-          <ImageListItem key={item}>
+          <Grid item xs={12} sm={6} md={4}>
             <Box
-              component="img"
               sx={{
-                height: { xs: 300, sm: 600 },
-                width: "100%",
+                alignItems: "center",
+                display: "flex",
+                flexDirection: "column",
               }}
-              src={"https://www.w3schools.com/css/img_lights.jpg"}
-              style={{ objectFit: "fill" }}
-            />
-            <ImageListItemBar
-              title={
-                <Typography
-                  sx={{ typography: { xs: "h5", sm: "h4" } }}
-                  textAlign="center"
-                  style={{ wordWrap: "break-word" }}
-                >
-                  {"Title asd aw awf"}
-                </Typography>
-              }
-              subtitle={
-                <Typography variant="h6" textAlign="center">
-                  {"description"}
-                </Typography>
-              }
-              position="below"
-              sx={{ mt: 30 }}
-            />
-          </ImageListItem>
+            >
+              <Box
+                component="img"
+                sx={{
+                  height: { xs: 300, sm: 600 },
+
+                  objectFit: "fill",
+                }}
+                src={item}
+              />
+              <Typography
+                sx={{
+                  textAlign: "center",
+                  fontFamily: "Work Sans",
+                  fontWeight: "bold",
+                  fontSize: { xs: 9, sm: 11, md: 13 },
+                  marginTop: 40,
+                  width: "50%",
+                }}
+              >
+                {"FASHION"}
+              </Typography>
+              <Typography
+                sx={{
+                  typography: { xs: "h5", sm: "h4" },
+                  width: "70%",
+                  marginTop: 15,
+                }}
+                textAlign="center"
+                style={{ wordWrap: "break-word" }}
+              >
+                {"MY GO-TO APP TO CREATE CONTENT: CANVA!"}
+              </Typography>
+              <Typography
+                textAlign="center"
+                marginTop={20}
+                sx={{ width: "70%" }}
+              >
+                {
+                  "If you're looking for ways to create engaging & unique content, CANVA will be your new go-to program for all things creative! Take a look at some templates I've created."
+                }
+              </Typography>
+            </Box>
+          </Grid>
         ))}
-      </ImageList>
+      </Grid>
+      <VerticalLineButton marginTop={"15%"} />
     </Box>
   );
 }

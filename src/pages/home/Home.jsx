@@ -21,6 +21,13 @@ const Home = () => {
       <HorizontalArticleImgLeft marginTop={60} />
       <HorizontalArticleImgRight marginTop={-40} />
       <HorizontalTwoImgArticle marginTop={60} />
+      <HorizontalArticleImgLeft marginTop={60} />
+      <HorizontalArticleImgRight marginTop={-40} />
+      <HorizontalImgList title={"My Style"} marginTop={60} />
+      <HorizontalArticleImgLeft marginTop={60} />
+      <HorizontalArticleImgRight marginTop={-40} />
+      <VerticalGalleryArticleList marginTop={40} />
+      <Footer marginTop={40} />
     </>
   );
 };
