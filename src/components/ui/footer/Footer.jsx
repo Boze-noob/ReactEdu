@@ -1,4 +1,4 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import PinterestIcon from "@mui/icons-material/Pinterest";
@@ -77,9 +77,15 @@ function InfoBox() {
         justifyContent: "center",
       }}
     >
-      <Typography sx={{ m: 7 }}>About</Typography>
-      <Typography sx={{ m: 7 }}>Policies</Typography>
-      <Typography sx={{ m: 7 }}>Contact</Typography>
+      <Button variant="text" sx={{ m: 7, fontFamily: "Work Sans" }}>
+        About
+      </Button>
+      <Button variant="text" sx={{ m: 7, fontFamily: "Work Sans" }}>
+        Policies
+      </Button>
+      <Button variant="text" sx={{ m: 7, fontFamily: "Work Sans" }}>
+        Contact
+      </Button>
     </Box>
   );
 }
