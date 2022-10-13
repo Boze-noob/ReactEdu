@@ -41,9 +41,15 @@ function SocialMediaBox() {
         justifyContent: "center",
       }}
     >
-      <InstagramIcon sx={{ m: 10 }} />
-      <TwitterIcon sx={{ m: 10 }} />
-      <PinterestIcon sx={{ m: 10 }} />
+      <Button target="_blank" href={"https://www.youtube.com/"}>
+        <InstagramIcon sx={{ m: 10 }} />
+      </Button>
+      <Button target="_blank" href={"https://www.youtube.com/"}>
+        <TwitterIcon sx={{ m: 10 }} />
+      </Button>
+      <Button target="_blank" href={"https://www.youtube.com/"}>
+        <PinterestIcon sx={{ m: 10 }} />
+      </Button>
     </Box>
   );
 }
