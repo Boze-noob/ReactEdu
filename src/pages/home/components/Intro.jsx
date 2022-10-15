@@ -37,8 +37,13 @@ const Intro = () => {
           </Box>
         </div>
         <Box
-          style={{ position: "absolute", bottom: "40%", right: "3%" }}
-          sx={{ display: "flex", flexDirection: "column" }}
+          sx={{
+            position: "absolute",
+            bottom: { xs: "30%", sm: "40%" },
+            right: "3%",
+            display: "flex",
+            flexDirection: "column",
+          }}
         >
           <SocialMediaItem
             icon={
@@ -77,7 +82,6 @@ function SocialMediaItem({ icon, href }) {
   return (
     <Box
       sx={{
-        p: { xs: 0.1, sm: 1 },
         m: { xs: 0.1, sm: 1 },
       }}
     >

@@ -1,6 +1,5 @@
 import * as React from "react";
 import { AppBar, Box, Toolbar, Typography, Button } from "@mui/material";
-
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import SideMenu from "./components/SideBar.jsx";
@@ -34,15 +33,16 @@ export default function NavBar(props) {
           </Typography>
           <Button>
             <Typography
-              variant="h7"
-              style={{
+              sx={{
                 fontFamily: "Work Sans",
                 color: trigger ? "black" : "white",
+                fontWeight: "500",
+                fontSize: { xs: 10, sm: 15 },
               }}
             >
               Shop
             </Typography>
-            <Box sx={{ width: { sm: 5, md: 10 } }} />
+            <Box sx={{ width: { xs: 5, md: 10 } }} />
             <ShoppingBasketIcon
               sx={{
                 fontSize: { xs: 15, sm: 20 },
