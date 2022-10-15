@@ -1,15 +1,9 @@
 import * as React from "react";
-import {
-  AppBar,
-  Box,
-  Toolbar,
-  Typography,
-  Button,
-  IconButton,
-} from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { AppBar, Box, Toolbar, Typography, Button } from "@mui/material";
+
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
+import SideMenu from "./components/SideBar.jsx";
 
 export default function NavBar(props) {
   const trigger = useScrollTrigger();
@@ -28,14 +22,7 @@ export default function NavBar(props) {
             py: 15,
           }}
         >
-          <IconButton>
-            <MenuIcon
-              sx={{
-                fontSize: { xs: 20, sm: 30 },
-                color: trigger ? "black" : "white",
-              }}
-            />
-          </IconButton>
+          <SideMenu />
           <Typography
             sx={{ typography: { xs: "h6", sm: "h4" } }}
             style={{

@@ -1,13 +1,12 @@
 import Home from "./pages/home/Home";
-import NavBar from "./components/ui/navBar/NavBar";
 import Theme from "./common/Theme";
 import { ThemeProvider } from "@mui/material/styles";
+import Router from "./pages/router/Router.jsx";
 
 function App() {
   return (
     <ThemeProvider theme={Theme}>
-      <NavBar />
-      <Home />
+      <Router />
     </ThemeProvider>
   );
 }
