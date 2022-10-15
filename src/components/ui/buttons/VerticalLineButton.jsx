@@ -1,11 +1,16 @@
 import { Box, Button, Divider } from "@mui/material";
 
-export default function VerticalLineButton({ marginTop, onClick }) {
+export default function VerticalLineButton({
+  marginTop,
+  marginBottom,
+  onClick,
+}) {
   return (
     <Box
       sx={{
         flexDirection: "column",
         marginTop: marginTop ?? 10,
+        marginBottom: marginBottom ?? 10,
         alignItems: "center",
         display: "flex",
       }}

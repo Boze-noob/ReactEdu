@@ -78,7 +78,11 @@ export default function VerticalGalleryArticleList({ marginTop }) {
           </Grid>
         ))}
       </Grid>
-      <VerticalLineButton marginTop={"15%"} onClick={loadMore} />
+      <VerticalLineButton
+        marginTop={"10%"}
+        marginBottom={"5%"}
+        onClick={loadMore}
+      />
     </Box>
   );
 }

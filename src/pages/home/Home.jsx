@@ -4,7 +4,6 @@ import HorizontalArticleImgRight from "../../components/ui/articles/horizontalAr
 import HorizontalImgList from "../../components/ui/lists/HorizontalImgList";
 import ArticleWithImgBackground from "../../components/ui/articles/ArticleWithImgBackground";
 import VerticalGalleryArticleList from "../../components/ui/lists/VerticalGalleryArticleList";
-import Footer from "../../components/ui/footer/Footer";
 import HorizontalArticleImgLeft from "../../components/ui/articles/horizontalArticles/HorizontalArticleImgLeft";
 import HorizontalTwoImgArticle from "../../components/ui/articles/horizontalArticles/HorizontalTwoImgArticle";
 
@@ -27,7 +26,6 @@ const Home = () => {
       <HorizontalArticleImgLeft marginTop={60} />
       <HorizontalArticleImgRight marginTop={-40} />
       <VerticalGalleryArticleList marginTop={40} />
-      <Footer marginTop={40} />
     </>
   );
 };
