@@ -2,9 +2,9 @@ import * as React from "react";
 import { AppBar, Box, Toolbar, Typography, Button } from "@mui/material";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import SideMenu from "./components/SideBar.jsx";
+import SideMenu from "./components/SideMenu.jsx";
 
-export default function NavBar() {
+export default function NavBar({ primaryColor, secondaryColor }) {
   const trigger = useScrollTrigger();
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -21,12 +21,15 @@ export default function NavBar() {
             py: 15,
           }}
         >
-          <SideMenu />
+          <SideMenu
+            primaryColor={primaryColor}
+            secondaryColor={secondaryColor}
+          />
           <Typography
             sx={{ typography: { xs: "h6", sm: "h4" } }}
             style={{
               fontFamily: "Work Sans",
-              color: trigger ? "black" : "white",
+              color: trigger ? primaryColor : secondaryColor,
             }}
           >
             SINCERLY JULES
@@ -35,7 +38,7 @@ export default function NavBar() {
             <Typography
               sx={{
                 fontFamily: "Work Sans",
-                color: trigger ? "black" : "white",
+                color: trigger ? primaryColor : secondaryColor,
                 fontWeight: "500",
                 fontSize: { xs: 10, sm: 15 },
               }}
@@ -46,7 +49,7 @@ export default function NavBar() {
             <ShoppingBasketIcon
               sx={{
                 fontSize: { xs: 15, sm: 20 },
-                color: trigger ? "black" : "white",
+                color: trigger ? primaryColor : secondaryColor,
               }}
             />
           </Button>

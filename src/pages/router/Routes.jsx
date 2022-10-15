@@ -1,4 +1,4 @@
-export const HOME_ROUTE = "";
+export const HOME_ROUTE = "/";
 export const FASHION_ROUTE = "fashion";
 export const BEAUTY_ROUTE = "beauty";
 export const LIFESTYLE_ROUTE = "lifestyle";

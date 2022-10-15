@@ -21,7 +21,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
 
-export default function App() {
+export default function SideMenu({ primaryColor, secondaryColor }) {
   const [open, setOpen] = useState(false);
   const trigger = useScrollTrigger();
 
@@ -39,10 +39,10 @@ export default function App() {
           }}
         />
       </IconButton>
-      <SideBarItem items={categoryItems} toggleSlider={toggleSlider} />
-      <SideBarItem items={shopItems} toggleSlider={toggleSlider} />
-      <SideBarItem items={copyrightItems} toggleSlider={toggleSlider} />
-      <SocialMediaSideBarItem items={socialMediaItems} />
+      <SideMenuItem items={categoryItems} toggleSlider={toggleSlider} />
+      <SideMenuItem items={shopItems} toggleSlider={toggleSlider} />
+      <SideMenuItem items={copyrightItems} toggleSlider={toggleSlider} />
+      <SocialMediaSideMenuItem items={socialMediaItems} />
     </Box>
   );
 
@@ -55,7 +55,7 @@ export default function App() {
           <MenuIcon
             sx={{
               fontSize: { xs: 20, sm: 30 },
-              color: trigger ? "black" : "white",
+              color: trigger ? primaryColor : secondaryColor,
             }}
           />
         </IconButton>
@@ -68,7 +68,7 @@ export default function App() {
   );
 }
 
-function SideBarItem({ items, toggleSlider }) {
+function SideMenuItem({ items, toggleSlider }) {
   return (
     <>
       <Divider />
@@ -104,7 +104,7 @@ function SideBarItem({ items, toggleSlider }) {
   );
 }
 
-function SocialMediaSideBarItem({ items }) {
+function SocialMediaSideMenuItem({ items }) {
   return (
     <>
       <Divider />

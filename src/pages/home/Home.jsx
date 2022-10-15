@@ -6,10 +6,12 @@ import ArticleWithImgBackground from "../../components/ui/articles/ArticleWithIm
 import VerticalGalleryArticleList from "../../components/ui/lists/VerticalGalleryArticleList";
 import HorizontalArticleImgLeft from "../../components/ui/articles/horizontalArticles/HorizontalArticleImgLeft";
 import HorizontalTwoImgArticle from "../../components/ui/articles/horizontalArticles/HorizontalTwoImgArticle";
+import NavBar from "../../components/ui/navBar/NavBar";
 
 const Home = () => {
   return (
     <>
+      <NavBar primaryColor={"black"} secondaryColor={"white"} />
       <Intro />
       <HorizontalArticleImgLeft marginTop={60} />
       <HorizontalArticleImgRight marginTop={-40} />

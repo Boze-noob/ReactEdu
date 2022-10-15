@@ -8,7 +8,6 @@ import { HOME_ROUTE, POLICIES_ROUTE } from "./Routes.jsx";
 const Router = () => {
   return (
     <BrowserRouter>
-      <NavBar />
       <Routes>
         <Route path={HOME_ROUTE} element={<HomePage></HomePage>}></Route>
         <Route
