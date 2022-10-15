@@ -4,7 +4,7 @@ import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import SideMenu from "./components/SideBar.jsx";
 
-export default function NavBar(props) {
+export default function NavBar() {
   const trigger = useScrollTrigger();
   return (
     <Box sx={{ flexGrow: 1 }}>

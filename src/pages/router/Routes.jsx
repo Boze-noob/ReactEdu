@@ -1,0 +1,10 @@
+export const HOME_ROUTE = "";
+export const FASHION_ROUTE = "fashion";
+export const BEAUTY_ROUTE = "beauty";
+export const LIFESTYLE_ROUTE = "lifestyle";
+export const COLLAGES_ROUTE = "collages";
+export const SHOP_MY_LOOK_ROUTE = "shopmylook";
+export const SHOPPE_ROUTE = "shoppe";
+export const ABOUT_ROUTE = "about";
+export const CONTACT_ROUTE = "contact";
+export const POLICIES_ROUTE = "policies";

@@ -1,49 +1,51 @@
+import * as Routes from "../../pages/router/Routes.jsx";
+
 export const categoryItems = [
   {
     text: "FASHION",
-    route: "fashion",
+    route: Routes.FASHION_ROUTE,
   },
   {
     text: "BEAUTY",
-    route: "beauty",
+    route: Routes.BEAUTY_ROUTE,
   },
   {
     text: "LIFESTYLE",
-    route: "lifestyle",
+    route: Routes.LIFESTYLE_ROUTE,
   },
   {
     text: "COLLAGES",
-    route: "collages",
+    route: Routes.COLLAGES_ROUTE,
   },
   {
     text: "HOME",
-    route: "",
+    route: Routes.HOME_ROUTE,
   },
   {
     text: "SHOP MY LOOKS",
-    route: "shopmylooks",
+    route: Routes.SHOP_MY_LOOK_ROUTE,
   },
 ];
 
 export const shopItems = [
   {
     text: "SHOPPE",
-    route: "shoppe",
+    route: Routes.SHOPPE_ROUTE,
   },
 ];
 
 export const copyrightItems = [
   {
     text: "ABOUT ME",
-    route: "about",
+    route: Routes.ABOUT_ROUTE,
   },
   {
     text: "CONTACT",
-    route: "contact",
+    route: Routes.CONTACT_ROUTE,
   },
   {
     text: "POLICIES",
-    route: "policies",
+    route: Routes.POLICIES_ROUTE,
   },
 ];
 
