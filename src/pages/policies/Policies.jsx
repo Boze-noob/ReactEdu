@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import PageTitle from "../../components/ui/header/PageTitle.jsx";
 import NavBar from "../../components/ui/navBar/NavBar.jsx";
 import {
@@ -21,6 +22,7 @@ export default function Policies() {
       <PolicieItem title={"GIFTING + SPONSORED"} paragraphs={gifting} />
       <PolicieItem title={"BOOKINGS AND PARTNERSHIPS"} paragraphs={bookings} />
       <PolicieItem title={"BLOG FAQ & INQUIRIES"} paragraphs={blogFAQ} />
+      <Box height={20} />
     </>
   );
 }
