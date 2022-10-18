@@ -2,6 +2,7 @@ import PageTitle from "../../components/ui/header/PageTitle.jsx";
 import NavBar from "../../components/ui/navBar/NavBar.jsx";
 import { Box, Typography, Button } from "@mui/material";
 import { MultiLineForm } from "../../components/ui/forms/MultiLineForm.jsx";
+import CustomButton from "../../components/ui/buttons/CustomButton";
 
 export default function Contact() {
   return (
@@ -17,13 +18,22 @@ export default function Contact() {
       >
         <Image />
         <Typography
-          sx={{ mt: { xs: "15%", sm: "5%" } }}
-          variant="h3"
+          sx={{
+            mt: { xs: "10%", sm: "5%" },
+            typography: { xs: "h4", sm: "h3" },
+          }}
           whiteSpace={"pre-wrap"}
         >
           {"BOOKINGS & \n PARTNERSHIPS"}
         </Typography>
-        <Typography sx={{ mt: { xs: "5%", sm: "2%" } }}>
+        <Typography
+          sx={{
+            mt: { xs: "5%", sm: "2%" },
+            pl: 10,
+            pl: 10,
+            textAlign: "center",
+          }}
+        >
           {
             "For booking inquiries & partnerships, please contact Jennifer Powell or Meghan Durtschi:"
           }
@@ -38,9 +48,25 @@ export default function Contact() {
         >
           Say hi to me on this form !
         </Typography>
-        <MultiLineForm label={"Name"} rows={1} marginTop={30} />
-        <MultiLineForm label={"Email"} rows={1} marginTop={15} />
-        <MultiLineForm label={"Comment"} rows={6} marginTop={15} />
+        <MultiLineForm
+          label={"Name"}
+          rows={1}
+          marginTop={30}
+          width={{ xs: "70%", sm: "40%" }}
+        />
+        <MultiLineForm
+          label={"Email"}
+          rows={1}
+          marginTop={15}
+          width={{ xs: "70%", sm: "40%" }}
+        />
+        <MultiLineForm
+          label={"Comment"}
+          rows={6}
+          marginTop={15}
+          width={{ xs: "70%", sm: "40%" }}
+        />
+        <CustomButton txt={"SEND MESSAGE"} margin={30} />
       </Box>
     </>
   );
