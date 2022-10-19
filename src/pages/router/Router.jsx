@@ -2,9 +2,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "../home/Home";
 import ContactPage from "../contact/Contact";
 import PoliciesPage from "../policies/Policies";
-import NavBar from "../../components/ui/navBar/NavBar.jsx";
+import AboutPage from "../about/About";
 import Footer from "../../components/ui/footer/Footer.jsx";
-import { CONTACT_ROUTE, HOME_ROUTE, POLICIES_ROUTE } from "./Routes.jsx";
+import {
+  ABOUT_ROUTE,
+  CONTACT_ROUTE,
+  HOME_ROUTE,
+  POLICIES_ROUTE,
+} from "./Routes.jsx";
 
 const Router = () => {
   return (
@@ -19,6 +24,7 @@ const Router = () => {
           path={CONTACT_ROUTE}
           element={<ContactPage></ContactPage>}
         ></Route>
+        <Route path={ABOUT_ROUTE} element={<AboutPage></AboutPage>}></Route>
       </Routes>
       <Footer marginTop={40} />
     </BrowserRouter>
