@@ -5,11 +5,13 @@ export default function Content() {
   return (
     <Box width={"100%"} position={"relative"} height={"135vh"}>
       <Typography
-        top={"5%"}
-        left={"5%"}
-        position={"absolute"}
-        whiteSpace={"pre-wrap"}
-        width={"55%"}
+        sx={{
+          top: { xs: "2%", sm: "5%" },
+          left: "5%",
+          position: "absolute",
+          whiteSpace: "pre-wrap",
+          width: "55%",
+        }}
       >
         {
           '"I launched my blog in 2009 while attending FIDM where I studied Visual Communications. At the time, I was also interning at WGSN, assisting a few celebrity stylists, working a 9-5, and attending college. It was a lot! I remember starting to feel overwhelmed with everything on my plate and felt like I was not being as creative as I wanted to be. \n \n My sister suggested I start a fashion blog to help me fulfill this void, so I went for it! I had no idea what I was doing but figured it out as I went. It was hard to juggle everything all at once but the blog gave me a sense of peace and freedom that I did not get with anything else so it kept me going. Being able to have my blog as a creative outlet helped me stay inspired and grow creatively. \n \n Now 12 years & over 5.7M+ followers later, I am so humbled to have this little blog here because it changed my life forever. This blog will forever hold a special place in my heart! Since the beginning of SJ, I have always stayed true to myself and do things I genuinely love and believe in, but most importantly, I always follow my heart no matter what. \n \n If there is one thing I would love for you to take away from visiting my blog is that YOU CAN DO ANYTHING you set your mind to! Believe in yourself and never give up even if it feels unreachable, trust the process and be patient and you will see results! As I always say DREAM, BELIEVE, ACHIEVE!"'
