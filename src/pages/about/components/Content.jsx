@@ -35,19 +35,26 @@ export default function Content() {
           "https://sincerelyjules.com/wp-content/themes/sincerely/assets/img/pages/sj_about_image_04.png"
         }
         width={"50%"}
-        visibility={{ xs: "visible", sm: "hidden", md: "visible" }}
+        visibility={{ xs: "hidden", md: "visible" }}
       />
 
       <Box
-        bottom={"10%"}
         sx={{
-          width: "35%",
+          width: { xs: "100%", sm: "35%" },
           position: { xs: "static", sm: "absolute" },
-          visibility: { xs: "hidden", sm: "visible" },
           right: { sm: "5%", md: "15%" },
+          bottom: { xs: "0%", sm: "10%" },
         }}
       >
-        <Typography whiteSpace={"pre-wrap"} variant={"h4"} fontWeight={500}>
+        <Typography
+          whiteSpace={"pre-wrap"}
+          fontWeight={500}
+          textAlign={"center"}
+          sx={{
+            typography: { xs: "h6", sm: "h4" },
+            pt: { xs: "5%", sm: "0%" },
+          }}
+        >
           {'"WHAT YOU LOVE DOING \n SHOULD NEVER FEEL LIKE \n WORK."'}
         </Typography>
       </Box>
