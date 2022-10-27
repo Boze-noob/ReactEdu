@@ -9,11 +9,13 @@ export default function ShoppePage() {
     <>
       <NavBar primaryColor={"black"} secondaryColor={"black"} />
       <PageTitle title={"SHOP"} />
-      <Box sx={{ width: "100%", display: "flex", flexDirection: "row" }}>
-        <Box sx={{ width: "20%", height: 100 }}>
+      <Box
+        sx={{ width: "100%", display: "flex", flexDirection: "row", mt: "4%" }}
+      >
+        <Box sx={{ width: "25%", pl: "8%" }}>
           <ShoppeSideMenu />
         </Box>
-        <Box sx={{ width: "80%", height: 100, bgcolor: "blue" }}></Box>
+        <Box sx={{ width: "75%" }}></Box>
       </Box>
     </>
   );

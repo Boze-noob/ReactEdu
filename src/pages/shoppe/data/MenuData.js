@@ -1,90 +1,88 @@
-import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
-import LocalLibraryOutlinedIcon from "@material-ui/icons/LocalLibraryOutlined";
-import TrendingUpOutlinedIcon from "@material-ui/icons/TrendingUpOutlined";
-import DescriptionOutlinedIcon from "@material-ui/icons/DescriptionOutlined";
+import AcUnitIcon from "@mui/icons-material/AcUnit";
 import React from "react";
 
-export const menu = [
+export const MenuData = [
   {
-    icon: <HomeOutlinedIcon />,
-    title: "Home",
-    items: [],
+    title: "SHOP ALL",
   },
   {
-    icon: <LocalLibraryOutlinedIcon />,
-    title: "Education",
+    title: "ACCESSORIES",
     items: [
       {
-        title: "Technical Analysis",
-        items: [
-          {
-            title: "The Dow Theory",
-            to: "/thedowtheory",
-          },
-          {
-            title: "Charts & Chart Patterns",
-            to: "/chart",
-          },
-          {
-            title: "Trend & Trend Lines",
-            to: "/trendlines",
-          },
-          {
-            title: "Support & Resistance",
-            to: "/sandr",
-          },
-        ],
+        title: "JEWELRY",
       },
       {
-        title: "Fundamental Analysis",
-        items: [
-          {
-            title: "The Dow Theory",
-            to: "/thedowtheory",
-          },
-          {
-            title: "Charts & Chart Patterns",
-            to: "/chart",
-          },
-          {
-            title: "Trend & Trend Lines",
-            to: "/trendlines",
-          },
-          {
-            title: "Support & Resistance",
-            to: "/sandr",
-          },
-        ],
+        title: "SUNGLASSES & \n EYEWEAR",
       },
       {
-        title: "Elliot Wave Analysis",
-        items: [
-          {
-            title: "The Dow Theory",
-            to: "/thedowtheory",
-          },
-          {
-            title: "Charts & Chart Patterns",
-            to: "/chart",
-          },
-          {
-            title: "Trend & Trend Lines",
-            to: "/trendlines",
-          },
-          {
-            title: "Support & Resistance",
-            to: "/sandr",
-          },
-        ],
+        title: "HAIR ACCESSORIES",
+      },
+      {
+        title: "HATS",
       },
     ],
   },
   {
-    icon: <TrendingUpOutlinedIcon />,
-    title: "Options",
+    title: "CLOTHING",
+    items: [
+      {
+        title: "ACTIVE WEAR",
+      },
+      {
+        title: "DRESSES",
+      },
+      {
+        title: "TOPS",
+      },
+      {
+        title: "KNITS",
+      },
+      {
+        title: "PANTS",
+      },
+      {
+        title: "DENIM",
+      },
+      {
+        title: "SHORTS",
+      },
+      {
+        title: "SKIRTS",
+      },
+      {
+        title: "SWIMWEAR",
+      },
+    ],
   },
   {
-    icon: <DescriptionOutlinedIcon />,
-    title: "Blog",
+    title: "BAGS",
+  },
+  {
+    title: "SHOES",
+    items: [
+      {
+        title: "BOOTS",
+      },
+      {
+        title: "HEELS",
+      },
+      {
+        title: "FLATS",
+      },
+      {
+        title: "SNEAKERS",
+      },
+      {
+        title: "SANDALS",
+      },
+    ],
+  },
+  {
+    title: "BEAUTY",
+    items: [
+      {
+        title: "NAIL POLISH",
+      },
+    ],
   },
 ];

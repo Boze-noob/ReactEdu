@@ -1,17 +1,13 @@
 import React, { useState } from "react";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import Collapse from "@material-ui/core/Collapse";
-import ExpandLessIcon from "@material-ui/icons/ExpandLess";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { List, ListItem, Collapse, Typography } from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 
-import { menu } from "./menu";
-import { hasChildren } from "./utils";
+import { MenuData } from "../data/MenuData";
+import { hasChildren } from "../../../utils/utils";
 
 export default function ShoppeSideMenu() {
-  return menu.map((item, key) => <MenuItem key={key} item={item} />);
+  return MenuData.map((item, key) => <MenuItem key={key} item={item} />);
 }
 
 const MenuItem = ({ item }) => {
@@ -22,8 +18,11 @@ const MenuItem = ({ item }) => {
 const SingleLevel = ({ item }) => {
   return (
     <ListItem button>
-      <ListItemIcon>{item.icon}</ListItemIcon>
-      <ListItemText primary={item.title} />
+      <Typography
+        sx={{ fontWeight: "bold", fontSize: 13, fontFamily: "Work Sans" }}
+      >
+        {item.title}
+      </Typography>
     </ListItem>
   );
 };
@@ -37,19 +36,22 @@ const MultiLevel = ({ item }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <ListItem button onClick={handleClick}>
-        <ListItemIcon>{item.icon}</ListItemIcon>
-        <ListItemText primary={item.title} />
+        <Typography
+          sx={{ fontWeight: "bold", fontSize: 13, fontFamily: "Work Sans" }}
+        >
+          {item.title}
+        </Typography>
         {open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
       </ListItem>
       <Collapse in={open} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
+        <List component="div" sx={{ pl: "10%" }}>
           {children.map((child, key) => (
             <MenuItem key={key} item={child} />
           ))}
         </List>
       </Collapse>
-    </React.Fragment>
+    </>
   );
 };
