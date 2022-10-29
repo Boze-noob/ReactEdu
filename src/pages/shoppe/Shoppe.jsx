@@ -3,6 +3,7 @@ import PageTitle from "../../components/ui/header/PageTitle.jsx";
 import NavBar from "../../components/ui/navBar/NavBar.jsx";
 import { Box } from "@mui/material";
 import ShoppeSideMenu from "./components/ShoppeSideMenu.jsx";
+import ShopperArticleList from "./components/ShopperArticleList.jsx";
 
 export default function ShoppePage() {
   return (
@@ -15,7 +16,9 @@ export default function ShoppePage() {
         <Box sx={{ width: "25%", pl: "8%" }}>
           <ShoppeSideMenu />
         </Box>
-        <Box sx={{ width: "75%" }}></Box>
+        <Box sx={{ width: "75%" }}>
+          <ShopperArticleList />
+        </Box>
       </Box>
     </>
   );
