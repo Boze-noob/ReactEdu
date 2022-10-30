@@ -27,7 +27,7 @@ const Home = () => {
       <HorizontalImgList title={"My Style"} marginTop={60} />
       <HorizontalArticleImgLeft marginTop={60} />
       <HorizontalArticleImgRight marginTop={-40} />
-      <VerticalGalleryArticleList marginTop={40} />
+      <VerticalGalleryArticleList marginTop={40} loadMoreFlag={true} />
     </>
   );
 };

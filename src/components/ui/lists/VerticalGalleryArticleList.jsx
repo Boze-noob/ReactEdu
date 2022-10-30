@@ -2,7 +2,10 @@ import { Typography, Box, Grid } from "@mui/material";
 import VerticalLineButton from "../buttons/VerticalLineButton";
 import { useState } from "react";
 
-export default function VerticalGalleryArticleList({ marginTop }) {
+export default function VerticalGalleryArticleList({
+  marginTop,
+  loadMoreFlag,
+}) {
   const fakeData = [
     "https://sincerelyjules.com/wp-content/uploads/2022/05/SJxCANVA1-1000x1500.jpg",
     "https://sincerelyjules.com/wp-content/uploads/2022/06/Sincerely-jules-provence-1-1000x1500.jpg",
@@ -78,11 +81,13 @@ export default function VerticalGalleryArticleList({ marginTop }) {
           </Grid>
         ))}
       </Grid>
-      <VerticalLineButton
-        marginTop={"10%"}
-        marginBottom={"5%"}
-        onClick={loadMore}
-      />
+      {loadMoreFlag && (
+        <VerticalLineButton
+          marginTop={"10%"}
+          marginBottom={"5%"}
+          onClick={loadMore}
+        />
+      )}
     </Box>
   );
 }

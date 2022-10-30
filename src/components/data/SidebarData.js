@@ -19,7 +19,7 @@ export const categoryItems = [
   },
   {
     text: "HOME",
-    route: Routes.HOME_ROUTE,
+    route: Routes.HOUSE_ROUTE,
   },
   {
     text: "SHOP MY LOOKS",
