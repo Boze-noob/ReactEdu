@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import {
   Grid,
   Card,
@@ -10,10 +11,19 @@ import {
   Box,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import VerticalLineButton from "../../../components/ui/buttons/VerticalLineButton";
 
 export default function ShopperArticleList() {
+  const fakeData = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+  const [itemData, setItemData] = useState(fakeData);
+
+  const loadMore = () => {
+    setItemData((items) => items.concat(fakeData));
+  };
+
   const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+    backgroundColor: theme.palette.mode === "dark" ? "#e6ebeb" : "#fff",
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: "center",
@@ -21,30 +31,30 @@ export default function ShopperArticleList() {
   }));
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={30}>
-        <Grid item xs={4}>
-          <Item>
-            <Article />
-          </Item>
+    <>
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid
+          container
+          spacing={25}
+          sx={{ paddingLeft: { xs: "10%", sm: "0%" } }}
+        >
+          {itemData.map((item) => (
+            <Grid item xs={6} sm={4} lg={3}>
+              <Item>
+                <Article />
+              </Item>
+            </Grid>
+          ))}
         </Grid>
-        <Grid item xs={4}>
-          <Item>
-            <Article />
-          </Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>
-            <Article />
-          </Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>
-            <Article />
-          </Item>
-        </Grid>
-      </Grid>
-    </Box>
+      </Box>
+
+      <VerticalLineButton
+        marginTop={"10%"}
+        marginBottom={"5%"}
+        onClick={loadMore}
+        text="Shop More"
+      />
+    </>
   );
 }
 
@@ -54,17 +64,24 @@ function Article() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
-          image="https://cdn.mos.cms.futurecdn.net/kCbvedK262UGLXCLFeW5oS.jpg"
-          alt="green iguana"
+          image="https://sincerelyjules.com/wp-content/uploads/2022/09/IMG_7069.jpg"
+          sx={{ height: { xs: 120, sm: 150, md: 190 }, objectFit: "contain" }}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
+          <Typography
+            gutterBottom
+            variant="h7"
+            component="div"
+            fontFamily={"Work Sans"}
+          >
+            MIU MIU
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography
+            color="text.secondary"
+            fontFamily={"Work Sans"}
+            sx={{ fontSize: { xs: 10, sm: 14, lg: 16 } }}
+          >
+            Logo-Knit Crocheted Headband
           </Typography>
         </CardContent>
       </CardActionArea>

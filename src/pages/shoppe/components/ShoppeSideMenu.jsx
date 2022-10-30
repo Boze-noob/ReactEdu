@@ -19,7 +19,11 @@ const SingleLevel = ({ item }) => {
   return (
     <ListItem button>
       <Typography
-        sx={{ fontWeight: "bold", fontSize: 13, fontFamily: "Work Sans" }}
+        sx={{
+          fontWeight: "bold",
+          fontSize: { xs: 8, sm: 13 },
+          fontFamily: "Work Sans",
+        }}
       >
         {item.title}
       </Typography>
@@ -39,7 +43,11 @@ const MultiLevel = ({ item }) => {
     <>
       <ListItem button onClick={handleClick}>
         <Typography
-          sx={{ fontWeight: "bold", fontSize: 13, fontFamily: "Work Sans" }}
+          sx={{
+            fontWeight: "bold",
+            fontSize: { xs: 8, sm: 13 },
+            fontFamily: "Work Sans",
+          }}
         >
           {item.title}
         </Typography>

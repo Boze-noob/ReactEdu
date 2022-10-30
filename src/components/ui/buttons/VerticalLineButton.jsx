@@ -4,6 +4,7 @@ export default function VerticalLineButton({
   marginTop,
   marginBottom,
   onClick,
+  text,
 }) {
   return (
     <Box
@@ -27,7 +28,7 @@ export default function VerticalLineButton({
         }}
         onClick={onClick}
       >
-        LOAD MORE
+        {text ?? "LOAD MORE"}
       </Button>
       <Box height={20}></Box>
       <Divider orientation="vertical" sx={{ height: 50, bgcolor: "black" }} />
