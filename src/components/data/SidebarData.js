@@ -21,10 +21,6 @@ export const categoryItems = [
     text: "HOME",
     route: Routes.HOUSE_ROUTE,
   },
-  {
-    text: "SHOP MY LOOKS",
-    route: Routes.SHOP_MY_LOOK_ROUTE,
-  },
 ];
 
 export const shopItems = [

@@ -21,6 +21,7 @@ import {
   COLLAGES_ROUTE,
   HOUSE_ROUTE,
 } from "./Routes.jsx";
+import LifestylePage from "../lifestyle/Lifestyle";
 
 const Router = () => {
   return (
@@ -43,7 +44,7 @@ const Router = () => {
         <Route path={BEAUTY_ROUTE} element={<BeautyPage></BeautyPage>}></Route>
         <Route
           path={LIFESTYLE_ROUTE}
-          element={<LIFESTYLE_ROUTE></LIFESTYLE_ROUTE>}
+          element={<LifestylePage></LifestylePage>}
         ></Route>
         <Route
           path={COLLAGES_ROUTE}
