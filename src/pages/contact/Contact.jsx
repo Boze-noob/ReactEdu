@@ -1,7 +1,7 @@
 import PageTitle from "../../components/ui/header/PageTitle.jsx";
 import NavBar from "../../components/ui/navBar/NavBar.jsx";
 import { Box, Typography, Button } from "@mui/material";
-import { MultiLineForm } from "../../components/ui/forms/MultiLineForm.jsx";
+import { MultiLineInput } from "../../components/ui/forms/MultiLineInput.jsx";
 import CustomButton from "../../components/ui/buttons/CustomButton";
 
 export default function Contact() {
@@ -48,19 +48,19 @@ export default function Contact() {
         >
           Say hi to me on this form !
         </Typography>
-        <MultiLineForm
+        <MultiLineInput
           label={"Name"}
           rows={1}
           marginTop={30}
           width={{ xs: "70%", sm: "40%" }}
         />
-        <MultiLineForm
+        <MultiLineInput
           label={"Email"}
           rows={1}
           marginTop={15}
           width={{ xs: "70%", sm: "40%" }}
         />
-        <MultiLineForm
+        <MultiLineInput
           label={"Comment"}
           rows={6}
           marginTop={15}

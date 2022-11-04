@@ -1,6 +1,6 @@
 import { TextField } from "@mui/material";
 
-export function MultiLineForm({
+export function MultiLineInput({
   rows,
   label,
   defaultValue,
