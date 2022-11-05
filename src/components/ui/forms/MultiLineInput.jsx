@@ -14,7 +14,10 @@ export function MultiLineInput({
       multiline
       rows={rows ?? 4}
       defaultValue={defaultValue ?? ""}
-      sx={{ mt: marginTop ?? 10, width: width ?? "40%" }}
+      sx={{
+        mt: marginTop ?? 10,
+        width: width ?? "40%",
+      }}
       size={size ?? "small"}
     />
   );

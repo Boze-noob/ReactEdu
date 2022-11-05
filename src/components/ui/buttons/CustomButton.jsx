@@ -7,7 +7,11 @@ export default function CustomButton({ onClick, margin, txt }) {
       onClick={onClick}
       sx={{ m: { margin }, borderRadius: 0 }}
     >
-      <Typography style={{ padding: 3 }}>{txt}</Typography>
+      <Typography
+        style={{ padding: 3, fontFamily: "Work Sans", fontWeight: "500" }}
+      >
+        {txt}
+      </Typography>
     </Button>
   );
 }

@@ -1,11 +1,11 @@
 import { Box } from "@mui/material";
 
-export const CustomImage = ({ src, marginTop, width, padding }) => {
+export const CustomImage = ({ src, marginTop, width, padding, height }) => {
   return (
     <Box
       component="img"
       sx={{
-        width: { width },
+        width: width,
       }}
       src={src}
       style={{ objectFit: "fill" }}

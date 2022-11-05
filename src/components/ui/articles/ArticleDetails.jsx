@@ -1,10 +1,8 @@
 import { Typography, Box } from "@mui/material";
 import React from "react";
 import { CustomImage } from "../image/Image";
-import { Comments } from "../comments/Comments";
 import VerticalGalleryArticleList from "../lists/VerticalGalleryArticleList";
 import { ImageList, ImageListItemBar, ImageListItem } from "@mui/material";
-import { MultiLineForm } from "../forms/MultiLineInput";
 import CommentForm from "../forms/CommentForm";
 
 export default function ArticleDetails() {
@@ -30,6 +28,7 @@ export default function ArticleDetails() {
           typography: { xs: "h5", sm: "h4", md: "h3" },
           width: "35%",
           textAlign: "center",
+          mt: "2%",
         }}
       >
         CUTE SUMMER TO FALL TRANSITIONAL OUTFIT!
@@ -39,12 +38,15 @@ export default function ArticleDetails() {
           fontFamily: "Work Sans",
           fontWeight: "bold",
           fontSize: { xs: 10, sm: 11, md: 12 },
+          mt: "2%",
         }}
       >
         PARIS, FRANCE - OCTOBER 11
       </Typography>
       <GalleryImages />
-      <Typography sx={{ width: "65%", textAlign: "center", typography: "h7" }}>
+      <Typography
+        sx={{ width: "65%", textAlign: "center", typography: "h7", mt: "4%" }}
+      >
         Cardigans are as cute and cozy as it gets, I absolutely love them in
         every shape and style. It’s a staple that brings a touch of lux to your
         most casual outfits. They’re the perfect item to style over a slip dress
@@ -80,7 +82,7 @@ export default function ArticleDetails() {
         }
         width="70%"
       />
-      <CommentForm />
+      <CommentForm marginTop={"5%"} />
       <VerticalGalleryArticleList marginTop={40} loadMoreFlag={true} />
     </Box>
   );
@@ -88,7 +90,12 @@ export default function ArticleDetails() {
 
 function GalleryImages() {
   return (
-    <Box display="flex" flexDirection="row" width={"70%"}>
+    <Box
+      display="flex"
+      flexDirection="row"
+      mt={"3%"}
+      sx={{ width: { xs: "85%", sm: "70%" } }}
+    >
       <CustomImage
         src={
           "https://post.healthline.com/wp-content/uploads/2020/08/full-moon-night-landscape-732x549-thumbnail-1.jpg"
@@ -177,7 +184,11 @@ function HorizontalList() {
   ];
   return (
     <ImageList
-      sx={{ overflowX: "auto", width: { xs: "70%", sm: "55%" }, marginTop: 40 }}
+      sx={{
+        overflowX: "auto",
+        width: { xs: "70%", sm: "55%" },
+        marginTop: "7%",
+      }}
       rowHeight={250}
     >
       <ImageListItem sx={{ display: "inline-flex", flexDirection: "row" }}>
