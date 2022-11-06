@@ -26,7 +26,7 @@ export default function ArticleDetails() {
       <Typography
         sx={{
           typography: { xs: "h5", sm: "h4", md: "h3" },
-          width: "35%",
+          width: { xs: "50%", sm: "35%" },
           textAlign: "center",
           mt: "2%",
         }}
@@ -45,7 +45,12 @@ export default function ArticleDetails() {
       </Typography>
       <GalleryImages />
       <Typography
-        sx={{ width: "65%", textAlign: "center", typography: "h7", mt: "4%" }}
+        sx={{
+          width: { xs: "85%", sm: "65%" },
+          textAlign: "center",
+          typography: "h7",
+          mt: "4%",
+        }}
       >
         Cardigans are as cute and cozy as it gets, I absolutely love them in
         every shape and style. It’s a staple that brings a touch of lux to your
@@ -61,28 +66,33 @@ export default function ArticleDetails() {
       <Box
         display={"flex"}
         flexDirection={"row"}
-        sx={{ justifyContent: "space-evenly" }}
+        sx={{
+          justifyContent: "space-evenly",
+          width: { xs: "90%", sm: "69%" },
+          height: { xs: 230, sm: 400, md: 550, lg: 650 },
+          mt: { xs: "8%", sm: "0%" },
+        }}
       >
         <CustomImage
           src={
-            "https://post.healthline.com/wp-content/uploads/2020/08/full-moon-night-landscape-732x549-thumbnail-1.jpg"
+            "https://sincerelyjules.com/wp-content/uploads/2022/10/Sincerely-jules-sezane-cardigan-denim-loafers-1000x1500.jpg"
           }
           width="45%"
         />
         <CustomImage
           src={
-            "https://post.healthline.com/wp-content/uploads/2020/08/full-moon-night-landscape-732x549-thumbnail-1.jpg"
+            "https://sincerelyjules.com/wp-content/uploads/2022/10/Sincerely-jules-sezane-bottoms-loafers-1000x1500.jpg"
           }
           width="45%"
         />
       </Box>
       <CustomImage
         src={
-          "https://post.healthline.com/wp-content/uploads/2020/08/full-moon-night-landscape-732x549-thumbnail-1.jpg"
+          "https://sincerelyjules.com/wp-content/uploads/2022/10/Sincerely-jules-sezane-cardigan.jpg"
         }
-        width="70%"
+        width={{ xs: "84%", sm: "65%" }}
       />
-      <CommentForm marginTop={"5%"} />
+      <CommentForm marginTop={{ xs: "15%", sm: "5%" }} />
       <VerticalGalleryArticleList marginTop={40} loadMoreFlag={true} />
     </Box>
   );
@@ -98,7 +108,7 @@ function GalleryImages() {
     >
       <CustomImage
         src={
-          "https://post.healthline.com/wp-content/uploads/2020/08/full-moon-night-landscape-732x549-thumbnail-1.jpg"
+          "https://sincerelyjules.com/wp-content/uploads/2022/10/Sincerely-jules-sezane-look-bag-loafers.jpg"
         }
         width="100%"
         marginTop={"0%"}
@@ -186,8 +196,8 @@ function HorizontalList() {
     <ImageList
       sx={{
         overflowX: "auto",
-        width: { xs: "70%", sm: "55%" },
-        marginTop: "7%",
+        width: { xs: "85%", sm: "55%" },
+        marginTop: { xs: "10%", sm: "7%" },
       }}
       rowHeight={250}
     >

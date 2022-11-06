@@ -22,7 +22,7 @@ export default function CommentForm({ marginTop }) {
           sx={{
             fontWeight: 600,
             fontFamily: "Work Sans",
-            fontSize: { xs: 10, sm: 13 },
+            fontSize: 13,
           }}
         >
           10 COMMENTS
@@ -32,7 +32,7 @@ export default function CommentForm({ marginTop }) {
           sx={{
             fontWeight: 600,
             fontFamily: "Work Sans",
-            fontSize: { xs: 10, sm: 13 },
+            fontSize: 13,
           }}
         >
           SHOW ALL
@@ -43,33 +43,39 @@ export default function CommentForm({ marginTop }) {
         sx={{
           fontFamily: "Work Sans",
           fontWeight: 600,
-          fontSize: { xs: 9, sm: 13 },
-          mt: "3%",
+          fontSize: 13,
+          mt: { xs: "6%", sm: "3%" },
         }}
       >
         LEAVE A COMMENT
       </Typography>
-      <Typography sx={{ fontSize: { xs: 9, sm: 13 }, mt: "1.5%" }}>
+      <Typography sx={{ fontSize: 13, mt: { xs: "3%", sm: "1.5%" } }}>
         Your email address will not be published.
       </Typography>
       <MultiLineInput
         label={"Your Comment"}
-        width={"60%"}
+        width={{ xs: "80%", sm: "60%" }}
         rows={10}
-        marginTop={"3%"}
+        marginTop={{ xs: "6%", sm: "3%" }}
       />
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: { xs: "column", sm: "row" },
           justifyContent: "space-between",
-          width: "60%",
-          mt: "1%",
+          width: { xs: "80%", sm: "60%" },
+          mt: { xs: "4%", sm: "1%" },
         }}
       >
         <TextField fullWidth label={"Name"} defaultValue={""} size={"small"} />
         <Box width={"3%"} />
-        <TextField fullWidth label={"Email"} defaultValue={""} size={"small"} />
+        <TextField
+          fullWidth
+          label={"Email"}
+          defaultValue={""}
+          size={"small"}
+          sx={{ mt: { xs: "3%", sm: "0%" } }}
+        />
       </Box>
       <CustomButton txt="SEND MESSAGE" margin={"2%"} />
     </Box>
