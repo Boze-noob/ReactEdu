@@ -3,6 +3,8 @@ import { AppBar, Box, Toolbar, Typography, Button } from "@mui/material";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import SideMenu from "./components/SideMenu.jsx";
+import { Link } from "react-router-dom";
+import * as Routes from "../../../pages/router/Routes";
 
 export default function NavBar({ primaryColor, secondaryColor }) {
   const trigger = useScrollTrigger();
@@ -34,25 +36,27 @@ export default function NavBar({ primaryColor, secondaryColor }) {
           >
             SINCERLY JULES
           </Typography>
-          <Button>
-            <Typography
-              sx={{
-                fontFamily: "Work Sans",
-                color: trigger ? primaryColor : secondaryColor,
-                fontWeight: "500",
-                fontSize: { xs: 10, sm: 15 },
-              }}
-            >
-              Shop
-            </Typography>
-            <Box sx={{ width: { xs: 5, md: 10 } }} />
-            <ShoppingBasketIcon
-              sx={{
-                fontSize: { xs: 15, sm: 20 },
-                color: trigger ? primaryColor : secondaryColor,
-              }}
-            />
-          </Button>
+          <Link to={Routes.SHOPPE_ROUTE} style={{ textDecoration: "none" }}>
+            <Button>
+              <Typography
+                sx={{
+                  fontFamily: "Work Sans",
+                  color: trigger ? primaryColor : secondaryColor,
+                  fontWeight: "500",
+                  fontSize: { xs: 10, sm: 15 },
+                }}
+              >
+                Shop
+              </Typography>
+              <Box sx={{ width: { xs: 5, md: 10 } }} />
+              <ShoppingBasketIcon
+                sx={{
+                  fontSize: { xs: 15, sm: 20 },
+                  color: trigger ? primaryColor : secondaryColor,
+                }}
+              />
+            </Button>
+          </Link>
         </Toolbar>
       </AppBar>
     </Box>

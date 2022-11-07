@@ -7,7 +7,7 @@ import ArticleDetails from "./components/ui/articles/ArticleDetails";
 function App() {
   return (
     <ThemeProvider theme={Theme}>
-      <ArticleDetails />
+      <Router />
     </ThemeProvider>
   );
 }
