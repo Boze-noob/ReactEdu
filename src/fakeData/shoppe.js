@@ -60,6 +60,74 @@ export const jewlery = [
     description: "Hammered Gold-Plated Chain Bracelet",
   },
   {
+    img: "https://sincerelyjules.com/wp-content/uploads/2021/09/Sincerely-jules-lele-sadoughi.jpg",
+    title: "LELE SADOUGHI",
+    description: "Petal Framed Button Earrings",
+  },
+  {
+    img: "https://sincerelyjules.com/wp-content/uploads/2021/09/Sincerely-jules-brinker-eliza.jpg",
+    title: "DANNIJO",
+    description: "Heart On Your Sleeve Bracelet",
+  },
+  {
+    img: "https://sincerelyjules.com/wp-content/uploads/2021/09/Sincerely-jules-dannijo.jpg",
+    title: "DANNIJO",
+    description: "Rome Ring",
+  },
+  {
+    img: "https://sincerelyjules.com/wp-content/uploads/2021/09/sINCERELY-JULES-BRINKER-ELIZA-1.jpg",
+    title: "BRINKER & ELIZA",
+    description: "Goldie Necklace",
+  },
+  {
+    img: "https://sincerelyjules.com/wp-content/uploads/2021/07/ISABEL-MARANT.jpg",
+    title: "ISABEL MARANT",
+    description: "Shiny Globe Earrings",
+  },
+  {
+    img: "https://sincerelyjules.com/wp-content/uploads/2021/07/SINCERELY-JULES-MAISON-IREM.jpg",
+    title: "MAISON IREM",
+    description: "Romance Earrings ",
+  },
+  {
+    img: "https://sincerelyjules.com/wp-content/uploads/2021/07/SINCERELY-JULES-BRINKERELIZA.jpg",
+    title: "BRINKER & ELIZA",
+    description: "Heart of Gold Earrings",
+  },
+  {
+    img: "https://sincerelyjules.com/wp-content/uploads/2021/07/Sincerely-Jules-MARNI.jpg",
+    title: "MARNI",
+    description: "Trapeze Earrings",
+  },
+  {
+    img: "https://sincerelyjules.com/wp-content/uploads/2021/05/SINCERELY-JULES-LUV-AJ-EARRING.jpg",
+    title: "LUV AJ",
+    description: "Martina Tube Hoop Earrings",
+  },
+  {
+    img: "https://sincerelyjules.com/wp-content/uploads/2021/05/SINCERELY-JULES-BRINKER-ELIZA-NECKLACE.jpg",
+    title: "BRINKER & ELIZA",
+    description: "Sugarplum Necklace",
+  },
+  {
+    img: "https://sincerelyjules.com/wp-content/uploads/2021/05/SINCERELY-JULES-SOKO-RINGS.jpg",
+    title: "SOKO",
+    description: "Fanned Stacking Rings",
+  },
+  {
+    img: "https://sincerelyjules.com/wp-content/uploads/2021/05/SINCERELY-JULES-CHAN-LUU-ANKLET.jpg",
+    title: "CHAN LUU",
+    description: "Pearl Beaded Anklet",
+  },
+  {
+    img: "https://sincerelyjules.com/wp-content/uploads/2021/02/ismdb3052730859_q6_2-0._UX357_QL90_.jpg",
+    title: "ISABEL MARANT",
+    description: "Mismatched A Wild Shore Earrings",
+  },
+];
+
+export const belts = [
+  {
     img: "",
     title: "",
     description: "",
