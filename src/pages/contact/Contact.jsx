@@ -1,5 +1,4 @@
 import PageTitle from "../../components/ui/header/PageTitle.jsx";
-import NavBar from "../../components/ui/navBar/NavBar.jsx";
 import { Box, Typography, Button } from "@mui/material";
 import { MultiLineInput } from "../../components/ui/forms/MultiLineInput.jsx";
 import CustomButton from "../../components/ui/buttons/CustomButton";
