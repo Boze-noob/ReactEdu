@@ -18,7 +18,6 @@ export default function ShoppePage() {
 
   return (
     <>
-      <NavBar primaryColor={"black"} secondaryColor={"black"} />
       <PageTitle title={title} />
       <Box
         sx={{ width: "100%", display: "flex", flexDirection: "row", mt: "4%" }}

@@ -8,7 +8,6 @@ import VerticalGalleryArticleList from "../../components/ui/lists/VerticalGaller
 export default function HousePage() {
   return (
     <>
-      <NavBar primaryColor={"black"} secondaryColor={"black"} />
       <PageTitle title={"Home"} />
       <HorizontalArticleImgLeft marginTop={60} />
       <HorizontalArticleImgRight marginTop={-40} />

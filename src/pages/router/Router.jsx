@@ -12,7 +12,6 @@ import { NavWrapper } from "./NavWrapper";
 import {
   ABOUT_ROUTE,
   CONTACT_ROUTE,
-  HOME_ROUTE,
   POLICIES_ROUTE,
   SHOPPE_ROUTE,
   FASHION_ROUTE,

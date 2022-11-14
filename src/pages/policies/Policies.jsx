@@ -14,7 +14,6 @@ import PolicieItem from "./components/PolicieItem";
 export default function Policies() {
   return (
     <>
-      <NavBar primaryColor={"black"} secondaryColor={"black"} />
       <PageTitle title={"Policies"} />
       <PolicieItem title={""} paragraphs={description} />
       <PolicieItem title={"POSTS and COLLABS"} paragraphs={posts} />

@@ -7,7 +7,6 @@ import CustomButton from "../../components/ui/buttons/CustomButton";
 export default function Contact() {
   return (
     <>
-      <NavBar primaryColor={"black"} secondaryColor={"black"} />
       <PageTitle title={"CONTACT"} />
       <Box
         sx={{

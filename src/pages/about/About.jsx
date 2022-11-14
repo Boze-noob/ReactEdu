@@ -7,7 +7,6 @@ import Testimonials from "./components/Testimonials";
 export default function About() {
   return (
     <>
-      <NavBar primaryColor={"black"} secondaryColor={"black"} />
       <PageTitle title={"CONTACT"} />
       <Intro />
       <Content />

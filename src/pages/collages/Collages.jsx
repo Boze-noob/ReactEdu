@@ -8,7 +8,6 @@ import VerticalGalleryArticleList from "../../components/ui/lists/VerticalGaller
 export default function CollagesPage() {
   return (
     <>
-      <NavBar primaryColor={"black"} secondaryColor={"black"} />
       <PageTitle title={"Collages"} />
       <HorizontalArticleImgLeft marginTop={60} />
       <HorizontalArticleImgRight marginTop={-40} />

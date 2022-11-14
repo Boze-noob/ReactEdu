@@ -8,7 +8,6 @@ import VerticalGalleryArticleList from "../../components/ui/lists/VerticalGaller
 export default function BeautyPage() {
   return (
     <>
-      <NavBar primaryColor={"black"} secondaryColor={"black"} />
       <PageTitle title={"Beauty"} />
       <HorizontalArticleImgLeft marginTop={60} />
       <HorizontalArticleImgRight marginTop={-40} />
