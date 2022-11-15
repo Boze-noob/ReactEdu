@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { List, ListItem, Collapse, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-
 import { MenuData } from "../data/MenuData";
 import { hasChildren } from "../../../utils/utils";
 
@@ -17,7 +16,7 @@ const MenuItem = ({ item }) => {
 
 const SingleLevel = ({ item }) => {
   return (
-    <ListItem button>
+    <ListItem button onClick={() => console.log("Ouch" + item.title)}>
       <Typography
         sx={{
           fontWeight: "bold",

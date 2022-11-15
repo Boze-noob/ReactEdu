@@ -41,7 +41,7 @@ export default function ShopperArticleList() {
           {itemData.map((item) => (
             <Grid item xs={6} sm={4} lg={3}>
               <Item>
-                <Article />
+                <Article imageUrl={""} title={""} description={""} />
               </Item>
             </Grid>
           ))}
@@ -58,13 +58,13 @@ export default function ShopperArticleList() {
   );
 }
 
-function Article() {
+function Article({ imageUrl, title, description }) {
   return (
     <Card>
       <CardActionArea>
         <CardMedia
           component="img"
-          image="https://sincerelyjules.com/wp-content/uploads/2022/09/IMG_7069.jpg"
+          image={imageUrl}
           sx={{ height: { xs: 120, sm: 150, md: 190 }, objectFit: "contain" }}
         />
         <CardContent>
@@ -74,14 +74,14 @@ function Article() {
             component="div"
             fontFamily={"Work Sans"}
           >
-            MIU MIU
+            {title}
           </Typography>
           <Typography
             color="text.secondary"
             fontFamily={"Work Sans"}
             sx={{ fontSize: { xs: 10, sm: 14, lg: 16 } }}
           >
-            Logo-Knit Crocheted Headband
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>
