@@ -1,16 +1,8 @@
 import { Box, Typography, Divider, Grid } from "@mui/material";
-import { useSelector, useDispatch } from "react-redux";
-import { getInstagramInfo } from "../../../redux/footerRedux/actions";
 import "./css/GridOnHover.css";
-import { useEffect } from "react";
+import { instagramFooterData } from "../../../fakeData/instagram";
 
 export default function InstagramGrid() {
-  const dispatch = useDispatch();
-  const instagramInfoList = useSelector((state) => state.instagramInfoList);
-  useEffect(() => {
-    dispatch(getInstagramInfo());
-  }, []);
-
   return (
     <Box style={{ background: "#f4eadf" }}>
       <Box
@@ -41,13 +33,13 @@ export default function InstagramGrid() {
           }}
         />
       </Box>
-      <ImagesGrid instagramInfoList={instagramInfoList} />
+      <ImagesGrid data={instagramFooterData} />
     </Box>
   );
 }
 
-function ImagesGrid({ instagramInfoList }) {
-  const instagramInfoFilteredList = instagramInfoList.slice(1, 7);
+function ImagesGrid({ data }) {
+  const slicedData = data.slice(1, 7);
   return (
     <Box
       sx={{
@@ -58,9 +50,9 @@ function ImagesGrid({ instagramInfoList }) {
         mt: 20,
       }}
     >
-      {instagramInfoList.length > 0 ? (
+      {data.length > 0 ? (
         <img
-          src={instagramInfoList[0].imageUrl}
+          src={data[0].imageUrl}
           height="100%"
           style={{ objectFit: "fill" }}
         />
@@ -69,7 +61,7 @@ function ImagesGrid({ instagramInfoList }) {
       )}
 
       <Grid container spacing={0} rowSpacing={0}>
-        {instagramInfoFilteredList.map((item) => (
+        {slicedData.map((item) => (
           <Grid item xs={4}>
             <Box
               sx={{ height: { xs: 125, sm: 300 } }}
