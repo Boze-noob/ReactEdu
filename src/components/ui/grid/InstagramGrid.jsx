@@ -1,8 +1,16 @@
 import { Box, Typography, Divider, Grid } from "@mui/material";
 import "./css/GridOnHover.css";
-import { instagramFooterData } from "../../../fakeData/instagram";
+import { useFooterStore } from "../../../stores/FooterStore";
+import { useEffect } from "react";
+import { getFooter } from "../../../data/repositories/FooterRepository";
 
 export default function InstagramGrid() {
+  useEffect(() => {
+    getFooter();
+  }, []);
+
+  const footerData = useFooterStore((state) => state.footerData);
+
   return (
     <Box style={{ background: "#f4eadf" }}>
       <Box
@@ -33,7 +41,7 @@ export default function InstagramGrid() {
           }}
         />
       </Box>
-      <ImagesGrid data={instagramFooterData} />
+      <ImagesGrid data={footerData} />
     </Box>
   );
 }
