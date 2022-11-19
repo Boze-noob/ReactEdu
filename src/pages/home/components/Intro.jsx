@@ -52,7 +52,7 @@ const Intro = () => {
                 sx={{ fontSize: { xs: 10, sm: 16, md: "large" } }}
               />
             }
-            href="https://www.youtube.com/watch?v=yRh-dzrI4Z4"
+            href="https://www.instagram.com/sincerelyjules/"
           />
           <SocialMediaItem
             icon={
@@ -61,7 +61,7 @@ const Intro = () => {
                 sx={{ fontSize: { xs: 10, sm: 16, md: "large" } }}
               />
             }
-            href="https://www.youtube.com/watch?v=yRh-dzrI4Z4"
+            href="https://twitter.com/sincerelyJules"
           />
           <SocialMediaItem
             icon={
@@ -70,7 +70,7 @@ const Intro = () => {
                 sx={{ fontSize: { xs: 10, sm: 16, md: "large" } }}
               />
             }
-            href="https://www.youtube.com/watch?v=yRh-dzrI4Z4"
+            href="https://www.pinterest.com/sincerelyjules1/"
           />
         </Box>
       </div>

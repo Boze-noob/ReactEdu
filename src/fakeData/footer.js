@@ -3,7 +3,7 @@ export const footerData = [
     id: 0,
     imageUrl:
       "https://imgs.search.brave.com/kJGKsPbzkopxSdDqjvqV5-I--hia5WRsIFtw7e1ISGw/rs:fit:750:929:1/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzZhL2Vl/LzNiLzZhZWUzYjc5/YjAwZTg3MzVmMWU4/MzUzNjUxOTE1OTA3/LmpwZw",
-    description: "Desc 1",
+    description: "Classic combo ",
     postUrl: "https://www.youtube.com/watch?v=AHmCH7iB_IM",
   },
   {

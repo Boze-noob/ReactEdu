@@ -3,6 +3,8 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import InstagramGrid from "./../grid/InstagramGrid";
+import { Link } from "react-router-dom";
+import * as Routes from "../../../pages/router/Routes";
 
 export default function Footer({ marginTop }) {
   return (
@@ -41,13 +43,19 @@ function SocialMediaBox() {
         justifyContent: "center",
       }}
     >
-      <Button target="_blank" href={"https://www.youtube.com/"}>
+      <Button
+        target="_blank"
+        href={"https://www.instagram.com/sincerelyjules/"}
+      >
         <InstagramIcon sx={{ m: 10 }} />
       </Button>
-      <Button target="_blank" href={"https://www.youtube.com/"}>
+      <Button target="_blank" href={"https://twitter.com/sincerelyJules"}>
         <TwitterIcon sx={{ m: 10 }} />
       </Button>
-      <Button target="_blank" href={"https://www.youtube.com/"}>
+      <Button
+        target="_blank"
+        href={"https://www.pinterest.com/sincerelyjules1/"}
+      >
         <PinterestIcon sx={{ m: 10 }} />
       </Button>
     </Box>
@@ -83,15 +91,21 @@ function InfoBox() {
         justifyContent: "center",
       }}
     >
-      <Button variant="text" sx={{ m: 7, fontFamily: "Work Sans" }}>
-        About
-      </Button>
-      <Button variant="text" sx={{ m: 7, fontFamily: "Work Sans" }}>
-        Policies
-      </Button>
-      <Button variant="text" sx={{ m: 7, fontFamily: "Work Sans" }}>
-        Contact
-      </Button>
+      <Link to={Routes.ABOUT_ROUTE} style={{ textDecoration: "none" }}>
+        <Button variant="text" sx={{ m: 7, fontFamily: "Work Sans" }}>
+          About
+        </Button>
+      </Link>
+      <Link to={Routes.POLICIES_ROUTE} style={{ textDecoration: "none" }}>
+        <Button variant="text" sx={{ m: 7, fontFamily: "Work Sans" }}>
+          Policies
+        </Button>
+      </Link>
+      <Link to={Routes.CONTACT_ROUTE} style={{ textDecoration: "none" }}>
+        <Button variant="text" sx={{ m: 7, fontFamily: "Work Sans" }}>
+          Contact
+        </Button>
+      </Link>
     </Box>
   );
 }

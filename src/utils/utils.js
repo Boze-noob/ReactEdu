@@ -15,3 +15,17 @@ export function hasChildren(item) {
 
   return true;
 }
+
+export function getFirstHalfOfString(str) {
+  return str
+    .split(" ")
+    .slice(0, str.length / 2)
+    .join(" ");
+}
+
+export function getSecondHalfOfString(str) {
+  return str
+    .split(" ")
+    .slice(str.length / 2, str.length)
+    .join(" ");
+}
