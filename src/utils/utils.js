@@ -17,15 +17,17 @@ export function hasChildren(item) {
 }
 
 export function getFirstHalfOfString(str) {
+  const num = str.length / 2;
+  console.log("num is " + num);
   return str
     .split(" ")
-    .slice(0, str.length / 2)
+    .slice(0, str.split(" ").length / 2)
     .join(" ");
 }
 
 export function getSecondHalfOfString(str) {
   return str
     .split(" ")
-    .slice(str.length / 2, str.length)
+    .slice(str.split(" ").length / 2, str.split(" ").length)
     .join(" ");
 }

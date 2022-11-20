@@ -15,6 +15,7 @@ export const articleData = [
     category: "Fashion",
     title: "Cute summer to fall transitional outfit! ",
     locationDate: "PARIS, FRANCE - OCTOBER 11",
+    shortDescription: "Short description",
     description:
       "Cardigans are as cute and cozy as it gets, I absolutely love them in every shape and style. It’s a staple that brings a touch of lux to yourmost casual outfits. They’re the perfect item to style over a slip dressor layered over a simple white tee. You can even wear them withoutanything underneath, as I’ve done here. I’m really loving cardigans witha collar detail, they give off a cool preppy look that I really love.Just throw on your fave pair of denim, loafers and your go-to bag for alook that’s both casual and chic. I’d gladly wear this ensemble everydaythis fall and winter, just throw on a coat for extra warmth.",
     comments: [],

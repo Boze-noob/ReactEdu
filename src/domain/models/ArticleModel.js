@@ -5,6 +5,7 @@ export function ArticleModel(
   category,
   title,
   locationDate,
+  shortDescription,
   description,
   comments,
   articlesForSale
@@ -16,6 +17,7 @@ export function ArticleModel(
   this.title = title;
   this.locationDate = locationDate;
   this.description = description;
+  this.shortDescription = shortDescription;
   this.comments = comments;
   this.articlesForSale = articlesForSale;
 }

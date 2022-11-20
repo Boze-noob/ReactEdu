@@ -15,6 +15,7 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
     article.category,
     article.title,
     article.loactionDate,
+    article.shortDescription,
     article.description,
     article.comments,
     article.articlesForSale
@@ -45,23 +46,23 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
               fontWeight: 500,
             }}
           >
-            {articleModel.category}
+            {articleModel.category.toUpperCase()}
           </Typography>
           <Typography sx={{ typography: { xs: "h7", sm: "h4" } }}>
-            {utils.getFirstHalfOfString(articleModel.title)}
+            {utils.getFirstHalfOfString(articleModel.title).toUpperCase()}
           </Typography>
           <Typography
             sx={{ typography: { xs: "h6", sm: "h3" }, mb: 20 }}
             style={{ fontWeight: 600, fontFamily: "Work Sans" }}
             textAlign="center"
           >
-            {utils.getSecondHalfOfString(articleModel.title)}
+            {utils.getSecondHalfOfString(articleModel.title).toUpperCase()}
           </Typography>
           <Typography
             style={{ fontWeight: 600, marginLeft: 50, marginRight: 50 }}
             align="center"
           >
-            {articleModel.description}
+            {articleModel.shortDescription}
           </Typography>
           <HorizontalList articlesForSale={articleModel.articlesForSale} />
           <CustomButton

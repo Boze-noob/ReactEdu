@@ -59,11 +59,22 @@ function ImagesGrid({ data }) {
       }}
     >
       {data.length > 0 ? (
-        <img
-          src={data[0].imageUrl}
-          height="100%"
-          style={{ objectFit: "fill" }}
-        />
+        <Box style={{ position: "relative" }} className={"container"}>
+          <img
+            src={data[0].imageUrl}
+            height="100%"
+            style={{ objectFit: "fill" }}
+          />
+          <div className="overlay">
+            <Typography
+              sx={{ typography: { xs: "h6", sm: "h5" } }}
+              className={"text"}
+              style={{ fontWeight: 500, fontFamily: "Lora" }}
+            >
+              {data[0].description}
+            </Typography>
+          </div>
+        </Box>
       ) : (
         ""
       )}

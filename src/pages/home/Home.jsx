@@ -29,19 +29,19 @@ const Home = () => {
       <>
         <Intro />
         <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
-        <HorizontalArticleImgRight marginTop={-40} />
+        <HorizontalArticleImgRight marginTop={-40} article={articles[0]} />
         <HorizontalImgList title={"Highlists of the Week"} marginTop={60} />
         <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
-        <HorizontalArticleImgRight marginTop={-40} />
+        <HorizontalArticleImgRight marginTop={-40} article={articles[0]} />
         <ArticleWithImgBackground marginTop={40} />
         <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
-        <HorizontalArticleImgRight marginTop={-40} />
+        <HorizontalArticleImgRight marginTop={-40} article={articles[0]} />
         <HorizontalTwoImgArticle marginTop={60} />
         <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
-        <HorizontalArticleImgRight marginTop={-40} />
+        <HorizontalArticleImgRight marginTop={-40} article={articles[0]} />
         <HorizontalImgList title={"My Style"} marginTop={60} />
         <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
-        <HorizontalArticleImgRight marginTop={-40} />
+        <HorizontalArticleImgRight marginTop={-40} article={articles[0]} />
         <VerticalGalleryArticleList marginTop={40} loadMoreFlag={true} />
       </>
     );
