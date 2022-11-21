@@ -6,6 +6,7 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import { ArticleModel } from "../../../../domain/models/ArticleModel";
 import { ArticleForSaleModel } from "../../../../domain/models/ArticleForSale";
 import * as utils from "../../../../utils/utils.js";
+import { Link } from "react-router-dom";
 
 export default function HorizontalArticleImgRight({ marginTop, article }) {
   const articleModel = new ArticleModel(
@@ -59,11 +60,13 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
             {articleModel.shortDescription}
           </Typography>
           <HorizontalList articlesForSale={articleModel.articlesForSale} />
-          <CustomButton
-            onClick={handleButtonClick}
-            margin={20}
-            txt={"READ MORE"}
-          />
+          <Link to={"/somenewroute"} style={{ textDecoration: "none" }}>
+            <CustomButton
+              //onClick={handleButtonClick}
+              margin={20}
+              txt={"READ MORE"}
+            />
+          </Link>
         </Box>
       </Grid>
       <Grid
