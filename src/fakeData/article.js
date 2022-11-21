@@ -24,7 +24,7 @@ export const articleData = [
         id: "0",
         img: "https://img.shopstyle-cdn.com/sim/bd/de/bdde293e0389975344fc8677dd7e13f0_best/shayla-mini-dress.jpg",
         title: "SHAYKA MINI DRESS",
-        url: "Author",
+        url: "https://www.modaoperandi.com/women/p/love-shack-fancy/larsa-wool-and-cashmere-blend-cardigan-2/538093?AID=14311123&PID=7900573&SID=6049135907&cjevent=4d13d1af69cc11ed815c00ef0a180513&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
       },
       {
         id: "1",

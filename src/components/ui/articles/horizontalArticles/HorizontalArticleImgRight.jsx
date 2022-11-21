@@ -113,13 +113,16 @@ function HorizontalList({ articlesForSale }) {
             key={item.img}
             sx={{ paddingRight: "3em", width: 200 }}
           >
-            <img
-              src={item.img}
-              srcSet={item.img}
-              alt={item.author}
-              loading="lazy"
-              style={{ height: 210, objectFit: "contain" }}
-            />
+            <a href={item.url}>
+              <img
+                src={item.img}
+                srcSet={item.img}
+                alt={item.author}
+                loading="lazy"
+                style={{ height: 210, objectFit: "contain" }}
+              />
+            </a>
+
             <ImageListItemBar
               position="below"
               subtitle={item.title}
