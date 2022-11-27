@@ -19,8 +19,10 @@ import {
   LIFESTYLE_ROUTE,
   COLLAGES_ROUTE,
   HOUSE_ROUTE,
+  ARTICLE_DETAIL_ROUTE,
 } from "./Routes.jsx";
 import LifestylePage from "../lifestyle/Lifestyle";
+import ArticleDetails from "../../components/ui/articles/ArticleDetails";
 
 const Router = () => {
   return (
@@ -57,6 +59,10 @@ const Router = () => {
           <Route
             path={SHOPPE_ROUTE}
             element={<ShoppePage></ShoppePage>}
+          ></Route>
+          <Route
+            path={ARTICLE_DETAIL_ROUTE}
+            element={<ArticleDetails></ArticleDetails>}
           ></Route>
         </Route>
       </Routes>

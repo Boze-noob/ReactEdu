@@ -6,8 +6,12 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import { ArticleModel } from "../../../../domain/models/ArticleModel";
 import { ArticleForSaleModel } from "../../../../domain/models/ArticleForSale";
 import * as utils from "../../../../utils/utils.js";
+import { useNavigate } from "react-router-dom";
+import { ARTICLE_DETAIL_ROUTE } from "../../../../pages/router/Routes";
 
 export default function HorizontalArticleImgLeft({ marginTop, article }) {
+  const navigate = useNavigate();
+
   const articleModel = new ArticleModel(
     article.id,
     article.galleryImages,
@@ -66,7 +70,15 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
           </Typography>
           <HorizontalList articlesForSale={articleModel.articlesForSale} />
           <CustomButton
-            onClick={handleButtonClick}
+            onClick={() =>
+              navigate(
+                {
+                  pathname: ARTICLE_DETAIL_ROUTE,
+                  search: `?id=${articleModel.id}`,
+                },
+                { state: articleModel }
+              )
+            }
             margin={20}
             txt={"READ MORE"}
           />
@@ -123,8 +135,4 @@ function HorizontalList({ articlesForSale }) {
       </ImageListItem>
     </ImageList>
   );
-}
-
-function handleButtonClick() {
-  console.log("Damn  you clicked me!");
 }

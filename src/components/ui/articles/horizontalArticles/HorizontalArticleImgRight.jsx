@@ -6,9 +6,12 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import { ArticleModel } from "../../../../domain/models/ArticleModel";
 import { ArticleForSaleModel } from "../../../../domain/models/ArticleForSale";
 import * as utils from "../../../../utils/utils.js";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { ARTICLE_DETAIL_ROUTE } from "../../../../pages/router/Routes";
 
 export default function HorizontalArticleImgRight({ marginTop, article }) {
+  const navigate = useNavigate();
+
   const articleModel = new ArticleModel(
     article.id,
     article.galleryImages,
@@ -60,13 +63,19 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
             {articleModel.shortDescription}
           </Typography>
           <HorizontalList articlesForSale={articleModel.articlesForSale} />
-          <Link to={"/somenewroute"} style={{ textDecoration: "none" }}>
-            <CustomButton
-              //onClick={handleButtonClick}
-              margin={20}
-              txt={"READ MORE"}
-            />
-          </Link>
+          <CustomButton
+            onClick={() =>
+              navigate(
+                {
+                  pathname: ARTICLE_DETAIL_ROUTE,
+                  search: `?id=${articleModel.id}`,
+                },
+                { state: articleModel }
+              )
+            }
+            margin={20}
+            txt={"READ MORE"}
+          />
         </Box>
       </Grid>
       <Grid
@@ -136,8 +145,4 @@ function HorizontalList({ articlesForSale }) {
       </ImageListItem>
     </ImageList>
   );
-}
-
-function handleButtonClick() {
-  console.log("Damn  you clicked me!");
 }

@@ -4,20 +4,27 @@ import { CustomImage } from "../image/Image";
 import VerticalGalleryArticleList from "../lists/VerticalGalleryArticleList";
 import { ImageList, ImageListItemBar, ImageListItem } from "@mui/material";
 import CommentForm from "../forms/CommentForm";
+import { useLocation } from "react-router-dom";
+import { ArticleModel } from "../../../domain/models/ArticleModel";
+import { ArticleForSaleModel } from "../../../domain/models/ArticleForSale";
 
-export default function ArticleDetails(model) {
+export default function ArticleDetails() {
+  const { state } = useLocation();
+
   const article = new ArticleModel(
-    model.id,
-    model.galleryImages,
-    model.images,
-    model.category,
-    model.title,
-    model.locationDate,
-    model.shortDescription,
-    model.description,
-    model.comments,
-    model.articlesForSale
+    state.id,
+    state.galleryImages,
+    state.images,
+    state.category,
+    state.title,
+    state.locationDate,
+    state.shortDescription,
+    state.description,
+    state.comments,
+    state.articlesForSale
   );
+
+  console.log("Article inside details is " + JSON.stringify(article));
 
   return (
     <Box
@@ -67,7 +74,7 @@ export default function ArticleDetails(model) {
       >
         {article.description}
       </Typography>
-      <HorizontalList />
+      <HorizontalList articlesForSale={article.articlesForSale} />
       <Box
         display={"flex"}
         flexDirection={"row"}
@@ -126,7 +133,10 @@ function GalleryImages({ images }) {
   );
 }
 
-function HorizontalList(articles) {
+function HorizontalList(articlesForSale) {
+  const articles = articlesForSale.articlesForSale.map(
+    (item) => new ArticleForSaleModel(item.id, item.img, item.title, item.url)
+  );
   return (
     <ImageList
       sx={{

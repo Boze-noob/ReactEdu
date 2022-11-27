@@ -7,3 +7,4 @@ export const SHOPPE_ROUTE = "/shoppe";
 export const ABOUT_ROUTE = "/about";
 export const CONTACT_ROUTE = "/contact";
 export const POLICIES_ROUTE = "/policies";
+export const ARTICLE_DETAIL_ROUTE = "/article_detail";
