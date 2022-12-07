@@ -5,7 +5,15 @@ export default function CustomButton({ onClick, margin, txt }) {
     <Button
       variant="contained"
       onClick={onClick}
-      sx={{ m: { margin }, borderRadius: 0 }}
+      sx={{
+        m: { margin },
+        borderRadius: 0,
+        "&:hover": {
+          cursor: "pointer",
+          bgcolor: "#333333",
+        },
+        transition: "0.7s",
+      }}
     >
       <Typography
         style={{ padding: 3, fontFamily: "Work Sans", fontWeight: "500" }}

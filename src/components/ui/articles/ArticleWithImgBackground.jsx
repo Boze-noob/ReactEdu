@@ -63,37 +63,47 @@ export default function ArticleWithImgBackground({ marginTop }) {
           </Typography>
         </Link>
 
-        <Link underline="none" href="https://mui.com/material-ui/react-link/">
-          <Typography
-            sx={{
-              fontSize: { xs: 12, sm: 25, md: 38 },
-              "&:hover": {
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            "&:hover": {
+              cursor: "pointer",
+              "& .titleFirstPart": {
                 color: "black",
               },
+              "& .titleSecondPart": {
+                color: "black",
+              },
+            },
+          }}
+        >
+          <Typography
+            className="titleFirstPart"
+            sx={{
+              fontSize: { xs: 12, sm: 25, md: 38 },
+              transition: "0.7s",
               color: "white",
             }}
           >
             A CUTE DATE NIGHT
           </Typography>
-        </Link>
 
-        <Link underline="none" href="https://mui.com/material-ui/react-link/">
           <Typography
-            style={{
-              fontFamily: "Work Sans",
-              fontWeight: "bold",
-            }}
+            className="titleSecondPart"
             sx={{
               fontSize: { xs: 14, sm: 27, md: 40 },
-              "&:hover": {
-                color: "black",
-              },
+              transition: "0.7s",
               color: "white",
+              fontFamily: "Work Sans",
+              fontWeight: "bold",
             }}
           >
             LOOK IDEA!
           </Typography>
-        </Link>
+        </Box>
 
         <Box height={20} />
         <LineButton btnTxt="Read" width={80} />
