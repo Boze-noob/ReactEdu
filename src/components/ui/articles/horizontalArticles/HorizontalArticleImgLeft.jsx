@@ -52,16 +52,39 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
           >
             {articleModel.category.toUpperCase()}
           </Typography>
-          <Typography sx={{ typography: { xs: "h7", sm: "h4" } }}>
-            {utils.getFirstHalfOfString(articleModel.title).toUpperCase()}
-          </Typography>
-          <Typography
-            sx={{ typography: { xs: "h6", sm: "h3" }, mb: 20 }}
-            style={{ fontWeight: 600, fontFamily: "Work Sans" }}
-            textAlign="center"
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              "&:hover": {
+                cursor: "pointer",
+                "& .firstTitle": {
+                  color: "#49494a",
+                },
+                "& .secondTitle": {
+                  color: "#49494a",
+                },
+              },
+            }}
           >
-            {utils.getSecondHalfOfString(articleModel.title).toUpperCase()}
-          </Typography>
+            <Typography
+              className="firstTitle"
+              sx={{ typography: { xs: "h7", sm: "h4" } }}
+            >
+              {utils.getFirstHalfOfString(articleModel.title).toUpperCase()}
+            </Typography>
+            <Typography
+              className="secondTitle"
+              sx={{ typography: { xs: "h6", sm: "h3" }, mb: 20 }}
+              style={{ fontWeight: 600, fontFamily: "Work Sans" }}
+              textAlign="center"
+            >
+              {utils.getSecondHalfOfString(articleModel.title).toUpperCase()}
+            </Typography>
+          </Box>
+
           <Typography
             style={{ fontWeight: 600, marginLeft: 50, marginRight: 50 }}
             align="center"
@@ -95,6 +118,11 @@ function Image({ src, height }) {
       sx={{
         height: height,
         width: { xs: "100%", sm: "90%" },
+        "&:hover": {
+          opacity: 0.7,
+          cursor: "pointer",
+        },
+        transition: "0.7s",
       }}
       src={src}
       style={{ objectFit: "fill" }}

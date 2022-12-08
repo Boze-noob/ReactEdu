@@ -48,8 +48,15 @@ const Intro = () => {
           <SocialMediaItem
             icon={
               <InstagramIcon
-                style={{ fill: "white" }}
-                sx={{ fontSize: { xs: 10, sm: 16, md: "large" } }}
+                sx={{
+                  fontSize: { xs: 10, sm: 16, md: "x-large" },
+                  fill: "white",
+                  "&:hover": {
+                    cursor: "pointer",
+                    fill: "#333333",
+                  },
+                  transition: "0.7s",
+                }}
               />
             }
             href="https://www.instagram.com/sincerelyjules/"
@@ -57,8 +64,15 @@ const Intro = () => {
           <SocialMediaItem
             icon={
               <TwitterIcon
-                style={{ fill: "white" }}
-                sx={{ fontSize: { xs: 10, sm: 16, md: "large" } }}
+                sx={{
+                  fontSize: { xs: 10, sm: 16, md: "x-large" },
+                  fill: "white",
+                  "&:hover": {
+                    cursor: "pointer",
+                    fill: "#333333",
+                  },
+                  transition: "0.7s",
+                }}
               />
             }
             href="https://twitter.com/sincerelyJules"
@@ -66,8 +80,15 @@ const Intro = () => {
           <SocialMediaItem
             icon={
               <PinterestIcon
-                style={{ fill: "white" }}
-                sx={{ fontSize: { xs: 10, sm: 16, md: "large" } }}
+                sx={{
+                  fontSize: { xs: 10, sm: 16, md: "x-large" },
+                  fill: "white",
+                  "&:hover": {
+                    cursor: "pointer",
+                    fill: "#333333",
+                  },
+                  transition: "0.7s",
+                }}
               />
             }
             href="https://www.pinterest.com/sincerelyjules1/"
@@ -85,7 +106,15 @@ function SocialMediaItem({ icon, href }) {
         m: { xs: 0.1, sm: 1 },
       }}
     >
-      <Button target="_blank" href={href}>
+      <Button
+        target="_blank"
+        href={href}
+        sx={{
+          "&:hover": {
+            bgcolor: "transparent",
+          },
+        }}
+      >
         {icon}
       </Button>
     </Box>

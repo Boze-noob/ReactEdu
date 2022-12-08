@@ -37,22 +37,39 @@ export default function NavBar({ primaryColor, secondaryColor }) {
             SINCERLY JULES
           </Typography>
           <Link to={Routes.SHOPPE_ROUTE} style={{ textDecoration: "none" }}>
-            <Button>
+            <Button
+              sx={{
+                "&:hover": {
+                  cursor: "pointer",
+                  bgcolor: "transparent",
+                  "& .txt": {
+                    color: "black",
+                  },
+                  "& .icon": {
+                    fill: "black",
+                  },
+                },
+              }}
+            >
               <Typography
+                className="txt"
                 sx={{
                   fontFamily: "Work Sans",
                   color: trigger ? primaryColor : secondaryColor,
                   fontWeight: "500",
                   fontSize: { xs: 10, sm: 15 },
+                  transition: "0.7s",
                 }}
               >
                 Shop
               </Typography>
               <Box sx={{ width: { xs: 5, md: 10 } }} />
               <ShoppingBasketIcon
+                className="icon"
                 sx={{
                   fontSize: { xs: 15, sm: 20 },
                   color: trigger ? primaryColor : secondaryColor,
+                  transition: "0.7s",
                 }}
               />
             </Button>
