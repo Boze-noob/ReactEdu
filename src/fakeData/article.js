@@ -12,7 +12,7 @@ export const articleData = [
       "https://sincerelyjules.com/wp-content/uploads/2022/10/Sincerely-jules-sezane-bottoms-loafers-1000x1500.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/10/Sincerely-jules-sezane-cardigan.jpg",
     ],
-    category: "Fashion",
+    category: 0,
     title: "Cute summer to fall transitional outfit! ",
     locationDate: "PARIS, FRANCE - OCTOBER 11",
     shortDescription: "Short description",

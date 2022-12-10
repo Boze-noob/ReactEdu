@@ -8,6 +8,10 @@ import { ArticleForSaleModel } from "../../../../domain/models/ArticleForSale";
 import * as utils from "../../../../utils/utils.js";
 import { Link, useNavigate } from "react-router-dom";
 import { ARTICLE_DETAIL_ROUTE } from "../../../../pages/router/Routes";
+import {
+  getPathFromCategory,
+  Categorys,
+} from "../../../../types/enumerations/categorys";
 
 export default function HorizontalArticleImgRight({ marginTop, article }) {
   const navigate = useNavigate();
@@ -38,13 +42,13 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
           }}
         >
           <Typography
-            style={{
+            sx={{
               marginBottom: 15,
               fontFamily: "Work Sans",
               fontWeight: 500,
             }}
           >
-            {articleModel.category.toUpperCase()}
+            {Categorys[articleModel.category].toUpperCase()}
           </Typography>
           <Typography sx={{ typography: { xs: "h7", sm: "h4" } }}>
             {utils.getFirstHalfOfString(articleModel.title).toUpperCase()}

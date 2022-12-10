@@ -5,9 +5,12 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import SideMenu from "./components/SideMenu.jsx";
 import { Link } from "react-router-dom";
 import * as Routes from "../../../pages/router/Routes";
+import { useNavigate } from "react-router-dom";
 
 export default function NavBar({ primaryColor, secondaryColor }) {
   const trigger = useScrollTrigger();
+  const navigate = useNavigate();
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
@@ -28,10 +31,14 @@ export default function NavBar({ primaryColor, secondaryColor }) {
             secondaryColor={secondaryColor}
           />
           <Typography
-            sx={{ typography: { xs: "h6", sm: "h4" } }}
-            style={{
+            sx={{
+              typography: { xs: "h6", sm: "h4" },
               fontFamily: "Work Sans",
               color: trigger ? primaryColor : secondaryColor,
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              navigate("/");
             }}
           >
             SINCERLY JULES

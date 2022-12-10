@@ -8,6 +8,10 @@ import { ArticleForSaleModel } from "../../../../domain/models/ArticleForSale";
 import * as utils from "../../../../utils/utils.js";
 import { useNavigate } from "react-router-dom";
 import { ARTICLE_DETAIL_ROUTE } from "../../../../pages/router/Routes";
+import {
+  getPathFromCategory,
+  Categorys,
+} from "../../../../types/enumerations/categorys";
 
 export default function HorizontalArticleImgLeft({ marginTop, article }) {
   const navigate = useNavigate();
@@ -44,13 +48,18 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
           }}
         >
           <Typography
-            style={{
+            sx={{
               marginBottom: 15,
               fontFamily: "Work Sans",
               fontWeight: 500,
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              console.log("On click" + articleModel.category);
+              navigate(getPathFromCategory(articleModel.category));
             }}
           >
-            {articleModel.category.toUpperCase()}
+            {Categorys[articleModel.category].toUpperCase()}
           </Typography>
           <Box
             sx={{
