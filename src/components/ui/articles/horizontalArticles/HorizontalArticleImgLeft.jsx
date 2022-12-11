@@ -29,6 +29,16 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
     article.articlesForSale
   );
 
+  const onReadMore = () => {
+    navigate(
+      {
+        pathname: ARTICLE_DETAIL_ROUTE,
+        search: `?id=${articleModel.id}`,
+      },
+      { state: articleModel }
+    );
+  };
+
   return (
     <Grid container spacing={0} style={{ marginTop: marginTop }}>
       <Grid item xs={12} sm={6}>
@@ -81,6 +91,9 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
             <Typography
               className="firstTitle"
               sx={{ typography: { xs: "h7", sm: "h4" } }}
+              onClick={() => {
+                onReadMore();
+              }}
             >
               {utils.getFirstHalfOfString(articleModel.title).toUpperCase()}
             </Typography>
@@ -89,6 +102,9 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
               sx={{ typography: { xs: "h6", sm: "h3" }, mb: 20 }}
               style={{ fontWeight: 600, fontFamily: "Work Sans" }}
               textAlign="center"
+              onClick={() => {
+                onReadMore();
+              }}
             >
               {utils.getSecondHalfOfString(articleModel.title).toUpperCase()}
             </Typography>
@@ -102,15 +118,7 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
           </Typography>
           <HorizontalList articlesForSale={articleModel.articlesForSale} />
           <CustomButton
-            onClick={() =>
-              navigate(
-                {
-                  pathname: ARTICLE_DETAIL_ROUTE,
-                  search: `?id=${articleModel.id}`,
-                },
-                { state: articleModel }
-              )
-            }
+            onClick={() => onReadMore()}
             margin={20}
             txt={"READ MORE"}
           />
@@ -152,7 +160,18 @@ function HorizontalList({ articlesForSale }) {
         {articles.map((item) => (
           <ImageListItem
             key={item.img}
-            sx={{ paddingRight: "3em", width: 200 }}
+            sx={{
+              width: 160,
+              justifyContent: "center",
+              alignItems: "center",
+              "&:hover": {
+                cursor: "pointer",
+
+                border: 0.1,
+                borderColor: "red",
+              },
+              transition: "0.7s",
+            }}
           >
             <a href={item.url}>
               <img
