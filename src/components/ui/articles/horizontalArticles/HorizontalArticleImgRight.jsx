@@ -29,6 +29,16 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
     article.articlesForSale
   );
 
+  const onReadMore = () => {
+    navigate(
+      {
+        pathname: ARTICLE_DETAIL_ROUTE,
+        search: `?id=${articleModel.id}`,
+      },
+      { state: articleModel }
+    );
+  };
+
   return (
     <Grid container spacing={0} style={{ marginTop: marginTop }}>
       <Grid item xs={12} sm={6}>
@@ -46,20 +56,49 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
               marginBottom: 15,
               fontFamily: "Work Sans",
               fontWeight: 500,
+              cursor: "pointer",
             }}
           >
             {Categorys[articleModel.category].toUpperCase()}
           </Typography>
-          <Typography sx={{ typography: { xs: "h7", sm: "h4" } }}>
-            {utils.getFirstHalfOfString(articleModel.title).toUpperCase()}
-          </Typography>
-          <Typography
-            sx={{ typography: { xs: "h6", sm: "h3" }, mb: 20 }}
-            style={{ fontWeight: 600, fontFamily: "Work Sans" }}
-            textAlign="center"
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              "&:hover": {
+                cursor: "pointer",
+                "& .firstTitle": {
+                  color: "#49494a",
+                },
+                "& .secondTitle": {
+                  color: "#49494a",
+                },
+              },
+            }}
           >
-            {utils.getSecondHalfOfString(articleModel.title).toUpperCase()}
-          </Typography>
+            <Typography
+              className="firstTitle"
+              sx={{ typography: { xs: "h7", sm: "h4" } }}
+              onClick={() => {
+                onReadMore();
+              }}
+            >
+              {utils.getFirstHalfOfString(articleModel.title).toUpperCase()}
+            </Typography>
+            <Typography
+              className="secondTitle"
+              sx={{ typography: { xs: "h6", sm: "h3" }, mb: 20 }}
+              style={{ fontWeight: 600, fontFamily: "Work Sans" }}
+              textAlign="center"
+              onClick={() => {
+                onReadMore();
+              }}
+            >
+              {utils.getSecondHalfOfString(articleModel.title).toUpperCase()}
+            </Typography>
+          </Box>
           <Typography
             style={{ fontWeight: 600, marginLeft: 50, marginRight: 50 }}
             align="center"
@@ -68,15 +107,7 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
           </Typography>
           <HorizontalList articlesForSale={articleModel.articlesForSale} />
           <CustomButton
-            onClick={() =>
-              navigate(
-                {
-                  pathname: ARTICLE_DETAIL_ROUTE,
-                  search: `?id=${articleModel.id}`,
-                },
-                { state: articleModel }
-              )
-            }
+            onClick={() => onReadMore()}
             margin={20}
             txt={"READ MORE"}
           />
@@ -107,6 +138,11 @@ function Image({ src, height }) {
       sx={{
         height: height,
         width: { xs: "100%", sm: "90%" },
+        "&:hover": {
+          opacity: 0.7,
+          cursor: "pointer",
+        },
+        transition: "0.7s",
       }}
       src={src}
       style={{ objectFit: "fill" }}
