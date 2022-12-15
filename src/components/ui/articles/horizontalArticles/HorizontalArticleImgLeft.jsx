@@ -166,9 +166,7 @@ function HorizontalList({ articlesForSale }) {
               alignItems: "center",
               "&:hover": {
                 cursor: "pointer",
-
-                border: 0.1,
-                borderColor: "red",
+                boxShadow: 20,
               },
               transition: "0.7s",
             }}

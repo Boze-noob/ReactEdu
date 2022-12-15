@@ -163,7 +163,16 @@ function HorizontalList({ articlesForSale }) {
         {articles.map((item) => (
           <ImageListItem
             key={item.img}
-            sx={{ paddingRight: "3em", width: 200 }}
+            sx={{
+              width: 160,
+              justifyContent: "center",
+              alignItems: "center",
+              "&:hover": {
+                cursor: "pointer",
+                boxShadow: 20,
+              },
+              transition: "0.7s",
+            }}
           >
             <a href={item.url}>
               <img

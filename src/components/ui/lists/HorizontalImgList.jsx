@@ -108,34 +108,49 @@ export default function HorizontalImgList({
 
 function Item(props) {
   return (
-    <Box sx={{ flexDirection: "column" }}>
+    <Box
+      sx={{
+        flexDirection: "column",
+        "&:hover": {
+          cursor: "pointer",
+          "& .decription": {
+            color: "#49494a",
+          },
+          "& .subdescription": {
+            color: "#49494a",
+          },
+        },
+      }}
+    >
       <Box
         component="img"
         sx={{
           height: { xs: 100, sm: 300, md: 450 },
           width: "95%",
+          "&:hover": {
+            cursor: "pointer",
+          },
         }}
         src={props.item.imgUrl}
         style={{ objectFit: "fill", padding: 10 }}
       />
       <Typography
-        style={{ textAlign: "center" }}
+        className="description"
         sx={{
           mt: 5,
-
           fontSize: { xs: 9, sm: 14, md: 20 },
+          textAlign: "center",
         }}
       >
         {props.item.description}
       </Typography>
       <Typography
-        style={{
-          textAlign: "center",
-        }}
+        className="subdescription"
         sx={{
           fontWeight: "bold",
           fontSize: { xs: 13, sm: 15, md: 21 },
           fontFamily: "Work Sans",
+          textAlign: "center",
         }}
       >
         {props.item.subDescription}
