@@ -23,7 +23,7 @@ export default function Footer({ marginTop }) {
         }}
       >
         <SocialMediaBox />
-        <CopyrightBox />
+        <PageNameBox />
         <InfoBox />
       </Box>
       <Typography textAlign={"center"} sx={{ mt: 5, pb: 10 }} fontSize={10}>
@@ -62,7 +62,7 @@ function SocialMediaBox() {
   );
 }
 
-function CopyrightBox() {
+function PageNameBox() {
   return (
     <Box
       sx={{
@@ -73,7 +73,16 @@ function CopyrightBox() {
       }}
     >
       <Box sx={{ display: "flex", flexDirection: "column" }}>
-        <Typography variant="h5" textAlign={"center"}>
+        <Typography
+          variant="h5"
+          textAlign={"center"}
+          sx={{
+            "&:hover": {
+              cursor: "pointer",
+              color: "#49494a",
+            },
+          }}
+        >
           Sincerly Julies
         </Typography>
       </Box>

@@ -29,7 +29,16 @@ export default function InstagramGrid() {
         >
           Follow
         </Typography>
-        <Typography sx={{ ml: 30 }} variant="h5">
+        <Typography
+          sx={{
+            ml: 30,
+            "&:hover": {
+              cursor: "pointer",
+              color: "#49494a",
+            },
+          }}
+          variant="h4"
+        >
           @SincerlyJules
         </Typography>
         <Divider
@@ -59,7 +68,15 @@ function ImagesGrid({ data }) {
       }}
     >
       {data.length > 0 ? (
-        <Box style={{ position: "relative" }} className={"container"}>
+        <Box
+          style={{ position: "relative" }}
+          className={"container"}
+          sx={{
+            "&:hover": {
+              cursor: "pointer",
+            },
+          }}
+        >
           <img
             src={data[0].imageUrl}
             height="100%"
@@ -83,7 +100,12 @@ function ImagesGrid({ data }) {
         {slicedData.map((item) => (
           <Grid item xs={4}>
             <Box
-              sx={{ height: { xs: 125, sm: 300 } }}
+              sx={{
+                height: { xs: 125, sm: 300 },
+                "&:hover": {
+                  cursor: "pointer",
+                },
+              }}
               style={{ position: "relative" }}
               className={"container"}
             >

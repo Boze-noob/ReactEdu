@@ -40,8 +40,12 @@ export default function VerticalGalleryArticleList({
                 component="img"
                 sx={{
                   height: { xs: 300, sm: 600 },
-
                   objectFit: "fill",
+                  "&:hover": {
+                    opacity: 0.7,
+                    cursor: "pointer",
+                  },
+                  transition: "0.7s",
                 }}
                 src={item}
               />
@@ -53,6 +57,10 @@ export default function VerticalGalleryArticleList({
                   fontSize: { xs: 9, sm: 11, md: 13 },
                   marginTop: 40,
                   width: "50%",
+                  "&:hover": {
+                    cursor: "pointer",
+                    color: "#49494a",
+                  },
                 }}
               >
                 {"FASHION"}
@@ -62,9 +70,13 @@ export default function VerticalGalleryArticleList({
                   typography: { xs: "h5", sm: "h4" },
                   width: "70%",
                   marginTop: 15,
+                  textAlign: "center",
+                  wordWrap: "break-word",
+                  "&:hover": {
+                    cursor: "pointer",
+                    color: "#49494a",
+                  },
                 }}
-                textAlign="center"
-                style={{ wordWrap: "break-word" }}
               >
                 {"MY GO-TO APP TO CREATE CONTENT: CANVA!"}
               </Typography>
