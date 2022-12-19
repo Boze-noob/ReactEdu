@@ -46,17 +46,16 @@ export default function ArticleWithImgBackground({ marginTop }) {
       >
         <Link underline="none" href="https://mui.com/material-ui/react-link/">
           <Typography
-            style={{
-              marginBottom: 15,
-              fontFamily: "Work Sans",
-              fontWeight: "bold",
-            }}
             sx={{
               color: "white",
               fontSize: { xs: 9, sm: 11, md: 13 },
               "&:hover": {
                 color: "black",
               },
+              marginBottom: 15,
+              fontFamily: "Work Sans",
+              fontWeight: "bold",
+              transition: "0.7s",
             }}
           >
             FASHION

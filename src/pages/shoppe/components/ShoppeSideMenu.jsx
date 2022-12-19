@@ -16,12 +16,13 @@ const MenuItem = ({ item }) => {
 
 const SingleLevel = ({ item }) => {
   return (
-    <ListItem button onClick={() => console.log("Ouch" + item.title)}>
+    <ListItem onClick={() => console.log("Ouch" + item.title)}>
       <Typography
         sx={{
           fontWeight: "bold",
           fontSize: { xs: 8, sm: 13 },
           fontFamily: "Work Sans",
+          cursor: "pointer",
         }}
       >
         {item.title}
@@ -40,12 +41,13 @@ const MultiLevel = ({ item }) => {
 
   return (
     <>
-      <ListItem button onClick={handleClick}>
+      <ListItem onClick={handleClick}>
         <Typography
           sx={{
             fontWeight: "bold",
             fontSize: { xs: 8, sm: 13 },
             fontFamily: "Work Sans",
+            cursor: "pointer",
           }}
         >
           {item.title}
