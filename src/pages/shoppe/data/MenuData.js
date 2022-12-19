@@ -14,73 +14,73 @@ export const MenuData = [
         title: Items.ShopMenuEnum.SUNGLASS,
       },
       {
-        title: "HAIR ACCESSORIES",
+        title: Items.ShopMenuEnum.HAIR_ACCESSORIES,
       },
       {
-        title: "HATS",
-      },
-    ],
-  },
-  {
-    title: "CLOTHING",
-    items: [
-      {
-        title: "ACTIVE WEAR",
-      },
-      {
-        title: "DRESSES",
-      },
-      {
-        title: "TOPS",
-      },
-      {
-        title: "KNITS",
-      },
-      {
-        title: "PANTS",
-      },
-      {
-        title: "DENIM",
-      },
-      {
-        title: "SHORTS",
-      },
-      {
-        title: "SKIRTS",
-      },
-      {
-        title: "SWIMWEAR",
+        title: Items.ShopMenuEnum.HATS,
       },
     ],
   },
   {
-    title: "BAGS",
-  },
-  {
-    title: "SHOES",
+    title: Items.ShopMenuEnum.CLOTHING,
     items: [
       {
-        title: "BOOTS",
+        title: Items.ShopMenuEnum.ACTIVE_WEAR,
       },
       {
-        title: "HEELS",
+        title: Items.ShopMenuEnum.DRESSES,
       },
       {
-        title: "FLATS",
+        title: Items.ShopMenuEnum.TOPS,
       },
       {
-        title: "SNEAKERS",
+        title: Items.ShopMenuEnum.KNITS,
       },
       {
-        title: "SANDALS",
+        title: Items.ShopMenuEnum.PANTS,
+      },
+      {
+        title: Items.ShopMenuEnum.DENIM,
+      },
+      {
+        title: Items.ShopMenuEnum.SHORTS,
+      },
+      {
+        title: Items.ShopMenuEnum.SKIRTS,
+      },
+      {
+        title: Items.ShopMenuEnum.SWIMWEAR,
       },
     ],
   },
   {
-    title: "BEAUTY",
+    title: Items.ShopMenuEnum.BAGS,
+  },
+  {
+    title: Items.ShopMenuEnum.SHOES,
     items: [
       {
-        title: "NAIL POLISH",
+        title: Items.ShopMenuEnum.BOOTS,
+      },
+      {
+        title: Items.ShopMenuEnum.HEELS,
+      },
+      {
+        title: Items.ShopMenuEnum.FLATS,
+      },
+      {
+        title: Items.ShopMenuEnum.SNEAKERS,
+      },
+      {
+        title: Items.ShopMenuEnum.SANDALS,
+      },
+    ],
+  },
+  {
+    title: Items.ShopMenuEnum.BEAUTY,
+    items: [
+      {
+        title: Items.ShopMenuEnum.NAIL_POLISH,
       },
     ],
   },
