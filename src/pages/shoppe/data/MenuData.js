@@ -1,18 +1,17 @@
-import AcUnitIcon from "@mui/icons-material/AcUnit";
-import React from "react";
+import * as Items from "../../../types/enumerations/shopMenu";
 
 export const MenuData = [
   {
-    title: "SHOP ALL",
+    title: Items.ShopMenuEnum.SHOP_ALL,
   },
   {
-    title: "ACCESSORIES",
+    title: Items.ShopMenuEnum.ACCESSORIES,
     items: [
       {
-        title: "JEWELRY",
+        title: Items.ShopMenuEnum.JEWELRY,
       },
       {
-        title: "SUNGLASSES & \n EYEWEAR",
+        title: Items.ShopMenuEnum.SUNGLASS,
       },
       {
         title: "HAIR ACCESSORIES",
