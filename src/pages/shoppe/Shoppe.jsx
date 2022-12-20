@@ -1,24 +1,17 @@
 import React from "react";
 import { useState } from "react";
 import PageTitle from "../../components/ui/header/PageTitle.jsx";
-import NavBar from "../../components/ui/navBar/NavBar.jsx";
 import { Box } from "@mui/material";
 import ShoppeSideMenu from "./components/ShoppeSideMenu.jsx";
 import ShopperArticleList from "./components/ShopperArticleList.jsx";
-import { useCallback } from "react";
+import { useShoppeStore } from "../../stores/ShoppeStore.js";
 
 export default function ShoppePage() {
-  const [title, setTitle] = useState("Shop All");
-  const setNewTitle = useCallback(
-    (title) => {
-      setTitle(title);
-    },
-    [title]
-  );
+  const selectedCategory = useShoppeStore((state) => state.selectedCategory);
 
   return (
     <>
-      <PageTitle title={title} />
+      <PageTitle title={selectedCategory} />
       <Box
         sx={{ width: "100%", display: "flex", flexDirection: "row", mt: "4%" }}
       >
