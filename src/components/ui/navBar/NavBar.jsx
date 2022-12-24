@@ -6,6 +6,7 @@ import SideMenu from "./components/SideMenu.jsx";
 import { Link } from "react-router-dom";
 import * as Routes from "../../../pages/router/Routes";
 import { useNavigate } from "react-router-dom";
+import { width } from "@mui/system";
 
 export default function NavBar({ primaryColor, secondaryColor }) {
   const trigger = useScrollTrigger();
@@ -26,10 +27,13 @@ export default function NavBar({ primaryColor, secondaryColor }) {
             py: 15,
           }}
         >
-          <SideMenu
-            primaryColor={primaryColor}
-            secondaryColor={secondaryColor}
-          />
+          <Box sx={{ width: "5%" }}>
+            <SideMenu
+              primaryColor={primaryColor}
+              secondaryColor={secondaryColor}
+            />
+          </Box>
+
           <Typography
             sx={{
               typography: { xs: "h6", sm: "h4" },
@@ -43,44 +47,46 @@ export default function NavBar({ primaryColor, secondaryColor }) {
           >
             SINCERLY JULES
           </Typography>
-          <Link to={Routes.SHOPPE_ROUTE} style={{ textDecoration: "none" }}>
-            <Button
-              sx={{
-                "&:hover": {
-                  cursor: "pointer",
-                  bgcolor: "transparent",
-                  "& .txt": {
-                    color: "black",
-                  },
-                  "& .icon": {
-                    fill: "black",
-                  },
-                },
-              }}
-            >
-              <Typography
-                className="txt"
+          <Box sx={{ width: "5%" }}>
+            <Link to={Routes.SHOPPE_ROUTE} style={{ textDecoration: "none" }}>
+              <Button
                 sx={{
-                  fontFamily: "Work Sans",
-                  color: trigger ? primaryColor : secondaryColor,
-                  fontWeight: "500",
-                  fontSize: { xs: 10, sm: 15 },
-                  transition: "0.7s",
+                  "&:hover": {
+                    cursor: "pointer",
+                    bgcolor: "transparent",
+                    "& .txt": {
+                      color: "black",
+                    },
+                    "& .icon": {
+                      fill: "black",
+                    },
+                  },
                 }}
               >
-                Shop
-              </Typography>
-              <Box sx={{ width: { xs: 5, md: 10 } }} />
-              <ShoppingBasketIcon
-                className="icon"
-                sx={{
-                  fontSize: { xs: 15, sm: 20 },
-                  color: trigger ? primaryColor : secondaryColor,
-                  transition: "0.7s",
-                }}
-              />
-            </Button>
-          </Link>
+                <Typography
+                  className="txt"
+                  sx={{
+                    fontFamily: "Work Sans",
+                    color: trigger ? primaryColor : secondaryColor,
+                    fontWeight: "500",
+                    fontSize: { xs: 10, sm: 15 },
+                    transition: "0.7s",
+                  }}
+                >
+                  Shop
+                </Typography>
+                <Box sx={{ width: { xs: 5, md: 10 } }} />
+                <ShoppingBasketIcon
+                  className="icon"
+                  sx={{
+                    fontSize: { xs: 15, sm: 20 },
+                    color: trigger ? primaryColor : secondaryColor,
+                    transition: "0.7s",
+                  }}
+                />
+              </Button>
+            </Link>
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>
