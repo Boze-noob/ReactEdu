@@ -6,7 +6,6 @@ import SideMenu from "./components/SideMenu.jsx";
 import { Link } from "react-router-dom";
 import * as Routes from "../../../pages/router/Routes";
 import { useNavigate } from "react-router-dom";
-import { width } from "@mui/system";
 
 export default function NavBar({ primaryColor, secondaryColor }) {
   const trigger = useScrollTrigger();
