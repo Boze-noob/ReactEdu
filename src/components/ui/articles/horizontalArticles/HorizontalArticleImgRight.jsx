@@ -6,7 +6,7 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import { ArticleModel } from "../../../../domain/models/ArticleModel";
 import { ArticleForSaleModel } from "../../../../domain/models/ArticleForSale";
 import * as utils from "../../../../utils/utils.js";
-import { Link, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { ARTICLE_DETAIL_ROUTE } from "../../../../pages/router/Routes";
 import {
   getPathFromCategory,
@@ -15,6 +15,7 @@ import {
 
 export default function HorizontalArticleImgRight({ marginTop, article }) {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const articleModel = new ArticleModel(
     article.id,
@@ -59,7 +60,9 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
               cursor: "pointer",
             }}
             onClick={() => {
-              navigate(getPathFromCategory(articleModel.category));
+              const path = getPathFromCategory(articleModel.category);
+
+              if (location.pathname != path) navigate(path);
             }}
           >
             {Categorys[articleModel.category].toUpperCase()}

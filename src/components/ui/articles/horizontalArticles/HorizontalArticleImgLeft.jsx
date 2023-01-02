@@ -12,9 +12,11 @@ import {
   getPathFromCategory,
   Categorys,
 } from "../../../../types/enumerations/categorys";
+import { useLocation } from "react-router-dom";
 
 export default function HorizontalArticleImgLeft({ marginTop, article }) {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const articleModel = new ArticleModel(
     article.id,
@@ -65,7 +67,9 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
               cursor: "pointer",
             }}
             onClick={() => {
-              navigate(getPathFromCategory(articleModel.category));
+              const path = getPathFromCategory(articleModel.category);
+
+              if (location.pathname != path) navigate(path);
             }}
           >
             {Categorys[articleModel.category].toUpperCase()}
