@@ -58,6 +58,10 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
               fontWeight: 500,
               cursor: "pointer",
             }}
+            onClick={() => {
+              console.log("On click" + articleModel.category);
+              navigate(getPathFromCategory(articleModel.category));
+            }}
           >
             {Categorys[articleModel.category].toUpperCase()}
           </Typography>

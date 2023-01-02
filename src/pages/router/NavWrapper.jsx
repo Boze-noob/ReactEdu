@@ -10,9 +10,9 @@ export const NavWrapper = () => {
   const [showScrollBtn, setShowScrollBtn] = useState(false);
 
   window.addEventListener("scroll", () => {
-    if (window.pageYOffset < 250 && showScrollBtn == true)
+    if (window.pageYOffset < 250 && showScrollBtn === true)
       setShowScrollBtn(false);
-    else if (window.pageYOffset > 250 && showScrollBtn == false)
+    else if (window.pageYOffset > 250 && showScrollBtn === false)
       setShowScrollBtn(true);
   });
 
