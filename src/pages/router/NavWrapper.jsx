@@ -2,9 +2,19 @@ import { Outlet, useLocation } from "react-router-dom";
 import ScrollToTop from "../../utils/scrollToTop.js";
 import NavBar from "../../components/ui/navBar/NavBar";
 import Footer from "../../components/ui/footer/Footer.jsx";
+import { ScrollBtn } from "../../components/ui/buttons/ScrollBtn.jsx";
+import { useState } from "react";
 
 export const NavWrapper = () => {
   const location = useLocation();
+  const [showScrollBtn, setShowScrollBtn] = useState(false);
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset < 250 && showScrollBtn == true)
+      setShowScrollBtn(false);
+    else if (window.pageYOffset > 250 && showScrollBtn == false)
+      setShowScrollBtn(true);
+  });
 
   return (
     <>
@@ -13,28 +23,14 @@ export const NavWrapper = () => {
         primaryColor={"black"}
         secondaryColor={location.pathname === "/" ? "white" : "black"}
       />
-      <button
-        onClick={() => {
-          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-        }}
-        style={{
-          position: "fixed",
-          padding: "1rem 2rem",
-          fontSize: "20px",
-          bottom: "40px",
-          right: "40px",
-          backgroundColor: "#0C9",
-          color: "#fff",
-          textAlign: "center",
-          zIndex: 1,
-          "&:hover": {
-            cursor: "pointer",
-            bgcolor: "#333333",
-          },
-        }}
-      >
-        Scroll to top
-      </button>
+      {showScrollBtn && (
+        <ScrollBtn
+          onClick={() =>
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+          }
+        />
+      )}
+
       <Outlet></Outlet>
       <Footer marginTop={40} />
     </>

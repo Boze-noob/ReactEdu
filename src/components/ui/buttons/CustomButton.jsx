@@ -10,7 +10,7 @@ export default function CustomButton({ onClick, margin, txt }) {
         borderRadius: 0,
         "&:hover": {
           cursor: "pointer",
-          bgcolor: "#333333",
+          bgcolor: "#404040",
         },
         transition: "0.7s",
       }}
