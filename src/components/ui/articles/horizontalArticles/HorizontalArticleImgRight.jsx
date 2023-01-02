@@ -59,7 +59,6 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
               cursor: "pointer",
             }}
             onClick={() => {
-              console.log("On click" + articleModel.category);
               navigate(getPathFromCategory(articleModel.category));
             }}
           >
