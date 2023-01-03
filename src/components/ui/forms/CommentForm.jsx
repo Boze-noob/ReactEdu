@@ -4,8 +4,13 @@ import SouthIcon from "@mui/icons-material/South";
 import { MultiLineInput } from "./MultiLineInput";
 import CustomButton from "../buttons/CustomButton";
 import { DividerLightGrey } from "../dividers/DividerLightGrey";
+import { useState } from "react";
+import { timestampToDate } from "../../../utils/utils";
+import { comments } from "../../../fakeData/comments";
 
 export default function CommentForm({ marginTop }) {
+  const [showComments, setShowComments] = useState(false);
+
   return (
     <Box
       sx={{
@@ -17,7 +22,12 @@ export default function CommentForm({ marginTop }) {
       }}
     >
       <DividerLightGrey />
-      <Box sx={{ display: "flex", flexDirection: "row", my: "2%" }}>
+      <Box
+        sx={{ display: "flex", flexDirection: "row", my: "2%" }}
+        onClick={() => {
+          setShowComments(!showComments);
+        }}
+      >
         <Typography
           sx={{
             fontWeight: 600,
@@ -25,7 +35,7 @@ export default function CommentForm({ marginTop }) {
             fontSize: 13,
           }}
         >
-          10 COMMENTS
+          {comments.length + " COMMENTS"}
         </Typography>
         <SouthIcon fontSize="small" sx={{ mx: 10 }} />
         <Typography
@@ -39,6 +49,14 @@ export default function CommentForm({ marginTop }) {
         </Typography>
       </Box>
       <DividerLightGrey />
+      {showComments && (
+        <>
+          {comments.map((comment) => {
+            return <Comment commentModel={comment} />;
+          })}
+        </>
+      )}
+
       <Typography
         sx={{
           fontFamily: "Work Sans",
@@ -77,7 +95,60 @@ export default function CommentForm({ marginTop }) {
           sx={{ mt: { xs: "3%", sm: "0%" } }}
         />
       </Box>
+      <TextField
+        label={"Website"}
+        defaultValue={""}
+        size={"small"}
+        sx={{ mt: { xs: "3%", sm: "0%" } }}
+      />
       <CustomButton txt="SEND MESSAGE" margin={"2%"} />
     </Box>
   );
 }
+
+const Comment = ({ commentModel }) => {
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: 1 / 2,
+        mt: "2%",
+        borderTop: 1,
+        borderBottom: 1,
+        borderColor: "grey.200",
+      }}
+    >
+      <Box sx={{ display: "flex", flexDirection: "row", p: 5 }}>
+        <Typography
+          sx={{ fontSize: 13, fontWeight: "bold", fontFamily: "work sans" }}
+        >
+          {commentModel.name}
+        </Typography>
+        <Typography sx={{ fontSize: 13, pl: 5 }}>{" says:"} </Typography>
+      </Box>
+      <Typography
+        sx={{
+          fontSize: 13,
+          p: 5,
+          fontWeight: "light",
+          lineHeight: 2,
+          fontFamily: "work sans",
+        }}
+      >
+        {commentModel.comment}
+      </Typography>
+      <Typography
+        sx={{
+          fontSize: 10,
+          color: "gray",
+          fontWeight: "light",
+          fontFamily: "work sans",
+          p: 5,
+        }}
+      >
+        {timestampToDate(commentModel.timestamp)}
+      </Typography>
+    </Box>
+  );
+};
