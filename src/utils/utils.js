@@ -31,7 +31,7 @@ export function getSecondHalfOfString(str) {
 }
 
 export const timestampToDate = (timestamp) => {
-  var a = new Date(timestamp * 1000);
+  var a = new Date(timestamp);
 
   var months = [
     "January",

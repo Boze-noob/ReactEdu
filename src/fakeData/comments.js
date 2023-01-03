@@ -1,6 +1,6 @@
 import { CommentModel } from "../domain/models/CommentModel";
 
-export const comments = [
+export const fakeComments = [
   new CommentModel(
     1,
     "Monica",

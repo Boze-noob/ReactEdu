@@ -7,6 +7,7 @@ export function MultiLineInput({
   marginTop,
   size,
   width,
+  onValueChange,
 }) {
   return (
     <TextField
@@ -19,6 +20,9 @@ export function MultiLineInput({
         width: width ?? "40%",
       }}
       size={size ?? "small"}
+      onChange={(event) => {
+        onValueChange(event.target.value);
+      }}
     />
   );
 }

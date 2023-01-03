@@ -6,10 +6,25 @@ import CustomButton from "../buttons/CustomButton";
 import { DividerLightGrey } from "../dividers/DividerLightGrey";
 import { useState } from "react";
 import { timestampToDate } from "../../../utils/utils";
-import { comments } from "../../../fakeData/comments";
+import { fakeComments } from "../../../fakeData/comments";
+import { CommentModel } from "../../../domain/models/CommentModel";
 
 export default function CommentForm({ marginTop }) {
   const [showComments, setShowComments] = useState(false);
+  const [comments, setComments] = useState(fakeComments);
+
+  const [comment, setComment] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [webSite, setWebSite] = useState("");
+
+  const submitComment = () => {
+    console.log(Date.now());
+    setComments((oldArray) => [
+      ...oldArray,
+      new CommentModel(2, name, comment, Date.now(), email, webSite),
+    ]);
+  };
 
   return (
     <Box
@@ -70,38 +85,66 @@ export default function CommentForm({ marginTop }) {
       <Typography sx={{ fontSize: 13, mt: { xs: "3%", sm: "1.5%" } }}>
         Your email address will not be published.
       </Typography>
-      <MultiLineInput
-        label={"Your Comment"}
-        width={{ xs: "80%", sm: "60%" }}
-        rows={10}
-        marginTop={{ xs: "6%", sm: "3%" }}
-      />
       <Box
         sx={{
-          display: "flex",
-          flexDirection: { xs: "column", sm: "row" },
-          justifyContent: "space-between",
           width: { xs: "80%", sm: "60%" },
-          mt: { xs: "4%", sm: "1%" },
         }}
       >
-        <TextField fullWidth label={"Name"} defaultValue={""} size={"small"} />
-        <Box width={"3%"} />
+        <MultiLineInput
+          width={1}
+          label={"Your Comment"}
+          rows={10}
+          marginTop={{ xs: "6%", sm: "3%" }}
+          onValueChange={(value) => {
+            setComment(value);
+          }}
+        />
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", sm: "row" },
+            justifyContent: "space-between",
+            mt: { xs: "4%", sm: "2%" },
+          }}
+        >
+          <TextField
+            fullWidth
+            label={"Name"}
+            defaultValue={""}
+            size={"small"}
+            onChange={(event) => {
+              setName(event.target.value);
+            }}
+          />
+          <Box width={"3%"} />
+          <TextField
+            fullWidth
+            label={"Email"}
+            defaultValue={""}
+            size={"small"}
+            sx={{ mt: { xs: "3%", sm: "0%" } }}
+            onChange={(event) => {
+              setEmail(event.target.value);
+            }}
+          />
+        </Box>
         <TextField
           fullWidth
-          label={"Email"}
+          label={"Website"}
           defaultValue={""}
           size={"small"}
-          sx={{ mt: { xs: "3%", sm: "0%" } }}
+          sx={{ mt: { xs: "4%", sm: "2%" } }}
+          onChange={(event) => {
+            setWebSite(event.target.value);
+          }}
         />
       </Box>
-      <TextField
-        label={"Website"}
-        defaultValue={""}
-        size={"small"}
-        sx={{ mt: { xs: "3%", sm: "0%" } }}
+
+      <CustomButton
+        txt="SEND MESSAGE"
+        margin={"2%"}
+        onClick={() => submitComment()}
       />
-      <CustomButton txt="SEND MESSAGE" margin={"2%"} />
     </Box>
   );
 }
