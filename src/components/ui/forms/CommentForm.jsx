@@ -5,25 +5,52 @@ import { MultiLineInput } from "./MultiLineInput";
 import CustomButton from "../buttons/CustomButton";
 import { DividerLightGrey } from "../dividers/DividerLightGrey";
 import { useState } from "react";
-import { timestampToDate } from "../../../utils/utils";
+import { isEmail, timestampToDate } from "../../../utils/utils";
 import { fakeComments } from "../../../fakeData/comments";
 import { CommentModel } from "../../../domain/models/CommentModel";
 
 export default function CommentForm({ marginTop }) {
+  //TODO refactor validation(use form)
+
   const [showComments, setShowComments] = useState(false);
   const [comments, setComments] = useState(fakeComments);
 
   const [comment, setComment] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [webSite, setWebSite] = useState("");
+  const [website, setwebsite] = useState("");
+
+  const [isNameErr, setIsNameErr] = useState(false);
+  const [isEmailErr, setIsEmailErr] = useState(false);
+  const [iswebsiteErr, setIswebsiteErr] = useState(false);
+  const [isCommentErr, setIsCommentErr] = useState(false);
 
   const submitComment = () => {
-    console.log(Date.now());
-    setComments((oldArray) => [
-      ...oldArray,
-      new CommentModel(2, name, comment, Date.now(), email, webSite),
-    ]);
+    if (name.length === 0) setIsNameErr(true);
+    else setIsNameErr(false);
+    if (email.length === 0 || isEmail(email) === false) setIsEmailErr(true);
+    else setIsEmailErr(false);
+    if (website.length === 0) setIswebsiteErr(true);
+    else setIswebsiteErr(false);
+    if (comment.length === 0) setIsCommentErr(true);
+    else setIsCommentErr(false);
+
+    if (!isNameErr && !isEmailErr && !iswebsiteErr && !isCommentErr) {
+      if (isEmailErr) setIsEmailErr(false);
+      if (isNameErr) setIsNameErr(false);
+      if (iswebsiteErr) setIswebsiteErr(false);
+      if (isCommentErr) setIsCommentErr(false);
+
+      setComment("");
+      setName("");
+      setEmail("");
+      setwebsite("");
+
+      setComments((oldArray) => [
+        ...oldArray,
+        new CommentModel(2, name, comment, Date.now(), email, website),
+      ]);
+    }
   };
 
   return (
@@ -98,6 +125,8 @@ export default function CommentForm({ marginTop }) {
           onValueChange={(value) => {
             setComment(value);
           }}
+          initVal={comment}
+          isError={isCommentErr}
         />
         <Box
           sx={{
@@ -108,6 +137,7 @@ export default function CommentForm({ marginTop }) {
           }}
         >
           <TextField
+            error={isNameErr}
             fullWidth
             label={"Name"}
             defaultValue={""}
@@ -115,9 +145,12 @@ export default function CommentForm({ marginTop }) {
             onChange={(event) => {
               setName(event.target.value);
             }}
+            value={name}
+            helperText={isNameErr ? "This field is required!" : null}
           />
           <Box width={"3%"} />
           <TextField
+            error={isEmailErr}
             fullWidth
             label={"Email"}
             defaultValue={""}
@@ -126,17 +159,28 @@ export default function CommentForm({ marginTop }) {
             onChange={(event) => {
               setEmail(event.target.value);
             }}
+            value={email}
+            helperText={
+              isEmailErr
+                ? isEmail(email) == false
+                  ? "Incorrect email"
+                  : "This field is required!"
+                : null
+            }
           />
         </Box>
         <TextField
+          error={iswebsiteErr}
           fullWidth
-          label={"Website"}
+          label={"website"}
           defaultValue={""}
           size={"small"}
           sx={{ mt: { xs: "4%", sm: "2%" } }}
           onChange={(event) => {
-            setWebSite(event.target.value);
+            setwebsite(event.target.value);
           }}
+          value={website}
+          helperText={iswebsiteErr ? "This field is required!" : null}
         />
       </Box>
 

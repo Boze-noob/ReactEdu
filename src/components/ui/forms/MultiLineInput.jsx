@@ -7,10 +7,13 @@ export function MultiLineInput({
   marginTop,
   size,
   width,
+  initVal,
   onValueChange,
+  isError = false,
 }) {
   return (
     <TextField
+      error={isError}
       label={label ?? "Label"}
       multiline
       rows={rows ?? 4}
@@ -23,6 +26,8 @@ export function MultiLineInput({
       onChange={(event) => {
         onValueChange(event.target.value);
       }}
+      value={initVal}
+      helperText={isError ? "This field is required!" : null}
     />
   );
 }

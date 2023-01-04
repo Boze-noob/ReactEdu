@@ -67,3 +67,7 @@ export const timestampToDate = (timestamp) => {
     sec;
   return time;
 };
+
+export const isEmail = (value) => {
+  return /\S+@\S+\.\S+/.test(value);
+};
