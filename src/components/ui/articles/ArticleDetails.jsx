@@ -7,6 +7,7 @@ import CommentForm from "../forms/CommentForm";
 import { useLocation } from "react-router-dom";
 import { ArticleModel } from "../../../domain/models/ArticleModel";
 import { ArticleForSaleModel } from "../../../domain/models/ArticleForSale";
+import { Categorys } from "../../../types/enumerations/categorys";
 
 export default function ArticleDetails() {
   const { state } = useLocation();
@@ -31,24 +32,24 @@ export default function ArticleDetails() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mt: { xs: "16%", sm: "10%", md: "7%" },
+          mt: { xs: "15%", sm: "9%", md: "8%" },
         }}
       >
         <Typography
           sx={{
             fontFamily: "Work Sans",
             fontWeight: "bold",
-            fontSize: { xs: 10, sm: 11, md: 12 },
+            fontSize: { xs: 12, sm: 13, md: 14 },
           }}
         >
-          {article.category}
+          {Categorys[article.category]}
         </Typography>
         <Typography
           sx={{
             typography: { xs: "h5", sm: "h4", md: "h3" },
             width: { xs: "50%", sm: "35%" },
             textAlign: "center",
-            mt: "2%",
+            mt: "1%",
           }}
         >
           {article.title}

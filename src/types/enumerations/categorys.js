@@ -8,7 +8,6 @@ export const Categorys = {
 };
 
 export const getPathFromCategory = (category) => {
-  console.log("Category id" + category);
   let route = "/";
   switch (category) {
     case 0:

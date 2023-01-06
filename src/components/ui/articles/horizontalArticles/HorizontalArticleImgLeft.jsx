@@ -24,7 +24,7 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
     article.images,
     article.category,
     article.title,
-    article.loactionDate,
+    article.locationDate,
     article.shortDescription,
     article.description,
     article.comments,
