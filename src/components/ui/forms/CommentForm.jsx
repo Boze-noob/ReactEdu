@@ -5,50 +5,73 @@ import { MultiLineInput } from "./MultiLineInput";
 import CustomButton from "../buttons/CustomButton";
 import { DividerLightGrey } from "../dividers/DividerLightGrey";
 import { useState } from "react";
-import { isEmail, timestampToDate } from "../../../utils/utils";
+import {
+  cleanTxt,
+  isEmail,
+  isUrl,
+  timestampToDate,
+} from "../../../utils/utils";
 import { fakeComments } from "../../../fakeData/comments";
 import { CommentModel } from "../../../domain/models/CommentModel";
 
 export default function CommentForm({ marginTop }) {
   //TODO refactor validation(use form)
-
   const [showComments, setShowComments] = useState(false);
   const [comments, setComments] = useState(fakeComments);
 
   const [comment, setComment] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [website, setwebsite] = useState("");
+  const [website, setWebsite] = useState("");
 
   const [isNameErr, setIsNameErr] = useState(false);
   const [isEmailErr, setIsEmailErr] = useState(false);
-  const [iswebsiteErr, setIswebsiteErr] = useState(false);
+  const [isWebsiteErr, setIsWebsiteErr] = useState(false);
   const [isCommentErr, setIsCommentErr] = useState(false);
 
+  const validateComment = () => {
+    let isOkay = true;
+
+    if (name.length === 0) {
+      setIsNameErr(true);
+      isOkay = false;
+    } else setIsNameErr(false);
+
+    if (email.length === 0 || isEmail(email) === false) {
+      setIsEmailErr(true);
+      isOkay = false;
+    } else setIsEmailErr(false);
+
+    if (website.length === 0 || isUrl(website) === false) {
+      setIsWebsiteErr(true);
+      isOkay = false;
+    } else setIsWebsiteErr(false);
+
+    if (comment.length === 0) {
+      setIsCommentErr(true);
+      isOkay = false;
+    } else setIsCommentErr(false);
+
+    return isOkay;
+  };
+
   const submitComment = () => {
-    if (name.length === 0) setIsNameErr(true);
-    else setIsNameErr(false);
-    if (email.length === 0 || isEmail(email) === false) setIsEmailErr(true);
-    else setIsEmailErr(false);
-    if (website.length === 0) setIswebsiteErr(true);
-    else setIswebsiteErr(false);
-    if (comment.length === 0) setIsCommentErr(true);
-    else setIsCommentErr(false);
-
-    if (!isNameErr && !isEmailErr && !iswebsiteErr && !isCommentErr) {
-      if (isEmailErr) setIsEmailErr(false);
-      if (isNameErr) setIsNameErr(false);
-      if (iswebsiteErr) setIswebsiteErr(false);
-      if (isCommentErr) setIsCommentErr(false);
-
+    if (validateComment()) {
       setComment("");
       setName("");
       setEmail("");
-      setwebsite("");
+      setWebsite("");
 
       setComments((oldArray) => [
         ...oldArray,
-        new CommentModel(2, name, comment, Date.now(), email, website),
+        new CommentModel(
+          2,
+          cleanTxt(name),
+          cleanTxt(comment),
+          Date.now(),
+          cleanTxt(email),
+          website
+        ),
       ]);
     }
   };
@@ -162,25 +185,31 @@ export default function CommentForm({ marginTop }) {
             value={email}
             helperText={
               isEmailErr
-                ? isEmail(email) == false
-                  ? "Incorrect email"
-                  : "This field is required!"
+                ? email.length === 0
+                  ? "This field is required!"
+                  : "Incorrect email!"
                 : null
             }
           />
         </Box>
         <TextField
-          error={iswebsiteErr}
+          error={isWebsiteErr}
           fullWidth
-          label={"website"}
+          label={"Website"}
           defaultValue={""}
           size={"small"}
           sx={{ mt: { xs: "4%", sm: "2%" } }}
           onChange={(event) => {
-            setwebsite(event.target.value);
+            setWebsite(event.target.value);
           }}
           value={website}
-          helperText={iswebsiteErr ? "This field is required!" : null}
+          helperText={
+            isWebsiteErr
+              ? website.length === 0
+                ? "This field is required!"
+                : "Invalid website url!"
+              : null
+          }
         />
       </Box>
 
@@ -207,11 +236,17 @@ const Comment = ({ commentModel }) => {
       }}
     >
       <Box sx={{ display: "flex", flexDirection: "row", p: 5 }}>
-        <Typography
-          sx={{ fontSize: 13, fontWeight: "bold", fontFamily: "work sans" }}
+        <a
+          href={commentModel.website}
+          target="_blank"
+          style={{ textDecoration: "none", color: "black" }}
         >
-          {commentModel.name}
-        </Typography>
+          <Typography
+            sx={{ fontSize: 13, fontWeight: "bold", fontFamily: "work sans" }}
+          >
+            {commentModel.name}
+          </Typography>
+        </a>
         <Typography sx={{ fontSize: 13, pl: 5 }}>{" says:"} </Typography>
       </Box>
       <Typography

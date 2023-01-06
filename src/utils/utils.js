@@ -1,3 +1,7 @@
+import validator from "validator";
+import { badWords } from "../data/constants/BadWords";
+import Filter from "bad-words";
+
 export function hasChildren(item) {
   const { items: children } = item;
 
@@ -70,4 +74,18 @@ export const timestampToDate = (timestamp) => {
 
 export const isEmail = (value) => {
   return /\S+@\S+\.\S+/.test(value);
+};
+
+export const isUrl = (value) => {
+  if (validator.isURL(value)) return true;
+  else return false;
+};
+
+export const cleanTxt = (txt) => {
+  var filter = new Filter();
+
+  filter.addWords(...badWords);
+
+  const newTxt = filter.clean(txt);
+  return newTxt;
 };
