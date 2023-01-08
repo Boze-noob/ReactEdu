@@ -31,8 +31,8 @@ const Home = () => {
         <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
         <HorizontalArticleImgRight marginTop={-40} article={articles[1]} />
         <HorizontalImgList title={"Highlists of the Week"} marginTop={60} />
-        <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
-        <HorizontalArticleImgRight marginTop={-40} article={articles[0]} />
+        <HorizontalArticleImgLeft marginTop={60} article={articles[2]} />
+        <HorizontalArticleImgRight marginTop={-40} article={articles[3]} />
         <ArticleWithImgBackground marginTop={40} />
         <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
         <HorizontalArticleImgRight marginTop={-40} article={articles[0]} />

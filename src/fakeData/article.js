@@ -155,4 +155,142 @@ export const articleData = [
       },
     ],
   },
+  {
+    id: 2,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/IMG_0051.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/IMG_0049-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/IMG_0035-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/IMG_0047.jpg",
+    ],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/IMG_0053-2.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/IMG_0014.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/IMG_0030.jpg",
+    ],
+    category: 0,
+    title: "INTRODUCING: COLOR DEPT. MERCH!",
+    locationDate: "LOS ANGELES, CA - November 30",
+    shortDescription:
+      "Take a look at our new Color Dept. merch! Cozy and perfect for everyday wear.",
+    description: `I’m so excited to introduce you to Color Dept. merch! This mini collection was created with comfort and everyday wear in mind. You’ll find a mix of novelty pieces where optimism comes through in self-care slogans as reminders to always take care of yourself. 
+
+    Meet our Color Club Crewneck, this incredibly soft sweatshirt comes in a washed sea-foam green with our Color Dept. logo printed on the front and self-care phrases on the back. This cozy piece is sure to be in heavy rotation this fall. Pair it with your fave denim and sneakers. 
+    
+    I’m obsessed with our Be Bold tee, made with love and given the Color Dept. touch. Created to inspire you to ‘be bold’ everyday. This tee offers a long oversized fit, I recommend you size down for a cozier fit.
+    
+    Our Self-Care Hat features the slogan ‘self care is the best care’ embroidered at front of the cap. It’s the perfect addition to compliment all of your OOTD’s. 
+    
+    Last, but certainly not the least, our Self-Care Tote will be your new best friend! Perfect for carrying your laptop, groceries, workout gear, flowers and all things in between. 
+    
+    Shop the full collection here! 
+    
+    Join the Color Club and let us know below your fave piece, we’d love to hear your feedback & thoughts.`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://cdn.shopify.com/s/files/1/0533/8264/3867/products/IMG_0016_720x.jpg?v=1668529184",
+        title: "COLOR CLUB CREWNECK",
+        url: "https://colordept.com/collections/merch-1/products/color-club-crewneck",
+      },
+      {
+        id: "1",
+        img: "https://cdn.shopify.com/s/files/1/0533/8264/3867/products/IMG_0047_720x.jpg?v=1667952480",
+        title: "Self care hat",
+        url: "https://colordept.com/collections/merch-1/products/self-care-hat",
+      },
+      {
+        id: "2",
+        img: "https://cdn.shopify.com/s/files/1/0533/8264/3867/products/BeBoldTeeJPG_720x.jpg?v=1667951548",
+        title: "BE BOLD TEE",
+        url: "https://colordept.com/collections/merch-1/products/be-bold-tee",
+      },
+      {
+        id: "3",
+        img: "https://cdn.shopify.com/s/files/1/0533/8264/3867/products/IMG_0048_720x.jpg?v=1667953054",
+        title: "Self care tote",
+        url: "https://colordept.com/collections/merch-1/products/self-care-tote",
+      },
+    ],
+  },
+  {
+    id: 3,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/Sincerely-jules-vicotrias-secret-blazer-adidas-ensemble.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/Sincerely-jules-vicotrias-secret-blazer-adidas-street-style-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/Sincerely-jules-adidas-sneakers-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/Sincerely-jules-vicotrias-secret-blazer-adidas-street-look.jpg",
+    ],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/Sincerely-jules-vicotrias-secret-blazer-adidas-look.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/sincerely-jules-victorias-secret-white-set-blazer-adidas-look.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/11/sincerely-jules-victorias-secret-white-set-blazer-fit-1000x1500.jpg",
+    ],
+    category: 0,
+    title: "HOW TO ELEVATE A PAJAMA SET!",
+    locationDate: "LOS ANGELES, CA - November 04",
+    shortDescription:
+      "Take a look at how I styled this pajama set! Perfect for a casual/chic outing!",
+    description: `When getting dress, one thing about me is that I will always try to prioritize comfort over anything else. Especially when it’s a full day of running errands – comfort must take precedence. On such days, an easy solution is to throw on a matching set (pajama sets including). They’re just so easy to dress up or down and make for the perfect outfit formula to create a cozy-chic ensemble. 
+
+    If you’re worried about not looking polished enough, all you have to do incorporate elevated pieces and accessorize. For example, here I styled this set with an oversized blazer, this instantly turned this matching set up a notch while still providing enough comfort. Go the extra mile and add cute jewelry to the mix, and finish the look with sneakers & a  bag. You’re ready to tackle the day ahead in style and comfort. `,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://images.urbndata.com/is/image/FreePeople/78757473_030_a/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+        title: "Venice Sweater Set",
+        url: "https://www.freepeople.com/shop/venice-sweater-set/?cm_mmc=rakuten-_-affiliates-_-ShopStyle%20Collective-_-1&utm_medium=affiliates&utm_source=rakuten&utm_campaign=ShopStyle%20Collective&utm_term=717323&utm_content=1&utm_kxconfid=v3sdm8r4u&ranMID=43177&ranEAID=%2a2nGiS3mv0Y&ranSiteID=.2nGiS3mv0Y-tguiz648unylbCiMoa1JSg&color=030&type=REGULAR&quantity=1",
+      },
+      {
+        id: "1",
+        img: "https://cdn.shopify.com/s/files/1/2185/2813/products/W3624R_01_b1_s1_a1_m18_001c2075-df31-468b-9256-86d26d0837d3_750x.jpg?v=1633566092",
+        title: "MICRO WAFFLE PLEASANT CROPPED HENLEY",
+        url: "https://www.aloyoga.com/products/w3624r-micro-waffle-pleasant-cropped-henley-black?variant=40706073460916&disableCurrencyEstimate=&utm_source=pepperjam&utm_medium=affiliate&utm_campaign=Affil_PJ_PPC_187416&utm_content=8-11924&clickId=4244806486",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/mwlbm/mwlbm3009115791/mwlbm3009115791_1660078537859_2-0.__UX540__._QL90_.jpg",
+        title: "MWL by Madewell",
+        url: "https://www.shopbop.com/chunky-waffle-henley-sweatshirt-mwl/vp/v=1/1562754570.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6154442102&sharedid=42352&subid1=.2nGiS3mv0Y-2HGpv6MROAKKjUT7lLcPfA",
+      },
+      {
+        id: "3",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/mwlbm/mwlbm3009215791/mwlbm3009215791_1660165919993_2-0.__UX540__._QL90_.jpg",
+        title: "MWL by Madewell",
+        url: "https://www.shopbop.com/textured-waffle-straight-sweatpants-mwl/vp/v=1/1545402868.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6154443016&sharedid=42352&subid1=.2nGiS3mv0Y-bIxCmBuNbEud7hulBUBU9Q",
+      },
+      {
+        id: "4",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/staud/staud3132121459/staud3132121459_1663867387249_2-0.__UX540__._QL90_.jpg",
+        title: "Staud",
+        url: "https://www.shopbop.com/timber-sweatshirt-staud/vp/v=1/1588311987.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6154444216&sharedid=42352&subid1=.2nGiS3mv0Y-WRezAFQxjmKa5JrfqhS_tw",
+      },
+      {
+        id: "5",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/staud/staud3132521459/staud3132521459_1663867403346_2-0.__UX540__._QL90_.jpg",
+        title: "Staud",
+        url: "https://www.shopbop.com/sapling-short-staud/vp/v=1/1538981519.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6154445312&sharedid=42352&subid1=.2nGiS3mv0Y-HhqT6770GMeiEW.k9WmFiA",
+      },
+      {
+        id: "6",
+        img: "https://images.urbndata.com/is/image/FreePeople/63611131_031_a/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+        title: "Staple Slouch Socks",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=934918504&pid=uid6025-44217687-51&utm_content=productwidget%3A63618719873fe159b8add837&utm_medium=referral",
+      },
+      {
+        id: "7",
+        img: "https://m.media-amazon.com/images/I/41jV-la5tuL._AC_UY535_.jpg",
+        title: "adidas Samba Vegan Shoes",
+        url: "https://www.amazon.com/adidas-Samba-Vegan-Shoes-Mens/dp/B09MF2FQZY?tag=sincerelyjules-ssc-774982-20&ascsubtag=6154448462",
+      },
+      {
+        id: "8",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/lspec/lspec3005086863/lspec3005086863_q2_2-0.__UX540__._QL90_.jpg",
+        title: "Le Specs",
+        url: "https://www.shopbop.com/weekend-riot-polarized-sunglasses-le/vp/v=1/1556551709.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6154449435&sharedid=42352&subid1=.2nGiS3mv0Y-Pi1V0YLyPATTEgZDs9xqYA",
+      },
+    ],
+  },
 ];
