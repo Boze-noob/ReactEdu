@@ -40,6 +40,28 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
     );
   };
 
+  function Image({ src, height }) {
+    return (
+      <Box
+        component="img"
+        sx={{
+          height: height,
+          width: { xs: "100%", sm: "90%" },
+          "&:hover": {
+            opacity: 0.7,
+            cursor: "pointer",
+          },
+          transition: "0.7s",
+        }}
+        onClick={() => {
+          onReadMore();
+        }}
+        src={src}
+        style={{ objectFit: "fill" }}
+      />
+    );
+  }
+
   return (
     <Grid container spacing={0} style={{ marginTop: marginTop }}>
       <Grid item xs={12} sm={6}>
@@ -134,25 +156,6 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
         />
       </Grid>
     </Grid>
-  );
-}
-
-function Image({ src, height }) {
-  return (
-    <Box
-      component="img"
-      sx={{
-        height: height,
-        width: { xs: "100%", sm: "90%" },
-        "&:hover": {
-          opacity: 0.7,
-          cursor: "pointer",
-        },
-        transition: "0.7s",
-      }}
-      src={src}
-      style={{ objectFit: "fill" }}
-    />
   );
 }
 
