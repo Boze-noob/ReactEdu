@@ -3,100 +3,133 @@ import LineButton from "../../../components/ui/buttons/LineButton";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import PinterestIcon from "@mui/icons-material/Pinterest";
+import { useArticleStore } from "../../../stores/ArticleStore";
+import { useEffect } from "react";
+import { getArticles } from "../../../data/repositories/ArticleRepository";
+import * as utils from "../../../utils/utils.js";
 
 const Intro = () => {
-  return (
-    <Card sx={{ height: 1, width: 1 }}>
-      <div style={{ position: "relative", backgroundColor: "#1E1E1E" }}>
-        <CardMedia
-          component="img"
-          image="https://sincerelyjules.com/wp-content/uploads/2022/09/Sincerely-jules-blazer-victorias-secret-lace-bra.jpg"
-          sx={{ opacity: 0.7 }}
-        />
-        <div style={{ position: "absolute", top: "35%", left: "5%" }}>
-          <Typography
-            style={{
-              color: "white",
-              fontFamily: "Marck Script",
+  const isLoading = useArticleStore((state) => state.isLoading);
+  const articleModel = useArticleStore((state) => state.articles[0]);
+
+  useEffect(() => {
+    getArticles();
+  }, []);
+
+  if (isLoading) {
+    return (
+      <>
+        <Typography variant="h1">Loading....</Typography>
+      </>
+    );
+  } else {
+    return (
+      <Card sx={{ height: 1, width: 1 }}>
+        <div style={{ position: "relative", backgroundColor: "#1E1E1E" }}>
+          <CardMedia
+            component="img"
+            image={articleModel.galleryImages[0]}
+            sx={{ opacity: 0.7, height: { xs: 400, sm: 800 } }}
+          />
+          <Box
+            style={{ position: "absolute", top: "35%", left: "5%" }}
+            sx={{
+              "&:hover": {
+                cursor: "pointer",
+                "& .firstTitle": {
+                  color: "#49494a",
+                },
+                "& .secondTitle": {
+                  color: "#49494a",
+                },
+              },
             }}
-            sx={{ fontSize: { xs: 18, sm: 35, md: 55 } }}
           >
-            Quick and easy
-          </Typography>
-          <Typography
-            style={{
-              color: "white",
-              fontFamily: "Helvetica Neue",
+            <Typography
+              className="firstTitle"
+              style={{
+                color: "white",
+                fontFamily: "Marck Script",
+              }}
+              sx={{ fontSize: { xs: 18, sm: 35, md: 55 } }}
+            >
+              {utils.getFirstHalfOfString(articleModel.title).toUpperCase()}
+            </Typography>
+            <Typography
+              style={{
+                color: "white",
+                fontFamily: "Helvetica Neue",
+              }}
+              sx={{ fontSize: { xs: 12, sm: 25, md: 38 }, ml: 100 }}
+            >
+              {utils.getSecondHalfOfString(articleModel.title).toUpperCase()}
+            </Typography>
+            <Box sx={{ mt: 10 }}>
+              <LineButton btnTxt="Read" width="25%" />
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              position: "absolute",
+              bottom: { xs: "30%", sm: "40%" },
+              right: "3%",
+              display: "flex",
+              flexDirection: "column",
             }}
-            sx={{ fontSize: { xs: 12, sm: 25, md: 38 }, ml: 100 }}
           >
-            Outfit idea!
-          </Typography>
-          <Box sx={{ mt: 10 }}>
-            <LineButton btnTxt="Read" width="25%" />
+            <SocialMediaItem
+              icon={
+                <InstagramIcon
+                  sx={{
+                    fontSize: { xs: 10, sm: 16, md: "x-large" },
+                    fill: "white",
+                    "&:hover": {
+                      cursor: "pointer",
+                      fill: "#333333",
+                    },
+                    transition: "0.7s",
+                  }}
+                />
+              }
+              href="https://www.instagram.com/sincerelyjules/"
+            />
+            <SocialMediaItem
+              icon={
+                <TwitterIcon
+                  sx={{
+                    fontSize: { xs: 10, sm: 16, md: "x-large" },
+                    fill: "white",
+                    "&:hover": {
+                      cursor: "pointer",
+                      fill: "#333333",
+                    },
+                    transition: "0.7s",
+                  }}
+                />
+              }
+              href="https://twitter.com/sincerelyJules"
+            />
+            <SocialMediaItem
+              icon={
+                <PinterestIcon
+                  sx={{
+                    fontSize: { xs: 10, sm: 16, md: "x-large" },
+                    fill: "white",
+                    "&:hover": {
+                      cursor: "pointer",
+                      fill: "#333333",
+                    },
+                    transition: "0.7s",
+                  }}
+                />
+              }
+              href="https://www.pinterest.com/sincerelyjules1/"
+            />
           </Box>
         </div>
-        <Box
-          sx={{
-            position: "absolute",
-            bottom: { xs: "30%", sm: "40%" },
-            right: "3%",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <SocialMediaItem
-            icon={
-              <InstagramIcon
-                sx={{
-                  fontSize: { xs: 10, sm: 16, md: "x-large" },
-                  fill: "white",
-                  "&:hover": {
-                    cursor: "pointer",
-                    fill: "#333333",
-                  },
-                  transition: "0.7s",
-                }}
-              />
-            }
-            href="https://www.instagram.com/sincerelyjules/"
-          />
-          <SocialMediaItem
-            icon={
-              <TwitterIcon
-                sx={{
-                  fontSize: { xs: 10, sm: 16, md: "x-large" },
-                  fill: "white",
-                  "&:hover": {
-                    cursor: "pointer",
-                    fill: "#333333",
-                  },
-                  transition: "0.7s",
-                }}
-              />
-            }
-            href="https://twitter.com/sincerelyJules"
-          />
-          <SocialMediaItem
-            icon={
-              <PinterestIcon
-                sx={{
-                  fontSize: { xs: 10, sm: 16, md: "x-large" },
-                  fill: "white",
-                  "&:hover": {
-                    cursor: "pointer",
-                    fill: "#333333",
-                  },
-                  transition: "0.7s",
-                }}
-              />
-            }
-            href="https://www.pinterest.com/sincerelyjules1/"
-          />
-        </Box>
-      </div>
-    </Card>
-  );
+      </Card>
+    );
+  }
 };
 
 function SocialMediaItem({ icon, href }) {

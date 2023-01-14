@@ -28,14 +28,14 @@ const Home = () => {
     return (
       <>
         <Intro />
-        <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
-        <HorizontalArticleImgRight marginTop={-40} article={articles[1]} />
+        <HorizontalArticleImgLeft marginTop={60} article={articles[1]} />
+        <HorizontalArticleImgRight marginTop={-40} article={articles[2]} />
         <HorizontalImgList title={"Highlists of the Week"} marginTop={60} />
-        <HorizontalArticleImgLeft marginTop={60} article={articles[2]} />
-        <HorizontalArticleImgRight marginTop={-40} article={articles[3]} />
+        <HorizontalArticleImgLeft marginTop={60} article={articles[3]} />
+        <HorizontalArticleImgRight marginTop={-40} article={articles[4]} />
         <ArticleWithImgBackground marginTop={40} />
-        <HorizontalArticleImgLeft marginTop={60} article={articles[4]} />
-        <HorizontalArticleImgRight marginTop={-40} article={articles[0]} />
+        <HorizontalArticleImgLeft marginTop={60} article={articles[5]} />
+        <HorizontalArticleImgRight marginTop={-40} article={articles[6]} />
         <HorizontalTwoImgArticle marginTop={60} />
         <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
         <HorizontalArticleImgRight marginTop={-40} article={articles[0]} />
