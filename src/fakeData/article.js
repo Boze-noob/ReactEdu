@@ -1,5 +1,87 @@
 export const articleData = [
   {
+    id: 6,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/12/Sincerely-jules-plaid-shirt-buble-skirt-heels-green-sweater-look-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/12/Sincerely-jules-r14-top-aje-skirt-look.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/12/Sincerely-jules-plaid-shirt-aje-skirt-macha-macha-heels-green-sweater-holiday-look.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/12/Sincerely-jules-plaid-shirt-aje-skirt-macha-macha-heels-outfit.jpg",
+    ],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/12/Sincerely-jules-plaid-shirt-aje-skirt-macha-macha-heels-silver-bag-holiday-look-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/12/Sincerely-jules-plaid-shirt-aje-skirt-macha-macha-heels-silver-bag-holiday-ensemble.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/12/Sincerely-jules-plaid-shirt-aje-skirt-macha-macha-heels-holiday-look.jpg",
+    ],
+    category: 0,
+    title: "WHAT TO WEAR TO A HOLIDAY PARTY!",
+    locationDate: "LOS ANGELES, CA December 23",
+    shortDescription: "",
+    description: `Hi everyone! I hope you’re all well and enjoying the holidays. Christmas has always been my favorite time of the year for many reasons. From spending quality time with my loved ones, to the celebratory atmosphere, to the music, to the food, and to the joy that emanates from people. The spirit of the holiday season truly is magical, and I feel so blessed to have some of the most beautiful memories during this time of the year. 
+
+    One thing we can all agree on is the stress of trying to figure out what to wear to all the holiday festivities. But not to worry, if you’re in need of some inspo I’ve got you covered with the most perfect Christmas ‘fit. This day only comes once a year, so I like to go all out from head to toe. 
+    
+    Going for xmas color plaids is an excellent choice for the festive day (plus it brings a cozy element to your look). Team it with a skirt and a sparkly heel to dress it up. Then you’re going to accessories with statement earrings to really make this look stand out – don’t forget to finish the look with a fun bag to bring this ‘fit together. There you have it, comfy, chic, and festive – this ensemble was made for Christmas!
+    
+    Happy holidays everyone, thank you so much for choosing to be here. Sending you all a big hug and well wishes for the new year! `,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://is4.fwrdassets.com/images/p/fw/z/R13-WS286_V1.jpg",
+        title: "R 13",
+        url: "https://www.fwrd.com/product-r13-shredded-seam-shirt-in-red-grey-plaid/R13-WS286/?d=Womens&AID=11120556&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=9a61e0cd943d11ed829b00cf0a180511&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "1",
+        img: "https://is4.fwrdassets.com/images/p/fw/z/R13-WS288_V1.jpg",
+        title: "R 13",
+        url: "https://www.fwrd.com/product-r13-convertible-cropped-work-shirt-in-red-green-plaid/R13-WS288/?d=Womens&AID=11120556&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=af462559943d11ed82c800c60a18ba73&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/seven/seven420441e132/seven420441e132_1666129969429_2-0.__UX540__._QL90_.jpg",
+        title: "7 For All Mankind",
+        url: "https://www.shopbop.com/flirty-mini-skirt-7-all/vp/v=1/1568761645.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6166237920&sharedid=42352&subid1=.2nGiS3mv0Y-1HCfzXm4VNOcijPsbn0iDA",
+      },
+      {
+        id: "3",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/sroch/sroch301801cd2d/sroch301801cd2d_1658840932816_2-0.__UX540__._QL90_.jpg",
+        title: "Simone Rocha",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=933431610&pid=uid6025-44217687-51&utm_content=productwidget%3A63a4afbd32a5632402d90fc7&utm_medium=referral",
+      },
+      {
+        id: "4",
+        img: "https://is4.revolveassets.com/images/p4/n/z/SHAS-WL241_V1.jpg",
+        title: "Shashi",
+        url: "https://www.revolve.com/royal-queen-earring/dp/SHAS-WL241/?d=Womens&AID=11017645&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=efc2b021943d11ed809500c50a18b8f6&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "5",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/orent/orent3091212140/orent3091212140_1670256773197_2-0.__UX540__._QL90_.jpg",
+        title: "Oscar de la renta",
+        url: "https://click.linksynergy.com/deeplink?id=*2nGiS3mv0Y&mid=42352&murl=https%3A%2F%2Fwww.shopbop.com%2Finfinity-earring-oscar-renta%2Fvp%2Fv%3D1%2F1507829844.htm&u1=6166242127",
+      },
+      {
+        id: "6",
+        img: "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/c4/P00730827.jpg",
+        title: "Macha & macha",
+        url: "https://www.mytheresa.com/en-us/mach-mach-double-bow-embellished-satin-pumps-2414113.html?utm_source=affiliate&utm_medium=affiliate.cj.us&cjevent=29dcd31a943e11ed809500c50a18b8f6&AID=13462687&PID=7900573&SID=6166243185&lpcr=pdptrecoaff&aff=set",
+      },
+      {
+        id: "7",
+        img: "https://cdn.shopify.com/s/files/1/2170/8465/products/STEVEMADDEN_SHOES_VIABLE_OFF-WHITE_grande.jpg?v=1653516206",
+        title: "Steve Maden",
+        url: "https://www.stevemadden.com/products/viable-off-white?utm_medium=affiliate&utm_source=rakuten&utm_content=ShopStyle+(US)",
+      },
+      {
+        id: "8",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/byfar/byfar3055612208/byfar3055612208_1669736701311_2-0.__UX540__._QL90_.jpg",
+        title: "By Far",
+        url: "https://www.shopbop.com/baby-amber-silver-flagstone-leather/vp/v=1/1564603934.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6166245921&sharedid=42352&subid1=.2nGiS3mv0Y-UNTMxDEYqntDo48JleTBlg",
+      },
+    ],
+  },
+  {
     id: 0,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/10/Sincerely-jules-sezane-look-bag-loafers.jpg",
@@ -371,6 +453,83 @@ export const articleData = [
         img: "https://www.sephora.com/productimages/sku/s2389286-main-zoom.jpg?imwidth=315",
         title: "Polish Primer",
         url: "https://www.sephora.com/product/gisou-propolis-infused-polishing-primer-P462362?om_mmc=aff-linkshare-redirect-*2nGiS3mv0Y&c3ch=Linkshare&c3nid=*2nGiS3mv0Y&affid=.2nGiS3mv0Y-iBhxTwpbE8ZyDdEGMyEIHQ&ranEAID=*2nGiS3mv0Y&ranMID=2417&ranSiteID=.2nGiS3mv0Y-iBhxTwpbE8ZyDdEGMyEIHQ&ranLinkID=10-1&browserdefault=true",
+      },
+    ],
+  },
+  {
+    id: 5,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-travis-mathews-zip-up-denim-loewe-bag-sunglasses-look-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-travis-mathew-top-denim-loewe-bag-ensemble.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-travis-mathew-look-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-sunnies-loewe-purse-denim-ensemble.jpg",
+    ],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-travis-mathews-zip-up-denim-loewe-bag-sunglasses-3.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-black-sunnies-travis-mathews-look.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-sunnies-loewe-purse-denim-street-fit.jpg",
+    ],
+    category: 0,
+    title: "EASY WAY TO ELEVATE A CASUAL LOOK!",
+    locationDate: "LOS ANGELES, CA May 13",
+    shortDescription:
+      "The perfect casual chic outfit for your next city adventure. Check it out!",
+    description: `I’m through and through a denim girl. My ideal go-to outfit always involves a pair of jeans, therefore I’m always looking for ways to breathe new life into my denim looks. For a look that’s both polished and comfortable go for a sweatshirt & jeans combination – to instantly elevate your look opt for a low mule. Adding a pair of statement hoop earrings, sleek sunnies and a cute bag to the mix will give your ensemble that extra umph. Wear this perfect look to do errands around the city or to meet friends for an al fresco lunch.`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/zsupp/zsupp306451c1b4/zsupp306451c1b4_1627485048759_2-0.__UX540__._QL90_.jpg",
+        title: "Z supply",
+        url: "https://www.shopbop.com/half-zip-z-supply/vp/v=1/1583546949.htm?os=false&fm=other-shopbysize-viewall&folderID=65799&colorId=1C1B4&ref_=SB_PLP_PDP_NWL_W_ACTIV_GYMTO_65799_NB_48&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6165871722&sharedid=42352&subid1=.2nGiS3mv0Y-nUiorg.BN7eV5HQ1irtzJA",
+      },
+      {
+        id: "1",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/varle/varle300551071c/varle300551071c_q1_2-0.__UX540__._QL90_.jpg",
+        title: "Varley",
+        url: "https://www.shopbop.com/vine-pullover-varley/vp/v=1/1585602964.htm?os=false&fm=other-shopbysize-viewall&folderID=65743&colorId=1071C&ref_=SB_PLP_PDP_NWL_W_ACTIV_CLOTH_65743_NB_31&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6165872707&sharedid=42352&subid1=.2nGiS3mv0Y-GTRK.kLgdm_fCovzgKudgQ",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/yearo/yearo301681c1b4/yearo301681c1b4_1636046421422_2-0.__UX540__._QL90_.jpg",
+        title: "Year of ours",
+        url: "https://www.shopbop.com/open-collar-half-zip-year/vp/v=1/1523793270.htm?os=false&fm=other-shopbysize-viewall&folderID=13332&colorId=1C1B4&ref_=SB_PLP_PDP_NWL_W_CLOTH_TOPS_13332_NB_70&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6165873805&sharedid=42352&subid1=.2nGiS3mv0Y-USfm8BDctJGBseHhekN9OA",
+      },
+      {
+        id: "3",
+        img: "https://is4.revolveassets.com/images/p4/n/z/AGOL-WJ272_V1.jpg",
+        title: "Agolde",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=848312961&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A627ab08e2a03b041903777f8&utm_medium=referral",
+      },
+      {
+        id: "4",
+        img: "https://is4.revolveassets.com/images/p4/n/z/GRLR-WJ487_V1.jpg",
+        title: "Grlfrnd",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=902707985&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A627ab08e2a03b041903777f8&utm_medium=referral",
+      },
+      {
+        id: "5",
+        img: "https://is4.revolveassets.com/images/p4/n/z/LEIV-WJ278_V1.jpg",
+        title: "Levi's",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=919580007&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A627ab08e2a03b041903777f8&utm_medium=referral",
+      },
+      {
+        id: "6",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/shash/shash4218111739/shash4218111739_q3_2-0.__UX540__._QL90_.jpg",
+        title: "Shashi",
+        url: "https://www.shopbop.com/timeless-hoop-shashi/vp/v=1/1562519703.htm?os=false&fm=other-shopbysize-viewall&folderID=13540&colorId=11739&ref_=SB_PLP_PDP_NWL_W_ACCES_JEWEL_13540_NB_67&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6165880473&sharedid=42352&subid1=.2nGiS3mv0Y-2Nm6R4VJ95Bu6ou1.RijZw",
+      },
+      {
+        id: "7",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/sokoo/sokoo3010311739/sokoo3010311739_1649361153078_2-0.__UX540__._QL90_.jpg",
+        title: "Soko",
+        url: "https://www.shopbop.com/tumba-capsule-hoop-soko/vp/v=1/1593843909.htm?os=false&fm=other-shopbysize-viewall&folderID=13544&colorId=11739&ref_=SB_PLP_PDP_NWL_W_ACCES_JEWEL_13544_NB_88&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6165881918&sharedid=42352&subid1=.2nGiS3mv0Y-nbKNS.3eGJzrc0G7RC9_5w",
+      },
+      {
+        id: "8",
+        img: "https://is4.fwrdassets.com/images/p/fw/z/MNIF-WZ136_V1.jpg",
+        title: "Manolo Blangnik",
+        url: "https://www.fwrd.com/product-manolo-blahnik-calla-50-mule-in-black-snake/MNIF-WZ136/?d=Womens&AID=11120556&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=23f9e4dd942611ed80bd00be0a18b8f8&cjdata=MXxOfDB8WXww",
       },
     ],
   },
