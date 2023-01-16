@@ -533,4 +533,164 @@ export const articleData = [
       },
     ],
   },
+  {
+    id: 7,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-IRO-DRESS-BAG-look11-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-IRO-paris-dress-bag-sandals-coachella-fashion.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-IRO-paris-dress-bag-sandals-coachella-fit-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-IRO-DRESS-BAG-look8.jpg",
+    ],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-IRO-DRESS-BAG-black-slides-look1-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-IRO-DRESS-BAG-coachella-look-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-IRO-paris-dress-bag-sandals-fit.jpg",
+    ],
+    category: 0,
+    title: "CASUAL MINI DRESS FOR ANY OCCASSION!",
+    locationDate: "PALM SPRINGS, CA - May 04",
+    shortDescription:
+      "Looking for ways to style a mini dress? Check out this look that works for almost every occasion.",
+    description: `I am a sucker for mini dresses – they’re the ultimate item for almost any occasion. What makes them so special is that they’re flirty, fun and seriously so convenient as they’re an outfit in and of themselves. All you have to worry about is what shoes & accessories you’re wearing.
+
+    The one I’m wearing here is by IRO Paris – I absolutely love the print and how flattering is the silhouette? Wanted to dress it down a bit so styled it with slides, minimal accessories and a high pony – a little glam with a touch of comfort. Switch things up after dark with a barely-there chic sandals or mules. Bottom line, you can’t go wrong dressing a mini up or down.
+    
+    If you’re on the hunt for the perfect mini, I’ve done the hard work for you and scoured the internet with several options I’m sure you’ll love. Take a look at the link below.`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/irooo/irooo4187212cb0/irooo4187212cb0_1648067884448_2-0.__UX540__._QL90_.jpg",
+        title: "IRO",
+        url: "https://www.shopbop.com/hura-iro/vp/v=1/1572681811.htm?os=false&fm=other-shopbysize-viewall&folderID=60749&colorId=12CB0&ref_=SB_PLP_PDP_NWL_W_SHOP-_THEDR_60749_NB_75&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6170508850&sharedid=42352&subid1=.2nGiS3mv0Y-PDdggBuADO9gSxMmFI9OJQ",
+      },
+      {
+        id: "1",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/irooo/irooo418351cb42/irooo418351cb42_1639004513656_2-0.__UX540__._QL90_.jpg",
+        title: "IRO",
+        url: "https://click.linksynergy.com/deeplink?id=*2nGiS3mv0Y&mid=42352&murl=https%3A%2F%2Fwww.shopbop.com%2Fcarlina-dress-iro%2Fvp%2Fv%3D1%2F1566622888.htm%3Fos%3Dfalse%26fm%3Dother-shopbysize-viewall%26folderID%3D13351%26colorId%3D1CB42%26ref_%3DSB_PLP_PDP_NWL_W_CLOTH_DRESS_13351_NB_46&u1=6170509634",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/irooo/irooo4183616a70/irooo4183616a70_1642191220735_2-0.__UX540__._QL90_.jpg",
+        title: "IRO",
+        url: "https://click.linksynergy.com/deeplink?id=*2nGiS3mv0Y&mid=42352&murl=https%3A%2F%2Fwww.shopbop.com%2Folanda-dress-iro%2Fvp%2Fv%3D1%2F1567029965.htm%3Fos%3Dfalse%26fm%3Dother-shopbysize-viewall%26folderID%3D66583%26colorId%3D16A70%26ref_%3DSB_PLP_PDP_NWL_W_SHOP-_SPECI_66583_NB_49&u1=6170510704",
+      },
+      {
+        id: "3",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/rhode/rhode3034519279/rhode3034519279_1648227394579_2-0.__UX540__._QL90_.jpg",
+        title: "RHODE RESORT",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=917381491&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A627190c188f669739d58e96a&utm_medium=referral",
+      },
+      {
+        id: "4",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/eliza/eliza3054512140/eliza3054512140_1635362887910_2-0.__UX540__._QL90_.jpg",
+        title: "ELIZENETH COLE",
+        url: "https://www.shopbop.com/rhiannon-earrings-elizabeth-cole/vp/v=1/1512246500.htm?os=false&fm=other-shopbysize-viewall&folderID=13540&colorId=12140&ref_=SB_PLP_PDP_NWL_W_ACCES_JEWEL_13540_NB_48&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6170520086&sharedid=42352&subid1=.2nGiS3mv0Y-hE8TaFmj0F_bTG4SMztdzQ",
+      },
+      {
+        id: "5",
+        img: "https://is4.revolveassets.com/images/p4/n/z/ELIZ-WL368_V1.jpg",
+        title: "ELIZABETH COLE",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=905451108&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A627190c188f669739d58e96a&utm_medium=referral",
+      },
+      {
+        id: "6",
+        img: "https://is4.fwrdassets.com/images/p/fw/z/ISAB-WZ369_V1.jpg",
+        title: "ISABEL MARANT",
+        url: "https://www.fwrd.com/product-isabel-marant-lennyo-sandal-in-black/ISAB-WZ369/?d=Womens&AID=11120556&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=c297774b95db11ed837401b00a18ba72&cjdata=MXxOfDB8WXwwhttps://www.fwrd.com/product-isabel-marant-lennyo-sandal-in-black/ISAB-WZ369/?d=Womens&AID=11120556&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=c297774b95db11ed837401b00a18ba72&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "7",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/neous/neous300101b002/neous300101b002_1629817737768_2-0.__UX540__._QL90_.jpg",
+        title: "NEOUS",
+        url: "https://www.shopbop.com/delphinus-bag-neous/vp/v=1/1526649379.htm?os=false&fm=other-viewall&folderID=13505&colorId=1B002&ref_=SB_PLP_PDP_NWL_W_BAGS_13505_NB_64&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6170524729&sharedid=42352&subid1=.2nGiS3mv0Y-2AbdxRfnrlGc4k0B7NTcmg",
+      },
+      {
+        id: "8",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/simil/simil305211c683/simil305211c683_1643134171639_2-0.__UX540__._QL90_.jpg",
+        title: "SIMON MILLER",
+        url: "https://www.shopbop.com/s834-vegan-retro-bag-simon/vp/v=1/1540356193.htm?os=false&fm=other-viewall&folderID=13524&colorId=1C683&ref_=SB_PLP_PDP_NWL_W_BAGS_SATCH_13524_NB_35&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6170526087&sharedid=42352&subid1=.2nGiS3mv0Y-KWpl8YyEOFIREEomvN9t1Q",
+      },
+    ],
+  },
+  {
+    id: 8,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/04/Sincerely-jules-iroparis-boots-vest-ensemble.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/04/Sincerely-jules-iroparis-look-6.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/04/Sincerely-jules-iroparis-belt-look.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/04/Sincerely-jules-iroparis-fit-1000x1500.jpg",
+    ],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/04/Sincerely-jules-iroparis-vest-boots-look.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/04/Sincerely-jules-iroparis-full-desert-look-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/04/Sincerely-jules-iroparis-look-2.jpg",
+    ],
+    category: 0,
+    title: "WHAT TO WEAR TO THE DESERT!",
+    locationDate: "PALM SPRINGS, CA - April 29",
+    shortDescription:
+      "If you missed Coachella but are still making your way to the desert, take a look at this fit I put together that's sure to suit your desert getaway.",
+    description: `If you’re thinking of going on  a desert getaway and in need of an outfit idea, I’ve got one thats suitable. Wore this little number during Coachella weekend and it was a total vibe.
+
+    An oversized vest is perfect to wear in the desert, as it’s airy enough to keep you from over heating while still offering that cool edge. Paired it with a mini skirt, boots and finished it off with a buckled belt. Went with an earthy / neutral palette as these tones always look amazing against a desert backdrop. Wear this one to explore all the cute vintage shops in Joshua tree or to dine al fresco in palm springs.`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://cdn-images.farfetch-contents.com/18/00/16/15/18001615_38904356_322.jpg",
+        title: "IRO",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=913455595&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A626b0ee44feeea474b217e62&utm_medium=referral",
+      },
+      {
+        id: "1",
+        img: "https://is4.revolveassets.com/images/p4/n/z/RGBR-WO68_V1.jpg",
+        title: "RAG & BONE",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=919027404&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A626b0ee44feeea474b217e62&utm_medium=referral",
+      },
+      {
+        id: "2",
+        img: "https://is4.revolveassets.com/images/p4/n/z/IRO-WQ80_V1.jpg",
+        title: "IRO",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=910188559&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A626b0ee44feeea474b217e62&utm_medium=referral",
+      },
+      {
+        id: "3",
+        img: "https://is4.revolveassets.com/images/p4/n/z/DVWS-WQ26_V1.jpg",
+        title: "DEVON WINDSOR",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=908242501&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A626b0ee44feeea474b217e62&utm_medium=referral",
+      },
+      {
+        id: "4",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/shash/shash4175413701/shash4175413701_q1_2-0.__UX540__._QL90_.jpg",
+        title: "SHASHI",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=920118255&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A626b0ee44feeea474b217e62&utm_medium=referral",
+      },
+      {
+        id: "5",
+        img: "https://is4.fwrdassets.com/images/p/fw/45/IRX-WA15_V1.jpg",
+        title: "IRO",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=914877445&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A626b0ee44feeea474b217e62&utm_medium=referral",
+      },
+      {
+        id: "6",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/bloww/bloww404681d7aa/bloww404681d7aa_1645648919949_2-0.__UX540__._QL90_.jpg",
+        title: "B-LOW",
+        url: "https://www.shopbop.com/clover-waist-belt-b-low/vp/v=1/1509966238.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6170554119&sharedid=42352&subid1=.2nGiS3mv0Y-3gmsefAACRB02c_ZMQwi9Q",
+      },
+      {
+        id: "7",
+        img: "https://is4.revolveassets.com/images/p4/n/z/IRO-WZ62_V1.jpg",
+        title: "IRO",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=888693744&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A626b0ee44feeea474b217e62&utm_medium=referral",
+      },
+      {
+        id: "8",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/ismdb/ismdb3041111876/ismdb3041111876_1634838642931_2-0.__UX540__._QL90_.jpg",
+        title: "ISABEL MARANT",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=842113102&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A626b0ee44feeea474b217e62&utm_medium=referral",
+      },
+    ],
+  },
 ];
