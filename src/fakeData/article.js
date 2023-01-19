@@ -693,4 +693,191 @@ export const articleData = [
       },
     ],
   },
+  {
+    id: 9,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/09/Dept.-03-Campaign-40-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/09/Dept.-03-Campaign-51.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/09/Dept.-03-Campaign-36.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/09/Dept.-03-Campaign-67-1000x1500.jpg",
+    ],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/09/Dept.-03-Campaign-50.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/09/Dept.-03-Campaign-22-1.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/09/Dept.-03-Campaign-28.jpg",
+    ],
+    category: 1,
+    title: "Introducing my new nail polish collection!",
+    locationDate: "LOS ANGELES, CA - September 08",
+    shortDescription:
+      "Get ready to brighten our mood and and sooth your mind with my new Color Dept. 03 dreamy shades. Take a look!",
+    description: `The Color Dept. 03 collection is here! YAY!!! I’m beyond excited to introduce you to our new delicious shades that I know you’ll adore. 
+
+    Get ready to discover a rainbow of dreamy pastels featuring 4 new happy hues that go from summer to fall seamlessly. If you’re looking to freshen up your nail polish game, look no further – our new shades are unimaginably stunning, work well all year round and I hope bring joy to your life. 
+    
+    Our formula can cover nails in a gorgeous color with just one to two coasts! Plus we are vegan & cruelty free. The new colors are: Peace of mind, Talk to me, Gone bananas, and Forget me not. 
+    
+    Peace of mind is an earthy pale green tone that compliments all skin tones. Experience bliss and a light sense of calmness when wearing this polish. 
+    
+    Talk to me is a playful and mysterious pink with hints of pastel rose, and mauve – you will LOVE! This sweet color is subtle, glamorous and sure to strike up a conversation. Pair this shade with a crisp white button-up, your fave go-to denim, and some cute heels for an effortlessly chic ootd. 
+    
+    Gone bananas – hello sunshine in a bottle! This dreamy yellow color is the perfect balance between bright and soft that will instantly boost your mood and wardrobe. For a fun pop of color, this shade is the move. 
+    
+    Forget me not is a striking blue shade that you need to try on your nails ASAP! Like little pieces of the bright blue sky, this retro pastel is our fashion forward take on true blue. Wear it with fresh airy pieces when it’s hot out, come fall I can’t wait to wear this shade with all my knits and cold weather essentials.  
+    
+    Comment below which shades you’re loving. Would love to hear your feedback! `,
+    comments: [],
+    articlesForSale: [],
+  },
+  {
+    id: 10,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-hat-SWF-Dress-elleme-bag-fit.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-SWFdress-hat-look-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-hat-elleme-bag-SWF-floral-dress-1-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-SWF-Dress-Elleme-bag-hat-look.jpg",
+    ],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-basket-hat-elleme-bag.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-floral-dress-hat-elleme-bag.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-elleme-bag-1000x1500.jpg",
+    ],
+    category: 0,
+    title: "Summer essential maxi dress!",
+    locationDate: "LOS ANGELES, CA - May 20",
+    shortDescription:
+      "Time to switch out your knits & sweaters for dresses! This maxi dress look is the perfect go-to 'fit for all your summer soirees. Take a look!",
+    description: `Summer is on the horizon, which probably means you’re already conjuring up all the stylish ‘fits that you will wear to your next staycation or beachy destination. An easy item that comes to mind is a flowy maxi dress! I don’t know about you but when I think of breezy warm weather I can’t help but imagine myself wearing dreamy maxi’s with colorful hues and fun prints on them. To get you in a summer state of mind, let this outfit here serve as inspo.
+
+    Accessorizing is key to elevating your maxi dress –  I like to incorporate straw hats, dainty jewelry and to keep things summer appropriate pair with additional pops of color whether it be your bag or shoes (or both as I’ve done here!). Summer we are ready!`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/swfff/swfff3003519fda/swfff3003519fda_1646942397879_2-0.__UX540__._QL90_.jpg",
+        title: "S/W/F",
+        url: "https://click.linksynergy.com/deeplink?id=*2nGiS3mv0Y&mid=42352&murl=https%3A%2F%2Fwww.shopbop.com%2Fone-shoulder-puff-sleeve-maxi%2Fvp%2Fv%3D1%2F1579907544.htm%3Fos%3Dfalse%26fm%3Dother-shopbysize-viewall%26folderID%3D13266%26colorId%3D19FDA%26ref_%3DSB_PLP_PDP_NWL_W_CLOTH_13266_NB_80&u1=6175896194",
+      },
+      {
+        id: "1",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/swfff/swfff300361d41e/swfff300361d41e_1646953723169_2-0.__UX540__._QL90_.jpg",
+        title: "S/W/F",
+        url: "https://www.shopbop.com/centered-halter-neck-tiered-maxi/vp/v=1/1572448556.htm?os=false&fm=other-shopbysize-viewall&folderID=57188&colorId=1D41E&ref_=SB_PLP_PDP_NWL_W_BOUTI_CAROL_57188_NB_63&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6175896725&sharedid=42352&subid1=.2nGiS3mv0Y-6hDPq9Wk5nfbI1Ao8W3RXQ",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/tbags/tbags411001d749/tbags411001d749_1652227125946_2-0.__UX540__._QL90_.jpg",
+        title: "MISA",
+        url: "https://www.shopbop.com/calista-dress-misa/vp/v=1/1538410215.htm?os=false&fm=other-shopbysize-viewall&folderID=13838&colorId=1D749&ref_=SB_PLP_PDP_NWL_W_BOUTI_BRIDA_13838_NB_51&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6175897594&sharedid=42352&subid1=.2nGiS3mv0Y-WQSeqoSIchO3SAxsTU3w7A",
+      },
+      {
+        id: "3",
+        img: "https://cdn.modaoperandi.com/img/images/products/896586/529251/large_ben-amun-gold-button-earrings-clip-on.jpg?_v=1671632436",
+        title: "BEN-AMUN",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=918791465&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A6283dc624feeea254f131d5d&utm_medium=referral",
+      },
+      {
+        id: "4",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/mblac/mblac3013111739/mblac3013111739_1645647495242_2-0.__UX540__._QL90_.jpg",
+        title: "MARIA BLACK",
+        url: "https://www.shopbop.com/aspen-necklace-maria-black/vp/v=1/1571137445.htm?os=false&fm=other-shopbysize-viewall&folderID=13540&colorId=11739&ref_=SB_PLP_PDP_NWL_W_ACCES_JEWEL_13540_NB_44&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6175900572&sharedid=42352&subid1=.2nGiS3mv0Y-dQIonavbQVxB4aG0uFYvtg",
+      },
+      {
+        id: "5",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/zeunr/zeunr4067719521/zeunr4067719521_1646079780118_2-0.__UX540__._QL90_.jpg",
+        title: "JENNIFER",
+        url: "https://click.linksynergy.com/deeplink?id=*2nGiS3mv0Y&mid=42352&murl=https%3A%2F%2Fwww.shopbop.com%2Fjolene-necklace-jennifer-zeuner-jewelry%2Fvp%2Fv%3D1%2F1577550121.htm%3Fos%3Dfalse%26fm%3Dother-shopbysize-viewall%26folderID%3D13540%26colorId%3D19521%26ref_%3DSB_PLP_PDP_NWL_W_ACCES_JEWEL_13540_NB_85&u1=6175901063",
+      },
+      {
+        id: "6",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/lhats/lhats3001411611/lhats3001411611_1643835771008_2-0.__UX540__._QL90_.jpg",
+        title: "LOLA HATS",
+        url: "https://www.shopbop.com/fiscolo-hat-lola-hats/vp/v=1/1525313036.htm?os=false&fm=other-shopbysize-viewall&folderID=13574&colorId=11611&ref_=SB_PLP_PDP_NWL_W_ACCES_HATS_13574_EP_2&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6175901803&sharedid=42352&subid1=.2nGiS3mv0Y-prjbi2WeaaWxfanlZksLPA",
+      },
+      {
+        id: "7",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/renen/renen3015010bee/renen3015010bee_1647965590795_2-0.__UX540__._QL90_.jpg",
+        title: "REIKE NEN",
+        url: "https://www.shopbop.com/leaf-ankle-flip-flop-sandals/vp/v=1/1561716751.htm?os=false&fm=other-shopbysize-viewall&folderID=13438&colorId=10BEE&ref_=SB_PLP_PDP_NWL_W_SHOES_13438_NB_20&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6175903115&sharedid=42352&subid1=.2nGiS3mv0Y-WHdjullWa12fSie1aYVA8g",
+      },
+      {
+        id: "8",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/ellme/ellme3010612827/ellme3010612827_q1_2-0.__UX540__._QL90_.jpg",
+        title: "ELLEME",
+        url: "https://www.shopbop.com/vague-bag-elleme/vp/v=1/1588964915.htm?os=false&fm=other-viewall&folderID=13509&colorId=12827&ref_=SB_PLP_PDP_WL_W_BAGS_SHOUL_13509_EP_42&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6175903895&sharedid=42352&subid1=.2nGiS3mv0Y-UbjdxQ1LW5eok5fuJvDPZg",
+      },
+    ],
+  },
+  {
+    id: 11,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/04/IMG_1719-1000x1320.jpg",
+    ],
+    images: [],
+    category: 3,
+    title: "Mother's day gift guide",
+    locationDate: "LOS ANGELES, CA - May 20",
+    shortDescription:
+      "Here is a list of last min stylish gift ideas for Mom. Check them out!",
+    description: `Mother’s day is right around the corner and it’s the perfect time to show the leading ladies in your life a little extra amor. Whether you’re looking for something for your ma’ a close friend or sister, it’s nice to truly show your appreciation for all they do with a thoughtful gift. Ahead I’ve put together a curated list of some stylish / cute gift ideas that are sure to put a smile on their faces. 
+
+    Happy Mother’s day to all the mamas out there and the ones who have helped raise us. Cheers to you! `,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://cdn.modaoperandi.com/img/images/products/835070/457897/large_lisa-yang-neutral-danni-cardigan-2.jpg?_v=1659111661",
+        title: "DANNI",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=859810640&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A62697ef24feeea6e87aab4d9&utm_medium=referral",
+      },
+      {
+        id: "1",
+        img: "https://cdn.modaoperandi.com/img/images/products/896588/529253/large_ben-amun-gold-gold-plated-snake-necklace.jpg?_v=1674055573",
+        title: "BEN AMUN",
+        url: "https://www.modaoperandi.com/women/p/ben-amun/gold-plated-snake-necklace/529253?AID=14311123&PID=7900573&SID=6175925618&cjevent=f81667c6983011ed811e22f00a18ba73&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+      {
+        id: "2",
+        img: "https://image.s5a.com/is/image/saks/0400012990726?wid=984&hei=1312&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        title: "GUCCI",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=920756881&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A62697ef24feeea6e87aab4d9&utm_medium=referral",
+      },
+      {
+        id: "3",
+        img: "https://image.s5a.com/is/image/saks/0400095556762?wid=984&hei=1312&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        title: "BYERDO",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=920785807&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A62697ef24feeea6e87aab4d9&utm_medium=referral",
+      },
+      {
+        id: "4",
+        img: "https://image.s5a.com/is/image/saks/0400012566517_02MEDIUM?wid=480&hei=640&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        title: "CHANEL",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=920749476&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A62697ef24feeea6e87aab4d9&utm_medium=referral",
+      },
+      {
+        id: "5",
+        img: "https://image.s5a.com/is/image/saks/0400014612927_A1?wid=984&hei=1312&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        title: "LOEWE",
+        url: "https://www.saksfifthavenue.com/product/loewe-mini-gate-dual-leather-shoulder-bag-0400014612927.html?ranMID=13816&ranEAID=*2nGiS3mv0Y&ranSiteID=.2nGiS3mv0Y-qtfKm_UsKaiYxMySdBXjCA&site_refer=AFF001&mid=13816&siteID=.2nGiS3mv0Y-qtfKm_UsKaiYxMySdBXjCA&LSoid=1157732&LSlinkid=10&LScreativeid=1",
+      },
+      {
+        id: "6",
+        img: "https://cdn.modaoperandi.com/img/images/products/885198/516610/large_lack-of-color-neutral-the-inca-bucket-wide-tan.jpg?_v=1656467553",
+        title: "LACK OF COLOR",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=920775504&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A62697ef24feeea6e87aab4d9&utm_medium=referral",
+      },
+      {
+        id: "7",
+        img: "https://image.s5a.com/is/image/saks/0400016362531_VERT?wid=984&hei=1312&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        title: "BA&SH",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=919830995&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A62697ef24feeea6e87aab4d9&utm_medium=referral",
+      },
+      {
+        id: "8",
+        img: "https://cdn.modaoperandi.com/img/images/products/878894/509098/large_aeyde-black-bibi-calf-leather-black-55mm.jpg?_v=1672929248",
+        title: "AEYDE",
+        url: "https://www.modaoperandi.com/women/p/aeyde/bibi-calf-leather-black-55mm/509098?AID=14311123&PID=7900573&SID=6175932397&cjevent=a571c671983111ed811e22f00a18ba73&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+    ],
+  },
 ];
