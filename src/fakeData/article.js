@@ -880,4 +880,82 @@ export const articleData = [
       },
     ],
   },
+  {
+    id: 12,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-bandier-sweater-set-mustard-color-new-balance.jpeg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-bandier-sweater-set-mustard-color-new-balance-sneakers.jpeg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-bandier-sweater-set-mustard-color.-fit.jpeg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-bandier-orange-top-leggings-airforce-look-8-1000x1500.jpeg",
+    ],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-bandier-orange-top-leggings-airforce-look-4-1000x1500.jpeg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-bandier-orange-top-leggings-airforce-look-6.jpeg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/1C0165AB-42AC-45CB-AB23-489077A354E4-1000x1500.jpeg",
+    ],
+    category: 3,
+    title: "Three way to style marigold color!",
+    locationDate: "LOS ANGELES, CA - March 16",
+    shortDescription:
+      "Spring time is upon us, which means it’s time to start updating your wardrobe with pops of color. Check out how I styled a pop of yellow three ways!",
+    description: `With spring around the corner, I have bright pops of color on my mind. When we created the SJ for Bandier collections, we made sure to incorporate fun colors to our pieces. One fave is our goldenrod shade, a fun mustard/yellow hue that stands out from the rest. We all loved it so much we incorporated this shade to several of our pieces. Ahead, I styled three eye-catching ‘fits in the goldenrod shade using pieces from the SJ for Bandier collection. Check them out! If you’re intimidated by bold colors, I suggest adding just a small dose of color to your outfit. Here, I paired the Flint wide leg pant, with the Juniper Zip up hoodie and styled it with Willow tank for the perfect amount of color to brighten up this look. Perfect to WFH in or to take a stroll to your local coffee shop. Alternatively, you can swap the zip-up for a denim jacket and throw on slides for an elevated take.
+    Comment below which look is your fave!`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://m.media-amazon.com/images/I/517Dy4ljdVS._AC_UY550_.jpghttps://m.media-amazon.com/images/I/517Dy4ljdVS._AC_UY550_.jpg",
+        title: "BANDIER",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=915176933&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A622bd1bb88f66949b05dbb53&utm_medium=referral",
+      },
+      {
+        id: "1",
+        img: "https://is4.revolveassets.com/images/p4/n/z/VINCE-WS1034_V1.jpg",
+        title: "VINCE",
+        url: "https://www.revolve.com/marled-tank/dp/VINCE-WS1034/?d=Womens&AID=11017645&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=445c129f990011ed800b04530a18b8f7&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "2",
+        img: "https://is4.revolveassets.com/images/p4/n/z/ENZA-WS963_V1.jpg",
+        title: "ENZA COSTA",
+        url: "https://www.revolve.com/textured-knit-sleeveless-uneck/dp/ENZA-WS963/?d=Womens&AID=11017645&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=591f3d2a990011ed83c3bf210a18b8f6&cjdata=MXxOfDB8WXww&size=S&code=ENZA-WS963",
+      },
+      {
+        id: "3",
+        img: "https://m.media-amazon.com/images/I/41QbxlF06VL._AC_UY550_.jpg",
+        title: "BANDIER",
+        url: "https://www.amazon.com/Bandier-Sincerely-Jules-Juniper-Hoodie/dp/B093C11HJL?tag=sincerelyjules-ssc-774982-20&ascsubtag=6177625904",
+      },
+      {
+        id: "4",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/mothr/mothr2149110495/mothr2149110495_1636669512931_2-0.__UX540__._QL90_.jpg",
+        title: "MOTHER",
+        url: "https://www.shopbop.com/knock-out-roller-hover-mother/vp/v=1/1503110265.htm?folderID=68284&fm=other-shopbysize-viewall&os=false&colorId=10495&ref_=SB_PLP_PDP_NWL_W_BOUTI_BACKI_68284_NB_13&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6177626451&sharedid=42352&subid1=.2nGiS3mv0Y-8hiZGTL.BjFAbtIxnd.GKw",
+      },
+      {
+        id: "5",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/redon/redon3044410495/redon3044410495_q1_2-1.__UX540__._QL90_.jpg",
+        title: "RE/DONE",
+        url: "https://www.shopbop.com/80s-sweatpant-re-done/vp/v=1/1562829275.htm?os=false&fm=other-shopbysize-viewall&folderID=65745&colorId=10495&ref_=SB_PLP_PDP_NWL_W_ACTIV_CLOTH_65745_NB_10&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6177626993&sharedid=42352&subid1=.2nGiS3mv0Y-sSRBJ792WpXne2tl_y.BDA",
+      },
+      {
+        id: "6",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/adije/adije3007923247/adije3007923247_1635798749688_2-0.__UX540__._QL90_.jpg",
+        title: "ADINAS JEWELS",
+        url: "https://www.shopbop.com/pearl-tennis-necklace-adinas-jewels/vp/v=1/1582728511.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6177627731&sharedid=42352&subid1=.2nGiS3mv0Y-.b1DNhptDGDitrDIKP_jxg",
+      },
+      {
+        id: "7",
+        img: "https://images.urbndata.com/is/image/FreePeople/54565304_090_b/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+        title: "FREE PEOPLE",
+        url: "https://www.freepeople.com/shop/classic-chain-necklace/?cm_mmc=rakuten-_-affiliates-_-ShopStyle%20Collective-_-1&color=090&ranEAID=%2a2nGiS3mv0Y&ranMID=43177&ranSiteID=.2nGiS3mv0Y-yQf9uL0m4L18e2BBPJKkSg&size=One%20Size&utm_campaign=ShopStyle%20Collective&utm_content=1&utm_kxconfid=v3sdm8r4u&utm_medium=affiliates&utm_source=rakuten&utm_term=717323",
+      },
+      {
+        id: "8",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/beliz/beliz3024511739/beliz3024511739_1633963801247_2-0.__UX540__._QL90_.jpg",
+        title: "BRINKER & ELIZA",
+        url: "https://click.linksynergy.com/deeplink?id=*2nGiS3mv0Y&mid=42352&murl=https%3A%2F%2Fwww.shopbop.com%2Ftwist-necklace-brinker-eliza%2Fvp%2Fv%3D1%2F1514848579.htm%3Fos%3Dfalse%26fm%3Dother-shopbysize-viewall%26folderID%3D13543%26colorId%3D11739%26ref_%3DSB_PLP_PDP_NWL_W_ACCES_JEWEL_13543_NB_72&u1=6177629419",
+      },
+    ],
+  },
 ];
