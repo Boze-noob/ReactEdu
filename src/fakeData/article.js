@@ -893,7 +893,7 @@ export const articleData = [
       "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-bandier-orange-top-leggings-airforce-look-6.jpeg",
       "https://sincerelyjules.com/wp-content/uploads/2022/03/1C0165AB-42AC-45CB-AB23-489077A354E4-1000x1500.jpeg",
     ],
-    category: 3,
+    category: 0,
     title: "Three way to style marigold color!",
     locationDate: "LOS ANGELES, CA - March 16",
     shortDescription:
@@ -955,6 +955,481 @@ export const articleData = [
         img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/beliz/beliz3024511739/beliz3024511739_1633963801247_2-0.__UX540__._QL90_.jpg",
         title: "BRINKER & ELIZA",
         url: "https://click.linksynergy.com/deeplink?id=*2nGiS3mv0Y&mid=42352&murl=https%3A%2F%2Fwww.shopbop.com%2Ftwist-necklace-brinker-eliza%2Fvp%2Fv%3D1%2F1514848579.htm%3Fos%3Dfalse%26fm%3Dother-shopbysize-viewall%26folderID%3D13543%26colorId%3D11739%26ref_%3DSB_PLP_PDP_NWL_W_ACCES_JEWEL_13543_NB_72&u1=6177629419",
+      },
+    ],
+  },
+  {
+    id: 13,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-tie-dye-ellie-mae-top-zara-skirt-a.emery-sandals-dior-bag-look.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-tie-dye-ellie-mae-top-sandals.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-white-button-down-dior-bag.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-black-sunnies-1000x1500.jpg",
+    ],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-tie-dye-ellie-mae-top.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-tie-dye-ellie-mae-top-zara-skirt.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-button-down-dior-bag.jpg",
+    ],
+    category: 0,
+    title: "HOW TO WEAR A POP OF TIE-DYE!",
+    locationDate: "MIAMI, FL - March 11",
+    shortDescription:
+      "If you're looking for an outfit refresh, give this subtle tie-dye look a try. Take a look!",
+    description: `If you’ve been wondering if tie dye is still in, the answer is – it never left! These past two years we’ve been seeing tie dye everywhere. From dresses, to tanks, to shorts, to the beloved sweater matching set, you name it. I for one absolutely love the trend for its vibrant colors and fun artsy feel – it’s a total vibe. I know not everyone is a fan, but hopefully I can change your mind with this look. 😉 
+
+    For those who are having a hard time styling this trend, go for a subtle approach and only wear one tie dye item with the rest of your ensemble. For this look, I styled my tie dye tank by Ellie Mae (linked below) with an oversized button down, black skirt and strappy sandals. Wearing neutral tones with tie dye is a great way to break up all the noise tie dye prints offer. I added some jewelry for a pop of polish. `,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://is4.revolveassets.com/images/p4/n/z/FREE-WS3196_V1.jpg",
+        title: "FREE PEOPLE",
+        url: "https://www.revolve.com/free-people-easy-breezy-tank/dp/FREE-WS3196/?AID=11017645&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=d55e8462999c11ed83c3bf810a18b8f6&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "1",
+        img: "https://is4.revolveassets.com/images/p4/n/z/WLEY-WS9_V1.jpg",
+        title: "WSLY",
+        url: "https://www.revolve.com/the-rivington-weekend-tank/dp/WLEY-WS9/?d=Womens&AID=11017645&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=f66632cf999c11ed8001987f0a18b8fb&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "2",
+        img: "https://cdn.shopify.com/s/files/1/0550/4014/7529/products/b215de45b0dc0447ee9f7f1aba765df0_900x900.progressive.jpg?v=1665453796",
+        title: "RIPPLE",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=914799695&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A6227ec0e88f66949b0be3807&utm_medium=referral",
+      },
+      {
+        id: "3",
+        img: "https://is4.revolveassets.com/images/p4/n/z/GAME-WS2_V1.jpg",
+        title: "GOOD AMERICAN",
+        url: "https://www.revolve.com/tabbed-poplin-shirt/dp/GAME-WS2/?d=Womens&AID=11017645&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=1e38eb7d999d11ed83c3bf810a18b8f6&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "4",
+        img: "https://is4.revolveassets.com/images/p4/n/z/AMAN-WF103_V1.jpg",
+        title: "AMANDA",
+        url: "https://www.revolve.com/dale-skort/dp/AMAN-WF103/?d=Womens&AID=13237228&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=34463960999d11ed8001987f0a18b8fb&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "5",
+        img: "https://is4.revolveassets.com/images/p4/n/z/SPDW-WQ258_V1.jpg",
+        title: "SUPERDOWN",
+        url: "https://www.revolve.com/alana-mini-skirt/dp/SPDW-WQ258/?d=Womens&AID=11017645&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=48decd9c999d11ed82aa00e90a18b8f9&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "6",
+        img: "https://is4.revolveassets.com/images/p4/n/z/SPDW-WF137_V1.jpg",
+        title: "SUPERDOWN",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=884815772&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A6227ec0e88f66949b0be3807&utm_medium=referral",
+      },
+      {
+        id: "7",
+        img: "https://is4.revolveassets.com/images/p4/n/z/GUCR-WA57_V1.jpg",
+        title: "GUCCI",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=868538099&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A6227ec0e88f66949b0be3807&utm_medium=referral",
+      },
+      {
+        id: "8",
+        img: "https://is4.revolveassets.com/images/p4/n/z/AMAN-WF90_V1.jpg",
+        title: "AMANDA",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=872851493&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A6227ec0e88f66949b0be3807&utm_medium=referral",
+      },
+    ],
+  },
+  {
+    id: 14,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/BANDIER-SINCERELY-JULES-JOGGER-ZIP-UP-HOODIE-NEW-BALANCE-LOOK-47-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/BANDIER-SINCERELY-JULES-JOGGER-ZIP-UP-HOODIE-NEW-BALANCE--1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/BANDIER-SINCERELY-JULES-JOGGER-ZIP-UP-HOODIE-NEW-BALANCE-LOOK37.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/BANDIER-SINCERELY-JULES-JOGGER-ZIP-UP-HOODIE-NEW-BALANCE-LOOK-4.jpg",
+    ],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/BANDIER-SINCERELY-JULES-JOGGER-ZIP-UP-HOODIE-NEW-BALANCE-LOOK-.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/BANDIER-SINCERELY-JULES-JOGGER-ZIP-UP-HOODIE-NEW-BALANCE--1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/BANDIER-SINCERELY-JULES-JOGGER-ZIP-UP-HOODIE-NEW-BALANCE-LOOK.jpg",
+    ],
+    category: 0,
+    title: "HOW TO STYLE JOGGER SWEATPANTS!",
+    locationDate: "LOS ANGELES, CA - March 02",
+    shortDescription:
+      "Looking for some inspo on how to wear your favorite joggers. Check out how I styled this cozy chocolate brown jogger set!",
+    description: `Long gone are the days where joggers are only worn from the comfort of your own home. They’ve become an extremely versatile piece of clothing and I’m really loving all the ways you can style them. You can incorporate into your workwear, casual days or even to dressy functions depending on how you style them. 
+
+    The ones I’m wearing here are a part of my SJ for Bandier drop 4 collection and guess what we added a zip-up hoodie to match (linked above). I’m a sucker for street-style, so I went ahead and styled this set with a tee, scrunchie socks, and new balance sneakers for a day of wandering the city. For a dressier approach, swap the sneaks & socks for some strappy heels and throw on a blazer! `,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://m.media-amazon.com/images/I/41QbxlF06VL._AC_UY445_.jpg",
+        title: "BANDIER",
+        url: "https://www.amazon.com/Bandier-Sincerely-Jules-Juniper-Hoodie/dp/B093C11HJL?tag=sincerelyjules-ssc-774982-20&ascsubtag=6178796113",
+      },
+      {
+        id: "1",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/wesle/wesle3004110865/wesle3004110865_1640293359726_2-0.__UX540__._QL90_.jpg",
+        title: "WSLY",
+        url: "https://www.shopbop.com/eco-fleece-ankle-zip-sweatpant/vp/v=1/1538618814.htm?os=false&fm=other-shopbysize-viewall&folderID=65743&colorId=10865&ref_=SB_PLP_PDP_NWL_W_ACTIV_CLOTH_65743_NB_39&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178797155&sharedid=42352&subid1=.2nGiS3mv0Y-bdUZrG9mRbAs7.lKMgG2WQ",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/wesle/wesle3003910865/wesle3003910865_1640202608104_2-0.__UX540__._QL90_.jpg",
+        title: "WSLY",
+        url: "https://click.linksynergy.com/deeplink?id=*2nGiS3mv0Y&mid=42352&murl=https%3A%2F%2Fwww.shopbop.com%2Feco-fleece-crew-shoulder-pad%2Fvp%2Fv%3D1%2F1512813082.htm%3Fos%3Dfalse%26fm%3Dother-shopbysize-viewall%26folderID%3D62708%26colorId%3D10865%26ref_%3DSB_PLP_PDP_NWL_W_SIZEI_62708_NB_50&u1=6178797793",
+      },
+      {
+        id: "3",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/sbett/sbett3015930857/sbett3015930857_1641501892368_2-0.__UX540__._QL90_.jpg",
+        title: "SWEATY PETTY",
+        url: "https://www.shopbop.com/nestle-half-zip-sweatshirt-sweaty/vp/v=1/1500541662.htm?os=false&fm=other-shopbysize-viewall&folderID=13346&colorId=30857&ref_=SB_PLP_PDP_NWL_W_CLOTH_SUITI_13346_NB_42&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178798246&sharedid=42352&subid1=.2nGiS3mv0Y-Fn9oWxbGk8RSEUwGpA79uQ",
+      },
+      {
+        id: "4",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/sbett/sbett3016030857/sbett3016030857_1640108230540_2-0.__UX540__._QL90_.jpg",
+        title: "SWEARY PETTY",
+        url: "https://www.shopbop.com/nestle-taper-trouser-sweaty-betty/vp/v=1/1599628235.htm?os=false&fm=other-shopbysize-viewall&folderID=65739&colorId=30857&ref_=SB_PLP_PDP_NWL_W_ACTIV_65739_NB_54&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178798753&sharedid=42352&subid1=.2nGiS3mv0Y-gMLva9qwcODtLqAh9C9o3Q",
+      },
+      {
+        id: "5",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/msoma/msoma3004711739/msoma3004711739_1638570125685_2-0.__UX540__._QL90_.jpg",
+        title: "MISSOMA",
+        url: "https://www.shopbop.com/flat-snake-chain-necklace-missoma/vp/v=1/1561787774.htm?os=false&fm=other-shopbysize-viewall&folderID=13540&colorId=11739&ref_=SB_PLP_PDP_NWL_W_ACCES_JEWEL_13540_NB_7&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178799609&sharedid=42352&subid1=.2nGiS3mv0Y-Q0OuY2HoprOuZObuLEltRQ",
+      },
+      {
+        id: "6",
+        img: "https://images.urbndata.com/is/image/FreePeople/60094133_067_a?$a15-category$&qlt=80&fit=constrain",
+        title: "FREE PEOPLE",
+        url: "https://www.freepeople.com/shop/island-time-aviator-sunglasses/?cm_mmc=rakuten-_-affiliates-_-ShopStyle%20Collective-_-1&color=061&ranEAID=%2a2nGiS3mv0Y&ranMID=43177&ranSiteID=.2nGiS3mv0Y-W7uqBEljl8EWcjfLCVv_Dg&size=One%20Size&utm_campaign=ShopStyle%20Collective&utm_content=1&utm_kxconfid=v3sdm8r4u&utm_medium=affiliates&utm_source=rakuten&utm_term=717323",
+      },
+      {
+        id: "7",
+        img: "https://www.jcrew.com/s7-img-facade/AR522_EB7521?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+        title: "J.CREW",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=848289289&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A620bf9204feeea340c496bb3&utm_medium=referral",
+      },
+      {
+        id: "8",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/vejaa/vejaa3045620931/vejaa3045620931_1633725973354_2-0.__UX540__._QL90_.jpg",
+        title: "VEJA",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=900130767&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A620bf9204feeea340c496bb3&utm_medium=referral",
+      },
+    ],
+  },
+  {
+    id: 15,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-spring.jpg",
+    ],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-spring-fit.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-pink-slip.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-loewe-bag-scarf-3.jpg",
+    ],
+    category: 3,
+    title: "ESSENTIALS FOR SPRING!",
+    locationDate: "LOS ANGELES, CA - March 09",
+    shortDescription:
+      "To help you get ready for the new season, I’ve put together a list of Spring ‘fits + essentials I’m loving right now. Check it out!",
+    description: `If you’re looking for inspiration to start prepping your wardrobe with some springy ‘fits to welcome the new season, you’ve come to the right place. As much as I love my knits and coats, there is nothing more exciting than dressing for warmer days. Spring is the perfect time to start mixing and matching prints and colors. So, if you’re in need of a few wardrobe ideas to jump-start the fresh season, I’ve rounded up some cute outfits you’re gonna adore. From sweet mini dresses, to strappy sandals, to stripes, to shorts etc. I’ve got you covered. `,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/alema/alema3000127489/alema3000127489_1638972250712_2-0.__UX540__._QL90_.jpg",
+        title: "ALEMAIS",
+        url: "https://www.shopbop.com/sylvia-mini-dress-alemais/vp/v=1/1577148353.htm?os=false&fm=other-shopbysize-viewall&folderID=68284&colorId=27489&ref_=SB_PLP_PDP_NWL_W_BOUTI_BACKI_68284_NB_8&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178811374&sharedid=42352&subid1=.2nGiS3mv0Y-v36mwBDIUL_DJ5j_NTD5FA",
+      },
+      {
+        id: "1",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/danij/danij41134102cb/danij41134102cb_1637700120383_2-0.__UX540__._QL90_.jpg",
+        title: "DANNIJO",
+        url: "https://www.shopbop.com/aloha-necklace-dannijo/vp/v=1/1581967007.htm?productID=1581967007&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178812933&sharedid=42352&subid1=.2nGiS3mv0Y-XkxTaqW5uPxikeVzZHK_tQ",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/beliz/beliz3026611739/beliz3026611739_1646164951053_2-0.__UX540__._QL90_.jpg",
+        title: "BRINKER",
+        url: "https://www.shopbop.com/tinsel-hoops-brinker-eliza/vp/v=1/1575886509.htm?os=false&fm=other-shopbysize-viewall&folderID=13540&colorId=11739&ref_=SB_PLP_PDP_NWL_W_ACCES_JEWEL_13540_NB_88&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178813784&sharedid=42352&subid1=.2nGiS3mv0Y-YS6CHpBJqc1QsERA5uUkDA",
+      },
+      {
+        id: "3",
+        img: "https://images.urbndata.com/is/image/Anthropologie/46288486_014_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=720",
+        title: "SATIN",
+        url: "https://www.anthropologie.com/shop/satin-ponytail-holder-set?color=014&size=ALL&cm_mmc=rakuten-_-affiliates-_-ShopStyle%20Collective-_-1&utm_medium=affiliates&utm_source=rakuten&utm_campaign=ShopStyle%20Collective&utm_term=1197783&utm_content=1&utm_kxconfid=v3sdgfere&ranMID=39789&ranEAID=%2a2nGiS3mv0Y&ranSiteID=.2nGiS3mv0Y-OJI1fKfW5Z2NGZS4ECn.4g",
+      },
+      {
+        id: "4",
+        img: "https://cdn.modaoperandi.com/img/images/products/875608/505469/large_a-emery-brown-beau-sandal.jpg?_v=1673610520&h=1200&operation=resize&w=700",
+        title: "A.EMMARY",
+        url: "https://www.modaoperandi.com/women/p/a-emery/beau-sandal/505469?AID=14311123&PID=7900573&SID=6178815272&cjevent=1a5dbd1f99a011ed8254220e0a18b8fc&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+      {
+        id: "5",
+        img: "https://cdn.modaoperandi.com/img/images/products/892484/524721/large_la-cano-gold-yagua-earrings.jpg?_v=1674133396&h=1200&operation=resize&w=700",
+        title: "CANO",
+        url: "https://www.modaoperandi.com/women/p/la-cano/yagua-earrings/524721?AID=14311123&PID=7900573&SID=6178816958&cjevent=430c600499a011ed802ad4640a18b8f8&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+      {
+        id: "6",
+        img: "https://cdn.modaoperandi.com/img/images/products/885199/516611/large_lack-of-color-white-the-vista-white.jpg?_v=1673631698&h=1200&operation=resize&w=700",
+        title: "LACK OF COLOR",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=913904502&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A6227a86446a9186ac92633fd&utm_medium=referral",
+      },
+      {
+        id: "7",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/madew/madew4458519593/madew4458519593_q1_2-0.__UX540__._QL90_.jpg",
+        title: "MADEWELL",
+        url: "https://www.shopbop.com/long-skinny-metal-barrette-madewell/vp/v=1/1549209562.htm?os=false&fm=other-shopbysize-viewall&folderID=13575&colorId=19593&ref_=SB_PLP_PDP_WL_W_ACCES_HAIRA_13575_NB_51&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178819290&sharedid=42352&subid1=.2nGiS3mv0Y-.dat_5MMYJ7hHfqgmgbz6Q",
+      },
+      {
+        id: "8",
+        img: "https://www.chanel.com/images//t_one//w_0.38,h_0.38,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_320/le-vernis-longwear-nail-colour-18-rouge-noir-0-4fl-oz--packshot-default-159014-8800830750750.jpg",
+        title: "CHANEL",
+        url: "https://www.chanel.com/us/makeup/p/159014/le-vernis-longwear-nail-colour/",
+      },
+    ],
+  },
+  {
+    id: 16,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-flannel-button-up-proenza-boots-look.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-flannel-button-up-proenza-boots-look-1-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-flannel-button-up-proenza-boots-look-2-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-flannel-button-up-proenza-boots-look-5.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-flannel-button-up-proenza-boots-look-6.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-flannel-button-up-proenza-boots-look-7.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-flannel-button-up-proenza-boots-look-10.jpg",
+    ],
+    category: 0,
+    title: "HOW TO STYLE COMBAT BOOTS!",
+    locationDate: "LOS ANGELES, CA - February 21",
+    shortDescription: "Check out this easy way to style combat boots!",
+    description: `Combat boots – a classic staple that has been around for years and never goes out of style. To be honest when I got my first pair, I found them intimidating to style but after experimenting with several items in my closet I found that they pair amazingly well with an array of outfits. I either like to go for something soft and feminine like a flowy maxi dress or a mini, or I like to pair them with a structured jacket. When it comes to pairing them with pants I prefer a trouser or a cropped loose jean. So, if you’re debating if you should purchase a pair, I say go for it. Also do note that they work all year round so they’re a great investment. 😉
+
+    The ones I’m wearing here are by proenza, I really love the white trim on these as it gives the boot a cool contrast. I styled them with biker shorts and threw on an oversized flannel for a grunge take. To soften up the look, I accessorized with gold statement earrings and a sleek updo. 
+    
+    Are you a fan of combat boots? Comment below! `,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://is4.revolveassets.com/images/p4/n/z/BARD-WS246_V1.jpg",
+        title: "BARDOT",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=903255830&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A620d8b974feeea52242688fc&utm_medium=referral",
+      },
+      {
+        id: "1",
+        img: "https://is4.revolveassets.com/images/p4/n/z/SANC-WO285_V1.jpg",
+        title: "SANCTUARY",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=908802484&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A620d8b974feeea52242688fc&utm_medium=referral",
+      },
+      {
+        id: "2",
+        img: "https://is4.revolveassets.com/images/p4/n/z/BLAN-WO248_V1.jpg",
+        title: "BLANK NYC",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=888788998&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A620d8b974feeea52242688fc&utm_medium=referral",
+      },
+      {
+        id: "3",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/irooo/irooo417941bad2/irooo417941bad2_1632777068851_2-0.__UX540__._QL90_.jpg",
+        title: "IRO",
+        url: "https://www.shopbop.com/minsi-shirt-jacket-iro/vp/v=1/1597015854.htm?folderID=64802&fm=other-shopbysize-viewall&os=false&colorId=1BAD2&ref_=SB_PLP_PDP_WL_W_CLOTH_JACKE_64802_NB_24&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178858840&sharedid=42352&subid1=.2nGiS3mv0Y-cNKDJQtzhVLelGtuSV0Mnw",
+      },
+      {
+        id: "4",
+        img: "https://img.shopstyle-cdn.com/sim/5a/30/5a30de22b733ad6dd28c45fef2d01b03_best/corso-crossover-5-inch-biker-short.jpg",
+        title: "LE ORE",
+        url: "https://www.shopstyle.com/p/le-ore-corso-crossover-5-inch-biker-short/884918982?pid=uid8400-43273280-96",
+      },
+      {
+        id: "5",
+        img: "https://is4.revolveassets.com/images/p4/n/z/LSPA-WF26_V2.jpg",
+        title: "L-SPACE",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=884432599&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A620d8b974feeea52242688fc&utm_medium=referral",
+      },
+      {
+        id: "6",
+        img: "https://is4.revolveassets.com/images/p4/n/z/ONZR-WF15_V1.jpg",
+        title: "ONZIE",
+        url: "https://www.revolve.com/5-biker-short/dp/ONZR-WF15/?d=Womens&AID=11017645&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=acef31e399a411ed811e23f60a18ba73&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "7",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/shash/shash4231811739/shash4231811739_1628714484694_2-0.__UX540__._QL90_.jpg",
+        title: "SHASHI",
+        url: "https://www.shopbop.com/gold-odyssey-earring-shashi/vp/v=1/1598331950.htm?os=false&fm=other-shopbysize-viewall&folderID=13540&colorId=11739&ref_=SB_PLP_PDP_NWL_W_ACCES_JEWEL_13540_NB_18&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178861270&sharedid=42352&subid1=.2nGiS3mv0Y-id3rblHSgb.T32clVL1MDw",
+      },
+      {
+        id: "8",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/loren/loren3015411739/loren3015411739_1644859193840_2-0.__UX540__._QL90_.jpg",
+        title: "LOREN",
+        url: "https://www.shopbop.com/herringbone-bracelet-loren-stewart/vp/v=1/1594767983.htm?os=false&fm=other-shopbysize-viewall&folderID=13540&colorId=11739&ref_=SB_PLP_PDP_NWL_W_ACCES_JEWEL_13540_NB_2&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178861823&sharedid=42352&subid1=.2nGiS3mv0Y-1.vlVSgsLITbvWyThmBl_A",
+      },
+    ],
+  },
+  {
+    id: 17,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-sweatshirt-levis-short-new-balance-black-sunnies.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-chanel-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-sweatshirt-levis-short-new-balance-chanel-bag-look-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-sweatshirt-levis-short-new-balance.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-sweatshirt-levis-short-new-balance-chanel-bag.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-harvard-sweatshirt-levis-short-new-balance-shoes.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-sweatshirt-levis-short-new-balance-chanel-bag-look-1000x1500.jpg",
+    ],
+    category: 0,
+    title: "CUTE COLLEGIATE STYLE IDEA!",
+    locationDate: "LOS ANGELES, CA - February 17",
+    shortDescription:
+      "Take a look at this sporty/chic look for when you're on the go. So effortless & easy!",
+    description: `There’s something so effortless about pairing shorts with an oversized sweatshirt. I often find myself gravitating towards this off-duty look when I don’t want to overthink about what to wear. Isn’t it the best feeling when an outfit comes together with no fuss and just feels effortless? That’s how I feel about this look seen here.
+
+    If the weather is chilly where you currently find yourself, maybe try a pair of loose denim or even some sleek black leggings. The result is still sporty chic that’s equal parts cool and comfortable. Otherwise, keep the shorts and tie it all together with socks, everyone’s fave dad sneak – New Balance, a crossbody bag and some dainty jewelry.  
+    
+    What’s your no-fuss go-to look? Comment below!`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://cdn.modaoperandi.com/img/images/products/862104/489972/large_sporty-rich-neutral-la-health-club-crewneck.jpg?_v=1657626585&h=1200&operation=resize&w=700",
+        title: "SPORTY & RICH",
+        url: "https://www.modaoperandi.com/women/p/sporty-rich/la-health-club-crewneck/489972?AID=14311123&PID=7900573&SID=6178866926&cjevent=5635987499a511ed822501040a18ba72&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+      {
+        id: "1",
+        img: "https://cdn.modaoperandi.com/img/images/products/862113/489981/large_sporty-rich-white-sports-crewneck.jpg?_v=1656534886&h=1200&operation=resize&w=700",
+        title: "SPORT & RICH",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=909657309&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A620c27d688f669300cbc423f&utm_medium=referral",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/anine/anine3065010099/anine3065010099_1641598931431_2-0.__UX540__._QL90_.jpg",
+        title: "ANINE BING",
+        url: "https://click.linksynergy.com/deeplink?id=*2nGiS3mv0Y&mid=42352&murl=https%3A%2F%2Fwww.shopbop.com%2Framona-sweatshirt-university-stone-anine%2Fvp%2Fv%3D1%2F1505130940.htm%3FfolderID%3D65797%26fm%3Dother-shopbysize-viewall%26os%3Dfalse%26colorId%3D10099%26ref_%3DSB_PLP_PDP_NWL_W_ACTIV_YOGAL_65797_NB_98&u1=6178868425",
+      },
+      {
+        id: "3",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/leviv/leviv20580101d2/leviv20580101d2_q1_2-1.__UX540__._QL90_.jpg",
+        title: "LEVI'S",
+        url: "https://www.shopbop.com/501-original-short-levis/vp/v=1/1584220834.htm?os=false&fm=other-shopbysize-viewall&folderID=68284&colorId=101D2&ref_=SB_PLP_PDP_NWL_W_BOUTI_BACKI_68284_NB_13&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178869089&sharedid=42352&subid1=.2nGiS3mv0Y-vMUWegqIIlLwdXU_ogSEQw",
+      },
+      {
+        id: "4",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/mouss/mouss3014961732/mouss3014961732_q1_2-0.__UX540__._QL90_.jpg",
+        title: "MOUSSY",
+        url: "https://www.shopbop.com/packard-shorts-moussy-vintage/vp/v=1/1510562833.htm?os=false&fm=other-shopbysize-viewall&folderID=13377&colorId=61732&ref_=SB_PLP_PDP_NWL_W_CLOTH_DENIM_13377_EP_34&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178869565&sharedid=42352&subid1=.2nGiS3mv0Y-HPIJwVDeqp4JazdEg8i8Jw",
+      },
+      {
+        id: "5",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/frame/frame319101b524/frame319101b524_1642110251278_2-0.__UX540__._QL90_.jpg",
+        title: "FRAME",
+        url: "https://www.shopbop.com/grand-garcon-short-raw-after/vp/v=1/1571574407.htm?os=false&fm=other-shopbysize-viewall&folderID=13297&colorId=1B524&ref_=SB_PLP_PDP_NWL_W_CLOTH_SHORT_13297_NB_47&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178870002&sharedid=42352&subid1=.2nGiS3mv0Y-voLi5XSSFFH_26e2CuScZg",
+      },
+      {
+        id: "6",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/msoma/msoma3004711739/msoma3004711739_1638570125685_2-0.__UX540__._QL90_.jpg",
+        title: "MISSOMA",
+        url: "https://www.shopbop.com/flat-snake-chain-necklace-missoma/vp/v=1/1561787774.htm?os=false&fm=other-shopbysize-viewall&folderID=13540&colorId=11739&ref_=SB_PLP_PDP_NWL_W_ACCES_JEWEL_13540_NB_7&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178870488&sharedid=42352&subid1=.2nGiS3mv0Y-fyU6WoSuU1.fESz4Fx483A",
+      },
+      {
+        id: "7",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/mmoni/mmoni3011114e52/mmoni3011114e52_q1_2-0.__UX540__._QL90_.jpg",
+        title: "MAISON",
+        url: "https://www.shopbop.com/necklace-maison-monik/vp/v=1/1520284331.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178871448&sharedid=42352&subid1=.2nGiS3mv0Y-I6_jyt49XU6CnplrpQTbyA",
+      },
+      {
+        id: "8",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/beliz/beliz3025211739/beliz3025211739_1635367771102_2-0.__UX540__._QL90_.jpg",
+        title: "ELIZA",
+        url: "https://www.shopbop.com/rider-necklace-brinker-eliza/vp/v=1/1566927163.htm?os=false&fm=other-shopbysize-viewall&folderID=13543&colorId=11739&ref_=SB_PLP_PDP_NWL_W_ACCES_JEWEL_13543_NB_63&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6178871945&sharedid=42352&subid1=.2nGiS3mv0Y-kY_ZAYiHbJ6CANXO9rnFLw",
+      },
+    ],
+  },
+  {
+    id: 18,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/06/Sincerely-Jules-Summer-Fridays-Dae-Glossier-Essentials.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/06/Sincerely-Jules-Hair-Wrap-Dior-Facemask.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/06/Sincerely-Jules-Dior-Foundation-Gisou-Hair-Oil-Aesop-debaser-chanel-gold-Jewelry.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/06/Sincerely-Jules-Dior-Eyeshadow.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/06/Sincerely-Jules-YSL-Lipstick-Cartier-Watch.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/06/Sincerely-Jules-go-to-beauty-products-gisou-hair-oil-quai-lamer.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/06/Sincerely-Jules-Chanel-Nail-Polish-Cartier-Bracelet.jpg",
+    ],
+    category: 1,
+    title: "MY TOP BEAUTY MUST-HAVES YEAR ROUND!",
+    locationDate: "LOS ANGELES, CA June 11",
+    shortDescription:
+      "When it comes to my everyday beauty routine, I have a list of essential products that I like to use daily. Check them out!",
+    description: `My make-up/beauty routine is pretty much the same everyday. I definitely love to experiment with new looks from time to time but for everyday beauty wear, I like to stick with an easy, breezy light coverage look that’s easy to pull and that works well year round. I’m such a sucker for the warmer seasons – probably because we all get that natural glow from the heat going. Everything that I use daily are items to help achieve a natural sun-kissed vibe, and using the right products that target specifically what I want from dewy cheeks to beachy soft hair to silky glowy skin help me maintain this look year round. This is my ultimate go-to look and guess what it’s super low maintenance and easy to achieve. 
+
+    Below I’m sharing some of my everyday go-to beauty essentials from favorite make-up products to hair products to nail polish to skin products to even favorite perfumes! Keep scrolling through! `,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://www.sephora.com/productimages/sku/s2191435-main-zoom.jpg?imwidth=315",
+        title: "CHRISTIAN DIOR",
+        url: "https://www.sephora.com/product/backstage-eyeshadow-palette-P432504?om_mmc=aff-linkshare-redirect-*2nGiS3mv0Y&c3ch=Linkshare&c3nid=*2nGiS3mv0Y&affid=.2nGiS3mv0Y-KSdOIPaHn5acNgZNLWMmLw&ranEAID=*2nGiS3mv0Y&ranMID=2417&ranSiteID=.2nGiS3mv0Y-KSdOIPaHn5acNgZNLWMmLw&ranLinkID=10-1&browserdefault=true",
+      },
+      {
+        id: "1",
+        img: "https://www.chanel.com/images//t_one//w_0.43,h_0.43,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_320/les-beiges-healthy-glow-natural-eyeshadow-palette-light-0-16oz--packshot-default-184185-8818219548702.jpg",
+        title: "CHANEL",
+        url: "https://www.chanel.com/us/makeup/p/184185/les-beiges-healthy-glow-natural-eyeshadow-palette/?ranMID=39938&ranEAID=*2nGiS3mv0Y&ranSiteID=.2nGiS3mv0Y-GqJRt13fAW179crNRSInbA&wt.mc_id=fb_eye_affiliate_en_us_dis&wt.mc_t=display&utm_source=linkshare&utm_campaign=fb_eye_affiliate&utm_medium=affiliate&utm_content=ShopStyle+Collective&siteID=.2nGiS3mv0Y-GqJRt13fAW179crNRSInbA",
+      },
+      {
+        id: "2",
+        img: "https://www.sephora.com/productimages/sku/s2274256-main-zoom.jpg?imwidth=315",
+        title: "ILIA",
+        url: "https://www.sephora.com/product/the-necessary-eyeshadow-palette-P448845?om_mmc=aff-linkshare-redirect-*2nGiS3mv0Y&c3ch=Linkshare&c3nid=*2nGiS3mv0Y&affid=.2nGiS3mv0Y-qekcg71EjqtJFlxPhn_BZg&ranEAID=*2nGiS3mv0Y&ranMID=2417&ranSiteID=.2nGiS3mv0Y-qekcg71EjqtJFlxPhn_BZg&ranLinkID=10-1&browserdefault=true&skuId=2274256",
+      },
+      {
+        id: "3",
+        img: "https://www.sephora.com/productimages/sku/s1775006-main-zoom.jpg?imwidth=315",
+        title: "TARTE",
+        url: "https://www.sephora.com/product/tartelette-in-bloom-clay-eyeshadow-palette-P403812?om_mmc=aff-linkshare-redirect-*2nGiS3mv0Y&c3ch=Linkshare&c3nid=*2nGiS3mv0Y&affid=.2nGiS3mv0Y-gOqIvIR8R5AyxTIsioomtA&ranEAID=*2nGiS3mv0Y&ranMID=2417&ranSiteID=.2nGiS3mv0Y-gOqIvIR8R5AyxTIsioomtA&ranLinkID=10-1&browserdefault=true&skuId=1775006",
+      },
+      {
+        id: "4",
+        img: "https://www.sephora.com/productimages/sku/s2178325-main-zoom.jpg?imwidth=315",
+        title: "SAINT LAURENT",
+        url: "https://www.sephora.com/product/rouge-volupte-shine-oil-in-stick-lipstick-P377710?om_mmc=aff-linkshare-redirect-*2nGiS3mv0Y&c3ch=Linkshare&c3nid=*2nGiS3mv0Y&affid=.2nGiS3mv0Y-n2ccTmk3DzKR4SMDU2_FDQ&ranEAID=*2nGiS3mv0Y&ranMID=2417&ranSiteID=.2nGiS3mv0Y-n2ccTmk3DzKR4SMDU2_FDQ&ranLinkID=10-1&browserdefault=true&skuId=2178325",
+      },
+      {
+        id: "5",
+        img: "https://www.sephora.com/productimages/sku/s2389195-main-zoom.jpg?imwidth=315",
+        title: "GISOU",
+        url: "https://www.sephora.com/product/gisou-honey-infused-hair-oil-P462352?om_mmc=aff-linkshare-redirect-*2nGiS3mv0Y&c3ch=Linkshare&c3nid=*2nGiS3mv0Y&affid=.2nGiS3mv0Y-TPVACw8lYDficd4ITmdnTg&ranEAID=*2nGiS3mv0Y&ranMID=2417&ranSiteID=.2nGiS3mv0Y-TPVACw8lYDficd4ITmdnTg&ranLinkID=10-1&browserdefault=true",
+      },
+      {
+        id: "6",
+        img: "https://www.sephora.com/productimages/sku/s2362630-main-zoom.jpg?imwidth=315",
+        title: "OUAI",
+        url: "https://www.sephora.com/product/hair-oil-P406922?om_mmc=aff-linkshare-redirect-*2nGiS3mv0Y&c3ch=Linkshare&c3nid=*2nGiS3mv0Y&affid=.2nGiS3mv0Y-PNBqAtc.W1WnvZNqGjqLiA&ranEAID=*2nGiS3mv0Y&ranMID=2417&ranSiteID=.2nGiS3mv0Y-PNBqAtc.W1WnvZNqGjqLiA&ranLinkID=10-1&browserdefault=true&skuId=2362630",
+      },
+      {
+        id: "7",
+        img: "https://www.sephora.com/productimages/sku/s1634310-main-zoom.jpg?imwidth=315",
+        title: "NAILS INC",
+        url: "https://www.sephora.com/product/nailkale-superfood-base-coat-P388616?om_mmc=aff-linkshare-redirect-*2nGiS3mv0Y&c3ch=Linkshare&c3nid=*2nGiS3mv0Y&affid=.2nGiS3mv0Y-8k.QoIn9JNglw6emcoaDOw&ranEAID=*2nGiS3mv0Y&ranMID=2417&ranSiteID=.2nGiS3mv0Y-8k.QoIn9JNglw6emcoaDOw&ranLinkID=10-1&browserdefault=true",
+      },
+      {
+        id: "8",
+        img: "https://image.s5a.com/is/image/saks/0400095556388?wid=534&hei=712&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        title: "BYREDO",
+        url: "https://www.saksfifthavenue.com/product/byredo-rose-of-no-man-s-land-eau-de-parfum-0400095556388.html?ranMID=13816&ranEAID=*2nGiS3mv0Y&ranSiteID=.2nGiS3mv0Y-p2zHWQsDw.MpH5INBWHaUA&site_refer=AFF001&mid=13816&siteID=.2nGiS3mv0Y-p2zHWQsDw.MpH5INBWHaUA&LSoid=1157732&LSlinkid=10&LScreativeid=1",
       },
     ],
   },
