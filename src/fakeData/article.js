@@ -1509,4 +1509,80 @@ export const articleData = [
       },
     ],
   },
+  {
+    id: 19,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1014.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1013.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1015.jpg",
+    ],
+
+    images: [],
+    category: 1,
+    title: "BEAUTY ESSENTIALS",
+    locationDate: "February 20",
+    shortDescription:
+      "There are so many beauty brands out there these days thats its hard to keep up! Come check out some of my recent go to beauty and skin care products.",
+    description: `While I might be constantly traveling my skin can’t always afford to be so adventurous. I have a few beauty products I rely on that I know will keep my skin looking flawless. Like the Dior airflash spray foundation. Yes I know I’ve talked about this foundation before – but it’s really that good! I can not live with out it lately. The lightweight yet full coverage always leaves my skin looking and feeling so fresh and natural, as if I am not even wearing makeup. I also can not leave home with out my Anastasia Beverly Hills brow wiz. The pencil’s so easy to use on the go and I just love the little brush on the end that helps even out and fluff my brows.
+    One thing ill always be is a product junkie! My facialist doesn’t always agree with my habit, but I can’t help it! I love trying new products. Like my Laura Mercier moisturizing mask. Its just what my skin calls for after a long flight.
+    Lately I’ve been addicted to my Chanel hand cream! Not only is the bottle/packaging super cute but the smell is sooo dreamy! Another recent find is the Yves Saint Laurent Libre perfume. As you can see from the bottle in my pic….I’ve been practically bathing in it! I was living in D.S. & Durga the Debaser scent for a while there but thought I’d switch it up. The two perfumes smell so yummy that I have to travel with both as I never know what kind of mood I’ll be in or what the occasion calls for!
+    Weather you’re in need for some new makeup, perfume, or skincare recommendations I got you covered. Shop some of my favorite beauty and skincare brands below. I’m always on the look out for new products – so please don’t hesitate to comment your favorite beauty must haves.`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://n.nordstrommedia.com/id/sr3/2a4fde10-733f-41cb-8628-5a09387236cb.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "chanel",
+        url: "https://www.nordstrom.com/s/chanel-rouge-coco-ultra-hydrating-lip-colour/3960978?siteid=QFGLnEolOWg-5vWxRvLKvBZ2kJIZDjC68w&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "1",
+        img: "https://n.nordstrommedia.com/id/sr3/46c96a63-ba9a-4c24-a33b-e871e80daf73.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "NORDSTROM",
+        url: "https://www.nordstrom.com/s/benefiance-wrinkleresist24-pure-retinol-express-smoothing-eye-mask/3689481?siteid=QFGLnEolOWg-G5nIjLwdRt3qarwtME3.oA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "2",
+        img: "https://n.nordstrommedia.com/id/sr3/4c68e75e-76db-…g?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "VITAE",
+        url: "https://www.nordstrom.com/s/tata-harper-skincare-elixir-vitae-serum/5394093?siteid=QFGLnEolOWg-Dw.Ksg.bcq6viV0RJtoqGg&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "3",
+        img: "https://n.nordstrommedia.com/id/sr3/8ccb2a6c-10a2-487a-941e-430205803bc4.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "YVES SAINT LAURENT",
+        url: "https://www.nordstrom.com/s/yves-saint-laurent-libre-eau-de-parfum-spray-fragrance/5349306?siteid=QFGLnEolOWg-VStLyEXT_z8Ie.Qh1qg0Ug&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "4",
+        img: "https://n.nordstrommedia.com/id/sr3/71b806e7-7007-…g?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "NARS",
+        url: "https://www.nordstrom.com/s/nars-blush/2860999?siteid=QFGLnEolOWg-qqqZ3WRWTNFBObV9U_O4HA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "5",
+        img: "https://n.nordstrommedia.com/id/sr3/271fe3ee-6dc7-494c-aa2a-1447664eb388.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "CHANEL",
+        url: "https://www.nordstrom.com/s/chanel-le-volume-de-chanel-waterproof-mascara/3971108?siteid=QFGLnEolOWg-dRCRPfDGUnWsrjy0LSAaBA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "6",
+        img: "https://n.nordstrommedia.com/id/sr3/85571b78-b904-4035-8bfc-d02eb1b11e2c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "SHISEIDO",
+        url: "https://www.nordstrom.com/s/the-makeup-eyelash-curler/3056751?siteid=QFGLnEolOWg-2pE4Cw5oMeaEbhXwO9LpFw&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "7",
+        img: "https://images.rewardstyle.com/img?v=2.13&ms=36034494",
+        title: "GLOSSIER",
+        url: "https://www.glossier.com/products/stretch-concealer?click_id=0vZ1dQwzSxyNTJvwN6yJ%3A0jZUkA1Hhyg1UnmWY0&irgwc=1&utm_source=impactradius&utm_medium=affiliate&utm_campaign=LTK&utm_content=431612&g_ref=fe96da46dc4a93&utm_publishergroup=subnetworks",
+      },
+      {
+        id: "8",
+        img: "https://n.nordstrommedia.com/id/sr3/e95b5de1-c59c-4e78-9ee3-6d583867252d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "DEBASER",
+        url: "https://www.nordstrom.com/s/d-s-durga-debaser-eau-de-parfum/5439261?siteid=QFGLnEolOWg-M6E_plstnLhyznW1gpEIWg&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+    ],
+  },
 ];

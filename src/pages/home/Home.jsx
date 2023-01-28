@@ -42,7 +42,13 @@ const Home = () => {
         <HorizontalImgList title={"My Style"} marginTop={60} />
         <HorizontalArticleImgLeft marginTop={60} article={articles[9]} />
         <HorizontalArticleImgRight marginTop={-40} article={articles[10]} />
-        <VerticalGalleryArticleList marginTop={40} loadMoreFlag={true} />
+        <VerticalGalleryArticleList
+          marginTop={40}
+          loadMoreFlag={true}
+          articles={articles.filter((val, i) => {
+            if (i > 10) return val;
+          })}
+        />
       </>
     );
   }

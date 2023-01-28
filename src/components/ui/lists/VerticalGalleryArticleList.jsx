@@ -1,21 +1,38 @@
 import { Typography, Box, Grid } from "@mui/material";
 import VerticalLineButton from "../buttons/VerticalLineButton";
 import { useState } from "react";
+import { Categorys } from "../../../types/enumerations/categorys";
 
 export default function VerticalGalleryArticleList({
   marginTop,
   loadMoreFlag,
+  articles,
 }) {
-  const fakeData = [
-    "https://sincerelyjules.com/wp-content/uploads/2022/05/SJxCANVA1-1000x1500.jpg",
-    "https://sincerelyjules.com/wp-content/uploads/2022/06/Sincerely-jules-provence-1-1000x1500.jpg",
-    "https://sincerelyjules.com/wp-content/uploads/2022/06/Sincerely-jules-travis-mathews-new-balance-shoes-Fendi-bag-levis-shorts-ensemble-1000x1500.jpg",
-  ];
-
-  const [itemData, setItemData] = useState(fakeData);
+  const [itemData, setItemData] = useState([
+    articles[0],
+    articles[1],
+    articles[2],
+  ]);
+  const [counter, setCounter] = useState(3);
+  const [hasLoadMore, setHasLoadMore] = useState(loadMoreFlag);
 
   const loadMore = () => {
-    setItemData((items) => items.concat(fakeData));
+    setCounter(counter + 3);
+    if (
+      articles[counter] !== undefined &&
+      articles[counter + 1] !== undefined &&
+      articles[counter + 2] !== undefined
+    ) {
+      setItemData((items) =>
+        items.concat([
+          articles[counter],
+          articles[counter + 1],
+          articles[counter + 2],
+        ])
+      );
+    } else {
+      setHasLoadMore(false);
+    }
   };
 
   return (
@@ -47,7 +64,7 @@ export default function VerticalGalleryArticleList({
                   },
                   transition: "0.7s",
                 }}
-                src={item}
+                src={item.galleryImages[0]}
               />
               <Typography
                 sx={{
@@ -63,7 +80,7 @@ export default function VerticalGalleryArticleList({
                   },
                 }}
               >
-                {"FASHION"}
+                {Categorys[item.category].toUpperCase()}
               </Typography>
               <Typography
                 sx={{
@@ -78,22 +95,20 @@ export default function VerticalGalleryArticleList({
                   },
                 }}
               >
-                {"MY GO-TO APP TO CREATE CONTENT: CANVA!"}
+                {item.title}
               </Typography>
               <Typography
                 textAlign="center"
                 marginTop={20}
                 sx={{ width: "70%" }}
               >
-                {
-                  "If you're looking for ways to create engaging & unique content, CANVA will be your new go-to program for all things creative! Take a look at some templates I've created."
-                }
+                {item.shortDescription}
               </Typography>
             </Box>
           </Grid>
         ))}
       </Grid>
-      {loadMoreFlag && (
+      {hasLoadMore && (
         <VerticalLineButton
           marginTop={"10%"}
           marginBottom={"5%"}
