@@ -1585,4 +1585,140 @@ export const articleData = [
       },
     ],
   },
+  {
+    id: 20,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2018/12/scuncixsincerelyjules5.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/12/scuncixsincerelyjules4.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/12/scuncixsincerelyjules2.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/12/scuncixsincerelyjules1.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2018/12/scuncixsincerelyjules1.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/12/sincerelyjules-x-scunci0.jpg",
+    ],
+    category: 1,
+    title: "SINCERELY JULES X SCUNCI COLLECTION!",
+    locationDate: "LOS ANGELES, CA - December 03",
+    shortDescription:
+      "Excitement doesn't begin to describe how I feel about this launch!! Biggest collaboration to date and I can't wait for you guys to see it because I'm sooo proud of it! Come take a look at my little story about this amazing partnership! AHHHH!!!",
+    description: `O M G !!!
+
+ 
+
+    Can’t even really type this of how excited I am of this launch with you guys!!! AHHHHH!! (insert screaming here!!!)
+    
+     
+    
+    A little back story. When I was growing up, maybe about when I was 4-7yrs old, my mom would always make me the cutest bows, headbands, and any little hair accessory that would make me stand out from the rest of the girls in school. We didn’t have a lot of money so she would always make me these accessories because my parents couldn’t really afford to buy me the latest shoes or backpacks. This sweet memory of my childhood with my mom really is so special and nostalgic to me, that’s why this particular collaboration with one of my favorite brands growing up, SCUNCI, is everything to me. Not only does it bring back that beautiful nostalgic feeling and memory but I’m able to combine my love for hair and style into really affordable accessories that you can wear! It really cant’t get any better than that!
+    
+    When Scunci approached me with the idea of doing a collection together, I didn’t hesitate to say YES! It was like a dream to be not only be able to do something so fun and exciting with a brand I’ve been a big fan of but also be able to relive those childhood memories and bring it to the masses! The icing on the cake? Being sold exclusively a Target….. you guys, TARGET! Ah!!!!
+    
+     
+    
+    You can now shop my 40 piece collection at any Target store and online in the hair accessory aisle. There’s literally something for everyone- from cute scrunchies (my fave!) to pretty headband bandanas that you can wear multiple ways to sparkly barrettes,to bobby pins, to clips,  to turban headbands… I mean, there’s so much stuff to choose from! Hair accessories are definitely back and my collection with Scunci is something I’m soooo proud to share with you guys! Everything is under $10! The pieces are perfect for everyday, morning to night, from the gym to a special fancy event at night!
+    
+    I hope you guys love the pieces, as much as I do, would mean the world to me if you went to Target and checked them out! Can’t wait to see how you guys style them… make sure when you post on instagram to use the hashtag #SincerelyScuci. Stay tuned as I’ll be sharing more photos of how I wear the pieces!`,
+    comments: [],
+    articlesForSale: [],
+  },
+  {
+    id: 21,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2018/04/SKII_INeverExpire3.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/05/SKII_INeverExpire4.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/05/SKII_INeverExpire5.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/05/SKII_INeverExpire1.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2018/05/SKII_INeverExpire7.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/05/SKII_INeverExpire2.jpg",
+    ],
+    category: 1,
+    title: "I NEVER EXPIRE | SK-II CAMPAIGN",
+    locationDate: "LOS ANGELES, CA - May 03",
+    shortDescription:
+      "Very passionate about this topic about society and ageism. I'm sharing my personal pressures and why I believe in SK-II's #INeverExpire initiative. Would love to hear your personal experiences!",
+    description: `I’m the youngest of four and growing up with older siblings was always fun, but it also came with the pressure to follow in their footsteps. I’ve always struggled with accomplishing the so to speak ‘societal norms’ by a certain age. Most of my siblings had the house, the family, the career path all set by the time they were 30. Naturally, I felt like I had to fulfill these milestones as well. Sometimes, I was teased about not being married and having kids by the time I hit the big 3-0, and it made me have my own hang-ups about life. It made me question myself and decisions; often I found myself asking questions like, “Am I good enough to accomplish these goals?” or “am I falling behind compared to my siblings and peers?” I felt like I was being boxed into this “you have to be this certain age” to consider myself “successful” or even “accomplished.” I feel that society puts an age-related social stigma on women about accomplishing certain things by a certain age. This is an unrealistic approach to life, and I want to challenge this belief system. There is no such thing as an expiration date or age for living out our lives and dreams.
+
+    For me, it’s always been crucial to set goals for myself. Setting these goals didn’t mean putting an age limit to when they needed to be achieved. Although, I did feel the pressure from family, friends and society, I knew I never wanted to follow anyone’s footsteps but my own. I wanted to do things on my own terms. My goals weren’t geared towards having kids before I reached 30, or taking up a common career path or even being a home owner before I ended my twenties. I wanted to live against the grain, and defeat these old-fashion notions because we deserve to be happy at every age. My goals were not to check any of these pressures off my checklist by 25, 30 or 35, but instead it was about following my heart and doing them when they felt like the time was right for me. Now, at 32, two years after society’s “aged” deadline, I’m not married yet (we are engaged though!), we don’t have kids, and we have yet to find our dream home. But, more than ever, I feel the most proud to be this age. Most importantly, I’m happy and I feel confident that everything comes in due time when it’s meant to be. 
+   
+    After choosing to create my own path in life, I’ve been supported and even praised by friends and family on following my heart. It feels damn good to do what I want, when I want!
+   
+    With all the age-related shame that society imposes on women, I’m very happy brands like SK-II have decided to challenge these expectations. They’ve launched a powerful, global campaign called #INeverExpire in hopes of inspiring women to take a stand and live life on their own terms, regardless of age. It’s a beautiful initiative that will resonate with many of us who have experienced age-related pressures. SK-II discusses all these issues in their moving film titled, ‘The Expiry Date‘ which not only leaves you feeling empowered, but also moved and inspired to break the rules.
+   
+    Let’s make a promise to ourselves to embrace where we are in our lives no matter how old we are. Remember, there’s no expiration date on your dreams, you just have to believe in yourself and go for it! The definition of happiness is not measured through your age but by timeless self-love. Live your own life, dance to the beat of your own drum because that’s living life to the fullest. Go on a journey where numbers and expiration dates don’t exist. Together, we stand tall and proud to praise what we have accomplished, not what we haven’t.
+   
+    Follow your own beautiful path because it’s the one no one has walked but you. Your life and path are your own, it’s up to you to create your destiny. I’m living mine with no age attached because #INeverExpire.
+   
+    I enjoyed watching actress Chloe Bennet’s response to the video, you can see it on Vanity Fair, here. I want to hear your thoughts and experiences on this issue, what age pressures have YOU faced from society? When did you decide to live your life on your terms? If so, what made you do it and why?
+   
+    
+   
+   Thank you SK-II for creating this compelling global awareness and sponsoring this post.`,
+    comments: [],
+    articlesForSale: [],
+  },
+  {
+    id: 22,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2018/04/25E6B8A2-280D-43B0-9FB1-7111E380B38D-scaled.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/04/0AB2F392-CC98-43BF-86A5-54D68220F6C4-scaled.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/04/F02E84AE-AA54-43DC-9238-5137D54242C6-scaled.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/04/5AEEE7B9-D8FE-4A69-B028-E02A3C35F0A7-scaled.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2018/04/54C478C0-017B-443C-B43F-A1F8FD1C4C64-scaled.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/04/4F6D451E-4426-4D47-A037-C497C425161F-scaled.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/04/F4304834-B1A3-46E0-8851-B45303B7E6C5-scaled.jpg",
+    ],
+    category: 1,
+    title: "MY SK-II #ONEBOTTLEAWAYFROM JOURNEY",
+    locationDate: "LOS ANGELES. CA - April 27",
+    shortDescription:
+      "So excited I finished the #OneBottleAwayFrom journey with SK-II! My skin hasn't looked or felt this good in so long...read why I took on this journey!",
+    description: `With a constant workload of projects and non-stop traveling, my skin always takes the first hit. I try to take care of my skin as much as possible, but dedicating time to a consistent beauty regimen is not always easy with all the craziness. In hopes of a skin transformation after months of a stressful and dysfunctional routine, I started using SK-II Facial Treatment Essence.
+
+    From day to day, I don’t wear too much makeup, but with my work, I have to constantly load it up for photoshoots. I’ve always been a bit insecure about my skin, particularly about having acne, an oily T-zone (so annoying!), pores around my nose, and not having smooth texture. Discovering SK-II Facial Treatment Essence (which has been dubbed “miracle water”) has been really life-changing for me! Suddenly my skin looks fresh, glowy and youthful and I feel so much more confident to wear less makeup and let my skin breathe. The reason this product is so effective is PITERAÔ – a bio-ingredient rich in vitamins, minerals and other micro-nutrients designed to soften and smooth skin, even skin tone, enhance your natural radiance and minimize pores and wrinkles! How could I not wanna use this on my face? So good!
+    
+    Once I learned more about this “miracle water” (and all its benefits), I decided to embark on my #OneBottleAwayFrom journey – hoping to transform my skin to be radiant, smooth, firm and even, so I can feel confident going make-up free! I decided I was #OneBottleAwayFrom getting that flawless skin before my big trip to Mexico. My new regimen also helped me stay focused and committed to achieving beautiful healthy skin for an exciting and huge project (can’t wait to share more later!). I knew we would be shooting on the beach with minimal makeup and I wanted to make sure my skin was perfect. Luckily, after only a few weeks of using this essence, I started seeing a dramatic transformation in my skin, especially the texture – which made me so happy! My skin looked pretty flawless for the trip, which was the goal, but seeing the transformation has inspired me to keep this essence as a permanent part of my routine! I’ve seen a difference in all the areas I always felt insecure about: it minimized the pores around my nose, wrinkles around my eyes, evened out my skin tone and my skin definitely looks more radiant!
+    
+    The application also couldn’t have been easier – just apply a splash every morning and night before moisturizers or serums. I sprinkle several drops into my palm, rub my hands together and then tap onto my face, neck and chest.
+    
+    Allowing my skin to get proper treatment and rebuild itself was the best thing I’ve done for myself in a while and I couldn’t be more excited to show off my skin transformation! Feeling happy and confident when I look at myself in the mirror with no make-up on is the most liberating and powerful feeling I’ve felt in a while. The #OneBottleAwayFrom journey not only transformed my skin but it transformed my mind and confidence.
+    
+    Thank you SK-II for sponsoring this post.`,
+    comments: [],
+    articlesForSale: [],
+  },
+  {
+    id: 23,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2018/02/aerin14.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/02/aerin11.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/02/aerin12.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/02/aerin10.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2018/02/aerin4.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/02/aerin24.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/02/aerin3-1.jpg",
+    ],
+    category: 1,
+    title: "TULUM GETAWAY WITH AERIN.",
+    locationDate: "TULUM, MEXICO - February 27",
+    shortDescription:
+      "A quick getaway to my favorite place, Tulum + Quintana Roo, Mexico to experience a dreamy launch of Aerin's new perfume, the Hibiscus Palm. Come take a look!",
+    description: `Last month I was able to go back to my favorite place and help celebrate the launch of AERIN’s new fragrance, Hibiscus Palm, that will get you daydreaming of an exotic vacation and packing your bags to a fun getaway filled with sunshine, sand and palm trees! Totally my kind of getaway! The team put together a beautiful itinerary that included early morning yoga sessions, water activities (kayaking & paddle boarding), massages, a trip to the cenotes and the most gorgeous dinners you’d seen- you almost felt as if you were attending a wedding on the beach with how gorgeous and detail oriented the dinners were.
+
+    We got to spend time with Aerin herself, who is an absolute joy to be around and is so sweet and humble! She walked us through her inspiration for this fragrance and told us it was a mix of all her favorite things- summer, sunshine, beach, Mexico and flowers. Sounds like all of my favorite things too! There wasn’t a better way to experience this gorgeous fragrance than getting away to Tulum to help experience the coconut, white florals, vanilla and the hibiscus palm thats blended in the fragrance- it really helps take you to a tropical, exotic island/beach that you don’t ever want to leave.
+    
+    Take a look at my 2 day diary with Aerin and the new Hibiscus Palm.`,
+    comments: [],
+    articlesForSale: [],
+  },
 ];
