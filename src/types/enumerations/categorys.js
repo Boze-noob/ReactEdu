@@ -5,6 +5,7 @@ export const Categorys = {
   1: "Beauty",
   2: "Lifestyle",
   3: "Collages",
+  4: "Home",
 };
 
 export const getPathFromCategory = (category) => {

@@ -1721,4 +1721,516 @@ export const articleData = [
     comments: [],
     articlesForSale: [],
   },
+  {
+    id: 23,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/Sincerely-Jules-Palm-Springs-Look.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/Sincerely-Jules-Coffee-Fruit-Plate.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/Sincerely-Jules-Sands-Hotel.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/Sincerely-Jules-Loewe-Bag.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/Sincerely-Jules-Hunza-G-Bathing-Suit-Lack-Of-Color-Hat-YSL-Button-Up.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/Sincerely-Jules-Hunza-G-Bathing-Suit-Lack-Of-Color-Hat-YSL-Sunnies-Loewe-Bag.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/Sincerely-Jules-JW-MARRIOTT-HOTEL.jpg",
+    ],
+    category: 2,
+    title: "THINGS TO DO IN PALM SPRINGS!",
+    locationDate: "February 20",
+    shortDescription:
+      "One of my favorite places to go for a quick getaway is Palm Springs! Sharing where to stay and what to do in this fun little town!",
+    description: `One of my favorite places to visit in California is Palm springs! It’s only a 3 hour drive from LA, the weather is perfect right now and there are so many fun and relaxing things to do. Kevin and I celebrated our 6th anniversary there a couple of weeks ago and it was nothing short of perfect! 
+
+    Below, I’m going to share some of my favorite hotels to stay at, restaurants and some fun things to do while you’re there! So keep scrolling! 
+    SANDS HOTEL & SPA – This trip we decided to stay at the Sands Hotel and we are so glad we did because it was a dream! Everywhere you looked was so cute and photogenic! This hotel had major Miami vibes with all the lush greenery and pink interior. The pool area was gorgeous and offered cute pink daybeds to relax in! The room we stayed in was so nice and spacious, it came with a little patio & fountain – so cute! I swear this place was instagram heaven! Also, the hospitality was so awesome! FYI, this hotel is located in Indiana Wells, about 25 min out of Palm Springs.
+
+THE COLONY PALMS HOTEL – This hotel is so cute! It’s located centrally in the heart of Palm Springs, which I love because you can literally walk to all the cute shops and restaurants! It’s also newly renovated, so everything feels so clean and new. The restaurant/bar area is elevated and chic. The crowd feels a little Hollywood but the drinks are fantastic! I’ve ordered classic margaritas several times and they are always on point!
+
+KORAKIA PENSIONE HOTEL – I’ve stayed at this hotel several times and it’s so charming and peaceful! You’ll forget whether you’re in California or the Mediterranean. This place offers a pool, many outdoor spaces that include fire pits, fountains and stone paths – so pretty and unexpected. The food is also yummy here! I highly recommend you book a room here if you like boutique style hotels. My only unfortunate complaint is that the hot water runs out quick! 
+
+WORKSHOP KITCHEN + BAR – A must every time I’m in Palm Springs! My favorite items on the menu are the fries, truffle burger and wood fire pizza! So delicious! 
+
+THE PINK CABANA – This restaurant is so beautiful! From the tile floors, to the decor and the branding – so stunning and instagramable! Ate here for brunch and ordered the green chile chicken tacos, the milk bread french toast and had a few juices. All so yummy! 
+
+BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and the Birba Pizza were to die for. For dessert I had the butterscotch pudding! Buenicimo! `,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/anine/anine305271577e/anine305271577e_q1_2-0.__UX540__._QL90_.jpg",
+        title: "Anine Bing",
+        url: "https://www.shopbop.com/mika-shirt-anine-bing/vp/v=1/1535187577.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6201242515&sharedid=42352&subid1=.2nGiS3mv0Y-dpqzksgYdlk59C3nyJCPNw",
+      },
+      {
+        id: "1",
+        img: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ffd%2F15%2Ffd15e48167d456ca9762a9b4c54258eec63fb753.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirts_longsleeved%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+        title: "H&M",
+        url: "https://click.linksynergy.com/deeplink?id=*2nGiS3mv0Y&mid=43148&murl=https%3A%2F%2Fwww2.hm.com%2Fen_us%2Fproductpage.0948908002.html&u1=6201243536",
+      },
+      {
+        id: "2",
+        img: "https://images.urbndata.com/is/image/FreePeople/61703971_016_h/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+        title: "FREE PEOPLE",
+        url: "https://www.freepeople.com/shop/lyla-linen-trousers/?cm_mmc=rakuten-_-affiliates-_-ShopStyle%20Collective-_-1&color=016&ranEAID=%2a2nGiS3mv0Y&ranMID=43177&ranSiteID=.2nGiS3mv0Y-fNVlxpNpBjK5EvJDI8EHaw&size=US%208&utm_campaign=ShopStyle%20Collective&utm_content=1&utm_kxconfid=v3sdm8r4u&utm_medium=affiliates&utm_source=rakuten&utm_term=717323&type=REGULAR&quantity=1",
+      },
+      {
+        id: "3",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/tkees/tkees2015255879/tkees2015255879_q4_2-0.__UX540__._QL90_.jpg",
+        title: "TKEES",
+        url: "https://www.shopbop.com/foundations-matte-flip-flop-tkees/vp/v=1/1585078792.htm?os=false&fm=other-shopbysize-viewall&folderID=13438&colorId=55879&ref_=SB_PLP_PDP_NWL_W_SHOES_13438_NB_80&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6201245443&sharedid=42352&subid1=.2nGiS3mv0Y-4Ga2cJojh6zSw8sp82OZ1A",
+      },
+      {
+        id: "4",
+        img: "https://cdn.modaoperandi.com/img/images/products/847540/472956/large_ben-amun-gold-gold-plated-button-clip-on-earrings.jpg?_v=1638974057",
+        title: "BEN AMUN",
+        url: "https://api.shopstyle.com/action/apiVisitRetailer?id=852137338&pid=uid8400-43273280-96&aid=44217687&utm_content=productwidget%3A60a300e434abbd2474ae1e3a&utm_medium=referral",
+      },
+      {
+        id: "5",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/gorja/gorja4246915235/gorja4246915235_q1_2-1.__UX540__._QL90_.jpg",
+        title: "GORJANA",
+        url: "https://www.shopbop.com/alice-pearl-studs-gorjana/vp/v=1/1544951973.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6201247241&sharedid=42352&subid1=.2nGiS3mv0Y-CGMW6YOqZlRvzcj5rb1CXQ",
+      },
+    ],
+  },
+  {
+    id: 24,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/IMG_0290.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/IMG_0287.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/IMG_0289.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/IMG_0292.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/Sincerely-Jules-Laguna-Beach-ocean-view.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/IMG_0290.jpg",
+    ],
+    category: 2,
+    title: "6 TIPS TO HELP YOU DE-STRESS!",
+    locationDate: "LOS ANGELES, CA - May 17",
+    shortDescription:
+      "Self-care is so essential to your well being. Check out 6 simple ways I like to de-stress.",
+    description: `We all experience stress at some point in our lives. Whether it’s minor challenges to major crises, stress unfortunately is just a normal part of life. Although stress is a natural reaction, it’s still a negative force that takes a serious toll on both your professional life and mental health.
+
+    In this day and age where everything is moving fast and we are always wanting to be in the know and keep up with things, there’s a pressure to always be on but there is nothing wrong with turning everything off. It’s important for us to give ourselves time to relax and recharge. So if you’re feeling stressed and anxious, know that you’re not alone and that there are techniques out there that can help you feel better. 
+    
+    Carving out time to focus on your wellbeing is so important! Below I’m sharing tips on what I like to do to relax and de-stress when I’m feeling overwhelmed and ps- I’m stressed pretty often so hope these tips help! 
+    
+    GET MOVING
+    
+    I know, I know it’s the last thing you want to do when you’ve had a long day. But even taking 10 minutes out of your day to exercise can make a huge difference. YouTube has a ton of 5-10 min fitness videos you can workout to, some super easy and efficient. I also like to go on a quick run or even a walk, you don’t have to do a strenuous workout to get those endorphins flowing. 
+    
+    WRITE IN A JOURNAL
+    
+    This is a great way to reflect and plan. Write down all of those negative thoughts and also what brings you joy. Ask yourself what you could be doing more of that will help smooth you. There is so much power in writing, let that little journal be a place where you can leave your stresses and worries behind even just for a moment. I like to write first thing in the morning, especially what I’m grateful for. I have noticed that when I do that, I feel more at ease starting my day! 
+    
+    MEDITATE 
+    
+    Meditation is a great way to calm the mind. If you’re new to meditation (as I am) I recommend you download a meditation app. I use the app Breeth – this app is great for beginners because it offers guided meditations. You have the option to choose how long you want to meditate, and a soothing voice will guide you through what you’re supposed to do. 
+    
+    TAKE AN AROMATHERAPY BATH
+    
+    Nothing feels more relaxing than soaking in a warm bath to wind down after a long and exhausting day. I like to add a few drops of lavender essential oil as it offers a soothing effect and promotes a better night’s sleep. 
+    
+    GET ARTSY
+    
+    Do something creative that you enjoy. This is probably my favorite thing to do out of this list just because I love being creative! For me, I find painting to be so therapeutic, but any form of art can take your mind off of whatever is stressing you. 
+    
+    READ A BOOK 
+    
+    I like to set aside time in my day to read. Immersing yourself in a story is a good way to distract yourself from your daily stressors but if you’re not into books, try a cool magazine and enjoy cool imagery to help you get your mind off what you’re stressing about! 
+    
+    I hope these tips are helpful – if one method doesn’t work try another. Learning to relax takes time, so be patient with yourself and in no time you will figure out what works best for you. 😉 `,
+    comments: [],
+    articlesForSale: [],
+  },
+  {
+    id: 25,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/06/FullSizeRender.jpeg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/06/IMG_9614.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/06/IMG_9613.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/06/IMG_9612.jpg",
+    ],
+    category: 2,
+    title: "BLACK LIVES MATTER",
+    locationDate: "LOS ANGELES - June 11",
+    shortDescription:
+      "I want to use this space to boost the creative voices of Black Artists.",
+    description: `My heart has been heavy recently, but the unity, love, and solidarity we all have seen on a global level, gives me hope. Hope for change, hope for equality and hope for a better tomorrow. It’s a beautiful reminder that collectively, we can reshape the future.
+
+    I’ve been using my time to focus on donating to organization’s that are working to create real change. I am doing the work to sign petitions, vote, and educate myself on Black History, oppression, violence, and systemic racism. As a Mexican woman of color, I am anti-racist. I stand with love, compassion, and awareness with and for the Black community. My heart is strong and prepared to resist and fight for racial justice. I will do everything in my power to support and push to create radical change.
+    
+    It’s imperative for myself and the SJ team to continue to show our solidarity and help amplify Black voices and people of color in our community. We wanted to create a list and highlight some beautiful Black influencers, artists, beauty and fashion brands I’ve followed over the years and some recent accounts we’ve come across! Pictured and numbered below are just a few amazing and inspiring Black creatives that have touched my life and inspired me.
+    
+    Please add to this space by sharing other Black artists of all mediums.
+    
+    Here’s to Love, Light, and powerful change NOW!`,
+    comments: [],
+    articlesForSale: [],
+  },
+  {
+    id: 25,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/05/IMG_3264.png",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/05/IMG_3266.png",
+    ],
+    category: 2,
+    title: "MOTHERS DAY GIFT GUIDE",
+    locationDate: "May 07",
+    shortDescription:
+      "Mother’s Day is less than a week away! Get the perfect gift for your mom, sister or friend to let them know how special they are.",
+    description: `Whether it’s your mother, mother-in-law, grandmother or your sister and friends, you likely have a lot of reasons to celebrate a mom or few in your life. This mother’s day I’m sure a lot of us are not able to hang out with the leading ladies in our lives, so why not surprise her with a little something to make her feel special.  I’ve rounded up some cute gift idea’s that are sure to put a smile on her face.
+
+    Shop the collage below for some yummy beauty products, fun home goods and cute accessories.`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/toryb/toryb4804061202/toryb4804061202_q1_2-0.__UX540__._QL90_.jpg",
+        title: "TORY BURCH",
+        url: "https://www.shopbop.com/bubble-miller-pearl-drop-earring/vp/v=1/1568261856.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6201262415&sharedid=42352&subid1=.2nGiS3mv0Y-kSv.yDT7daG5FPPWwQmZJg",
+      },
+      {
+        id: "1",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/adler/adler2035111784/adler2035111784_q1_2-0.__UX540__._QL90_.jpg",
+        title: "JONATHAN ADLER",
+        url: "https://www.shopbop.com/pop-champagne-candle-jonathan-adler/vp/v=1/1564855854.htm?folderID=13539&fm=other-shopbysize-viewall&os=false&colorId=11784&ref=SB_PLP_NB_59&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6201264670&sharedid=42352&subid1=.2nGiS3mv0Y-f3s_0Rb9UhhtKQZnWSTcvQ",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/zeunr/zeunr4053014d80/zeunr4053014d80_q1_2-0.__UX540__._QL90_.jpg",
+        title: "JENNIFER",
+        url: "https://www.shopbop.com/marta-necklace-jennifer-zeuner-jewelry/vp/v=1/1591675683.htm?os=false&fm=other-shopbysize-viewall&folderID=13540&colorId=14D80&ref_=SB_PLP_PDP_NWL_W_ACCES_JEWEL_13540_NB_95&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6201265506&sharedid=42352&subid1=.2nGiS3mv0Y-F2BL3Beil3BNNs40_0UXjw",
+      },
+      {
+        id: "3",
+        img: "https://n.nordstrommedia.com/id/sr3/adec269c-5063-4a83-ab3c-ce06908a516e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "TOM FORD",
+        url: "https://www.nordstrom.com/s/tom-ford-private-blend-soleil-blanc-eau-de-parfum/4295355?siteid=.2nGiS3mv0Y-IxXsQqOH6C_mGsnb21e1vg&color=NO+COLOR&utm_source=rakuten&utm_medium=affiliate&utm_campaign=*2nGiS3mv0Y&utm_content=1&utm_term=1080428&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=*2nGiS3mv0Y",
+      },
+      {
+        id: "4",
+        img: "https://n.nordstrommedia.com/id/sr3/b2492a05-0be4-49e5-9c71-3c0d2901d57f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "CHANEL",
+        url: "https://www.nordstrom.com/s/chanel-coco-mademoiselle-travel-spray-set/4897646?siteid=.2nGiS3mv0Y-UP86RzTwR.81frjVjW1r6g&origin=category-personalizedsort&breadcrumb=Home%2FKids%2FMother%27s%20Day%20Gifts&color=none&utm_source=rakuten&utm_medium=affiliate&utm_campaign=*2nGiS3mv0Y&utm_content=1&utm_term=1080428&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=*2nGiS3mv0Y",
+      },
+      {
+        id: "5",
+        img: "https://n.nordstrommedia.com/id/sr3/4a401d3a-61d6-4672-afc2-a49abd1e82b3.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "DEBORAH",
+        url: "https://www.nordstrom.com/s/undressed-gel-lab-pro-nail-color-set-usd-72-value/5394301?siteid=.2nGiS3mv0Y-IrEKDp6OSZtwQS19xR2h7w&color=NO+COLOR&utm_source=rakuten&utm_medium=affiliate&utm_campaign=*2nGiS3mv0Y&utm_content=1&utm_term=1080428&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=*2nGiS3mv0Y",
+      },
+    ],
+  },
+  {
+    id: 26,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong8.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong47.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong79.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong76.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong75.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/bilabong61.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong11.jpg",
+    ],
+    category: 2,
+    title: "HAWAII DIARY WITH BILLABONG",
+    locationDate: "OAHU, HAWAII - January 10",
+    shortDescription:
+      "My Hawaii trip wouldn't be complete without beachy looks to take me through my week long stay! Take a look at my Hawaii OOTD Diary!",
+    description: `Last month, I had the absolute pleasure of traveling with one my favorites- Billabong! We flew out to the beautiful, lush destination to attend one of the biggest event in surfing, Pipe  Masters! It’s one of those events that’s so cool to experience and watch professional surfers do their thing while they ride some of the biggest waves- they can go as high as 15ft!!! So crazy!!
+
+    We hung out in Waikiki and celebrated the launch of Billabong’s New Wave collection which is pretty rad, it was a total 80’s revival look!! YES please!! The bubble gum color palette, 80’s vintage graphics and cool pieces made the collection so coveted! I loved wearing the corduroy babyblue shorts with the yellow bikini top and fanny pack.
+    
+    I had never been to Waikiki before but spending a couple days there before driving down to Oahu had to be my favorite. With so much to see and do and shop, it felt like there was always something new!`,
+    comments: [],
+    articlesForSale: [],
+  },
+  {
+    id: 27,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong8.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong47.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong79.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong76.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong75.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/bilabong61.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong11.jpg",
+    ],
+    category: 2,
+    title: "BEST WARM COATS!",
+    locationDate: "December 22",
+    shortDescription:
+      "It's cold out, so what better way than to warm up than by splurging (or getting lucky with a sale!) on a amazing coat? I've rounded up my top favorites from faux fur leopard, to your regular classic camel coat!",
+    description: `Last month, I had the absolute pleasure of traveling with one my favorites- Billabong! We flew out to the beautiful, lush destination to attend one of the biggest event in surfing, Pipe  Masters! It’s one of those events that’s so cool to experience and watch professional surfers do their thing while they ride some of the biggest waves- they can go as high as 15ft!!! So crazy!!
+
+    We hung out in Waikiki and celebrated the launch of Billabong’s New Wave collection which is pretty rad, it was a total 80’s revival look!! YES please!! The bubble gum color palette, 80’s vintage graphics and cool pieces made the collection so coveted! I loved wearing the corduroy babyblue shorts with the yellow bikini top and fanny pack.
+    
+    I had never been to Waikiki before but spending a couple days there before driving down to Oahu had to be my favorite. With so much to see and do and shop, it felt like there was always something new!`,
+    comments: [],
+    articlesForSale: [],
+  },
+  {
+    id: 28,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2017/08/CHLA5.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/08/CHLA8.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/08/CHLA.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2017/08/CHLA6.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/08/CHLA3.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/08/CHLA4-1.jpg",
+    ],
+    category: 2,
+    title: "CHLA & N:PHILANTHROPY",
+    locationDate: "LOS ANGELES, CA - August 28",
+    shortDescription:
+      "A beautiful day visit to the Children's Hospital with n:PHILANTHROPY. It was emotional but made me feel proud to be able to contribute to kids in need. Take a look at my experience!",
+    description: `Last week, I had the absolute honor and pleasure of visiting the Children’s Hospital Los Angeles (CHLA), which is a nonprofit institution that provides pediatric health care to children, with one of my favorite brands at the moment, n:PHILANTHROPY. What I love about n:PHILANTHROPY is the fact that they care to give back to children and animals in need. Their brand fully supports pediatric cancer research, the cancer nursing program and Beads of Courage program by giving 10% of their net proceeds. This unique part of their brand is truly heartwarming and makes me so proud to be apart of this with them.
+
+    I’ve been fortunate enough to be able to work with many great brands throughout my blogging years but n:PHILANTHROPY really stands out for me and makes a difference in fashion. I really appreciate that n:PHILANTHROPY is supporting and helping to contribute to these programs while trying to help bring light and hope to families during some of the most trying times they will face with their children. Being a part of this, helped me personally to really spend more time giving back to kids, people, animals in need and special cancer research programs. It’s a cause that I want to be more involved in and help make a difference in these kids’ lives.
+    
+    I was able to visit the Children’s Hospital for the day last week with the n:PHILANTHROPY team and visit a couple of the kids that have been diagnosed with cancer and have gone through chemo. I got to spend time with them and helped donate toys to them to play with. I also learned more about the Beads of Courage program which I think is a beautiful program to have the kids and families be apart of. The program is designed to honor and recognize the challenging journey kids take while receiving care for cancer or blood conditions. Each bead represents a treatment the kid has gone through and its a way to help turn a challenging fight into a way to honor and be proud of the milestone they’ve overcome. When I heard about each families story and how the Beads of Courage program have really made a positive impact in their lives during their whole journey, I got really emotional because you can see the pain each family and kids have gone through and these beads have been a reminder to them of hope and courage.
+    
+    I’m happy to be stepping away a little from fashion and into something more meaningful and bigger. I have nine nieces and nephews and they mean the world to me, so being a part of this and giving back to kids in need hits home for me.
+    
+    So, I’m happy I can contribute but also have you guys be a part of it too! n:PHILANTHROPY will be donating 20% of net proceeds from the Sincerely Jules favorite n:PHILANTHROPY items section on their website. I selected several of my favorite items and 20% of the proceeds for items sold from my favorite collection will go to CHLA and the cancer research program. This makes me so proud and excited!
+    
+     
+    
+    THANK YOU TO CHLA and n:PHILANTHROPY for allowing me to be a part of this!`,
+    comments: [],
+    articlesForSale: [],
+  },
+  {
+    id: 29,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2017/08/hamptons.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/08/hamptons12.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/08/hamptons2.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/08/hamptons4.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2017/08/hamptons16.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/08/hamptons6.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/08/hamptons10.jpg",
+    ],
+    category: 2,
+    title: "WHAT TO WEAR TO THE BEACH",
+    locationDate: "HAMPTONS, NEW YORK. August 04",
+    shortDescription:
+      "What to wear to the beach to have a little R&R! Sara and I are celebrating summer with beach chic looks!",
+    description: `While were were in the Hamptons, Sara and I decided to spend the day at the beach and just do a little R&R. It was a bit crowded but the weather was perfect enough to not even pay any attention.
+
+    If you’re like me, I always try to wear something to the beach that serves two purposes: laying out & afterwards grabbing lunch. You want to be able catch some sun but at the same wrap yourself up in something cute so that you can up and go rather quickly to grab a bite afterwards.
+    
+    Here are a few tips on showing you how to be beach chic ready:
+    
+    Throw on a denim jacket instead of a coverup
+    wear a bandeau top so that you’re able to throw on a pair of shorts or skirt
+    always, but always throw on a straw hat
+    dainty gold jewelry looks great with your bathing suit but also when you throw on the rest of your outfit after the beach
+    lastly, barely there makeup can take you from beach to lunch easily!`,
+    comments: [],
+    articlesForSale: [],
+  },
+  {
+    id: 30,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2017/02/revolve8-1.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/02/revolve7-1.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/02/revolve4-1.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/02/revolve11-1.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2017/02/revolve5-1.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/02/revolve6-1.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/02/revolve14-1.jpg",
+    ],
+    category: 2,
+    title: "MAUI DIARY.",
+    locationDate: "OAHU, HAWAUU - February 18",
+    shortDescription: "A week in paradise with Revolve!",
+    description: `Kevin and I took a week to jet off to Maui and explore tropical vibes with Revolve. It had been a while since we traveled anywhere, so I was excited to show Kevin Maui, lay out, eat yummy seafood and literally do nothing but enjoy each other.
+
+    We stayed in Wailea at the beautiful Four Seasons Maui resort and as we settled in, we were greeted by beautiful leis to welcome us! Since we got in rather late the first day, we kept it super mellow and had a light dinner and drinks! We started our first day doing a 4 hour hike where we discovered 5 beautiful waterfalls! It was followed by lunch on the beach and a chill evening to relax. We had a free day the next day so we woke up extra early to explore and drive around each beach. Had to go eat at Paia Fish Market in Lahaina because we heard from locals it was the place to eat…it was one of our favorite places for sure! We did some shopping, had dinner at Spago at our hotel FS Maui and whoa!-probably the best cocktails i’ve had were at Spagos (make sure to order the Cucumber Revenge!) We spent the whole week being together, exploring, driving off to little side roads, eating, we did so much eating.. another place I would have to recommend in Wailea is MonkeyPod-sooo good! Make sure to have their pies!
+    
+    We did an amazing helicopter ride, whale watching, surfing, and got to hang and talk to locals! It was one hell of a week where we felt relaxed and had so much fun! Below is a little diary of what it looked like and what I wore! Can’t wait for my next adventure very soon, make sure to follow along my social media! @sincerelyjules (instagram)`,
+    comments: [],
+    articlesForSale: [],
+  },
+  {
+    id: 31,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2019/10/7F37153D-0BFD-4C3A-952A-5A58E51E3ADC-scaled.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2019/10/AD791711-B931-4497-8688-87BF1D7AE762-scaled.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2019/10/02433E6B-7963-4A41-A978-60E562D6508E-scaled.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2019/10/9C056FE5-5841-4840-8695-A9BBC7DB94E6-scaled.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2019/10/E60EFECF-4E54-4E1C-9BB4-9BD533508A05-scaled.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2019/10/F2AA2DA7-1A46-4E6D-8237-2F2D2F02A653-scaled.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2019/10/9605272C-457E-4257-A5C8-06A97B3DA22C-scaled.jpg",
+    ],
+    category: 2,
+    title: "VEUVE CLICQUOT POLO CLASSIC 2019 – WHAT TO WEAR!",
+    locationDate: "May 07",
+    shortDescription:
+      "After a whirlwind in Paris for fashion week, I couldn’t be happier to be back in LA and just in time for the 10th Annual Veuve Clicquot’s Polo Classic. ",
+    description: `l’ve always loved the old fashioned vibe of this event. The Polo classic is known for being a really fun occasion to dress for! There is a classic and timeless feel to the attire and the sport as well. It’s all about Frilly dresses, elegant hats, bright patterns and bold statements.
+
+    I wore my Viva Aviva puff sleeve mini dress that Im currently obsessing over. The drop waist combined with the billowy skirt and bow has a signature 80’s feel, which I’m all about! I wore my new Tom Ford white leather day bag with the T shaped metal closure for a retro monochrome contrast against the black dress. I was inspired by Old Hollywood, but I incorporated current statement pieces that have that throwback feel. I love to time travel with fashion, and this was the best event to create a fun and wearable look! Veuve’s taste was impeccable. This event and every event with Veuve is always to the nines! 
+    
+    Scroll below to shop my look and let me know what you think, it was one of my all time favorites to style!`,
+    comments: [],
+    articlesForSale: [],
+  },
+  {
+    id: 32,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0055.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0068-2.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0057.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0065-1.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0085.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0070-1.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0082.jpg",
+    ],
+    category: 4,
+    title: "STYLING TIPS ON A CUTE BACKYARD PICNIC!",
+    locationDate: "LOS ANGELES, CA - April 12",
+    shortDescription:
+      "Check out my easy tips on how to throw a Spring outdoor picnic. So effortlessly cute & chic!",
+    description: `A few weeks ago, I threw an intimate surprise birthday brunch for one of my best girlfriends. The weather has been so beautiful (think sunny, blue sky, over 85°degree weather!) here in LA, so I thought an outdoor Spring picnic in my backyard would be exceptionally fitting for the occasion. When it comes to putting together an event, I always make sure to have a checklist for all of the things I’ll need plus a  theme in mind so I could pull the best inspo. For this picnic, I went for a pretty Spring rustic vibe that could make you feel like you were in Italy somewhere! I wanted my girl to be surrounded by pretty blooms and pops of color for a dreamy setting and it was a big hit, everyone loved it! `,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://n.nordstrommedia.com/id/sr3/dfdca098-ae06-4fc9-8a63-a7e5b546158c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "THE WHITE COMPANY",
+        url: "https://www.nordstrom.com/s/the-white-company-milford-carafe/5378120?siteid=.2nGiS3mv0Y-aWwE_FdFcDiXbDy6LSziXg&color=CLEAR&utm_source=rakuten&utm_medium=affiliate&utm_campaign=*2nGiS3mv0Y&utm_content=1&utm_term=1080428&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=*2nGiS3mv0Y",
+      },
+      {
+        id: "1",
+        img: "https://target.scene7.com/is/image/Target/GUEST_acab3819-5ea6-4bc2-86af-c20cc10e40d3?wid=325&hei=325&qlt=80&fmt=pjpeg",
+        title: "GIBSON",
+        url: "https://www.target.com/p/mauna-12-piece-dinnerware-set-in-cobalt-blue/-/A-81800683?clkid=322412c3N8eab11ed940087c42c222068&lnm=81938&afid=ShopStyle%20Inc.&ref=tgt_adv_xasd0002",
+      },
+      {
+        id: "2",
+        img: "https://target.scene7.com/is/image/Target/GUEST_48a1de29-d09b-48bf-b95e-2ebea1384c33?wid=325&hei=325&qlt=80&fmt=pjpeg",
+        title: "THRESHOLD",
+        url: "https://www.target.com/p/151-3oz-chunky-seagrass-woven-serving-bowl-beige-threshold-8482/-/A-76167300?clkid=322412c3N8eab11ed940087c42c222068&lnm=81938&afid=ShopStyle%20Inc.&ref=tgt_adv_xasd0002",
+      },
+      {
+        id: "3",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/lcolo/lcolo3000111611/lcolo3000111611_q1_2-0.__UX540__._QL90_.jpg",
+        title: "LACK OF COLOR",
+        url: "https://www.shopbop.com/palma-wide-boater-hat-lack/vp/v=1/1525233487.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6201356654&sharedid=42352&subid1=.2nGiS3mv0Y-cjx0i_oTPVl.0PkBaS2ayA",
+      },
+      {
+        id: "4",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/ullaj/ullaj2146112609/ullaj2146112609_q1_2-0.__UX540__._QL90_.jpg",
+        title: "ULLA JOHNSON",
+        url: "https://www.shopbop.com/selena-coverup-ulla-johnson/vp/v=1/1528377660.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6201357396&sharedid=42352&subid1=.2nGiS3mv0Y-k4K2ahaH0ufLMOQ.lfXQbw",
+      },
+      {
+        id: "5",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/mblac/mblac3005311739/mblac3005311739_q1_2-0.__UX540__._QL90_.jpg",
+        title: "MARIA BLACK",
+        url: "https://www.shopbop.com/senortia-hoops-maria-black/vp/v=1/1549656998.htm?os=false&fm=other-shopbysize-viewall&folderID=13540&colorId=11739&ref_=SB_PLP_PDP_NWL_W_ACCES_JEWEL_13540_NB_96&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6201358541&sharedid=42352&subid1=.2nGiS3mv0Y-.o3Y0ZX_uoHz9bbZiOoypw",
+      },
+    ],
+  },
+  {
+    id: 33,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/03/IMG_1211.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/03/IMG_1209.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/03/IMG_1215.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/03/IMG_1213.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/03/IMG_1214.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/03/IMG_1218.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/03/IMG_1215.jpg",
+    ],
+    category: 4,
+    title: "STAYING HOME & DECORATING",
+    locationDate: "March 25",
+    shortDescription:
+      "I know this time has been awkwardly challenging for everyone. I think we can all relate to the wide range of feelings happening amidst the global health crisis. I wanted to try to lighten the mood with some domestic style.",
+    description: `Since I’ve been able to actually hang around the house, I’ve been really appreciating our space. Tending to plants and rearranging our porch has brought me a sense of peace and has really calmed my mood. Keeping busy with domestic improvement is a great way to find your center when feeling off. Some projects I’ve been putting off forever finally got done! It feels so good to accomplish in these uncertain times.
+
+    I have been getting so much satisfaction from home design. There is something so soothing about creating a mood with lighting and texture. The style I’m experimenting with for our home is bohemian modern with warm neutral tones and accents. I love incorporating some eclectic pieces that I’ve collected while traveling over the years. It’s a time capsule of offerings from my life. This is what creates warmth for me and the feeling of home.
+    
+    I love sitting outside and lounging on our porch. I’ve surrounded our little dream area with plants and cactus’s for aesthetic. Having them around me is always comforting. I like lights or lanterns for adding a soft romantic feel to a patio, and then adding pillows or throw rugs and textiles as accents. I’ve rounded up some great outdoor textiles, furniture, planters, lighting and decor that are not only super cute and versatile, but also easy on the pocket. 😉 I would love some outdoor recommendations from you all! What are your favorite indoor or outdoor home decor sites?
+    
+    Lets all remember to stay home and stay safe!
+    
+    And please let’s try to pick each other up as much as we can right now by sharing and staying connected. <3 <3`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F7b%2Fb3%2F7bb3a23eb1549b224763fc78d4ddcb9587c443c9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bhome_decorations_pots%5D%2Ctype%5BDESCRIPTIVEDETAIL%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+        title: "H&M",
+        url: "https://www2.hm.com/en_us/productpage.0730088001.html?utm_source=rakuten&utm_medium=affiliate&utm_campaign=2575853_LTK&utm_content=10&utm_term=US_Network&ranMID=43148&ranEAID=QFGLnEolOWg&ranSiteID=QFGLnEolOWg-zA2VepHWdSNKpEVqKVG0kw",
+      },
+      {
+        id: "1",
+        img: "https://target.scene7.com/is/image/Target/GUEST_2c0ce27c-65a0-4baa-a727-9c6786d96711?wid=325&hei=325&qlt=80&fmt=pjpeg",
+        title: "SOUTHPORT",
+        url: "https://www.target.com/p/southport-2pk-patio-club-chair-linen-opalhouse-8482/-/A-53691789?clkid=322412c3N8eab11ed940087c42c222068&lnm=81938&afid=LTK&ref=tgt_adv_xasd0002",
+      },
+      {
+        id: "2",
+        img: "https://target.scene7.com/is/image/Target/GUEST_c70d8d41-1711-4e15-8010-8620ea2ddde3?wid=325&hei=325&qlt=80&fmt=pjpeg",
+        title: "BRITANNA",
+        url: "https://www.target.com/p/britanna-patio-hanging-egg-chair-natural-opalhouse-8482/-/A-76385837?clkid=322412c3N8eab11ed940087c42c222068&lnm=81938&afid=LTK&ref=tgt_adv_xasd0002",
+      },
+      {
+        id: "3",
+        img: "https://target.scene7.com/is/image/Target/GUEST_28b43250-83b4-466c-a315-0b84c4da29cc?wid=325&hei=325&qlt=80&fmt=pjpeg",
+        title: "MARTII",
+        url: "https://www.target.com/p/martii-3pc-patio-chat-set-natural-project-62-8482/-/A-76386841?clkid=322412c3N8eab11ed940087c42c222068&lnm=81938&afid=LTK&ref=tgt_adv_xasd0002",
+      },
+      {
+        id: "4",
+        img: "https://target.scene7.com/is/image/Target/GUEST_0746319d-6a4f-4b84-ab69-0999ba5e711e?wid=325&hei=325&qlt=80&fmt=pjpeg",
+        title: "SOUTHPORT",
+        url: "https://www.target.com/p/southport-patio-end-table-black-brown-opalhouse-8482/-/A-53691975?clkid=322412c3N8eab11ed940087c42c222068&lnm=81938&afid=LTK&ref=tgt_adv_xasd0002",
+      },
+      {
+        id: "5",
+        img: "https://target.scene7.com/is/image/Target/GUEST_bb1ac766-3931-4c20-ba48-2e70c626fd19?wid=325&hei=325&qlt=80&fmt=pjpeg",
+        title: "SOUTHPORT",
+        url: "https://www.target.com/p/southport-3pc-wicker-motion-patio-chat-set-linen-opalhouse-8482/-/A-53788890?clkid=322412c3N8eab11ed940087c42c222068&lnm=81938&afid=LTK&ref=tgt_adv_xasd0002",
+      },
+    ],
+  },
 ];
