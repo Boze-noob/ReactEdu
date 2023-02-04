@@ -1,6 +1,86 @@
 export const articleData = [
   {
-    id: 6,
+    id: 0,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2023/01/IMG_1761.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2023/01/SINCERELY-JULES-BANDIER-BIRKENSTOCKS-PUFFER-JACKET-LOOK-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2023/01/SINCERELY-JULES-BANDIER-BOMBER-JACKET.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2023/01/SINCERELY-JULES-BANDIER-BIRKENSTOCKS-PUFFER-JACKET-1000x1500.jpg",
+    ],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2023/01/SINCERELY-JULES-BANDIER-BIRKENSTOCKS-PUFFER-JACKET-2-1000x1500.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2023/01/SINCERELY-JULES-BANDIER-BIRKENSTOCKS-PUFFER-JACKET-BOTTEGA-BAG.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2023/01/SINCERELY-JULES-BANDIER-BIRKENSTOCKS-PUFFER-JACKET-STREET-LOOK.jpg",
+    ],
+    category: 0,
+    title: "CUTE WORKOUT ‘FIT FOR GYM & BEYOND!",
+    locationDate: "LOS ANGELES, CA - January 26",
+    shortDescription: "",
+    description: `There are days when I find it impossible to feel motivated to workout, especially during cold winter days. However, there are two things I will do to push myself; one, remind myself how good I’ll feel both physically and mentally post workout and two, throw on a cute exercise ‘fit! 
+
+    If you are in need of an extra push too, and looking for a cute outfit idea to spark some much-need motivation, take this look here as inpo. The matching set I’m wearing is by my SJ for Bandier collection, called the Rowana (also available in different prints and shades!). It’s simply stunning and perfect for movement. The material is insanely breathable and luxe, I can guarantee you’ll want to hit that workout class asap! It pairs beautifully with sneakers or birkenstock slides. Finish this look with a puffer or coat to keep you warm! 
+    
+    Xx jules`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://m.media-amazon.com/images/I/41mCEadAcKL._AC_SR38,50_.jpg",
+        title: "BANDIER",
+        url: "https://www.amazon.com/Sincerely-Jules-Womens-Bryn-Strappy/dp/B08NYZP7FV?tag=sincerelyjules-ssc-774982-20&ascsubtag=6203861522",
+      },
+      {
+        id: "1",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/aloyg/aloyg3026638833/aloyg3026638833_1673382686390_2-0.__UX540__._QL90_.jpg",
+        title: "ALO YOGA",
+        url: "https://www.shopbop.com/airlift-intrigue-bra-alo-yoga/vp/v=1/1530046224.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203861759&sharedid=42352&subid1=.2nGiS3mv0Y-zTeu4WfZwUodQsHM_Fwsyg",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/aloyg/aloyg300991071b/aloyg300991071b_1648510782025_2-0.__UX540__._QL90_.jpg",
+        title: "ALO YOGA",
+        url: "https://www.shopbop.com/ribbed-sweetheart-short-sleeve-alo/vp/v=1/1583671419.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203861894&sharedid=42352&subid1=.2nGiS3mv0Y-vmk6cpESlX5wF31S4TEm5A",
+      },
+      {
+        id: "3",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/byoga/byoga309561e92d/byoga309561e92d_1668471070561_2-0.__UX540__._QL90_.jpg",
+        title: "BEYOND YOGA",
+        url: "https://www.shopbop.com/spacedye-slim-racerback-cropped-tank/vp/v=1/1554161433.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203862033&sharedid=42352&subid1=.2nGiS3mv0Y-YMBLaSAhnJ5YyuihdvhLvw",
+      },
+      {
+        id: "4",
+        img: "https://m.media-amazon.com/images/I/619VkMWWeNL._AC_UY550_.jpg",
+        title: "BANDIER",
+        url: "https://www.amazon.com/Bandier-Sincerely-Jules-Crossover-Legging/dp/B08XR173H1?tag=sincerelyjules-ssc-774982-20&ascsubtag=6203862191",
+      },
+      {
+        id: "5",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/aloyg/aloyg3026938833/aloyg3026938833_1673469577504_2-0.__UX540__._QL90_.jpg",
+        title: "ALO YOGA",
+        url: "https://www.shopbop.com/high-waist-airlift-legging-alo/vp/v=1/1562716581.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203862383&sharedid=42352&subid1=.2nGiS3mv0Y-fHF7Bh0pnWeEWBcZUqvFTQ",
+      },
+      {
+        id: "6",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/byoga/byoga309621e92d/byoga309621e92d_1668633410883_2-0.__UX540__._QL90_.jpg",
+        title: "BEYOND YOGA",
+        url: "https://www.shopbop.com/spacedye-performance-high-waisted-midi/vp/v=1/1531741365.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203862568&sharedid=42352&subid1=.2nGiS3mv0Y-fPuuid2jwGHxhSPX_qGT2Q",
+      },
+      {
+        id: "7",
+        img: "https://cdn.shopify.com/s/files/1/2185/2813/products/W4433R_01_b1_s1_a1_1_m89_750x.jpg?v=1674674924",
+        title: "ASPEN",
+        url: "https://www.aloyoga.com/products/w4433r-aspen-love-puffer-jacket-black?variant=40706095448244&disableCurrencyEstimate=&utm_source=pepperjam&utm_medium=affiliate&utm_campaign=Affil_PJ_PPC_187416&utm_content=8-11924&clickId=4273490232",
+      },
+      {
+        id: "8",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/tnfac/tnfac30242161f6/tnfac30242161f6_q1_2-0.__UX540__._QL90_.jpg",
+        title: "THE NORTH FACE",
+        url: "https://www.shopbop.com/1996-retro-nuptse-jacket-north/vp/v=1/1510854695.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203863109&sharedid=42352&subid1=.2nGiS3mv0Y-xhnxCkGLlYZaAO4HrEWR4g",
+      },
+    ],
+  },
+  {
+    id: 1,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/12/Sincerely-jules-plaid-shirt-buble-skirt-heels-green-sweater-look-1000x1500.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/12/Sincerely-jules-r14-top-aje-skirt-look.jpg",
@@ -82,7 +162,7 @@ export const articleData = [
     ],
   },
   {
-    id: 0,
+    id: 2,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/10/Sincerely-jules-sezane-look-bag-loafers.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/10/Sincerely-jules-cardi-1000x1500.jpg",
@@ -159,7 +239,7 @@ export const articleData = [
     ],
   },
   {
-    id: 1,
+    id: 3,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/12/Sincerely-jules-levis-celine-bag-turtleneck-loafers-look.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/12/Sincerely-jules-celine-levis-look-1000x1500.jpg",
@@ -238,7 +318,7 @@ export const articleData = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/11/IMG_0051.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/11/IMG_0049-1000x1500.jpg",
@@ -297,7 +377,7 @@ export const articleData = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/11/Sincerely-jules-vicotrias-secret-blazer-adidas-ensemble.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/11/Sincerely-jules-vicotrias-secret-blazer-adidas-street-style-1000x1500.jpg",
@@ -376,7 +456,7 @@ export const articleData = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/10/IMG_6249.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/10/IMG_6418.jpg",
@@ -457,7 +537,7 @@ export const articleData = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-travis-mathews-zip-up-denim-loewe-bag-sunglasses-look-1000x1500.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-travis-mathew-top-denim-loewe-bag-ensemble.jpg",
@@ -534,7 +614,7 @@ export const articleData = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-IRO-DRESS-BAG-look11-1000x1500.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-IRO-paris-dress-bag-sandals-coachella-fashion.jpg",
@@ -615,7 +695,7 @@ export const articleData = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/04/Sincerely-jules-iroparis-boots-vest-ensemble.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/04/Sincerely-jules-iroparis-look-6.jpg",
@@ -694,7 +774,7 @@ export const articleData = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/09/Dept.-03-Campaign-40-1000x1500.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/09/Dept.-03-Campaign-51.jpg",
@@ -730,7 +810,7 @@ export const articleData = [
     articlesForSale: [],
   },
   {
-    id: 10,
+    id: 11,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-hat-SWF-Dress-elleme-bag-fit.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-SWFdress-hat-look-1000x1500.jpg",
@@ -809,7 +889,7 @@ export const articleData = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/04/IMG_1719-1000x1320.jpg",
     ],
@@ -881,7 +961,7 @@ export const articleData = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-bandier-sweater-set-mustard-color-new-balance.jpeg",
       "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-bandier-sweater-set-mustard-color-new-balance-sneakers.jpeg",
@@ -959,7 +1039,7 @@ export const articleData = [
     ],
   },
   {
-    id: 13,
+    id: 14,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-tie-dye-ellie-mae-top-zara-skirt-a.emery-sandals-dior-bag-look.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-tie-dye-ellie-mae-top-sandals.jpg",
@@ -1038,7 +1118,7 @@ export const articleData = [
     ],
   },
   {
-    id: 14,
+    id: 15,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/02/BANDIER-SINCERELY-JULES-JOGGER-ZIP-UP-HOODIE-NEW-BALANCE-LOOK-47-1000x1500.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/02/BANDIER-SINCERELY-JULES-JOGGER-ZIP-UP-HOODIE-NEW-BALANCE--1000x1500.jpg",
@@ -1117,7 +1197,7 @@ export const articleData = [
     ],
   },
   {
-    id: 15,
+    id: 16,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-spring.jpg",
     ],
@@ -1191,7 +1271,7 @@ export const articleData = [
     ],
   },
   {
-    id: 16,
+    id: 17,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-flannel-button-up-proenza-boots-look.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-flannel-button-up-proenza-boots-look-1-1000x1500.jpg",
@@ -1272,7 +1352,7 @@ export const articleData = [
     ],
   },
   {
-    id: 17,
+    id: 18,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-sweatshirt-levis-short-new-balance-black-sunnies.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-chanel-1000x1500.jpg",
@@ -1354,7 +1434,7 @@ export const articleData = [
     ],
   },
   {
-    id: 18,
+    id: 19,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2021/06/Sincerely-Jules-Summer-Fridays-Dae-Glossier-Essentials.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2021/06/Sincerely-Jules-Hair-Wrap-Dior-Facemask.jpg",
@@ -1434,159 +1514,159 @@ export const articleData = [
     ],
   },
   {
-    id: 19,
-    galleryImages: [
-      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1014.jpg",
-      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1013.jpg",
-      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1015.jpg",
-    ],
-
-    images: [],
-    category: 1,
-    title: "BEAUTY ESSENTIALS",
-    locationDate: "February 20",
-    shortDescription:
-      "There are so many beauty brands out there these days thats its hard to keep up! Come check out some of my recent go to beauty and skin care products.",
-    description: `While I might be constantly traveling my skin can’t always afford to be so adventurous. I have a few beauty products I rely on that I know will keep my skin looking flawless. Like the Dior airflash spray foundation. Yes I know I’ve talked about this foundation before – but it’s really that good! I can not live with out it lately. The lightweight yet full coverage always leaves my skin looking and feeling so fresh and natural, as if I am not even wearing makeup. I also can not leave home with out my Anastasia Beverly Hills brow wiz. The pencil’s so easy to use on the go and I just love the little brush on the end that helps even out and fluff my brows.
-    One thing ill always be is a product junkie! My facialist doesn’t always agree with my habit, but I can’t help it! I love trying new products. Like my Laura Mercier moisturizing mask. Its just what my skin calls for after a long flight.
-    Lately I’ve been addicted to my Chanel hand cream! Not only is the bottle/packaging super cute but the smell is sooo dreamy! Another recent find is the Yves Saint Laurent Libre perfume. As you can see from the bottle in my pic….I’ve been practically bathing in it! I was living in D.S. & Durga the Debaser scent for a while there but thought I’d switch it up. The two perfumes smell so yummy that I have to travel with both as I never know what kind of mood I’ll be in or what the occasion calls for!
-    Weather you’re in need for some new makeup, perfume, or skincare recommendations I got you covered. Shop some of my favorite beauty and skincare brands below. I’m always on the look out for new products – so please don’t hesitate to comment your favorite beauty must haves.`,
-    comments: [],
-    articlesForSale: [
-      {
-        id: "0",
-        img: "https://n.nordstrommedia.com/id/sr3/2a4fde10-733f-41cb-8628-5a09387236cb.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "chanel",
-        url: "https://www.nordstrom.com/s/chanel-rouge-coco-ultra-hydrating-lip-colour/3960978?siteid=QFGLnEolOWg-5vWxRvLKvBZ2kJIZDjC68w&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "1",
-        img: "https://n.nordstrommedia.com/id/sr3/46c96a63-ba9a-4c24-a33b-e871e80daf73.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "NORDSTROM",
-        url: "https://www.nordstrom.com/s/benefiance-wrinkleresist24-pure-retinol-express-smoothing-eye-mask/3689481?siteid=QFGLnEolOWg-G5nIjLwdRt3qarwtME3.oA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "2",
-        img: "https://n.nordstrommedia.com/id/sr3/4c68e75e-76db-…g?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "VITAE",
-        url: "https://www.nordstrom.com/s/tata-harper-skincare-elixir-vitae-serum/5394093?siteid=QFGLnEolOWg-Dw.Ksg.bcq6viV0RJtoqGg&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "3",
-        img: "https://n.nordstrommedia.com/id/sr3/8ccb2a6c-10a2-487a-941e-430205803bc4.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "YVES SAINT LAURENT",
-        url: "https://www.nordstrom.com/s/yves-saint-laurent-libre-eau-de-parfum-spray-fragrance/5349306?siteid=QFGLnEolOWg-VStLyEXT_z8Ie.Qh1qg0Ug&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "4",
-        img: "https://n.nordstrommedia.com/id/sr3/71b806e7-7007-…g?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "NARS",
-        url: "https://www.nordstrom.com/s/nars-blush/2860999?siteid=QFGLnEolOWg-qqqZ3WRWTNFBObV9U_O4HA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "5",
-        img: "https://n.nordstrommedia.com/id/sr3/271fe3ee-6dc7-494c-aa2a-1447664eb388.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "CHANEL",
-        url: "https://www.nordstrom.com/s/chanel-le-volume-de-chanel-waterproof-mascara/3971108?siteid=QFGLnEolOWg-dRCRPfDGUnWsrjy0LSAaBA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "6",
-        img: "https://n.nordstrommedia.com/id/sr3/85571b78-b904-4035-8bfc-d02eb1b11e2c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "SHISEIDO",
-        url: "https://www.nordstrom.com/s/the-makeup-eyelash-curler/3056751?siteid=QFGLnEolOWg-2pE4Cw5oMeaEbhXwO9LpFw&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "7",
-        img: "https://images.rewardstyle.com/img?v=2.13&ms=36034494",
-        title: "GLOSSIER",
-        url: "https://www.glossier.com/products/stretch-concealer?click_id=0vZ1dQwzSxyNTJvwN6yJ%3A0jZUkA1Hhyg1UnmWY0&irgwc=1&utm_source=impactradius&utm_medium=affiliate&utm_campaign=LTK&utm_content=431612&g_ref=fe96da46dc4a93&utm_publishergroup=subnetworks",
-      },
-      {
-        id: "8",
-        img: "https://n.nordstrommedia.com/id/sr3/e95b5de1-c59c-4e78-9ee3-6d583867252d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "DEBASER",
-        url: "https://www.nordstrom.com/s/d-s-durga-debaser-eau-de-parfum/5439261?siteid=QFGLnEolOWg-M6E_plstnLhyznW1gpEIWg&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-    ],
-  },
-  {
-    id: 19,
-    galleryImages: [
-      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1014.jpg",
-      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1013.jpg",
-      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1015.jpg",
-    ],
-
-    images: [],
-    category: 1,
-    title: "BEAUTY ESSENTIALS",
-    locationDate: "February 20",
-    shortDescription:
-      "There are so many beauty brands out there these days thats its hard to keep up! Come check out some of my recent go to beauty and skin care products.",
-    description: `While I might be constantly traveling my skin can’t always afford to be so adventurous. I have a few beauty products I rely on that I know will keep my skin looking flawless. Like the Dior airflash spray foundation. Yes I know I’ve talked about this foundation before – but it’s really that good! I can not live with out it lately. The lightweight yet full coverage always leaves my skin looking and feeling so fresh and natural, as if I am not even wearing makeup. I also can not leave home with out my Anastasia Beverly Hills brow wiz. The pencil’s so easy to use on the go and I just love the little brush on the end that helps even out and fluff my brows.
-    One thing ill always be is a product junkie! My facialist doesn’t always agree with my habit, but I can’t help it! I love trying new products. Like my Laura Mercier moisturizing mask. Its just what my skin calls for after a long flight.
-    Lately I’ve been addicted to my Chanel hand cream! Not only is the bottle/packaging super cute but the smell is sooo dreamy! Another recent find is the Yves Saint Laurent Libre perfume. As you can see from the bottle in my pic….I’ve been practically bathing in it! I was living in D.S. & Durga the Debaser scent for a while there but thought I’d switch it up. The two perfumes smell so yummy that I have to travel with both as I never know what kind of mood I’ll be in or what the occasion calls for!
-    Weather you’re in need for some new makeup, perfume, or skincare recommendations I got you covered. Shop some of my favorite beauty and skincare brands below. I’m always on the look out for new products – so please don’t hesitate to comment your favorite beauty must haves.`,
-    comments: [],
-    articlesForSale: [
-      {
-        id: "0",
-        img: "https://n.nordstrommedia.com/id/sr3/2a4fde10-733f-41cb-8628-5a09387236cb.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "chanel",
-        url: "https://www.nordstrom.com/s/chanel-rouge-coco-ultra-hydrating-lip-colour/3960978?siteid=QFGLnEolOWg-5vWxRvLKvBZ2kJIZDjC68w&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "1",
-        img: "https://n.nordstrommedia.com/id/sr3/46c96a63-ba9a-4c24-a33b-e871e80daf73.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "NORDSTROM",
-        url: "https://www.nordstrom.com/s/benefiance-wrinkleresist24-pure-retinol-express-smoothing-eye-mask/3689481?siteid=QFGLnEolOWg-G5nIjLwdRt3qarwtME3.oA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "2",
-        img: "https://n.nordstrommedia.com/id/sr3/4c68e75e-76db-…g?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "VITAE",
-        url: "https://www.nordstrom.com/s/tata-harper-skincare-elixir-vitae-serum/5394093?siteid=QFGLnEolOWg-Dw.Ksg.bcq6viV0RJtoqGg&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "3",
-        img: "https://n.nordstrommedia.com/id/sr3/8ccb2a6c-10a2-487a-941e-430205803bc4.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "YVES SAINT LAURENT",
-        url: "https://www.nordstrom.com/s/yves-saint-laurent-libre-eau-de-parfum-spray-fragrance/5349306?siteid=QFGLnEolOWg-VStLyEXT_z8Ie.Qh1qg0Ug&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "4",
-        img: "https://n.nordstrommedia.com/id/sr3/71b806e7-7007-…g?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "NARS",
-        url: "https://www.nordstrom.com/s/nars-blush/2860999?siteid=QFGLnEolOWg-qqqZ3WRWTNFBObV9U_O4HA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "5",
-        img: "https://n.nordstrommedia.com/id/sr3/271fe3ee-6dc7-494c-aa2a-1447664eb388.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "CHANEL",
-        url: "https://www.nordstrom.com/s/chanel-le-volume-de-chanel-waterproof-mascara/3971108?siteid=QFGLnEolOWg-dRCRPfDGUnWsrjy0LSAaBA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "6",
-        img: "https://n.nordstrommedia.com/id/sr3/85571b78-b904-4035-8bfc-d02eb1b11e2c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "SHISEIDO",
-        url: "https://www.nordstrom.com/s/the-makeup-eyelash-curler/3056751?siteid=QFGLnEolOWg-2pE4Cw5oMeaEbhXwO9LpFw&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-      {
-        id: "7",
-        img: "https://images.rewardstyle.com/img?v=2.13&ms=36034494",
-        title: "GLOSSIER",
-        url: "https://www.glossier.com/products/stretch-concealer?click_id=0vZ1dQwzSxyNTJvwN6yJ%3A0jZUkA1Hhyg1UnmWY0&irgwc=1&utm_source=impactradius&utm_medium=affiliate&utm_campaign=LTK&utm_content=431612&g_ref=fe96da46dc4a93&utm_publishergroup=subnetworks",
-      },
-      {
-        id: "8",
-        img: "https://n.nordstrommedia.com/id/sr3/e95b5de1-c59c-4e78-9ee3-6d583867252d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-        title: "DEBASER",
-        url: "https://www.nordstrom.com/s/d-s-durga-debaser-eau-de-parfum/5439261?siteid=QFGLnEolOWg-M6E_plstnLhyznW1gpEIWg&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
-      },
-    ],
-  },
-  {
     id: 20,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1014.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1013.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1015.jpg",
+    ],
+
+    images: [],
+    category: 1,
+    title: "BEAUTY ESSENTIALS",
+    locationDate: "February 20",
+    shortDescription:
+      "There are so many beauty brands out there these days thats its hard to keep up! Come check out some of my recent go to beauty and skin care products.",
+    description: `While I might be constantly traveling my skin can’t always afford to be so adventurous. I have a few beauty products I rely on that I know will keep my skin looking flawless. Like the Dior airflash spray foundation. Yes I know I’ve talked about this foundation before – but it’s really that good! I can not live with out it lately. The lightweight yet full coverage always leaves my skin looking and feeling so fresh and natural, as if I am not even wearing makeup. I also can not leave home with out my Anastasia Beverly Hills brow wiz. The pencil’s so easy to use on the go and I just love the little brush on the end that helps even out and fluff my brows.
+    One thing ill always be is a product junkie! My facialist doesn’t always agree with my habit, but I can’t help it! I love trying new products. Like my Laura Mercier moisturizing mask. Its just what my skin calls for after a long flight.
+    Lately I’ve been addicted to my Chanel hand cream! Not only is the bottle/packaging super cute but the smell is sooo dreamy! Another recent find is the Yves Saint Laurent Libre perfume. As you can see from the bottle in my pic….I’ve been practically bathing in it! I was living in D.S. & Durga the Debaser scent for a while there but thought I’d switch it up. The two perfumes smell so yummy that I have to travel with both as I never know what kind of mood I’ll be in or what the occasion calls for!
+    Weather you’re in need for some new makeup, perfume, or skincare recommendations I got you covered. Shop some of my favorite beauty and skincare brands below. I’m always on the look out for new products – so please don’t hesitate to comment your favorite beauty must haves.`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://n.nordstrommedia.com/id/sr3/2a4fde10-733f-41cb-8628-5a09387236cb.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "chanel",
+        url: "https://www.nordstrom.com/s/chanel-rouge-coco-ultra-hydrating-lip-colour/3960978?siteid=QFGLnEolOWg-5vWxRvLKvBZ2kJIZDjC68w&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "1",
+        img: "https://n.nordstrommedia.com/id/sr3/46c96a63-ba9a-4c24-a33b-e871e80daf73.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "NORDSTROM",
+        url: "https://www.nordstrom.com/s/benefiance-wrinkleresist24-pure-retinol-express-smoothing-eye-mask/3689481?siteid=QFGLnEolOWg-G5nIjLwdRt3qarwtME3.oA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "2",
+        img: "https://n.nordstrommedia.com/id/sr3/4c68e75e-76db-…g?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "VITAE",
+        url: "https://www.nordstrom.com/s/tata-harper-skincare-elixir-vitae-serum/5394093?siteid=QFGLnEolOWg-Dw.Ksg.bcq6viV0RJtoqGg&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "3",
+        img: "https://n.nordstrommedia.com/id/sr3/8ccb2a6c-10a2-487a-941e-430205803bc4.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "YVES SAINT LAURENT",
+        url: "https://www.nordstrom.com/s/yves-saint-laurent-libre-eau-de-parfum-spray-fragrance/5349306?siteid=QFGLnEolOWg-VStLyEXT_z8Ie.Qh1qg0Ug&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "4",
+        img: "https://n.nordstrommedia.com/id/sr3/71b806e7-7007-…g?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "NARS",
+        url: "https://www.nordstrom.com/s/nars-blush/2860999?siteid=QFGLnEolOWg-qqqZ3WRWTNFBObV9U_O4HA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "5",
+        img: "https://n.nordstrommedia.com/id/sr3/271fe3ee-6dc7-494c-aa2a-1447664eb388.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "CHANEL",
+        url: "https://www.nordstrom.com/s/chanel-le-volume-de-chanel-waterproof-mascara/3971108?siteid=QFGLnEolOWg-dRCRPfDGUnWsrjy0LSAaBA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "6",
+        img: "https://n.nordstrommedia.com/id/sr3/85571b78-b904-4035-8bfc-d02eb1b11e2c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "SHISEIDO",
+        url: "https://www.nordstrom.com/s/the-makeup-eyelash-curler/3056751?siteid=QFGLnEolOWg-2pE4Cw5oMeaEbhXwO9LpFw&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "7",
+        img: "https://images.rewardstyle.com/img?v=2.13&ms=36034494",
+        title: "GLOSSIER",
+        url: "https://www.glossier.com/products/stretch-concealer?click_id=0vZ1dQwzSxyNTJvwN6yJ%3A0jZUkA1Hhyg1UnmWY0&irgwc=1&utm_source=impactradius&utm_medium=affiliate&utm_campaign=LTK&utm_content=431612&g_ref=fe96da46dc4a93&utm_publishergroup=subnetworks",
+      },
+      {
+        id: "8",
+        img: "https://n.nordstrommedia.com/id/sr3/e95b5de1-c59c-4e78-9ee3-6d583867252d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "DEBASER",
+        url: "https://www.nordstrom.com/s/d-s-durga-debaser-eau-de-parfum/5439261?siteid=QFGLnEolOWg-M6E_plstnLhyznW1gpEIWg&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+    ],
+  },
+  {
+    id: 21,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1014.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1013.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1015.jpg",
+    ],
+
+    images: [],
+    category: 1,
+    title: "BEAUTY ESSENTIALS",
+    locationDate: "February 20",
+    shortDescription:
+      "There are so many beauty brands out there these days thats its hard to keep up! Come check out some of my recent go to beauty and skin care products.",
+    description: `While I might be constantly traveling my skin can’t always afford to be so adventurous. I have a few beauty products I rely on that I know will keep my skin looking flawless. Like the Dior airflash spray foundation. Yes I know I’ve talked about this foundation before – but it’s really that good! I can not live with out it lately. The lightweight yet full coverage always leaves my skin looking and feeling so fresh and natural, as if I am not even wearing makeup. I also can not leave home with out my Anastasia Beverly Hills brow wiz. The pencil’s so easy to use on the go and I just love the little brush on the end that helps even out and fluff my brows.
+    One thing ill always be is a product junkie! My facialist doesn’t always agree with my habit, but I can’t help it! I love trying new products. Like my Laura Mercier moisturizing mask. Its just what my skin calls for after a long flight.
+    Lately I’ve been addicted to my Chanel hand cream! Not only is the bottle/packaging super cute but the smell is sooo dreamy! Another recent find is the Yves Saint Laurent Libre perfume. As you can see from the bottle in my pic….I’ve been practically bathing in it! I was living in D.S. & Durga the Debaser scent for a while there but thought I’d switch it up. The two perfumes smell so yummy that I have to travel with both as I never know what kind of mood I’ll be in or what the occasion calls for!
+    Weather you’re in need for some new makeup, perfume, or skincare recommendations I got you covered. Shop some of my favorite beauty and skincare brands below. I’m always on the look out for new products – so please don’t hesitate to comment your favorite beauty must haves.`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://n.nordstrommedia.com/id/sr3/2a4fde10-733f-41cb-8628-5a09387236cb.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "chanel",
+        url: "https://www.nordstrom.com/s/chanel-rouge-coco-ultra-hydrating-lip-colour/3960978?siteid=QFGLnEolOWg-5vWxRvLKvBZ2kJIZDjC68w&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "1",
+        img: "https://n.nordstrommedia.com/id/sr3/46c96a63-ba9a-4c24-a33b-e871e80daf73.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "NORDSTROM",
+        url: "https://www.nordstrom.com/s/benefiance-wrinkleresist24-pure-retinol-express-smoothing-eye-mask/3689481?siteid=QFGLnEolOWg-G5nIjLwdRt3qarwtME3.oA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "2",
+        img: "https://n.nordstrommedia.com/id/sr3/4c68e75e-76db-…g?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "VITAE",
+        url: "https://www.nordstrom.com/s/tata-harper-skincare-elixir-vitae-serum/5394093?siteid=QFGLnEolOWg-Dw.Ksg.bcq6viV0RJtoqGg&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "3",
+        img: "https://n.nordstrommedia.com/id/sr3/8ccb2a6c-10a2-487a-941e-430205803bc4.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "YVES SAINT LAURENT",
+        url: "https://www.nordstrom.com/s/yves-saint-laurent-libre-eau-de-parfum-spray-fragrance/5349306?siteid=QFGLnEolOWg-VStLyEXT_z8Ie.Qh1qg0Ug&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "4",
+        img: "https://n.nordstrommedia.com/id/sr3/71b806e7-7007-…g?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "NARS",
+        url: "https://www.nordstrom.com/s/nars-blush/2860999?siteid=QFGLnEolOWg-qqqZ3WRWTNFBObV9U_O4HA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "5",
+        img: "https://n.nordstrommedia.com/id/sr3/271fe3ee-6dc7-494c-aa2a-1447664eb388.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "CHANEL",
+        url: "https://www.nordstrom.com/s/chanel-le-volume-de-chanel-waterproof-mascara/3971108?siteid=QFGLnEolOWg-dRCRPfDGUnWsrjy0LSAaBA&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "6",
+        img: "https://n.nordstrommedia.com/id/sr3/85571b78-b904-4035-8bfc-d02eb1b11e2c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "SHISEIDO",
+        url: "https://www.nordstrom.com/s/the-makeup-eyelash-curler/3056751?siteid=QFGLnEolOWg-2pE4Cw5oMeaEbhXwO9LpFw&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+      {
+        id: "7",
+        img: "https://images.rewardstyle.com/img?v=2.13&ms=36034494",
+        title: "GLOSSIER",
+        url: "https://www.glossier.com/products/stretch-concealer?click_id=0vZ1dQwzSxyNTJvwN6yJ%3A0jZUkA1Hhyg1UnmWY0&irgwc=1&utm_source=impactradius&utm_medium=affiliate&utm_campaign=LTK&utm_content=431612&g_ref=fe96da46dc4a93&utm_publishergroup=subnetworks",
+      },
+      {
+        id: "8",
+        img: "https://n.nordstrommedia.com/id/sr3/e95b5de1-c59c-4e78-9ee3-6d583867252d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "DEBASER",
+        url: "https://www.nordstrom.com/s/d-s-durga-debaser-eau-de-parfum/5439261?siteid=QFGLnEolOWg-M6E_plstnLhyznW1gpEIWg&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+    ],
+  },
+  {
+    id: 22,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2018/12/scuncixsincerelyjules5.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2018/12/scuncixsincerelyjules4.jpg",
@@ -1624,7 +1704,7 @@ export const articleData = [
     articlesForSale: [],
   },
   {
-    id: 21,
+    id: 23,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2018/04/SKII_INeverExpire3.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2018/05/SKII_INeverExpire4.jpg",
@@ -1662,7 +1742,7 @@ export const articleData = [
     articlesForSale: [],
   },
   {
-    id: 22,
+    id: 24,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2018/04/25E6B8A2-280D-43B0-9FB1-7111E380B38D-scaled.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2018/04/0AB2F392-CC98-43BF-86A5-54D68220F6C4-scaled.jpg",
@@ -1695,7 +1775,7 @@ export const articleData = [
     articlesForSale: [],
   },
   {
-    id: 23,
+    id: 25,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2018/02/aerin14.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2018/02/aerin11.jpg",
@@ -1722,7 +1802,7 @@ export const articleData = [
     articlesForSale: [],
   },
   {
-    id: 23,
+    id: 26,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2021/05/Sincerely-Jules-Palm-Springs-Look.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2021/05/Sincerely-Jules-Coffee-Fruit-Plate.jpg",
@@ -1795,7 +1875,7 @@ BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and
     ],
   },
   {
-    id: 24,
+    id: 27,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2021/05/IMG_0290.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2021/05/IMG_0287.jpg",
@@ -1847,7 +1927,7 @@ BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and
     articlesForSale: [],
   },
   {
-    id: 25,
+    id: 28,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2020/06/FullSizeRender.jpeg",
     ],
@@ -1875,7 +1955,7 @@ BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and
     articlesForSale: [],
   },
   {
-    id: 25,
+    id: 29,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2020/05/IMG_3264.png",
     ],
@@ -1932,7 +2012,7 @@ BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and
     ],
   },
   {
-    id: 26,
+    id: 30,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong8.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong47.jpg",
@@ -1959,7 +2039,7 @@ BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and
     articlesForSale: [],
   },
   {
-    id: 27,
+    id: 31,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong8.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong47.jpg",
@@ -1986,7 +2066,7 @@ BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and
     articlesForSale: [],
   },
   {
-    id: 28,
+    id: 32,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2017/08/CHLA5.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2017/08/CHLA8.jpg",
@@ -2020,7 +2100,7 @@ BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and
     articlesForSale: [],
   },
   {
-    id: 29,
+    id: 33,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2017/08/hamptons.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2017/08/hamptons12.jpg",
@@ -2053,7 +2133,7 @@ BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and
     articlesForSale: [],
   },
   {
-    id: 30,
+    id: 34,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2017/02/revolve8-1.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2017/02/revolve7-1.jpg",
@@ -2079,7 +2159,7 @@ BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and
     articlesForSale: [],
   },
   {
-    id: 31,
+    id: 35,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2019/10/7F37153D-0BFD-4C3A-952A-5A58E51E3ADC-scaled.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2019/10/AD791711-B931-4497-8688-87BF1D7AE762-scaled.jpg",
@@ -2106,7 +2186,7 @@ BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and
     articlesForSale: [],
   },
   {
-    id: 32,
+    id: 36,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0055.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0068-2.jpg",
@@ -2166,7 +2246,7 @@ BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and
     ],
   },
   {
-    id: 33,
+    id: 37,
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2020/03/IMG_1211.jpg",
       "https://sincerelyjules.com/wp-content/uploads/2020/03/IMG_1209.jpg",
@@ -2230,6 +2310,555 @@ BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and
         img: "https://target.scene7.com/is/image/Target/GUEST_bb1ac766-3931-4c20-ba48-2e70c626fd19?wid=325&hei=325&qlt=80&fmt=pjpeg",
         title: "SOUTHPORT",
         url: "https://www.target.com/p/southport-3pc-wicker-motion-patio-chat-set-linen-opalhouse-8482/-/A-53788890?clkid=322412c3N8eab11ed940087c42c222068&lnm=81938&afid=LTK&ref=tgt_adv_xasd0002",
+      },
+    ],
+  },
+  {
+    id: 38,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2023/01/IMG_1721.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2023/01/IMG_1722.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2023/01/IMG_1723.jpg",
+      "https://images.rewardstyle.com/img?v=2.13&ms=36088718",
+    ],
+    category: 3,
+    title: "COZY WARDROBE ESSENTIALS FOR WINTER!",
+    locationDate: "LOS ANGELES, CA - January 19",
+    shortDescription:
+      "Looking to update your winter gear? Take a look at these cozy item must-haves to keep you warm this season!",
+    description: `These cold winter days call for cute, cozy weather wardrobe essentials! If you have yet to upgrade your winter ‘fits, I’ve got you covered. I went ahead and found some amazing style options that are sure to keep you warm and chic this season. Whether your days are filled with snuggling up at your local coffee shop, wandering the city, or simply going about your day, these items are perfect for any kind of activity.
+
+    To see and shop them all, keep scrolling through.`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://cdn.modaoperandi.com/img/images/products/909862/543994/large_janessa-leone-black-tessa.jpg?_v=1675460275",
+        title: "JANESSA LEONE",
+        url: "https://www.modaoperandi.com/women/p/janessa-leone/tessa/543994?AID=14311123&PID=7900573&SID=6203830350&cjevent=86cf6d52a46a11ed81b827420a18ba72&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+      {
+        id: "1",
+        img: "https://cdn.modaoperandi.com/img/images/products/772156/387281/large_bottega-veneta-green-square-frame-aviator-metal-sunglasses.jpg?_v=1669745415",
+        title: "BOTTEGA VENETA",
+        url: "https://www.modaoperandi.com/women/p/bottega-veneta/square-frame-aviator-metal-sunglasses/387281?AID=14311123&PID=7900573&SID=6203830485&cjevent=96aa40e8a46a11ed80a538da0a18b8fa&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+      {
+        id: "2",
+        img: "https://cdn.modaoperandi.com/img/images/products/913165/547444/large_alighieri-gold-2205-the-flame-of-desire-24k-gold-plated-locket-necklace.jpg?_v=1675454730",
+        title: "Alighieri",
+        url: "https://www.modaoperandi.com/women/p/alighieri/2205-the-flame-of-desire-24k-gold-plated-locket-necklace/547444?AID=14311123&PID=7900573&SID=6203830703&cjevent=ae021120a46a11ed8399002b0a18ba74&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+      {
+        id: "3",
+        img: "https://cdn.modaoperandi.com/img/images/products/901184/534231/large_toteme-neutral-cable-knit-turtleneck-sweater.jpg?_v=1675283324",
+        title: "Toteme",
+        url: "https://www.modaoperandi.com/women/p/toteme/cable-knit-turtleneck-sweater/534231?AID=14311123&PID=7900573&SID=6203830914&cjevent=c1d1de76a46a11ed81af00250a18b8fb&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+      {
+        id: "4",
+        img: "https://cdn.modaoperandi.com/img/images/products/902593/535812/large_stand-studio-brown-autumn-quilted-jacket.jpg?_v=1675359960",
+        title: "Stand Studio",
+        url: "https://www.modaoperandi.com/women/p/stand-studio/autumn-quilted-jacket/535812?AID=14311123&PID=7900573&SID=6203831145&cjevent=d82b6ff5a46a11ed832d29510a18b8f6&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+      {
+        id: "5",
+        img: "https://cdn.modaoperandi.com/img/images/products/940492/577442/large_westman-atelier-multi-beauty-butter-bronzer.jpg?_v=1675345560",
+        title: "Westman Atelier",
+        url: "https://www.modaoperandi.com/beauty/p/westman-atelier/beauty-butter-bronzer/577442?AID=14311123&PID=7900573&SID=6203831333&cjevent=ed6e8d9ea46a11ed830800230a18b8fc&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+    ],
+  },
+  {
+    id: 39,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/Sincerely-Jules-Rhode-Dress.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/Sincerely-Jules-Rhode.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/Sincerely-Jules-Rhode-Look.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/05/Sincerely-Jules-Palm-Trees.jpg",
+    ],
+    category: 3,
+    title: "THE ULTIMATE SUMMER WARDROBE!",
+    locationDate: "LOS ANGELES, CA - May 26",
+    shortDescription:
+      "Having a hard time figuring out what you’ll be wearing for the long weekend ahead? I’ve got you covered with the ultimate summer wardrobe, take a look!",
+    description: `Memorial day weekend is right around the corner, and I’m here to help you prepare for the festive day in style. Whether you’re heading on a trip, attending a chic BBQ or enjoying some sun somewhere, I’ve got you covered with some cute outfit ideas! Take a look at my summer selects below, they consist of lightweight cotton, linen pieces, denim, dresses, sandals and swim! All the essentials for the perfect MDW lewwwwk! 
+
+    What are your plans for Memorial Day weekend? Comment below! `,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://cdn.modaoperandi.com/img/images/products/852012/477984/large_posse-neutral-lula-shirt.jpg?_v=1668541110",
+        title: "Posse",
+        url: "https://www.modaoperandi.com/women/p/posse/lula-shirt/477984?AID=14311123&PID=7900573&SID=6203833638&cjevent=cae43c97a46b11ed832d29520a18b8f6&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+      {
+        id: "1",
+        img: "https://cdn.modaoperandi.com/img/images/products/837040/460166/large_posse-pink-micky-linen-bandeau-top.jpg?_v=1649105328",
+        title: "Posse",
+        url: "https://www.modaoperandi.com/women/p/posse/micky-linen-bandeau-top/460166?AID=14311123&PID=7900573&SID=6203833934&cjevent=eb37fea0a46b11ed808ae1a70a18b8f8&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/beliz/beliz3020311739/beliz3020311739_q1_2-0.__UX540__._QL90_.jpg",
+        title: "Brinker & Eliza",
+        url: "https://www.shopbop.com/heart-gold-earrings-brinker-eliza/vp/v=1/1528052677.htm?os=false&fm=other-shopbysize-viewall&folderID=13540&colorId=11739&ref_=SB_PLP_PDP_NWL_W_ACCES_JEWEL_13540_NB_80&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203834099&sharedid=42352&subid1=.2nGiS3mv0Y-o55IwJnZDh5y4OzUa3h50Q",
+      },
+      {
+        id: "3",
+        img: "https://cdn.modaoperandi.com/img/images/products/801231/419615/large_posse-neutral-mia-knot-detailed-linen-cropped-top.jpg?_v=1663857340",
+        title: "Posse",
+        url: "https://www.modaoperandi.com/women/p/posse/mia-knot-detailed-linen-cropped-top/419615?AID=14311123&PID=7900573&SID=6203834430&cjevent=18732310a46c11ed81b827430a18ba72&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+      {
+        id: "4",
+        img: "https://cdn.modaoperandi.com/img/images/products/842087/466191/large_slvrlake-light-wash-london-ankle-high-rise-straight-leg.jpg?_v=1648059919",
+        title: "SLVRLAKE",
+        url: "https://www.modaoperandi.com/women/p/slvrlake/london-ankle-high-rise-straight-leg/466191?AID=14311123&PID=7900573&SID=6203834665&cjevent=2b7f16e0a46c11ed803a00280a18b8f7&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+      {
+        id: "5",
+        img: "https://cdn.modaoperandi.com/img/images/products/776990/392650/large_ray-ban-brown-aviator-metal-sunglasses.jpg?_v=1642472476",
+        title: "RAY-BAN",
+        url: "https://www.modaoperandi.com/women/p/ray-ban/aviator-metal-sunglasses/392650?AID=14311123&PID=7900573&SID=6203834860&cjevent=3bda1ba6a46c11ed803a00280a18b8f7&utm_medium=affiliate&medium=affiliate&source=ShopStyle%20Inc.&utm_source=ShopStyle%20Inc.",
+      },
+    ],
+  },
+  {
+    id: 40,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0108.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0106.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0144.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0142-1.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0137.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0102.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/IMG_0105.jpg",
+    ],
+    category: 3,
+    title: "BEST BEAUTY PRODUCTSTO KEEP YOUR SKIN GLOWY!",
+    locationDate: "LOS ANGELES, CA April 14",
+    shortDescription:
+      "I'm all about having healthy skin, so come take a look at my favorite beauty products to help you achieve glowy, fresh skin! Plus new items I have my eye on!",
+    description: `The balmy beautiful days of summer are soon approaching, so that means it’s time to switch up your beauty products for some that will keep your skin glowing, protected & hydrated all summer long. I’ve always been a sucker for anything beauty and I’m one of those people who will spend hours on end researching a product before using it. I’m also the type that likes to stick with what I know, and use a product over and over again but as of late I’ve had an itch to experiment with new products, especially with clean beauty. I’ve hand selected a few skincare, vitamins and tools I am currently loving (and some I have yet to try but will soon), keep scrolling to check them out! 
+
+    ***Before you check them out, I’d love to share two tips I like to always keep in mind. First, never, I repeat NEVER leave your house without SPF! Second, always remember beauty comes within! Be kind to yourself and make sure you nourish your body as equally as you do from the outside, in. Without true self-care beauty products can only go so far. 🙂
+    
+    Would love to know what some of your favorite skincare products are? And if you have any that you swear by? Comment below! xx`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://n.nordstrommedia.com/id/sr3/e2d60ab7-5cf7-4987-a4c9-033178720d29.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "Eye Cream",
+        url: "https://www.nordstrom.com/s/kylie-skin-eye-cream/5520102?siteid=.2nGiS3mv0Y-dm_VpE1kfN8N0mI5J71kmg&color=NO+COLOR&utm_source=rakuten&utm_medium=affiliate&utm_campaign=*2nGiS3mv0Y&utm_content=1&utm_term=1080428&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=*2nGiS3mv0Y",
+      },
+      {
+        id: "1",
+        img: "https://m.media-amazon.com/images/I/41faNsuVunL._SY450_.jpg",
+        title: "Shiseido",
+        url: "https://www.amazon.com/Shiseido-Color-Smart-Moisturizer-Spf30/dp/B073QN7CRM?tag=sincerelyjules-ssc-774982-20&ascsubtag=6203836618",
+      },
+      {
+        id: "2",
+        img: "https://target.scene7.com/is/image/Target/GUEST_90ff2b9b-9f43-4067-9dec-e31e9509f23f?wid=325&hei=325&qlt=80&fmt=pjpeg",
+        title: "Versed",
+        url: "https://www.target.com/p/versed-press-restart-gentle-retinol-serum-1-fl-oz/-/A-76542734?clkid=322412c3N8eab11ed940087c42c222068&lnm=81938&afid=ShopStyle%20Inc.&ref=tgt_adv_xasd0002",
+      },
+      {
+        id: "3",
+        img: "https://www.sephora.com/productimages/sku/s2224061-main-zoom.jpg?imwidth=465",
+        title: "Summer Fridays",
+        url: "https://www.sephora.com/product/cc-me-vitamin-c-serum-P449180?om_mmc=aff-linkshare-redirect-*2nGiS3mv0Y&c3ch=Linkshare&c3nid=*2nGiS3mv0Y&affid=.2nGiS3mv0Y-9iOjT15XZlRkjEKrWKsYhw&ranEAID=*2nGiS3mv0Y&ranMID=2417&ranSiteID=.2nGiS3mv0Y-9iOjT15XZlRkjEKrWKsYhw&ranLinkID=10-1&browserdefault=true",
+      },
+      {
+        id: "4",
+        img: "https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_1240/hydra-beauty-essence-mist-hydration-protection-radiance-energizing-mist-1-7oz--packshot-default-141050-8818160107550.jpg",
+        title: "CHANEL",
+        url: "https://www.chanel.com/us/skincare/p/141050/hydra-beauty-essence-mist-hydration-protection-radiance-energizing-mist/?ranMID=39938&ranEAID=*2nGiS3mv0Y&ranSiteID=.2nGiS3mv0Y-UTUQerzhKARU6LoeTxbrHw&wt.mc_id=fb_eye_affiliate_en_us_dis&wt.mc_t=display&utm_source=linkshare&utm_campaign=fb_eye_affiliate&utm_medium=affiliate&utm_content=ShopStyle+Collective&siteID=.2nGiS3mv0Y-UTUQerzhKARU6LoeTxbrHw",
+      },
+      {
+        id: "5",
+        img: "https://www.sephora.com/productimages/sku/s2149409-main-zoom.jpg?imwidth=48",
+        title: "Summer Fridays",
+        url: "https://www.sephora.com/product/overtime-mask-P436387?om_mmc=aff-linkshare-redirect-*2nGiS3mv0Y&c3ch=Linkshare&c3nid=*2nGiS3mv0Y&affid=.2nGiS3mv0Y-CGhAK6_JNb_RuATDoZbPqw&ranEAID=*2nGiS3mv0Y&ranMID=2417&ranSiteID=.2nGiS3mv0Y-CGhAK6_JNb_RuATDoZbPqw&ranLinkID=10-1&browserdefault=true",
+      },
+    ],
+  },
+  {
+    id: 41,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/03/6B14840E-91E7-47EB-B2A4-4D9C7E0AE8FA.jpeg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/03/AA5CD71F-F13B-4055-8D64-3502BC9619BF.jpeg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/03/C9B000A4-E3D9-42D3-AB9A-A9B821979BBB.jpeg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/03/FBD599D5-686B-4B30-B48D-76CF7AE24CCD.jpeg",
+    ],
+    category: 3,
+    title: "CUTE FLORAL OUTFITS FOR SPRING",
+    locationDate: "LOS ANGELES, CA - April 05",
+    shortDescription:
+      "Spring has sprung! Check out my favorite floral pieces for this season.",
+    description: `Spring is here, and I couldn’t be more excited for warm weather and clear skies! This means, it’s time to ditch the loungewear, and swap my sweats for lighter items. A good selection of dresses is my personal ideal for spring.  I look forward to everything floral and light, as well as the easiness of these months leading up to summer. Spring is always a much needed change of vibe, and I welcome the mood every year. It’s a breath of fresh air as far as trends are concerned. By this time we are all ready to move out of the winter wardrobe, and show some skin!
+
+    What dresses and patterns are you crushing on? Let me know ???????? Happy solstice!
+    
+    Keep scrolling to shop my favorite floral pieces this season.`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://images.urbndata.com/is/image/FreePeople/60103181_011_d/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+        title: "FREE PEOPLE",
+        url: "https://www.freepeople.com/shop/first-date-maxi-dress/?cm_mmc=rakuten-_-affiliates-_-ShopStyle%20Collective-_-1&ranEAID=%2a2nGiS3mv0Y&ranMID=43177&ranSiteID=.2nGiS3mv0Y-HoFL6HUGSGznxmRmYvEpLg&utm_campaign=ShopStyle%20Collective&utm_content=1&utm_kxconfid=v3sdm8r4u&utm_medium=affiliates&utm_source=rakuten&utm_term=717323&quantity=1",
+      },
+      {
+        id: "1",
+        img: "https://images.urbndata.com/is/image/FreePeople/51254894_002_e/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+        title: "FREE PEOPLE",
+        url: "https://www.freepeople.com/shop/feeling-groovy-maxi-dress/?cm_mmc=rakuten-_-affiliates-_-ShopStyle%20Collective-_-1&color=002&ranEAID=%2a2nGiS3mv0Y&ranMID=43177&ranSiteID=.2nGiS3mv0Y-Ec_GqgLhbFLVCpQAoAmpeQ&size=M&utm_campaign=ShopStyle%20Collective&utm_content=1&utm_kxconfid=v3sdm8r4u&utm_medium=affiliates&utm_source=rakuten&utm_term=717323&type=REGULAR&quantity=1",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/deepa/deepa4081112208/deepa4081112208_q1_2-0.__UX540__._QL90_.jpg",
+        title: "Deepa Gurnani",
+        url: "https://www.shopbop.com/deepa-gurnani-jenya-earrings/vp/v=1/1595019800.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203838741&sharedid=42352&subid1=.2nGiS3mv0Y-a29U6U_QSJ3OWAVfPi9uPg",
+      },
+      {
+        id: "3",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/ismdb/ismdb3052230859/ismdb3052230859_q3_2-0.__UX540__._QL90_.jpg",
+        title: "Isabel Marant",
+        url: "https://www.shopbop.com/boucle-doreill-isabel-marant/vp/v=1/1512624926.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203838948&sharedid=42352&subid1=.2nGiS3mv0Y-L.8udh8E3aACV35dEpmqYA",
+      },
+      {
+        id: "4",
+        img: "https://image.s5a.com/is/image/saks/0468993548556?wid=984&hei=1312&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        title: "David Yurman",
+        url: "https://www.saksfifthavenue.com/product/david-yurman-pinky-ring-in-18k-gold-0468993548556.html?ranMID=13816&ranEAID=*2nGiS3mv0Y&ranSiteID=.2nGiS3mv0Y-INm_EWYb2t9slcMsRWeK0A&site_refer=AFF001&mid=13816&siteID=.2nGiS3mv0Y-INm_EWYb2t9slcMsRWeK0A&LSoid=1157732&LSlinkid=10&LScreativeid=1",
+      },
+      {
+        id: "5",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/lcolo/lcolo300191a530/lcolo300191a530_q1_2-0.__UX540__._QL90_.jpg",
+        title: "LACK OF COLOR",
+        url: "https://www.shopbop.com/mirage-ivory-lack-color/vp/v=1/1559421631.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203839337&sharedid=42352&subid1=.2nGiS3mv0Y-FlQuPSVZ2ObyoAT_rqtBoQ",
+      },
+    ],
+  },
+  {
+    id: 42,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/7504BB98-5136-400F-BEC2-0AA03089B121.jpeg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/B53B40B6-B355-4EDA-8948-8CF96E08048D.jpeg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/B1290A1F-BA00-4961-9091-CBEA83E08708.jpeg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/B5C7DEF6-0C7E-4289-82CA-FFC6C321A24C.jpeg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/B767EAE5-A0DD-4CDF-AA05-055997C3E9DF.jpeg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/CA09184A-EC1D-4FC2-9CB0-20B6316C79F3-1000x1500.jpeg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/04/6BEBE3B3-40BC-4935-BA7C-D133B6E38F1D.jpeg",
+    ],
+    category: 3,
+    title: "VDAY OUTFITTING AND GIFT GUIDE!",
+    locationDate: "LOS ANGELES - February 08",
+    shortDescription:
+      "This Valentines Day is definitely different, but love is still in high demand ????",
+    description: `Spring is here, and I couldn’t be more excited for warm weather and clear skies! This means, it’s time to ditch the loungewear, and swap my sweats for lighter items. A good selection of dresses is my personal ideal for spring.  I look forward to everything floral and light, as well as the easiness of these months leading up to summer. Spring is always a much needed change of vibe, and I welcome the mood every year. It’s a breath of fresh air as far as trends are concerned. By this time we are all ready to move out of the winter wardrobe, and show some skin!
+
+    What dresses and patterns are you crushing on? Let me know ???????? Happy solstice!
+    
+    Keep scrolling to shop my favorite floral pieces this season.`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://img.shopstyle-cdn.com/sim/30/57/3057655445fcabd00c17a7aff40ce522_best/satin-long-pj-set.jpg",
+        title: "VICTORIA'S SECRET",
+        url: "https://www.shopstyle.com/p/satin-long-pj-set/821883359?pid=uid8400-43273280-96",
+      },
+      {
+        id: "1",
+        img: "https://is4.fwrdassets.com/images/p/fw/z/ACNO-WS3_V1.jpg",
+        title: "ASCENO",
+        url: "https://www.fwrd.com/product-asceno-the-london-pj-top-in-dusty-rose/ACNO-WS3/?d=Womens&AID=11120556&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=7ad21f36a46e11ed804c002f0a18ba73&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "2",
+        img: "https://is4.fwrdassets.com/images/p/fw/z/ACNO-WI1_V1.jpg",
+        title: "ASCENO",
+        url: "https://www.fwrd.com/product-asceno-the-london-pj-bottom-in-dusty-rose/ACNO-WI1/?d=Womens&AID=11120556&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=8a3e6632a46e11ed832d29540a18b8f6&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "3",
+        img: "https://is4.fwrdassets.com/images/p/fw/z/LAPF-WI87_V1.jpg",
+        title: "LA PERLA",
+        url: "https://www.fwrd.com/product-la-perla-silk-camisole-top-in-pink-powder/LAPF-WI87/?d=Womens&AID=11120556&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=995b0a0ba46e11ed835a00270a18b8f9&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "4",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/flora/flora3010113149/flora3010113149_q1_2-4.__UX540__._QL90_.jpg",
+        title: "Flora Nikrooz",
+        url: "https://www.shopbop.com/rosa-cami-tap-short-set/vp/v=1/1584853526.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203841669&sharedid=42352&subid1=.2nGiS3mv0Y-fFZbr7EtL8tSQuc.JNrVfw",
+      },
+      {
+        id: "5",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/eberj/eberj419261a530/eberj419261a530_q1_2-0.__UX540__._QL90_.jpg",
+        title: "Eberjey",
+        url: "https://www.shopbop.com/iona-love-chemise-eberjey/vp/v=1/1507363959.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203842018&sharedid=42352&subid1=.2nGiS3mv0Y-3oxs2AfGX.jmZvCBuU0xXg",
+      },
+    ],
+  },
+  {
+    id: 43,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/08/IMG_1373.jpg",
+    ],
+
+    images: [
+      "https://images.rewardstyle.com/img?v=2.13&ms=36044725",
+      "https://images.rewardstyle.com/img?v=2.13&ms=36044725",
+      "https://images.rewardstyle.com/img?v=2.13&ms=36044725",
+    ],
+    category: 3,
+    title: "THE MOST STYLISH SNEAKERS",
+    locationDate: "September 02",
+    shortDescription:
+      "Check out sneakers that Im loving and living in this season!",
+    description: `Spring is here, and I couldn’t be more excited for warm weather and clear skies! This means, it’s time to ditch the loungewear, and swap my sweats for lighter items. A good selection of dresses is my personal ideal for spring.  I look forward to everything floral and light, as well as the easiness of these months leading up to summer. Spring is always a much needed change of vibe, and I welcome the mood every year. It’s a breath of fresh air as far as trends are concerned. By this time we are all ready to move out of the winter wardrobe, and show some skin!
+
+    What dresses and patterns are you crushing on? Let me know ???????? Happy solstice!
+    
+    Keep scrolling to shop my favorite floral pieces this season.`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/nwbal/nwbal3021112397/nwbal3021112397_q1_2-0.__UX540__._QL90_.jpg",
+        title: "New Balance",
+        url: "https://www.shopbop.com/racer-sneaker-new-balance/vp/v=1/1521194716.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203843383&sharedid=42352&subid1=.2nGiS3mv0Y-SOU5zM0.KJ2OpVQ55aOFNg",
+      },
+      {
+        id: "1",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/rebok/rebok300141a027/rebok300141a027_q1_2-0.__UX540__._QL90_.jpg",
+        title: "REEBOK",
+        url: "https://www.shopbop.com/club-classic-laceup-sneakers-reebok/vp/v=1/1594021312.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203843732&sharedid=42352&subid1=.2nGiS3mv0Y-Ryh184zzh8PwzBUvMy5Mdg",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/rebok/rebok300681a1d6/rebok300681a1d6_q1_2-0.__UX540__._QL90_.jpg",
+        title: "REEBOK",
+        url: "https://www.shopbop.com/laceup-sneakers-reebok/vp/v=1/1582046219.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203844322&sharedid=42352&subid1=.2nGiS3mv0Y-hpdPeKXuINfTzP8dzmIK1g",
+      },
+      {
+        id: "3",
+        img: "https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/202799F127007_1/converse-off-white-chuck-70-high-sneakers.jpg",
+        title: "CONVERSE",
+        url: "https://www.ssense.com/en-us/women/product/converse/off-white-chuck-70-high-sneakers/5316581?clickref=1100lwvQZFM3&utm_source=PH_1100l16995&utm_medium=affiliate&utm_content=0&utm_term=https%3A%2F%2Fapi.shopstyle.com%2F&utm_campaign=",
+      },
+      {
+        id: "4",
+        img: "https://is4.fwrdassets.com/images/p/fw/z/VNSV-UZ49W_V1.jpg",
+        title: "VANS VAULT",
+        url: "https://www.fwrd.com/product-vans-vault-og-old-skool-lx/VNSV-UZ49/?AID=11120556&PID=7900573&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_4609662&cjevent=9db74396a46f11ed803a002b0a18b8f7&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "5",
+        img: "https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/202418F128281_1/saint-laurent-off-white-worn-look-court-classic-sl-06-sneakers.jpg",
+        title: "SAINT LAURENT",
+        url: "https://www.ssense.com/en-us/women/product/saint-laurent/off-white-worn-look-court-classic-sl06-sneakers/5634201?clickref=1100lwvQZHTS&utm_source=PH_1100l16995&utm_medium=affiliate&utm_content=0&utm_term=https%3A%2F%2Fapi.shopstyle.com%2F&utm_campaign=",
+      },
+    ],
+  },
+  {
+    id: 44,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_0941.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_0944.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_0948.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_0947.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_0950.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_0940.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_0942.jpg",
+    ],
+    category: 3,
+    title: "VALENTINE’S DAY OUTFIT AND GIFT IDEAS",
+    locationDate: "February 07",
+    shortDescription:
+      "Even if your not the biggest fan of Valentines day, its still fun to dress up and splurge on the ones we love. Ive rounded up some cute Vday outfits and fun gifts to impress that certain someone.",
+    description: `With V-day right around the corner, it’s time to start prepping for that perfect gift and date-night outfit! While classic red and pink might be your obvious choice, metallics, winter whites and a splash of vibrant color give a different twist on V-day style. So weather your shopping for yourself, bff, mom or co worker – I got you covered. Below are plenty of outfit and gift options to wow that special some one in your life. So no matter if your on a budget or want to splurge look no further!`,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://cdn-images.farfetch-contents.com/19/10/24/58/19102458_42037000_480.jpg",
+        title: "ROTATE",
+        url: "https://www.farfetch.com/ba/shopping/women/rotate-puff-sleeve-sequin-midi-dress-item-19102458.aspx?storeid=9671",
+      },
+      {
+        id: "1",
+        img: "https://is4.revolveassets.com/images/p4/n/dt/LEIV-WJ226_V1.jpg",
+        title: "LEVI'S",
+        url: "https://www.revolve.com/levis-501-straight/dp/LEIV-WJ226/?d=Womens&sectionURL=https%3A%2F%2Frstyle.me%2F&srcType=dp_recs_oos",
+      },
+      {
+        id: "2",
+        img: "https://is4.revolveassets.com/images/p4/n/dt/AGOL-WJ95_V1.jpg",
+        title: "AGOLDE",
+        url: "https://www.revolve.com/agolde-90s-high-rise-loose-fit/dp/AGOL-WJ95/?AID=11017645&PID=4441350&utm_medium=affiliate&utm_source=cj&source=cj&utm_campaign=glob_p_2975314&cjevent=ec6b50d9a47011ed803a002c0a18b8f7&cjdata=MXxOfDB8WXww",
+      },
+      {
+        id: "3",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/shash/shash4156412140/shash4156412140_q1_2-0.__UX540__._QL90_.jpg",
+        title: "SHASHI",
+        url: "https://www.shopbop.com/joy-ride-earrings-shashi/vp/v=1/1521917217.htm?extid=affprg_linkshare_SB-QFGLnEolOWg&cvosrc=affiliate.linkshare.QFGLnEolOWg&affuid=..2.Mjg1MzAw.MTE1Mg.MTI1NjUwNTcz.Mg.&sharedid=42352&subid1=QFGLnEolOWg-k9Yi44tK6lhwKl5HqzQqxQ",
+      },
+      {
+        id: "4",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/souli/souli3000824094/souli3000824094_q1_2-0.__UX540__._QL90_.jpg",
+        title: "Souliers Martinez",
+        url: "https://www.shopbop.com/carmen-sandal-souliers-martinez/vp/v=1/1529507076.htm?extid=affprg_linkshare_SB-QFGLnEolOWg&cvosrc=affiliate.linkshare.QFGLnEolOWg&affuid=..2.Mjg1MzAw.MTE1Mg.MTI1NjUwMDIw.Mg.&sharedid=42352&subid1=QFGLnEolOWg-kRP4p._M_g4w1mw7bdNwVA",
+      },
+      {
+        id: "5",
+        img: "https://n.nordstrommedia.com/id/sr3/ee1dce49-bc2e-4e34-99a2-d9ac2ae8f612.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        title: "BAKED",
+        url: "https://www.nordstrom.com/s/laura-geller-beauty-baked-body-frosting-tahitian-glow-all-over-face-body-glow/4126512?siteid=QFGLnEolOWg-OwLDs0k3jEAIReMifJbq8Q&utm_source=rakuten&utm_medium=affiliate&utm_campaign=QFGLnEolOWg&utm_content=1&utm_term=1196353&utm_channel=low_nd_affiliates&sp_source=rakuten&sp_campaign=QFGLnEolOWg",
+      },
+    ],
+  },
+  {
+    id: 45,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/06/IMG_0021-5.jpg",
+    ],
+
+    images: [
+      "https://images.rewardstyle.com/img?v=2.13&ms=36040954",
+      "https://images.rewardstyle.com/img?v=2.13&ms=36040954",
+      "https://images.rewardstyle.com/img?v=2.13&ms=36040954",
+    ],
+    category: 3,
+    title: "SUMMER SWIMSUITS",
+    locationDate: "June 16",
+    shortDescription:
+      "Check out swimsuits that Im loving and living in this summer!",
+    description: ``,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/vbear/vbear3131810916/vbear3131810916_q1_2-2.__UX540__._QL90_.jpg",
+        title: "Veronica Beard",
+        url: "https://www.shopbop.com/aniston-swimsuit-veronica-beard/vp/v=1/1586157998.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203852149&sharedid=42352&subid1=.2nGiS3mv0Y-z8WEx5Ywjw1sCMSZcojLnQ",
+      },
+      {
+        id: "1",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/hunza/hunza30010102d9/hunza30010102d9_q1_2-1.__UX540__._QL90_.jpg",
+        title: "Hunza G",
+        url: "https://www.shopbop.com/solitaire-one-piece-hunza-g/vp/v=1/1563923785.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203852862&sharedid=42352&subid1=.2nGiS3mv0Y-GygsAwGEvSgLEBJlb0mdIQ",
+      },
+      {
+        id: "2",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/flagp/flagp30076171f1/flagp30076171f1_q1_2-0.__UX540__._QL90_.jpg",
+        title: "Flagpole",
+        url: "https://www.shopbop.com/babe-one-piece-flagpole/vp/v=1/1575490706.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203853136&sharedid=42352&subid1=.2nGiS3mv0Y-GqCspiaabI6KLTlS6MIpEg",
+      },
+      {
+        id: "3",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/hunza/hunza3002512816/hunza3002512816_q1_2-1.__UX540__._QL90_.jpg",
+        title: "Hunza G",
+        url: "https://www.shopbop.com/domino-one-piece-hunza-g/vp/v=1/1508852894.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203853301&sharedid=42352&subid1=.2nGiS3mv0Y-cJjsxCGxpIcRvsLLBEhyuw",
+      },
+      {
+        id: "4",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/lshac/lshac3059214941/lshac3059214941_q1_2-0.__UX540__._QL90_.jpg",
+        title: "LoveShackFancy",
+        url: "https://www.shopbop.com/edna-one-piece-loveshackfancy/vp/v=1/1582224607.htm?extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203853526&sharedid=42352&subid1=.2nGiS3mv0Y-z.gfHH_gCAPHsxB_.QNKug",
+      },
+      {
+        id: "5",
+        img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/solid/solid3077410d92/solid3077410d92_1652388407095_2-0.__UX540__._QL90_.jpg",
+        title: "Solid & Striped",
+        url: "https://www.shopbop.com/veronica-one-piece-solid-striped/vp/v=1/1501310438.htm?os=false&fm=other-shopbysize-viewall&folderID=13266&colorId=10D92&ref_=SB_PLP_PDP_NWL_W_CLOTH_13266_NB_30&extid=affprg_linkshare_SB-*2nGiS3mv0Y&cvosrc=affiliate.linkshare.*2nGiS3mv0Y&affuid=6203853776&sharedid=42352&subid1=.2nGiS3mv0Y-ORpPlZBn6_hC0ssQ.l3p8w",
+      },
+    ],
+  },
+  {
+    id: 46,
+    galleryImages: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/06/IMG_0600.jpg",
+    ],
+
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2021/06/IMG_0599.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2021/06/Sincerely-Jules-Fathers-Day-New-Balance.jpg",
+    ],
+    category: 3,
+    title: "THE ULTIMATE FATHER’S DAY GIFT GUIDE!",
+    locationDate: "June 16",
+    shortDescription:
+      "Father's day is soon approaching! If you’re having trouble figuring out what to get dad, I’ve gathered up some amazing options! Check them out! ",
+    description: `Can’t believe Father’s day is literally around the corner in just a couple of short weeks, which means it’s time to start shopping for the perfect gift for him!
+
+    I’ve always been a daddy’s girl, so this holiday is always extra special! Also, shhh don’t say anything but I think I’m his favorite out of my siblings! (Hehe) I’m so thankful for my dad because he’s truly always been there for me and has guided me through life, I wouldn’t be where I am if it wasn’t for him (and my mom!).
+    
+    He’s literally the best dad in the world and I feel so lucky to call him my dad! (I love you dad!!❤️) After a tough last year for all of us, connecting with family is more important than ever! I am looking forward to honoring him by spending Father’s Day with him and showering him with love & gifts this holiday! 
+    
+    If you’re stuck on what to get the dad in your life, I’ve rounded up some goodies for all the cool dads out there! From lux essentials to clothing to self-care items to classic everyday sneakers; so many great options! Keep scrolling to shop! 
+    
+    Happy Father’s day to all the dads out there! Near and far, we appreciate and love you! `,
+    comments: [],
+    articlesForSale: [
+      {
+        id: "0",
+        img: "https://image.s5a.com/is/image/saks/0432169195035_GOLD?wid=984&hei=1312&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        title: "RAY-BAN",
+        url: "https://www.saksfifthavenue.com/product/ray-ban-rb3025-62mm-original-polarized-aviator-sunglasses-69195103.html?ranMID=13816&ranEAID=*2nGiS3mv0Y&ranSiteID=.2nGiS3mv0Y-IJdjca2uuDKY6oIzF.TpBw&site_refer=AFF001&mid=13816&siteID=.2nGiS3mv0Y-IJdjca2uuDKY6oIzF.TpBw&LSoid=1157732&LSlinkid=10&LScreativeid=1",
+      },
+      {
+        id: "1",
+        img: "https://image.s5a.com/is/image/saks/0400011529340_BLACK?wid=984&hei=1312&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        title: "SHINOLA",
+        url: "https://www.saksfifthavenue.com/product/shinola-detrola-the-model-d-stainless-steel--amp--silicone-strap-watch-0400011529340.html?ranMID=13816&ranEAID=*2nGiS3mv0Y&ranSiteID=.2nGiS3mv0Y-uva9uN5fZ3FGFwvpvbt4YA&site_refer=AFF001&mid=13816&siteID=.2nGiS3mv0Y-uva9uN5fZ3FGFwvpvbt4YA&LSoid=1157732&LSlinkid=10&LScreativeid=1",
+      },
+      {
+        id: "2",
+        img: "https://image.s5a.com/is/image/saks/0400099036345_NOCOLOR?wid=984&hei=1312&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        title: "TOM FORD",
+        url: "https://www.saksfifthavenue.com/product/tom-ford-ombre-leather-eau-de-parfum-0400099036345.html?ranMID=13816&ranEAID=*2nGiS3mv0Y&ranSiteID=.2nGiS3mv0Y-H1UQTcDHCF3tpD2uBcSaKQ&site_refer=AFF001&mid=13816&siteID=.2nGiS3mv0Y-H1UQTcDHCF3tpD2uBcSaKQ&LSoid=1157732&LSlinkid=10&LScreativeid=1",
+      },
+      {
+        id: "3",
+        img: "https://image.s5a.com/is/image/saks/0400701202894?wid=984&hei=1312&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        title: "BACCART",
+        url: "https://www.saksfifthavenue.com/product/baccarat-harmonie-crystal-tumbler-2-piece-set-0400701202894.html?ranMID=13816&ranEAID=*2nGiS3mv0Y&ranSiteID=.2nGiS3mv0Y-0uXypn.gXs9ySOuSNVWJtQ&site_refer=AFF001&mid=13816&siteID=.2nGiS3mv0Y-0uXypn.gXs9ySOuSNVWJtQ&LSoid=1157732&LSlinkid=10&LScreativeid=1",
+      },
+      {
+        id: "4",
+        img: "https://image.s5a.com/is/image/saks/0400098465760?wid=984&hei=1312&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        title: "GUCCI",
+        url: "https://www.saksfifthavenue.com/product/gucci-jordaan-leather-loafers-0400098465760.html?ranMID=13816&ranEAID=*2nGiS3mv0Y&ranSiteID=.2nGiS3mv0Y-2iXpI1RBfk_QYor7M_lAvw&site_refer=AFF001&mid=13816&siteID=.2nGiS3mv0Y-2iXpI1RBfk_QYor7M_lAvw&LSoid=1157732&LSlinkid=10&LScreativeid=1",
+      },
+      {
+        id: "5",
+        img: "https://image.s5a.com/is/image/saks/0400011925127?wid=984&hei=1312&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0",
+        title: "DOLCE&GABBANA",
+        url: "https://www.saksfifthavenue.com/product/dolce-gabbana-saint-barth-rubber-pool-slides-0400011925127.html?ranMID=13816&ranEAID=*2nGiS3mv0Y&ranSiteID=.2nGiS3mv0Y-9NqiKMM31zpIIjvXVBA3Lg&site_refer=AFF001&mid=13816&siteID=.2nGiS3mv0Y-9NqiKMM31zpIIjvXVBA3Lg&LSoid=1157732&LSlinkid=10&LScreativeid=1",
       },
     ],
   },
