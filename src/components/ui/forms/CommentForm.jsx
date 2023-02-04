@@ -236,17 +236,12 @@ const Comment = ({ commentModel }) => {
       }}
     >
       <Box sx={{ display: "flex", flexDirection: "row", p: 5 }}>
-        <a
-          href={commentModel.website}
-          target="_blank"
-          style={{ textDecoration: "none", color: "black" }}
+        <Typography
+          sx={{ fontSize: 13, fontWeight: "bold", fontFamily: "work sans" }}
         >
-          <Typography
-            sx={{ fontSize: 13, fontWeight: "bold", fontFamily: "work sans" }}
-          >
-            {commentModel.name}
-          </Typography>
-        </a>
+          {commentModel.name}
+        </Typography>
+
         <Typography sx={{ fontSize: 13, pl: 5 }}>{" says:"} </Typography>
       </Box>
       <Typography
@@ -260,6 +255,24 @@ const Comment = ({ commentModel }) => {
       >
         {commentModel.comment}
       </Typography>
+
+      <Box sx={{ p: 0, pl: 5, pt: 2 }}>
+        <a
+          href={commentModel.website}
+          target="_blank"
+          style={{
+            textDecoration: "none",
+            color: "black",
+            fontSize: 12,
+            fontFamily: "work sans",
+            color: "gray",
+            fontWeight: "light",
+          }}
+        >
+          {commentModel.website}
+        </a>
+      </Box>
+
       <Typography
         sx={{
           fontSize: 10,
@@ -267,6 +280,7 @@ const Comment = ({ commentModel }) => {
           fontWeight: "light",
           fontFamily: "work sans",
           p: 5,
+          mt: 2,
         }}
       >
         {timestampToDate(commentModel.timestamp)}

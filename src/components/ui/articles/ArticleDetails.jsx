@@ -8,9 +8,11 @@ import { useLocation } from "react-router-dom";
 import { ArticleModel } from "../../../domain/models/ArticleModel";
 import { ArticleForSaleModel } from "../../../domain/models/ArticleForSale";
 import { Categorys } from "../../../types/enumerations/categorys";
+import { useArticleStore } from "../../../stores/ArticleStore";
 
 export default function ArticleDetails() {
   const { state } = useLocation();
+  const articles = useArticleStore((state) => state.articles);
 
   const article = new ArticleModel(
     state.id,
@@ -71,6 +73,7 @@ export default function ArticleDetails() {
             textAlign: "center",
             typography: "h7",
             mt: "4%",
+            whiteSpace: "pre-line",
           }}
         >
           {article.description}
@@ -91,7 +94,11 @@ export default function ArticleDetails() {
         </Box>
         <CustomImage src={article.images[2]} width={{ xs: "84%", sm: "65%" }} />
         <CommentForm marginTop={{ xs: "15%", sm: "5%" }} />
-        <VerticalGalleryArticleList marginTop={40} loadMoreFlag={true} />
+        <VerticalGalleryArticleList
+          marginTop={40}
+          loadMoreFlag={true}
+          articles={articles}
+        />
       </Box>
     </>
   );
@@ -156,7 +163,7 @@ function HorizontalList(articlesForSale) {
             key={item.img}
             sx={{ paddingRight: "3em", width: 200 }}
           >
-            <a href={item.url}>
+            <a href={item.url} target="_blank">
               <img
                 src={item.img}
                 srcSet={item.img}

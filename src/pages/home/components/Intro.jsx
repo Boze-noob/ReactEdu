@@ -7,14 +7,27 @@ import { useArticleStore } from "../../../stores/ArticleStore";
 import { useEffect } from "react";
 import { getArticles } from "../../../data/repositories/ArticleRepository";
 import * as utils from "../../../utils/utils.js";
+import { useNavigate } from "react-router-dom";
+import { ARTICLE_DETAIL_ROUTE } from "../../router/Routes";
 
 const Intro = () => {
   const isLoading = useArticleStore((state) => state.isLoading);
   const articleModel = useArticleStore((state) => state.articles[0]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     getArticles();
   }, []);
+
+  const onReadMore = () => {
+    navigate(
+      {
+        pathname: ARTICLE_DETAIL_ROUTE,
+        search: `?id=${articleModel.id}`,
+      },
+      { state: articleModel }
+    );
+  };
 
   if (isLoading) {
     return (
@@ -31,20 +44,7 @@ const Intro = () => {
             image={articleModel.galleryImages[0]}
             sx={{ opacity: 0.7, height: { xs: 400, sm: 800 } }}
           />
-          <Box
-            style={{ position: "absolute", top: "35%", left: "5%" }}
-            sx={{
-              "&:hover": {
-                cursor: "pointer",
-                "& .firstTitle": {
-                  color: "#49494a",
-                },
-                "& .secondTitle": {
-                  color: "#49494a",
-                },
-              },
-            }}
-          >
+          <Box style={{ position: "absolute", top: "35%", left: "5%" }}>
             <Typography
               className="firstTitle"
               style={{
@@ -65,7 +65,11 @@ const Intro = () => {
               {utils.getSecondHalfOfString(articleModel.title).toUpperCase()}
             </Typography>
             <Box sx={{ mt: 10 }}>
-              <LineButton btnTxt="Read" width="25%" />
+              <LineButton
+                btnTxt="Read"
+                width="25%"
+                onClick={() => onReadMore()}
+              />
             </Box>
           </Box>
           <Box

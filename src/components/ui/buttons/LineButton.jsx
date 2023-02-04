@@ -1,8 +1,14 @@
 import { Typography, Divider, Box, Link } from "@mui/material";
 
-export default function LineButton({ btnTxt, width, url }) {
+export default function LineButton({ btnTxt, width, url, onClick }) {
   return (
-    <Link underline="none" href={url}>
+    <Link
+      underline="none"
+      href={url}
+      onClick={() => {
+        onClick();
+      }}
+    >
       <Box
         alignItems="center"
         sx={{

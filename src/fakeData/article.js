@@ -24,12 +24,6 @@ export const articleData = [
     comments: [],
     articlesForSale: [
       {
-        id: "0",
-        img: "https://m.media-amazon.com/images/I/41mCEadAcKL._AC_SR38,50_.jpg",
-        title: "BANDIER",
-        url: "https://www.amazon.com/Sincerely-Jules-Womens-Bryn-Strappy/dp/B08NYZP7FV?tag=sincerelyjules-ssc-774982-20&ascsubtag=6203861522",
-      },
-      {
         id: "1",
         img: "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/aloyg/aloyg3026638833/aloyg3026638833_1673382686390_2-0.__UX540__._QL90_.jpg",
         title: "ALO YOGA",
@@ -95,7 +89,8 @@ export const articleData = [
     category: 0,
     title: "WHAT TO WEAR TO A HOLIDAY PARTY!",
     locationDate: "LOS ANGELES, CA December 23",
-    shortDescription: "",
+    shortDescription:
+      "Major outfit inspo for your next holiday soirée. Take a look!",
     description: `Hi everyone! I hope you’re all well and enjoying the holidays. Christmas has always been my favorite time of the year for many reasons. From spending quality time with my loved ones, to the celebratory atmosphere, to the music, to the food, and to the joy that emanates from people. The spirit of the holiday season truly is magical, and I feel so blessed to have some of the most beautiful memories during this time of the year. 
 
     One thing we can all agree on is the stress of trying to figure out what to wear to all the holiday festivities. But not to worry, if you’re in need of some inspo I’ve got you covered with the most perfect Christmas ‘fit. This day only comes once a year, so I like to go all out from head to toe. 
@@ -177,7 +172,8 @@ export const articleData = [
     category: 0,
     title: "Cute summer to fall transitional outfit! ",
     locationDate: "PARIS, FRANCE - OCTOBER 11",
-    shortDescription: "Short description",
+    shortDescription:
+      "Cardigans are as cute and cozy as it gets, I absolutely love them in every shape and style.",
     description:
       "Cardigans are as cute and cozy as it gets, I absolutely love them in every shape and style. It’s a staple that brings a touch of lux to yourmost casual outfits. They’re the perfect item to style over a slip dressor layered over a simple white tee. You can even wear them withoutanything underneath, as I’ve done here. I’m really loving cardigans witha collar detail, they give off a cool preppy look that I really love.Just throw on your fave pair of denim, loafers and your go-to bag for alook that’s both casual and chic. I’d gladly wear this ensemble everydaythis fall and winter, just throw on a coat for extra warmth.",
     comments: [],
