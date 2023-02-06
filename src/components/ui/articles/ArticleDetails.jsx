@@ -9,6 +9,8 @@ import { ArticleModel } from "../../../domain/models/ArticleModel";
 import { ArticleForSaleModel } from "../../../domain/models/ArticleForSale";
 import { Categorys } from "../../../types/enumerations/categorys";
 import { useArticleStore } from "../../../stores/ArticleStore";
+import { Link } from "react-router-dom";
+import { FASHION_ROUTE } from "../../../pages/router/Routes";
 
 export default function ArticleDetails() {
   const { state } = useLocation();
@@ -37,15 +39,21 @@ export default function ArticleDetails() {
           mt: { xs: "15%", sm: "9%", md: "8%" },
         }}
       >
-        <Typography
-          sx={{
-            fontFamily: "Work Sans",
-            fontWeight: "bold",
-            fontSize: { xs: 12, sm: 13, md: 14 },
-          }}
+        <Link
+          to={FASHION_ROUTE}
+          style={{ textDecoration: "none", color: "black" }}
         >
-          {Categorys[article.category]}
-        </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Work Sans",
+              fontWeight: "bold",
+              fontSize: { xs: 12, sm: 13, md: 14 },
+            }}
+          >
+            {Categorys[article.category]}
+          </Typography>
+        </Link>
+
         <Typography
           sx={{
             typography: { xs: "h5", sm: "h4", md: "h3" },

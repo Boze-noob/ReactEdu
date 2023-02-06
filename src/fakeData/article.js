@@ -2037,16 +2037,10 @@ BIRBA – Love the ambiance this place has to offer! The Pappardelle Al Ragu and
   {
     id: 31,
     galleryImages: [
-      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong8.jpg",
-      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong47.jpg",
-      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong79.jpg",
-      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong76.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/12/warmcoats.jpg",
     ],
-
     images: [
-      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong75.jpg",
-      "https://sincerelyjules.com/wp-content/uploads/2018/01/bilabong61.jpg",
-      "https://sincerelyjules.com/wp-content/uploads/2018/01/billabong11.jpg",
+      "https://sincerelyjules.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-21-at-7.46.40-AM.png",
     ],
     category: 2,
     title: "BEST WARM COATS!",

@@ -57,7 +57,8 @@ export default function VerticalGalleryArticleList({
                 component="img"
                 sx={{
                   height: { xs: 300, sm: 600 },
-                  objectFit: "fill",
+                  width: "100%",
+                  objectFit: "cover",
                   "&:hover": {
                     opacity: 0.7,
                     cursor: "pointer",
