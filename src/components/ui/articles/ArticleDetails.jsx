@@ -15,6 +15,8 @@ import { FASHION_ROUTE } from "../../../pages/router/Routes";
 export default function ArticleDetails() {
   const { state } = useLocation();
   const articles = useArticleStore((state) => state.articles);
+  articles.splice(0, 1);
+  console.log("articles -> " + JSON.stringify(articles));
 
   const article = new ArticleModel(
     state.id,

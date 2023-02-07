@@ -7,6 +7,7 @@ export const CustomImage = ({
   padding,
   paddingLeft,
   paddingBottom,
+  imgFit = "cover",
 }) => {
   return (
     <Box
@@ -17,7 +18,7 @@ export const CustomImage = ({
         paddingBottom: paddingBottom,
       }}
       src={src}
-      style={{ objectFit: "cover" }}
+      style={{ objectFit: imgFit }}
       mt={marginTop ?? "5%"}
       p={padding ?? "0%"}
     />

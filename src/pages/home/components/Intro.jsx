@@ -42,7 +42,7 @@ const Intro = () => {
           <CardMedia
             component="img"
             image={articleModel.galleryImages[0]}
-            sx={{ opacity: 0.7, height: { xs: 400, sm: 800 } }}
+            sx={{ opacity: 0.7 }}
           />
           <Box style={{ position: "absolute", top: "35%", left: "5%" }}>
             <Typography
