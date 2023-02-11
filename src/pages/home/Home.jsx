@@ -27,7 +27,7 @@ const Home = () => {
   } else {
     return (
       <>
-        <Intro />
+        <Intro articleModel={articles[0]} />
         <HorizontalArticleImgLeft marginTop={60} article={articles[1]} />
         <HorizontalArticleImgRight marginTop={-40} article={articles[2]} />
         <HorizontalImgList title={"Highlists of the Week"} marginTop={60} />

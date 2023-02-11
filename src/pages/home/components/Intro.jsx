@@ -4,20 +4,13 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import { useArticleStore } from "../../../stores/ArticleStore";
-import { useEffect } from "react";
-import { getArticles } from "../../../data/repositories/ArticleRepository";
 import * as utils from "../../../utils/utils.js";
 import { useNavigate } from "react-router-dom";
 import { ARTICLE_DETAIL_ROUTE } from "../../router/Routes";
 
-const Intro = () => {
+const Intro = ({ articleModel }) => {
   const isLoading = useArticleStore((state) => state.isLoading);
-  const articleModel = useArticleStore((state) => state.articles[0]);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    getArticles();
-  }, []);
 
   const onReadMore = () => {
     navigate(
