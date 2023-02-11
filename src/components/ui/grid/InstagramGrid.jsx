@@ -112,7 +112,7 @@ function ImagesGrid({ data }) {
               <img src={item.imageUrl} className={"image"} />
               <div className="overlay">
                 <Typography
-                  sx={{ typography: { xs: "h6", sm: "h5" } }}
+                  sx={{ typography: "h6" }}
                   className={"text"}
                   style={{ fontWeight: 500, fontFamily: "Lora" }}
                 >
