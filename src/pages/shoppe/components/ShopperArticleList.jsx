@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { loadMoreShoppeService } from "../../../services/ShoppeService";
 import {
   Grid,
   Card,
@@ -12,14 +12,15 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import VerticalLineButton from "../../../components/ui/buttons/VerticalLineButton";
+import { useShoppeStore } from "../../../stores/ShoppeStore";
 
 export default function ShopperArticleList() {
-  const fakeData = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-  const [itemData, setItemData] = useState(fakeData);
+  const articles = useShoppeStore((state) => state.articles);
+  const selectedCategory = useShoppeStore((state) => state.selectedCategory);
+  const offset = useShoppeStore((state) => state.offset);
 
   const loadMore = () => {
-    setItemData((items) => items.concat(fakeData));
+    loadMoreShoppeService(selectedCategory, offset, articles);
   };
 
   const Item = styled(Paper)(({ theme }) => ({
@@ -30,32 +31,54 @@ export default function ShopperArticleList() {
     color: theme.palette.text.secondary,
   }));
 
-  return (
-    <>
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid
-          container
-          spacing={25}
-          sx={{ paddingLeft: { xs: "10%", sm: "0%" } }}
-        >
-          {itemData.map((item) => (
-            <Grid item xs={6} sm={4} lg={3}>
-              <Item>
-                <Article imageUrl={""} title={""} description={""} />
-              </Item>
-            </Grid>
-          ))}
-        </Grid>
-      </Box>
+  console.log("Articles are " + JSON.stringify(articles));
 
-      <VerticalLineButton
-        marginTop={"10%"}
-        marginBottom={"5%"}
-        onClick={loadMore}
-        text="Shop More"
-      />
-    </>
-  );
+  if (articles.length === 0 || articles === undefined) {
+    //TODO style it
+    return (
+      <>
+        <Box
+          sx={{
+            width: 1,
+            h: 1,
+          }}
+        >
+          <Typography>No result</Typography>
+        </Box>
+      </>
+    );
+  } else {
+    return (
+      <>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid
+            container
+            spacing={25}
+            sx={{ paddingLeft: { xs: "10%", sm: "0%" } }}
+          >
+            {articles.map((item) => (
+              <Grid item xs={6} sm={4} lg={3}>
+                <Item key={item.title}>
+                  <Article
+                    imageUrl={item.img}
+                    title={item.title}
+                    description={item.description}
+                  />
+                </Item>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+
+        <VerticalLineButton
+          marginTop={"10%"}
+          marginBottom={"5%"}
+          onClick={loadMore}
+          text="Shop More"
+        />
+      </>
+    );
+  }
 }
 
 function Article({ imageUrl, title, description }) {

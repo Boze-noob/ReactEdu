@@ -4,7 +4,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { MenuData } from "../data/MenuData";
 import { hasChildren } from "../../../utils/utils";
-import { changeSelectedShopperCategory } from "../../../services/ShoppeService";
+import { changeCategoryShoppeService } from "../../../services/ShoppeService";
 import { useShoppeStore } from "../../../stores/ShoppeStore";
 
 export default function ShoppeSideMenu() {
@@ -20,14 +20,15 @@ const SingleLevel = ({ item }) => {
   const selectedCategory = useShoppeStore((state) => state.selectedCategory);
 
   return (
-    <ListItem onClick={() => changeSelectedShopperCategory(item.title)}>
+    <ListItem onClick={() => changeCategoryShoppeService(item.title)}>
       <Typography
         sx={{
           fontWeight: "bold",
           fontSize: { xs: 8, sm: 13 },
           fontFamily: "Work Sans",
           cursor: "pointer",
-          textDecoration: selectedCategory == item.title && "underline #F4EADF",
+          textDecoration:
+            selectedCategory === item.title && "underline #F4EADF",
           textDecorationThickness: "7px",
         }}
       >

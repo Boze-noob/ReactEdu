@@ -1,13 +1,17 @@
-import React from "react";
-import { useState } from "react";
+import React, { useEffect } from "react";
 import PageTitle from "../../components/ui/header/PageTitle.jsx";
 import { Box } from "@mui/material";
 import ShoppeSideMenu from "./components/ShoppeSideMenu.jsx";
 import ShopperArticleList from "./components/ShopperArticleList.jsx";
 import { useShoppeStore } from "../../stores/ShoppeStore.js";
+import { getAllShoppeService } from "../../services/ShoppeService.js";
 
 export default function ShoppePage() {
   const selectedCategory = useShoppeStore((state) => state.selectedCategory);
+
+  useEffect(() => {
+    getAllShoppeService(selectedCategory);
+  }, []);
 
   return (
     <>
