@@ -13,10 +13,6 @@ export const getAllShoppeService = () => {
 };
 
 export const changeCategoryShoppeService = (category) => {
-  console.log("Selected category" + category);
-  console.log(
-    "Change category -> " + JSON.stringify(changeCategoryShoppe(category))
-  );
   useShoppeStore.setState({
     selectedCategory: category,
     articles: changeCategoryShoppe(category),
@@ -25,15 +21,20 @@ export const changeCategoryShoppeService = (category) => {
 };
 
 export const loadMoreShoppeService = (category, offset, articles) => {
-  console.log(
-    "Load more  -> " +
-      JSON.stringify(loadMoreShoppe(category, offset + SHOPPE_LOAD_MORE_NUMBER))
+  const newArticles = loadMoreShoppe(
+    category,
+    offset + SHOPPE_LOAD_MORE_NUMBER,
+    offset + 2 * SHOPPE_LOAD_MORE_NUMBER
   );
+
+  if (newArticles.length === 0)
+    useShoppeStore.setState({
+      hasLoadMore: false,
+    });
+
   useShoppeStore.setState({
     selectedCategory: category,
-    articles: articles.push(
-      ...loadMoreShoppe(category, offset + SHOPPE_LOAD_MORE_NUMBER)
-    ),
+    articles: articles.concat(newArticles),
     offset: offset + SHOPPE_LOAD_MORE_NUMBER,
   });
 };
