@@ -10,5 +10,6 @@ export const useShoppeStore = create(
     articles: [],
     offset: 0,
     limit: SHOPPE_LOAD_MORE_NUMBER,
+    hasLoadMore: true,
   }))
 );

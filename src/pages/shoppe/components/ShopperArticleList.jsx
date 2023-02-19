@@ -18,6 +18,7 @@ export default function ShopperArticleList() {
   const articles = useShoppeStore((state) => state.articles);
   const selectedCategory = useShoppeStore((state) => state.selectedCategory);
   const offset = useShoppeStore((state) => state.offset);
+  const hasLoadMore = useShoppeStore((state) => state.hasLoadMore);
 
   const loadMore = () => {
     loadMoreShoppeService(selectedCategory, offset, articles);
@@ -30,8 +31,6 @@ export default function ShopperArticleList() {
     textAlign: "center",
     color: theme.palette.text.secondary,
   }));
-
-  console.log("Articles are " + JSON.stringify(articles));
 
   if (articles.length === 0 || articles === undefined) {
     //TODO style it
@@ -70,12 +69,14 @@ export default function ShopperArticleList() {
           </Grid>
         </Box>
 
-        <VerticalLineButton
-          marginTop={"10%"}
-          marginBottom={"5%"}
-          onClick={loadMore}
-          text="Shop More"
-        />
+        {hasLoadMore && (
+          <VerticalLineButton
+            marginTop={"10%"}
+            marginBottom={"5%"}
+            onClick={loadMore}
+            text="Shop More"
+          />
+        )}
       </>
     );
   }
