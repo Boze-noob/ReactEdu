@@ -57,7 +57,14 @@ export default function ShopperArticleList() {
           >
             {articles.map((item) => (
               <Grid item xs={6} sm={4} lg={3}>
-                <Item key={item.title}>
+                <Item
+                  key={item.title}
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    height: "100%",
+                  }}
+                >
                   <Article
                     imageUrl={item.img}
                     title={item.title}
@@ -84,7 +91,16 @@ export default function ShopperArticleList() {
 
 function Article({ imageUrl, title, description }) {
   return (
-    <Card>
+    <Card
+      sx={{
+        "&:hover": {
+          opacity: 0.7,
+          cursor: "pointer",
+        },
+        transition: "0.7s",
+        height: "100%",
+      }}
+    >
       <CardActionArea>
         <CardMedia
           component="img"

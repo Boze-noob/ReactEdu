@@ -17,6 +17,7 @@ export const changeCategoryShoppeService = (category) => {
     selectedCategory: category,
     articles: changeCategoryShoppe(category),
     offset: 0,
+    hasLoadMore: true,
   });
 };
 
