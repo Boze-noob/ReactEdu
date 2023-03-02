@@ -61,6 +61,9 @@ export function changeCategoryShoppe(category) {
     case ShopMenuEnum.JEWELRY:
       return jewlery.slice(0, SHOPPE_LOAD_MORE_NUMBER);
 
+    case ShopMenuEnum.BELTS:
+      return belts.slice(0, SHOPPE_LOAD_MORE_NUMBER);
+
     case ShopMenuEnum.SUNGLASS:
       return sunglasses.slice(0, SHOPPE_LOAD_MORE_NUMBER);
 

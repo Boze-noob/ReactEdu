@@ -11,6 +11,9 @@ export const MenuData = [
         title: Items.ShopMenuEnum.JEWELRY,
       },
       {
+        title: Items.ShopMenuEnum.BELTS,
+      },
+      {
         title: Items.ShopMenuEnum.SUNGLASS,
       },
       {

@@ -69,6 +69,7 @@ export default function ShopperArticleList() {
                     imageUrl={item.img}
                     title={item.title}
                     description={item.description}
+                    link={item.link}
                   />
                 </Item>
               </Grid>
@@ -89,7 +90,7 @@ export default function ShopperArticleList() {
   }
 }
 
-function Article({ imageUrl, title, description }) {
+function Article({ imageUrl, title, description, link }) {
   return (
     <Card
       sx={{
@@ -101,30 +102,36 @@ function Article({ imageUrl, title, description }) {
         height: "100%",
       }}
     >
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          image={imageUrl}
-          sx={{ height: { xs: 120, sm: 150, md: 190 }, objectFit: "contain" }}
-        />
-        <CardContent>
-          <Typography
-            gutterBottom
-            variant="h7"
-            component="div"
-            fontFamily={"Work Sans"}
-          >
-            {title}
-          </Typography>
-          <Typography
-            color="text.secondary"
-            fontFamily={"Work Sans"}
-            sx={{ fontSize: { xs: 10, sm: 14, lg: 16 } }}
-          >
-            {description}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+      <a
+        href={link}
+        target="_blank"
+        style={{ textDecoration: "none", color: "inherit" }}
+      >
+        <CardActionArea>
+          <CardMedia
+            component="img"
+            image={imageUrl}
+            sx={{ height: { xs: 120, sm: 150, md: 190 }, objectFit: "contain" }}
+          />
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h7"
+              component="div"
+              fontFamily={"Work Sans"}
+            >
+              {title}
+            </Typography>
+            <Typography
+              color="text.secondary"
+              fontFamily={"Work Sans"}
+              sx={{ fontSize: { xs: 10, sm: 14, lg: 16 } }}
+            >
+              {description}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </a>
     </Card>
   );
 }
