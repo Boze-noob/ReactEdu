@@ -1,13 +1,20 @@
-import { Box, Typography, Grid } from "@mui/material";
-import { Paper, Divider } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import { Divider } from "@mui/material";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import {
+  getFirstHalfOfString,
+  getSecondHalfOfString,
+} from "../../../utils/utils";
+import { useNavigate } from "react-router-dom";
+import { ARTICLE_DETAIL_ROUTE } from "../../../pages/router/Routes";
 
 export default function HorizontalImgList({
   bgColor,
   title,
   fontFamily,
   marginTop,
+  articles = [],
 }) {
   const responsive = {
     superLargeDesktop: {
@@ -27,45 +34,6 @@ export default function HorizontalImgList({
       items: 2,
     },
   };
-
-  var items = [
-    {
-      description: "WHAT TO WEAR TO",
-      subDescription: "A BEACHY DINNER!",
-      imgUrl:
-        "https://sincerelyjules.com/wp-content/uploads/2022/06/Sincerley-jules-terry-bandier-look-900x900.jpg",
-    },
-    {
-      description: "SEVEN SPRING",
-      subDescription: "OUTFIT IDEAS!",
-      imgUrl:
-        "https://sincerelyjules.com/wp-content/uploads/2022/06/Sincerely-jules-victorias-secret-swim-hat-look-900x900.jpg",
-    },
-    {
-      description: "SUMMER ESSENTIAL",
-      subDescription: "MAXI DRESS!",
-      imgUrl:
-        "https://sincerelyjules.com/wp-content/uploads/2022/05/Sincerely-jules-hat-elleme-bag-SWF-floral-dress-2-900x900.jpg",
-    },
-    {
-      description: "MY TOP FIVE",
-      subDescription: "BEACH ESSENTIALS!",
-      imgUrl:
-        "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-siedres-groovy-dress-orange-jwpei-official-bag-chanel-slides-1-900x900.jpg",
-    },
-    {
-      description: "SEVEN SPRING",
-      subDescription: "OUTFIT IDEAS!",
-      imgUrl:
-        "https://sincerelyjules.com/wp-content/uploads/2022/03/Sincerely-jules-nanushka-top-linen-trouser-celine-bag-siedres-scarf-look-900x900.jpg",
-    },
-    {
-      description: "MY TOP FIVE",
-      subDescription: "BEACH ESSENTIALS!",
-      imgUrl:
-        "https://sincerelyjules.com/wp-content/uploads/2022/02/Sincerely-jules-sezane-spring-dress-scarf-espadrilles-look-900x900.jpg",
-    },
-  ];
 
   return (
     <Box
@@ -97,7 +65,7 @@ export default function HorizontalImgList({
         />
       </Box>
       <Carousel responsive={responsive}>
-        {items.map((item, i) => (
+        {articles.map((item, i) => (
           <Item key={i} item={item} />
         ))}
       </Carousel>
@@ -107,6 +75,16 @@ export default function HorizontalImgList({
 }
 
 function Item(props) {
+  const navigate = useNavigate();
+  const onReadMore = () => {
+    navigate(
+      {
+        pathname: ARTICLE_DETAIL_ROUTE,
+        search: `?id=${props.item.id}`,
+      },
+      { state: props.item }
+    );
+  };
   return (
     <Box
       sx={{
@@ -121,6 +99,7 @@ function Item(props) {
           },
         },
       }}
+      onClick={() => onReadMore()}
     >
       <Box
         component="img"
@@ -131,8 +110,8 @@ function Item(props) {
             cursor: "pointer",
           },
         }}
-        src={props.item.imgUrl}
-        style={{ objectFit: "fill", padding: 10 }}
+        src={props.item.images[0]}
+        style={{ objectFit: "cover", padding: 10 }}
       />
       <Typography
         className="description"
@@ -142,7 +121,7 @@ function Item(props) {
           textAlign: "center",
         }}
       >
-        {props.item.description}
+        {getFirstHalfOfString(props.item.title)}
       </Typography>
       <Typography
         className="subdescription"
@@ -153,7 +132,7 @@ function Item(props) {
           textAlign: "center",
         }}
       >
-        {props.item.subDescription}
+        {getSecondHalfOfString(props.item.title)}
       </Typography>
     </Box>
   );

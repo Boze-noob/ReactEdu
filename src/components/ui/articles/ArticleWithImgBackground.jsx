@@ -1,9 +1,33 @@
-import { CardMedia, Button, Card, Typography, Box, Link } from "@mui/material";
+import { CardMedia, Card, Typography, Box } from "@mui/material";
 import LineButton from "../buttons/LineButton";
+import {
+  getFirstHalfOfString,
+  getSecondHalfOfString,
+} from "../../../utils/utils";
+import { Link } from "react-router-dom";
+import { getPathFromCategory } from "../../../types/enumerations/categorys";
+import { useNavigate } from "react-router-dom";
+import { ARTICLE_DETAIL_ROUTE } from "../../../pages/router/Routes";
+import { Categorys } from "../../../types/enumerations/categorys";
 
-export default function ArticleWithImgBackground({ marginTop }) {
+export default function ArticleWithImgBackground({ marginTop, article }) {
+  const navigate = useNavigate();
+
+  const onReadMore = () => {
+    navigate(
+      {
+        pathname: ARTICLE_DETAIL_ROUTE,
+        search: `?id=${article.id}`,
+      },
+      { state: article }
+    );
+  };
+
   return (
     <Card
+      onClick={() => {
+        onReadMore();
+      }}
       style={{
         position: "relative",
         backgroundColor: "#1f1f1f",
@@ -16,9 +40,9 @@ export default function ArticleWithImgBackground({ marginTop }) {
     >
       <CardMedia
         component="img"
-        image="https://sincerelyjules.com/wp-content/uploads/2022/09/Sincerely-jules-ronny-kobo-dress-scaled.jpg"
+        image={article.images[0]}
         style={{
-          objectFit: "fill",
+          objectFit: "cover",
 
           width: "100%",
         }}
@@ -44,7 +68,10 @@ export default function ArticleWithImgBackground({ marginTop }) {
           height: { xs: 350, sm: 650 },
         }}
       >
-        <Link underline="none" href="https://mui.com/material-ui/react-link/">
+        <Link
+          to={getPathFromCategory(article.category)}
+          style={{ textDecoration: "none", color: "black" }}
+        >
           <Typography
             sx={{
               color: "white",
@@ -58,7 +85,7 @@ export default function ArticleWithImgBackground({ marginTop }) {
               transition: "0.7s",
             }}
           >
-            FASHION
+            {Categorys[article.category]}
           </Typography>
         </Link>
 
@@ -87,7 +114,7 @@ export default function ArticleWithImgBackground({ marginTop }) {
               color: "white",
             }}
           >
-            A CUTE DATE NIGHT
+            {getFirstHalfOfString(article.title)}
           </Typography>
 
           <Typography
@@ -100,7 +127,7 @@ export default function ArticleWithImgBackground({ marginTop }) {
               fontWeight: "bold",
             }}
           >
-            LOOK IDEA!
+            {getSecondHalfOfString(article.title)}
           </Typography>
         </Box>
 

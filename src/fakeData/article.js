@@ -889,7 +889,9 @@ export const articleData = [
     galleryImages: [
       "https://sincerelyjules.com/wp-content/uploads/2022/04/IMG_1719-1000x1320.jpg",
     ],
-    images: [],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2022/04/IMG_1719-1000x1320.jpg",
+    ],
     category: 3,
     title: "Mother's day gift guide",
     locationDate: "LOS ANGELES, CA - May 20",
@@ -1517,7 +1519,9 @@ export const articleData = [
       "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1015.jpg",
     ],
 
-    images: [],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1015.jpg",
+    ],
     category: 1,
     title: "BEAUTY ESSENTIALS",
     locationDate: "February 20",
@@ -1593,7 +1597,9 @@ export const articleData = [
       "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1015.jpg",
     ],
 
-    images: [],
+    images: [
+      "https://sincerelyjules.com/wp-content/uploads/2020/02/IMG_1013.jpg",
+    ],
     category: 1,
     title: "BEAUTY ESSENTIALS",
     locationDate: "February 20",

@@ -10,7 +10,7 @@ import { ArticleForSaleModel } from "../../../domain/models/ArticleForSale";
 import { Categorys } from "../../../types/enumerations/categorys";
 import { useArticleStore } from "../../../stores/ArticleStore";
 import { Link } from "react-router-dom";
-import { FASHION_ROUTE } from "../../../pages/router/Routes";
+import { getPathFromCategory } from "../../../types/enumerations/categorys";
 
 export default function ArticleDetails() {
   const { state } = useLocation();
@@ -41,7 +41,7 @@ export default function ArticleDetails() {
         }}
       >
         <Link
-          to={FASHION_ROUTE}
+          to={getPathFromCategory(article.category)}
           style={{ textDecoration: "none", color: "black" }}
         >
           <Typography
