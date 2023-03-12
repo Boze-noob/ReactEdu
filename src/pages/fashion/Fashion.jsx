@@ -5,24 +5,43 @@ import HorizontalArticleImgRight from "../../components/ui/articles/horizontalAr
 import HorizontalArticleImgLeft from "../../components/ui/articles/horizontalArticles/HorizontalArticleImgLeft";
 import VerticalGalleryArticleList from "../../components/ui/lists/VerticalGalleryArticleList.jsx";
 import { useArticleStore } from "../../stores/ArticleStore.js";
-import { getArticles } from "../../data/repositories/ArticleRepository.js";
+import { getFashionArticles } from "../../data/repositories/ArticleRepository.js";
+import { CircularProgress, Box } from "@mui/material";
 
 export default function FashionPage() {
-  const articles = useArticleStore((state) => state.articles);
+  const articles = useArticleStore((state) => state.fashionArticles);
 
   useEffect(() => {
-    getArticles();
+    getFashionArticles();
   }, []);
 
   return (
     <>
-      <PageTitle title={"Fashion"} />
-      <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
-      <HorizontalArticleImgRight marginTop={-40} article={articles[0]} />
-      <VerticalGalleryArticleList marginTop={40} loadMoreFlag={false} />
-      <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
-      <HorizontalArticleImgRight marginTop={-40} article={articles[0]} />
-      <VerticalGalleryArticleList marginTop={40} loadMoreFlag={true} />
+      {articles.length !== 0 ? (
+        <>
+          <PageTitle title={"Fashion"} />
+          <HorizontalArticleImgLeft marginTop={60} article={articles[1]} />
+          <HorizontalArticleImgRight marginTop={-40} article={articles[2]} />
+          <VerticalGalleryArticleList
+            marginTop={40}
+            loadMoreFlag={false}
+            articles={articles.slice(3, 6)}
+          />
+          <HorizontalArticleImgLeft marginTop={60} article={articles[6]} />
+          <HorizontalArticleImgRight marginTop={-40} article={articles[7]} />
+          <VerticalGalleryArticleList
+            marginTop={40}
+            loadMoreFlag={true}
+            articles={articles.filter((val, i) => {
+              if (i > 7) return val;
+            })}
+          />
+        </>
+      ) : (
+        <Box sx={{ height: "100vh" }}>
+          <CircularProgress />
+        </Box>
+      )}
     </>
   );
 }

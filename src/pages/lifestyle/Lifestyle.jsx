@@ -3,26 +3,45 @@ import PageTitle from "../../components/ui/header/PageTitle.jsx";
 import HorizontalArticleImgRight from "../../components/ui/articles/horizontalArticles/HorizontalArticleImgRight";
 import HorizontalArticleImgLeft from "../../components/ui/articles/horizontalArticles/HorizontalArticleImgLeft";
 import VerticalGalleryArticleList from "../../components/ui/lists/VerticalGalleryArticleList.jsx";
-import { getArticles } from "../../data/repositories/ArticleRepository.js";
+import { getLifestyleArticles } from "../../data/repositories/ArticleRepository.js";
 import { useArticleStore } from "../../stores/ArticleStore.js";
 import { useEffect } from "react";
+import { Box, CircularProgress } from "@mui/material";
 
 export default function LifestylePage() {
-  const articles = useArticleStore((state) => state.articles);
+  const articles = useArticleStore((state) => state.lifestyleArticles);
 
   useEffect(() => {
-    getArticles();
+    getLifestyleArticles();
   }, []);
 
   return (
     <>
-      <PageTitle title={"Lifestyle"} />
-      <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
-      <HorizontalArticleImgRight marginTop={-40} article={articles[0]} />
-      <VerticalGalleryArticleList marginTop={40} loadMoreFlag={false} />
-      <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
-      <HorizontalArticleImgRight marginTop={-40} article={articles[0]} />
-      <VerticalGalleryArticleList marginTop={40} loadMoreFlag={true} />
+      {articles.length !== 0 ? (
+        <>
+          <PageTitle title={"Lifestyle"} />
+          <HorizontalArticleImgLeft marginTop={60} article={articles[0]} />
+          <HorizontalArticleImgRight marginTop={-40} article={articles[1]} />
+          <VerticalGalleryArticleList
+            marginTop={40}
+            loadMoreFlag={false}
+            articles={articles.slice(2, 5)}
+          />
+          <HorizontalArticleImgLeft marginTop={60} article={articles[5]} />
+          <HorizontalArticleImgRight marginTop={-40} article={articles[6]} />
+          <VerticalGalleryArticleList
+            marginTop={40}
+            loadMoreFlag={true}
+            articles={articles.filter((val, i) => {
+              if (i > 6) return val;
+            })}
+          />
+        </>
+      ) : (
+        <Box sx={{ height: "100vh" }}>
+          <CircularProgress />
+        </Box>
+      )}
     </>
   );
 }

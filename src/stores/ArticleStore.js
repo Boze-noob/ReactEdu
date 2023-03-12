@@ -5,5 +5,10 @@ export const useArticleStore = create(
   immer(() => ({
     isLoading: true,
     articles: [],
+    fashionArticles: [],
+    beautyArticles: [],
+    lifestyleArticles: [],
+    collagesArticles: [],
+    homeArticles: [],
   }))
 );

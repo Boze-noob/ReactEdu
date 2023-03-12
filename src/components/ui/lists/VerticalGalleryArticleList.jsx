@@ -8,11 +8,12 @@ export default function VerticalGalleryArticleList({
   loadMoreFlag,
   articles,
 }) {
-  const [itemData, setItemData] = useState([
-    articles[0],
-    articles[1],
-    articles[2],
-  ]);
+  const [itemData, setItemData] = useState([]);
+  for (let i = 0; i < articles.length && itemData.length < 3; i++) {
+    if (articles[i]) {
+      itemData.push(articles[i]);
+    }
+  }
   const [counter, setCounter] = useState(3);
   const [hasLoadMore, setHasLoadMore] = useState(loadMoreFlag);
 
