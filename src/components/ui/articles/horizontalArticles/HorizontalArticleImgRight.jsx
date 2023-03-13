@@ -12,23 +12,13 @@ import {
   getPathFromCategory,
   Categorys,
 } from "../../../../types/enumerations/categorys";
+import { getArticleModel } from '../../';
 
 export default function HorizontalArticleImgRight({ marginTop, article }) {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const articleModel = new ArticleModel(
-    article.id,
-    article.galleryImages,
-    article.images,
-    article.category,
-    article.title,
-    article.locationDate,
-    article.shortDescription,
-    article.description,
-    article.comments,
-    article.articlesForSale
-  );
+  const articleModel = getArticleModel(article);
 
   const onReadMore = () => {
     navigate(
@@ -63,6 +53,9 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
   }
 
   return (
+    <>
+    {
+      articleModel === undefined ? <></> :
     <Grid container spacing={0} style={{ marginTop: marginTop }}>
       <Grid item xs={12} sm={6}>
         <Box
@@ -156,6 +149,8 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
         />
       </Grid>
     </Grid>
+    }
+    </>
   );
 }
 

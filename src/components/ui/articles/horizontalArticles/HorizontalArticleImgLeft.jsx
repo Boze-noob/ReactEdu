@@ -18,18 +18,7 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const articleModel = new ArticleModel(
-    article.id,
-    article.galleryImages,
-    article.images,
-    article.category,
-    article.title,
-    article.locationDate,
-    article.shortDescription,
-    article.description,
-    article.comments,
-    article.articlesForSale
-  );
+  const articleModel = getArticleModel(article);
 
   const onReadMore = () => {
     navigate(
@@ -64,92 +53,97 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
   }
 
   return (
-    <Grid container spacing={0} style={{ marginTop: marginTop }}>
-      <Grid item xs={12} sm={6}>
-        <Image
-          src={articleModel.galleryImages[0]}
-          height={{ xs: 450, md: 900 }}
-        />
-      </Grid>
-      <Grid item xs={12} sm={6}>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            height: "100%",
-            justifyContent: "center",
-          }}
-        >
-          <Typography
-            sx={{
-              marginBottom: 15,
-              fontFamily: "Work Sans",
-              fontWeight: 500,
-              cursor: "pointer",
-            }}
-            onClick={() => {
-              const path = getPathFromCategory(articleModel.category);
-
-              if (location.pathname != path) navigate(path);
-            }}
-          >
-            {Categorys[articleModel.category].toUpperCase()}
-          </Typography>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              "&:hover": {
-                cursor: "pointer",
-                "& .firstTitle": {
-                  color: "#49494a",
-                },
-                "& .secondTitle": {
-                  color: "#49494a",
-                },
-              },
-            }}
-          >
-            <Typography
-              className="firstTitle"
-              sx={{ typography: { xs: "h7", sm: "h4" } }}
-              onClick={() => {
-                onReadMore();
+    <>
+    {
+      articleModel === undefined ? <></> : 
+        <Grid container spacing={0} style={{ marginTop: marginTop }}>
+          <Grid item xs={12} sm={6}>
+            <Image
+              src={articleModel.galleryImages[0]}
+              height={{ xs: 450, md: 900 }}
+            />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                height: "100%",
+                justifyContent: "center",
               }}
             >
-              {utils.getFirstHalfOfString(articleModel.title).toUpperCase()}
-            </Typography>
-            <Typography
-              className="secondTitle"
-              sx={{ typography: { xs: "h6", sm: "h3" }, mb: 20 }}
-              style={{ fontWeight: 600, fontFamily: "Work Sans" }}
-              textAlign="center"
-              onClick={() => {
-                onReadMore();
-              }}
-            >
-              {utils.getSecondHalfOfString(articleModel.title).toUpperCase()}
-            </Typography>
-          </Box>
-
-          <Typography
-            style={{ fontWeight: 600, marginLeft: 50, marginRight: 50 }}
-            align="center"
-          >
-            {articleModel.shortDescription}
-          </Typography>
-          <HorizontalList articlesForSale={articleModel.articlesForSale} />
-          <CustomButton
-            onClick={() => onReadMore()}
-            margin={20}
-            txt={"READ MORE"}
-          />
-        </Box>
-      </Grid>
-    </Grid>
+              <Typography
+                sx={{
+                  marginBottom: 15,
+                  fontFamily: "Work Sans",
+                  fontWeight: 500,
+                  cursor: "pointer",
+                }}
+                onClick={() => {
+                  const path = getPathFromCategory(articleModel.category);
+    
+                  if (location.pathname != path) navigate(path);
+                }}
+              >
+                {Categorys[articleModel.category].toUpperCase()}
+              </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  "&:hover": {
+                    cursor: "pointer",
+                    "& .firstTitle": {
+                      color: "#49494a",
+                    },
+                    "& .secondTitle": {
+                      color: "#49494a",
+                    },
+                  },
+                }}
+              >
+                <Typography
+                  className="firstTitle"
+                  sx={{ typography: { xs: "h7", sm: "h4" } }}
+                  onClick={() => {
+                    onReadMore();
+                  }}
+                >
+                  {utils.getFirstHalfOfString(articleModel.title).toUpperCase()}
+                </Typography>
+                <Typography
+                  className="secondTitle"
+                  sx={{ typography: { xs: "h6", sm: "h3" }, mb: 20 }}
+                  style={{ fontWeight: 600, fontFamily: "Work Sans" }}
+                  textAlign="center"
+                  onClick={() => {
+                    onReadMore();
+                  }}
+                >
+                  {utils.getSecondHalfOfString(articleModel.title).toUpperCase()}
+                </Typography>
+              </Box>
+    
+              <Typography
+                style={{ fontWeight: 600, marginLeft: 50, marginRight: 50 }}
+                align="center"
+              >
+                {articleModel.shortDescription}
+              </Typography>
+              <HorizontalList articlesForSale={articleModel.articlesForSale} />
+              <CustomButton
+                onClick={() => onReadMore()}
+                margin={20}
+                txt={"READ MORE"}
+              />
+            </Box>
+          </Grid>
+        </Grid>
+    }
+    </>
   );
 }
 
