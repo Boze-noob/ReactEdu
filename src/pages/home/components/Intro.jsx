@@ -31,11 +31,17 @@ const Intro = ({ articleModel }) => {
   } else {
     return (
       <Card sx={{ height: 1, width: 1 }}>
-        <div style={{ position: "relative", backgroundColor: "#1E1E1E" }}>
+        <Box
+          style={{
+            position: "relative",
+            height: "100vh",
+            backgroundColor: "#1E1E1E",
+          }}
+        >
           <CardMedia
             component="img"
             image={articleModel.galleryImages[0]}
-            sx={{ opacity: 0.7 }}
+            sx={{ opacity: 0.7, height: "100vh", objectFit: "cover" }}
           />
           <Box style={{ position: "absolute", top: "35%", left: "5%" }}>
             <Typography
@@ -44,7 +50,7 @@ const Intro = ({ articleModel }) => {
                 color: "white",
                 fontFamily: "Marck Script",
               }}
-              sx={{ fontSize: { xs: 18, sm: 35, md: 55 } }}
+              sx={{ fontSize: { xs: 24, sm: 35, md: 55 } }}
             >
               {utils.getFirstHalfOfString(articleModel.title).toUpperCase()}
             </Typography>
@@ -53,7 +59,7 @@ const Intro = ({ articleModel }) => {
                 color: "white",
                 fontFamily: "Helvetica Neue",
               }}
-              sx={{ fontSize: { xs: 12, sm: 25, md: 38 }, ml: 100 }}
+              sx={{ fontSize: { xs: 18, sm: 25, md: 38 }, ml: 100 }}
             >
               {utils.getSecondHalfOfString(articleModel.title).toUpperCase()}
             </Typography>
@@ -68,7 +74,7 @@ const Intro = ({ articleModel }) => {
           <Box
             sx={{
               position: "absolute",
-              bottom: { xs: "30%", sm: "40%" },
+              bottom: { xs: "30%", sm: "30%" },
               right: "3%",
               display: "flex",
               flexDirection: "column",
@@ -78,7 +84,7 @@ const Intro = ({ articleModel }) => {
               icon={
                 <InstagramIcon
                   sx={{
-                    fontSize: { xs: 10, sm: 16, md: "x-large" },
+                    fontSize: { xs: 16, sm: 18, md: "x-large" },
                     fill: "white",
                     "&:hover": {
                       cursor: "pointer",
@@ -94,7 +100,7 @@ const Intro = ({ articleModel }) => {
               icon={
                 <TwitterIcon
                   sx={{
-                    fontSize: { xs: 10, sm: 16, md: "x-large" },
+                    fontSize: { xs: 16, sm: 18, md: "x-large" },
                     fill: "white",
                     "&:hover": {
                       cursor: "pointer",
@@ -110,7 +116,7 @@ const Intro = ({ articleModel }) => {
               icon={
                 <PinterestIcon
                   sx={{
-                    fontSize: { xs: 10, sm: 16, md: "x-large" },
+                    fontSize: { xs: 16, sm: 18, md: "x-large" },
                     fill: "white",
                     "&:hover": {
                       cursor: "pointer",
@@ -123,7 +129,7 @@ const Intro = ({ articleModel }) => {
               href="https://www.pinterest.com/sincerelyjules1/"
             />
           </Box>
-        </div>
+        </Box>
       </Card>
     );
   }
