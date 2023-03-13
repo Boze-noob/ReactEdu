@@ -3,7 +3,6 @@ import CustomButton from "../../buttons/CustomButton";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
-import { ArticleModel } from "../../../../domain/models/ArticleModel";
 import { ArticleForSaleModel } from "../../../../domain/models/ArticleForSale";
 import * as utils from "../../../../utils/utils.js";
 import { useNavigate } from "react-router-dom";
@@ -13,6 +12,7 @@ import {
   Categorys,
 } from "../../../../types/enumerations/categorys";
 import { useLocation } from "react-router-dom";
+import { getArticleModel } from "../../../../domain/models/ArticleModel";
 
 export default function HorizontalArticleImgLeft({ marginTop, article }) {
   const navigate = useNavigate();
@@ -54,8 +54,9 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
 
   return (
     <>
-    {
-      articleModel === undefined ? <></> : 
+      {articleModel === undefined ? (
+        <></>
+      ) : (
         <Grid container spacing={0} style={{ marginTop: marginTop }}>
           <Grid item xs={12} sm={6}>
             <Image
@@ -82,8 +83,8 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
                 }}
                 onClick={() => {
                   const path = getPathFromCategory(articleModel.category);
-    
-                  if (location.pathname != path) navigate(path);
+
+                  if (location.pathname !== path) navigate(path);
                 }}
               >
                 {Categorys[articleModel.category].toUpperCase()}
@@ -123,10 +124,12 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
                     onReadMore();
                   }}
                 >
-                  {utils.getSecondHalfOfString(articleModel.title).toUpperCase()}
+                  {utils
+                    .getSecondHalfOfString(articleModel.title)
+                    .toUpperCase()}
                 </Typography>
               </Box>
-    
+
               <Typography
                 style={{ fontWeight: 600, marginLeft: 50, marginRight: 50 }}
                 align="center"
@@ -142,7 +145,7 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
             </Box>
           </Grid>
         </Grid>
-    }
+      )}
     </>
   );
 }
@@ -175,6 +178,7 @@ function HorizontalList({ articlesForSale }) {
               <img
                 src={item.img}
                 srcSet={item.img}
+                alt={""}
                 loading="lazy"
                 style={{ height: 210, objectFit: "contain" }}
               />

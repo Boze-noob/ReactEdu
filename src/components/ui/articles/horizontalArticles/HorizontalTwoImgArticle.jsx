@@ -28,6 +28,7 @@ export default function HorizontalTwoImgArticle({ marginTop, articles }) {
   );
 
   function ImageWithDesc({ article }) {
+    if (article === undefined) return <></>;
     return (
       <Card
         style={{

@@ -16,7 +16,7 @@ export default function InstagramGrid() {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
           pt: 20,
         }}
@@ -47,6 +47,7 @@ export default function InstagramGrid() {
             width: "30%",
             bgcolor: "black",
             ml: "5%",
+            display: { xs: "none", md: "block" },
           }}
         />
       </Box>
@@ -84,7 +85,10 @@ function ImagesGrid({ data }) {
           />
           <div className="overlay">
             <Typography
-              sx={{ typography: { xs: "h6", sm: "h5" } }}
+              sx={{
+                typography: { xs: "h6", sm: "h5" },
+                display: { xs: "none", md: "block" },
+              }}
               className={"text"}
               style={{ fontWeight: 500, fontFamily: "Lora" }}
             >
@@ -112,7 +116,10 @@ function ImagesGrid({ data }) {
               <img src={item.imageUrl} className={"image"} />
               <div className="overlay">
                 <Typography
-                  sx={{ typography: "h6" }}
+                  sx={{
+                    typography: "h6",
+                    display: { xs: "none", md: "block" },
+                  }}
                   className={"text"}
                   style={{ fontWeight: 500, fontFamily: "Lora" }}
                 >

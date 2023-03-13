@@ -40,7 +40,7 @@ export default function LineButton({ btnTxt, width, url, onClick }) {
           color={"white"}
           sx={{
             pl: 15,
-            fontSize: { xs: 8, sm: 16 },
+            fontSize: { xs: 10, sm: 16 },
             transition: "0.7s",
           }}
           style={{
