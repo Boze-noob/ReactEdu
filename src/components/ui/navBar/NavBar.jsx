@@ -46,7 +46,7 @@ export default function NavBar({ primaryColor, secondaryColor }) {
           >
             SINCERLY JULES
           </Typography>
-          <Box sx={{ width: "5%" }}>
+          <Box sx={{ width: { sm: "5%" } }}>
             <Link to={Routes.SHOPPE_ROUTE} style={{ textDecoration: "none" }}>
               <Button
                 sx={{
@@ -74,7 +74,11 @@ export default function NavBar({ primaryColor, secondaryColor }) {
                 >
                   Shop
                 </Typography>
-                <Box sx={{ width: { xs: 5, md: 10 } }} />
+                <Box
+                  sx={{
+                    width: { xs: 5, md: 10 },
+                  }}
+                />
                 <ShoppingBasketIcon
                   className="icon"
                   sx={{

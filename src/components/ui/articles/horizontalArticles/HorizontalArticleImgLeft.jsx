@@ -70,16 +70,17 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                height: "100%",
                 justifyContent: "center",
+                height: "100%",
               }}
             >
               <Typography
                 sx={{
                   marginBottom: 15,
                   fontFamily: "Work Sans",
-                  fontWeight: 500,
+                  fontWeight: { xs: 600, sm: 500 },
                   cursor: "pointer",
+                  fontSize: { xs: 13, sm: 16 },
                 }}
                 onClick={() => {
                   const path = getPathFromCategory(articleModel.category);
@@ -93,8 +94,8 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
+                  justifyContent: { xs: "start", sm: "center" },
+                  alignItems: { xs: "start", sm: "center" },
                   "&:hover": {
                     cursor: "pointer",
                     "& .firstTitle": {
@@ -108,7 +109,7 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
               >
                 <Typography
                   className="firstTitle"
-                  sx={{ typography: { xs: "h7", sm: "h4" } }}
+                  sx={{ typography: { xs: "h6", sm: "h4" } }}
                   onClick={() => {
                     onReadMore();
                   }}
@@ -117,7 +118,7 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
                 </Typography>
                 <Typography
                   className="secondTitle"
-                  sx={{ typography: { xs: "h6", sm: "h3" }, mb: 20 }}
+                  sx={{ typography: { xs: "h5", sm: "h3" }, mb: 20 }}
                   style={{ fontWeight: 600, fontFamily: "Work Sans" }}
                   textAlign="center"
                   onClick={() => {
@@ -131,8 +132,11 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
               </Box>
 
               <Typography
-                style={{ fontWeight: 600, marginLeft: 50, marginRight: 50 }}
-                align="center"
+                style={{ marginLeft: 50, marginRight: 50 }}
+                sx={{
+                  align: { xs: "start", sm: "center" },
+                  fontWeight: { xs: 500, sm: 600 },
+                }}
               >
                 {articleModel.shortDescription}
               </Typography>
