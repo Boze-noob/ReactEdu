@@ -31,7 +31,7 @@ export default function HorizontalImgList({
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2,
+      items: 1,
     },
   };
 
@@ -61,15 +61,18 @@ export default function HorizontalImgList({
             width: "30%",
             bgcolor: "black",
             ml: "5%",
+            display: { xs: "none", sm: "block" },
           }}
         />
       </Box>
-      <Carousel responsive={responsive}>
+      <Carousel
+        responsive={responsive}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+      >
         {articles.map((item, i) => (
           <Item key={i} item={item} />
         ))}
       </Carousel>
-      ;
     </Box>
   );
 }
@@ -104,8 +107,8 @@ function Item(props) {
       <Box
         component="img"
         sx={{
-          height: { xs: 100, sm: 300, md: 450 },
-          width: "95%",
+          height: { xs: 300, sm: 350, md: 450 },
+          width: "100%",
           "&:hover": {
             cursor: "pointer",
           },

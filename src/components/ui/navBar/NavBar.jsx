@@ -1,5 +1,5 @@
 import * as React from "react";
-import { AppBar, Box, Toolbar, Typography, Button } from "@mui/material";
+import { AppBar, Box, Toolbar, Typography, IconButton } from "@mui/material";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import SideMenu from "./components/SideMenu.jsx";
@@ -48,7 +48,7 @@ export default function NavBar({ primaryColor, secondaryColor }) {
           </Typography>
           <Box sx={{ width: { sm: "5%" } }}>
             <Link to={Routes.SHOPPE_ROUTE} style={{ textDecoration: "none" }}>
-              <Button
+              <IconButton
                 sx={{
                   "&:hover": {
                     cursor: "pointer",
@@ -70,6 +70,7 @@ export default function NavBar({ primaryColor, secondaryColor }) {
                     fontWeight: "500",
                     fontSize: { xs: 10, sm: 15 },
                     transition: "0.7s",
+                    display: { xs: "none", sm: "block" },
                   }}
                 >
                   Shop
@@ -77,17 +78,18 @@ export default function NavBar({ primaryColor, secondaryColor }) {
                 <Box
                   sx={{
                     width: { xs: 5, md: 10 },
+                    display: { xs: "none", sm: "block" },
                   }}
                 />
                 <ShoppingBasketIcon
                   className="icon"
                   sx={{
-                    fontSize: { xs: 15, sm: 20 },
+                    fontSize: { xs: 20, sm: 30 },
                     color: trigger ? primaryColor : secondaryColor,
                     transition: "0.7s",
                   }}
                 />
-              </Button>
+              </IconButton>
             </Link>
           </Box>
         </Toolbar>

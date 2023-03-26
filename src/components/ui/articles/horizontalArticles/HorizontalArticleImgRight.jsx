@@ -56,23 +56,31 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
       {articleModel === undefined ? (
         <></>
       ) : (
-        <Grid container spacing={0} style={{ marginTop: marginTop }}>
-          <Grid item xs={12} sm={6}>
+        <Grid
+          container
+          spacing={0}
+          sx={{ marginTop: { xs: 50, sm: marginTop } }}
+        >
+          <Grid item xs={12} sm={6} order={{ xs: 2, sm: 1 }}>
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "center",
+                alignItems: { xs: "start", sm: "center" },
                 height: "100%",
                 justifyContent: "center",
+                marginTop: { xs: 20, sm: 0 },
+                marginRight: { xs: 20, sm: 0 },
+                marginLeft: { xs: 20, sm: 0 },
               }}
             >
               <Typography
                 sx={{
                   marginBottom: 15,
                   fontFamily: "Work Sans",
-                  fontWeight: 500,
+                  fontWeight: { xs: 600, sm: 500 },
                   cursor: "pointer",
+                  fontSize: { xs: 13, sm: 16 },
                 }}
                 onClick={() => {
                   const path = getPathFromCategory(articleModel.category);
@@ -86,8 +94,8 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
+                  justifyContent: { xs: "start", sm: "center" },
+                  alignItems: { xs: "start", sm: "center" },
                   "&:hover": {
                     cursor: "pointer",
                     "& .firstTitle": {
@@ -101,7 +109,7 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
               >
                 <Typography
                   className="firstTitle"
-                  sx={{ typography: { xs: "h7", sm: "h4" } }}
+                  sx={{ typography: { xs: "h6", sm: "h4" } }}
                   onClick={() => {
                     onReadMore();
                   }}
@@ -110,9 +118,12 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
                 </Typography>
                 <Typography
                   className="secondTitle"
-                  sx={{ typography: { xs: "h6", sm: "h3" }, mb: 20 }}
+                  sx={{
+                    typography: { xs: "h5", sm: "h3" },
+                    mb: 20,
+                    textAlign: { xs: "start", sm: "center" },
+                  }}
                   style={{ fontWeight: 600, fontFamily: "Work Sans" }}
-                  textAlign="center"
                   onClick={() => {
                     onReadMore();
                   }}
@@ -123,17 +134,35 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
                 </Typography>
               </Box>
               <Typography
-                style={{ fontWeight: 600, marginLeft: 50, marginRight: 50 }}
-                align="center"
+                sx={{
+                  marginLeft: { xs: 0, sm: 50 },
+                  marginRight: 50,
+                  align: { xs: "start", sm: "center" },
+                  fontWeight: { xs: 500, sm: 600 },
+                }}
               >
                 {articleModel.shortDescription}
               </Typography>
-              <HorizontalList articlesForSale={articleModel.articlesForSale} />
-              <CustomButton
-                onClick={() => onReadMore()}
-                margin={20}
-                txt={"READ MORE"}
-              />
+              {articleModel.articlesForSale.length !== 0 && (
+                <HorizontalList
+                  articlesForSale={articleModel.articlesForSale}
+                />
+              )}
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  width: 1,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <CustomButton
+                  onClick={() => onReadMore()}
+                  margin={20}
+                  txt={"READ MORE"}
+                />
+              </Box>
             </Box>
           </Grid>
           <Grid
@@ -144,6 +173,7 @@ export default function HorizontalArticleImgRight({ marginTop, article }) {
               justifyContent: "flex-end",
               display: "flex",
             }}
+            order={{ xs: 1, sm: 2 }}
           >
             <Image
               src={articleModel.galleryImages[0]}

@@ -69,9 +69,12 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "center",
+                alignItems: { xs: "start", sm: "center" },
                 justifyContent: "center",
                 height: "100%",
+                marginTop: { xs: 20, sm: 0 },
+                marginRight: { xs: 20, sm: 0 },
+                marginLeft: { xs: 20, sm: 0 },
               }}
             >
               <Typography
@@ -118,9 +121,12 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
                 </Typography>
                 <Typography
                   className="secondTitle"
-                  sx={{ typography: { xs: "h5", sm: "h3" }, mb: 20 }}
+                  sx={{
+                    typography: { xs: "h5", sm: "h3" },
+                    mb: 20,
+                    textAlign: { xs: "start", sm: "center" },
+                  }}
                   style={{ fontWeight: 600, fontFamily: "Work Sans" }}
-                  textAlign="center"
                   onClick={() => {
                     onReadMore();
                   }}
@@ -132,20 +138,35 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
               </Box>
 
               <Typography
-                style={{ marginLeft: 50, marginRight: 50 }}
                 sx={{
+                  marginLeft: { xs: 0, sm: 50 },
+                  marginRight: 50,
                   align: { xs: "start", sm: "center" },
                   fontWeight: { xs: 500, sm: 600 },
                 }}
               >
                 {articleModel.shortDescription}
               </Typography>
-              <HorizontalList articlesForSale={articleModel.articlesForSale} />
-              <CustomButton
-                onClick={() => onReadMore()}
-                margin={20}
-                txt={"READ MORE"}
-              />
+              {articleModel.articlesForSale.length !== 0 && (
+                <HorizontalList
+                  articlesForSale={articleModel.articlesForSale}
+                />
+              )}
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  width: 1,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <CustomButton
+                  onClick={() => onReadMore()}
+                  margin={20}
+                  txt={"READ MORE"}
+                />
+              </Box>
             </Box>
           </Grid>
         </Grid>
@@ -160,7 +181,7 @@ function HorizontalList({ articlesForSale }) {
   );
   return (
     <ImageList
-      sx={{ overflowX: "auto", width: { xs: 300, sm: 500 }, marginTop: 40 }}
+      sx={{ overflowX: "auto", width: { xs: "100%", sm: 500 }, marginTop: 40 }}
       rowHeight={250}
     >
       <ImageListItem sx={{ display: "inline-flex", flexDirection: "row" }}>

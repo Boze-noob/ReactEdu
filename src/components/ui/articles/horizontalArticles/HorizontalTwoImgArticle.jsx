@@ -18,10 +18,10 @@ export default function HorizontalTwoImgArticle({ marginTop, articles }) {
 
   return (
     <Grid container style={{ marginTop: marginTop }}>
-      <Grid item xs>
+      <Grid item xs={12} sm={6}>
         <ImageWithDesc article={articles[0]} />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <ImageWithDesc article={articles[1]} />
       </Grid>
     </Grid>
@@ -37,19 +37,19 @@ export default function HorizontalTwoImgArticle({ marginTop, articles }) {
           width: "100%",
         }}
         sx={{
-          height: { xs: 400, md: 900 },
+          height: { xs: 500, md: 900 },
         }}
       >
         <CardMedia
           component="img"
           image={article.images[0]}
           style={{
-            objectFit: "fill",
+            objectFit: "cover",
             width: "100%",
           }}
           sx={{
             opacity: 0.6,
-            height: { xs: 400, md: 900 },
+            height: { xs: 500, md: 900 },
           }}
         />
 
@@ -66,7 +66,7 @@ export default function HorizontalTwoImgArticle({ marginTop, articles }) {
             left: "0%",
           }}
           sx={{
-            height: { xs: 400, md: 900 },
+            height: { xs: 500, md: 900 },
           }}
         >
           <Box width={"60%"} onClick={() => onReadMore(article)}>
@@ -78,7 +78,7 @@ export default function HorizontalTwoImgArticle({ marginTop, articles }) {
               }}
               sx={{
                 color: "white",
-                fontSize: { xs: 12, sm: 25, md: 38 },
+                typography: { xs: "h5", sm: "h4" },
                 "&:hover": {
                   color: "black",
                   cursor: "pointer",
@@ -94,7 +94,10 @@ export default function HorizontalTwoImgArticle({ marginTop, articles }) {
           <Box height={20} />
           <Box
             width={"80%"}
-            sx={{ display: "flex", flexDirection: "row-reverse" }}
+            sx={{
+              display: { xs: "none", sm: "flex" },
+              flexDirection: "row-reverse",
+            }}
           >
             <LineButton
               btnTxt="Read"

@@ -35,7 +35,7 @@ export default function ArticleWithImgBackground({ marginTop, article }) {
         marginTop: marginTop ?? 10,
       }}
       sx={{
-        height: { xs: 350, sm: 650 },
+        height: { xs: 450, sm: 700 },
       }}
     >
       <CardMedia
@@ -47,7 +47,7 @@ export default function ArticleWithImgBackground({ marginTop, article }) {
           width: "100%",
         }}
         sx={{
-          height: { xs: 350, sm: 650 },
+          height: { xs: 450, sm: 700 },
           opacity: 0.7,
         }}
       />
@@ -75,7 +75,7 @@ export default function ArticleWithImgBackground({ marginTop, article }) {
           <Typography
             sx={{
               color: "white",
-              fontSize: { xs: 9, sm: 11, md: 13 },
+              fontSize: { xs: 15, sm: 11, md: 13 },
               "&:hover": {
                 color: "black",
               },
@@ -109,7 +109,7 @@ export default function ArticleWithImgBackground({ marginTop, article }) {
           <Typography
             className="titleFirstPart"
             sx={{
-              fontSize: { xs: 12, sm: 25, md: 38 },
+              typography: { xs: "h4", sm: "h2" },
               transition: "0.7s",
               color: "white",
             }}
@@ -120,7 +120,7 @@ export default function ArticleWithImgBackground({ marginTop, article }) {
           <Typography
             className="titleSecondPart"
             sx={{
-              fontSize: { xs: 14, sm: 27, md: 40 },
+              typography: { xs: "h4", sm: "h2" },
               transition: "0.7s",
               color: "white",
               fontFamily: "Work Sans",

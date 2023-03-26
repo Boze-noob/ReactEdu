@@ -3,6 +3,7 @@ import "./css/GridOnHover.css";
 import { useFooterStore } from "../../../stores/FooterStore";
 import { useEffect } from "react";
 import { getFooter } from "../../../data/repositories/FooterRepository";
+import { useMediaQuery } from "@mui/material";
 
 export default function InstagramGrid() {
   useEffect(() => {
@@ -31,13 +32,13 @@ export default function InstagramGrid() {
         </Typography>
         <Typography
           sx={{
+            typography: { xs: "h5", sm: "h4" },
             ml: 30,
             "&:hover": {
               cursor: "pointer",
               color: "#49494a",
             },
           }}
-          variant="h4"
         >
           @SincerlyJules
         </Typography>
@@ -57,7 +58,8 @@ export default function InstagramGrid() {
 }
 
 function ImagesGrid({ data }) {
-  const slicedData = data.slice(1, 7);
+  const isMobileView = useMediaQuery("(max-width:600px)");
+  const slicedData = isMobileView ? data.slice(1, 5) : data.slice(1, 7);
   return (
     <Box
       sx={{
@@ -78,11 +80,7 @@ function ImagesGrid({ data }) {
             },
           }}
         >
-          <img
-            src={data[0].imageUrl}
-            height="100%"
-            style={{ objectFit: "fill" }}
-          />
+          <img src={data[0].imageUrl} height="100%" />
           <div className="overlay">
             <Typography
               sx={{
@@ -102,7 +100,7 @@ function ImagesGrid({ data }) {
 
       <Grid container spacing={0} rowSpacing={0}>
         {slicedData.map((item) => (
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <Box
               sx={{
                 height: { xs: 125, sm: 300 },
@@ -113,7 +111,11 @@ function ImagesGrid({ data }) {
               style={{ position: "relative" }}
               className={"container"}
             >
-              <img src={item.imageUrl} className={"image"} />
+              <img
+                src={item.imageUrl}
+                className={"image"}
+                style={{ objectFit: "cover" }}
+              />
               <div className="overlay">
                 <Typography
                   sx={{
