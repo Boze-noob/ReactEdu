@@ -4,7 +4,7 @@ export default function PageTitle({ title }) {
   return (
     <>
       <Divider sx={{ mt: { xs: "16%", sm: "10%", md: "7%" } }} />
-      <Box width={"100%"} sx={{ m: { xs: 5, sm: 10 } }}>
+      <Box width={"100%"} sx={{ my: { xs: 5, sm: 10 } }}>
         <Typography
           sx={{
             fontFamily: "Work Sans",

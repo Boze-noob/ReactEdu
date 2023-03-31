@@ -17,12 +17,27 @@ export default function ShoppePage() {
     <>
       <PageTitle title={selectedCategory} />
       <Box
-        sx={{ width: "100%", display: "flex", flexDirection: "row", mt: "4%" }}
+        sx={{
+          width: "100%",
+          display: "flex",
+          flexDirection: { xs: "column", sm: "row" },
+          mt: "4%",
+        }}
       >
-        <Box sx={{ width: "25%", pl: { xs: "2%", sm: "4%", lg: "8%" } }}>
+        <Box
+          sx={{
+            width: { xs: 1, sm: "25%" },
+            pl: { sm: "4%", lg: "8%" },
+            mb: { xs: "5%", sm: 0 },
+            justifyContent: { xs: "center", sm: "start" },
+            alignItems: { xs: "center", sm: "start" },
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
           <ShoppeSideMenu />
         </Box>
-        <Box sx={{ width: "75%" }}>
+        <Box sx={{ width: { xs: "100%", sm: "75%" } }}>
           <ShopperArticleList />
         </Box>
       </Box>

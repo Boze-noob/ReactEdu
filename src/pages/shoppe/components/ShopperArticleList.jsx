@@ -50,11 +50,7 @@ export default function ShopperArticleList() {
     return (
       <>
         <Box sx={{ flexGrow: 1 }}>
-          <Grid
-            container
-            spacing={25}
-            sx={{ paddingLeft: { xs: "10%", sm: "0%" } }}
-          >
+          <Grid container spacing={25} sx={{ px: { xs: "7%", sm: "0%" } }}>
             {articles.map((item) => (
               <Grid item xs={6} sm={4} lg={3}>
                 <Item

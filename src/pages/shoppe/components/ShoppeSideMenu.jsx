@@ -1,14 +1,26 @@
 import React, { useState } from "react";
-import { List, ListItem, Collapse, Typography } from "@mui/material";
+import { List, ListItem, Collapse, Typography, Box } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { MenuData } from "../data/MenuData";
 import { hasChildren } from "../../../utils/utils";
 import { changeCategoryShoppeService } from "../../../services/ShoppeService";
 import { useShoppeStore } from "../../../stores/ShoppeStore";
+import * as Items from "../../../types/enumerations/shopMenu";
+import { isMobile } from "react-device-detect";
 
 export default function ShoppeSideMenu() {
-  return MenuData.map((item, key) => <MenuItem key={key} item={item} />);
+  let menuDataCopy = MenuData;
+  if (isMobile) {
+    menuDataCopy = [
+      {
+        title: Items.ShopMenuEnum.FILTER_SHOPPE,
+        items: menuDataCopy,
+      },
+    ];
+  }
+
+  return menuDataCopy.map((item, key) => <MenuItem key={key} item={item} />);
 }
 
 const MenuItem = ({ item }) => {
@@ -24,7 +36,7 @@ const SingleLevel = ({ item }) => {
       <Typography
         sx={{
           fontWeight: "bold",
-          fontSize: { xs: 8, sm: 13 },
+          fontSize: { xs: 11, sm: 13 },
           fontFamily: "Work Sans",
           cursor: "pointer",
           textDecoration:
@@ -47,12 +59,12 @@ const MultiLevel = ({ item }) => {
   };
 
   return (
-    <>
+    <Box>
       <ListItem onClick={handleClick}>
         <Typography
           sx={{
             fontWeight: "bold",
-            fontSize: { xs: 8, sm: 13 },
+            fontSize: { xs: 11, sm: 13 },
             fontFamily: "Work Sans",
             cursor: "pointer",
           }}
@@ -68,6 +80,6 @@ const MultiLevel = ({ item }) => {
           ))}
         </List>
       </Collapse>
-    </>
+    </Box>
   );
 };
