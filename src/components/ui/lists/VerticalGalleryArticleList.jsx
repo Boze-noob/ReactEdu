@@ -2,12 +2,15 @@ import { Typography, Box, Grid } from "@mui/material";
 import VerticalLineButton from "../buttons/VerticalLineButton";
 import { useState } from "react";
 import { Categorys } from "../../../types/enumerations/categorys";
+import { useNavigate } from "react-router-dom";
+import { ARTICLE_DETAIL_ROUTE } from "../../../pages/router/Routes";
 
 export default function VerticalGalleryArticleList({
   marginTop,
   loadMoreFlag,
   articles,
 }) {
+  const navigate = useNavigate();
   const [itemData, setItemData] = useState([]);
   for (let i = 0; i < articles.length && itemData.length < 3; i++) {
     if (articles[i]) {
@@ -36,6 +39,16 @@ export default function VerticalGalleryArticleList({
     }
   };
 
+  const onReadMore = (articleModel) => {
+    navigate(
+      {
+        pathname: ARTICLE_DETAIL_ROUTE,
+        search: `?id=${articleModel.id}`,
+      },
+      { state: articleModel }
+    );
+  };
+
   return (
     <Box
       sx={{
@@ -52,6 +65,9 @@ export default function VerticalGalleryArticleList({
                 alignItems: "center",
                 display: "flex",
                 flexDirection: "column",
+              }}
+              onClick={() => {
+                onReadMore(item);
               }}
             >
               <Box

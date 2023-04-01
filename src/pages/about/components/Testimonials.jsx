@@ -4,7 +4,6 @@ import { Box, Typography } from "@mui/material";
 export default function Testimonials() {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 1,
     },
@@ -27,7 +26,7 @@ export default function Testimonials() {
       display={"flex"}
       flexDirection={"row"}
       justifyContent="center"
-      sx={{ mt: { xs: "10%", sm: "5%" } }}
+      sx={{ mt: { xs: "auto", sm: "5%" } }}
     >
       <Box sx={{ width: { xs: "85%", sm: "70%" } }}>
         <Carousel responsive={responsive} swipeable={true}>

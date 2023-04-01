@@ -37,7 +37,7 @@ export default function ArticleDetails() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mt: { xs: "15%", sm: "9%", md: "8%" },
+          mt: { xs: "20%", sm: "9%", md: "8%" },
         }}
       >
         <Link
@@ -58,9 +58,9 @@ export default function ArticleDetails() {
         <Typography
           sx={{
             typography: { xs: "h5", sm: "h4", md: "h3" },
-            width: { xs: "50%", sm: "35%" },
+            width: { xs: "70%", sm: "35%" },
             textAlign: "center",
-            mt: "1%",
+            mt: { xs: "3%", sm: "1%" },
           }}
         >
           {article.title}
@@ -70,7 +70,7 @@ export default function ArticleDetails() {
             fontFamily: "Work Sans",
             fontWeight: "bold",
             fontSize: { xs: 10, sm: 11, md: 12 },
-            mt: "2%",
+            my: "2%",
           }}
         >
           {article.locationDate}
@@ -168,16 +168,14 @@ function HorizontalList(articlesForSale) {
     >
       <ImageListItem sx={{ display: "inline-flex", flexDirection: "row" }}>
         {articles.map((item) => (
-          <ImageListItem
-            key={item.img}
-            sx={{ paddingRight: "3em", width: 200 }}
-          >
+          <ImageListItem key={item.img} sx={{ width: 200 }}>
             <a href={item.url} target="_blank">
               <img
                 src={item.img}
                 srcSet={item.img}
                 loading="lazy"
                 style={{ height: 210, objectFit: "contain" }}
+                width={200}
               />
             </a>
             <ImageListItemBar

@@ -215,7 +215,7 @@ export default function CommentForm({ marginTop }) {
 
       <CustomButton
         txt="SEND MESSAGE"
-        margin={"2%"}
+        margin={30}
         onClick={() => submitComment()}
       />
     </Box>
@@ -228,7 +228,7 @@ const Comment = ({ commentModel }) => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        width: 1 / 2,
+        width: { xs: "60%", sm: 1 / 2 },
         mt: "2%",
         borderTop: 1,
         borderBottom: 1,
