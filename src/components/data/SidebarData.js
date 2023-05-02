@@ -48,14 +48,14 @@ export const copyrightItems = [
 export const socialMediaItems = [
   {
     text: "INSTAGRAM",
-    route: "https://reactrouter.com/en/main/components/link",
+    route: "https://www.instagram.com",
   },
   {
     text: "TWITTER",
-    route: "https://reactrouter.com/en/main/components/link",
+    route: "https://twitter.com",
   },
   {
     text: "PINTEREST",
-    route: "https://reactrouter.com/en/main/components/link",
+    route: "https://www.pinterest.com",
   },
 ];

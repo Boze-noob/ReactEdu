@@ -10,6 +10,7 @@ export function MultiLineInput({
   initVal,
   onValueChange,
   isError = false,
+  helperText,
 }) {
   return (
     <TextField
@@ -27,7 +28,7 @@ export function MultiLineInput({
         onValueChange(event.target.value);
       }}
       value={initVal}
-      helperText={isError ? "This field is required!" : null}
+      helperText={helperText ?? null}
     />
   );
 }

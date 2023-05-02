@@ -13,19 +13,19 @@ export const affiliateLinks = [
 
 export const gifting = [
   "I never post things unless I truly believe in them or love them regardless if it’s gifted or paid. I love discovering new brands and sharing those with you when I wear something gifted or paid. These posts will always be my own thoughts & opinion and I will always be transparent about that with you.",
-  "For gifting inquiries, please contact: Meghan Luce- meghan@sincerelyjules.com",
+  "For gifting inquiries, please contact: Meghan Jackson- meghan@gmail.com",
   "* While gifting is always welcomed and appreciated, a gift does not guarantee a mention or a post.",
 ];
 
 export const bookings = [
   "Partnering up with brands/companies, I truly love and I’m a fan of is so important to me. I only love to work with like-minded brands to collaborate with that fit my aesthetic and values. I like to work with brands I know my readers will love, enjoy and also benefit from. If you feel that we can have a successful partnership, I’d love to connect. Someone from my team will get back to you. Thank you so much for your interest!",
   "For booking inquiries & partnerships please contact my agent and brand manager:",
-  "Jennifer Powell – jen@jenniferpowell.com",
-  "Meghan Luce – meghan@sincerelyjules.com",
+  "Jennifer Owen – jen@gmail.com",
+  "Meghan Jackson – meghan@gmail.com",
 ];
 
 export const blogFAQ = [
   "I love all my SJ dreamers and always want to hear from you! If you have any blog questions, inquiries or just want to say hi, please contact:",
-  "Argelia Guerra – argelia@sincerelyjules.com",
+  "Argelia Rossi – argelia@gmail.com",
   "Thank you for visiting my blog and sharing this space with me!",
 ];

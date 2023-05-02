@@ -27,7 +27,7 @@ export default function Footer({ marginTop }) {
         <InfoBox />
       </Box>
       <Typography textAlign={"center"} sx={{ mt: 5, pb: 10 }} fontSize={10}>
-        @Copyright 2022 Sincerly Julies
+        @Copyright 2022 THE STYLISH LIFE
       </Typography>
     </Box>
   );
@@ -43,19 +43,13 @@ function SocialMediaBox() {
         justifyContent: "center",
       }}
     >
-      <Button
-        target="_blank"
-        href={"https://www.instagram.com/sincerelyjules/"}
-      >
+      <Button target="_blank" href={"https://www.instagram.com"}>
         <InstagramIcon sx={{ m: 10 }} />
       </Button>
-      <Button target="_blank" href={"https://twitter.com/sincerelyJules"}>
+      <Button target="_blank" href={"https://twitter.com"}>
         <TwitterIcon sx={{ m: 10 }} />
       </Button>
-      <Button
-        target="_blank"
-        href={"https://www.pinterest.com/sincerelyjules1/"}
-      >
+      <Button target="_blank" href={"https://www.pinterest.com"}>
         <PinterestIcon sx={{ m: 10 }} />
       </Button>
     </Box>
@@ -83,7 +77,7 @@ function PageNameBox() {
             },
           }}
         >
-          Sincerly Julies
+          THE STYLISH LIFE
         </Typography>
       </Box>
     </Box>

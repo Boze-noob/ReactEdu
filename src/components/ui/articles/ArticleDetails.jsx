@@ -1,5 +1,5 @@
 import { Typography, Box } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { CustomImage } from "../image/Image";
 import VerticalGalleryArticleList from "../lists/VerticalGalleryArticleList";
 import { ImageList, ImageListItemBar, ImageListItem } from "@mui/material";
@@ -8,14 +8,18 @@ import { useLocation } from "react-router-dom";
 import { ArticleModel } from "../../../domain/models/ArticleModel";
 import { ArticleForSaleModel } from "../../../domain/models/ArticleForSale";
 import { Categorys } from "../../../types/enumerations/categorys";
-import { useArticleStore } from "../../../stores/ArticleStore";
 import { Link } from "react-router-dom";
 import { getPathFromCategory } from "../../../types/enumerations/categorys";
+import { getArticlesForSeeMore } from "../../../data/repositories/ArticleRepository";
 
 export default function ArticleDetails() {
   const { state } = useLocation();
-  const articles = useArticleStore((state) => state.articles);
-  articles.splice(0, 1);
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    const articles = getArticlesForSeeMore(state.id, state.category);
+    setArticles(articles);
+  }, [state.id]);
 
   const article = new ArticleModel(
     state.id,

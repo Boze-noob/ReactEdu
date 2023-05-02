@@ -7,8 +7,8 @@ import VerticalGalleryArticleList from "../../components/ui/lists/VerticalGaller
 import HorizontalArticleImgLeft from "../../components/ui/articles/horizontalArticles/HorizontalArticleImgLeft";
 import HorizontalTwoImgArticle from "../../components/ui/articles/horizontalArticles/HorizontalTwoImgArticle";
 import { useArticleStore } from "../../stores/ArticleStore";
-import { Typography } from "@mui/material";
 import { getArticles } from "../../data/repositories/ArticleRepository";
+import { PageCircularProgress } from "../../components/ui/progress/PageCircularProgress";
 
 const Home = () => {
   const isLoading = useArticleStore((state) => state.isLoading);
@@ -22,11 +22,7 @@ const Home = () => {
   }, []);
 
   if (isLoading) {
-    return (
-      <>
-        <Typography variant="h1">Loading....</Typography>
-      </>
-    );
+    return <PageCircularProgress />;
   } else {
     return (
       <>

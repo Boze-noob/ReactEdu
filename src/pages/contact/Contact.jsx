@@ -2,8 +2,29 @@ import PageTitle from "../../components/ui/header/PageTitle.jsx";
 import { Box, Typography, Button } from "@mui/material";
 import { MultiLineInput } from "../../components/ui/forms/MultiLineInput.jsx";
 import CustomButton from "../../components/ui/buttons/CustomButton";
+import { useState } from "react";
+import { isEmail } from "../../utils/utils.js";
+import { toast } from "react-hot-toast";
 
 export default function Contact() {
+  //TODO use some package like FORMIK to do all those validations and etc.
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [comment, setComment] = useState("");
+  const [isEmailError, setIsEmailError] = useState(false);
+
+  const sendMessage = () => {
+    if (!isEmail(email)) {
+      setIsEmailError(true);
+    } else {
+      setIsEmailError(false);
+      toast.success("Your message is successfully sent!");
+      setEmail("");
+      setName("");
+      setComment("");
+    }
+  };
+
   return (
     <>
       <PageTitle title={"CONTACT"} />
@@ -33,12 +54,12 @@ export default function Contact() {
           }}
         >
           {
-            "For booking inquiries & partnerships, please contact Jennifer Powell or Meghan Durtschi:"
+            "For booking inquiries & partnerships, please contact Jennifer Owen or Meghan Rossi:"
           }
         </Typography>
         <Box display={"flex"} flexDirection={"row"}>
-          <TextButton text={"mine@gmail.com"} />
-          <TextButton text={"his@gmail.com"} />
+          <TextButton text={"jennifer@gmail.com"} />
+          <TextButton text={"meghan@gmail.com"} />
         </Box>
         <Typography
           fontFamily={"Oooh Baby"}
@@ -47,24 +68,44 @@ export default function Contact() {
           Say hi to me on this form !
         </Typography>
         <MultiLineInput
+          initVal={name}
           label={"Name"}
           rows={1}
           marginTop={30}
           width={{ xs: "70%", sm: "40%" }}
+          onValueChange={(value) => {
+            setName(value);
+          }}
+          isError={false}
         />
         <MultiLineInput
+          initVal={email}
           label={"Email"}
           rows={1}
           marginTop={15}
           width={{ xs: "70%", sm: "40%" }}
+          isError={isEmailError}
+          onValueChange={(value) => {
+            setEmail(value);
+          }}
+          helperText={isEmailError ? "Invalid email address!" : null}
         />
         <MultiLineInput
+          initVal={comment}
           label={"Comment"}
           rows={6}
           marginTop={15}
           width={{ xs: "70%", sm: "40%" }}
+          onValueChange={(value) => {
+            setComment(value);
+          }}
+          isError={false}
         />
-        <CustomButton txt={"SEND MESSAGE"} margin={30} />
+        <CustomButton
+          txt={"SEND MESSAGE"}
+          margin={30}
+          onClick={() => sendMessage()}
+        />
       </Box>
     </>
   );

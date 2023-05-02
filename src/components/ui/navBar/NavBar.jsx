@@ -44,7 +44,7 @@ export default function NavBar({ primaryColor, secondaryColor }) {
               navigate("/");
             }}
           >
-            SINCERLY JULES
+            THE STYLISH LIFE
           </Typography>
           <Box sx={{ width: { sm: "5%" } }}>
             <Link to={Routes.SHOPPE_ROUTE} style={{ textDecoration: "none" }}>

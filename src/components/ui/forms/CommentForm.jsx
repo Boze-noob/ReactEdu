@@ -13,6 +13,7 @@ import {
 } from "../../../utils/utils";
 import { fakeComments } from "../../../fakeData/comments";
 import { CommentModel } from "../../../domain/models/CommentModel";
+import { toast } from "react-hot-toast";
 
 export default function CommentForm({ marginTop }) {
   //TODO refactor validation(use form)
@@ -73,6 +74,7 @@ export default function CommentForm({ marginTop }) {
           website
         ),
       ]);
+      toast.success("Comment added!");
     }
   };
 
@@ -150,6 +152,7 @@ export default function CommentForm({ marginTop }) {
           }}
           initVal={comment}
           isError={isCommentErr}
+          helperText={isCommentErr ? "This field is required!" : null}
         />
         <Box
           sx={{

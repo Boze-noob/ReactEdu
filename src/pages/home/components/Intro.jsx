@@ -7,6 +7,7 @@ import { useArticleStore } from "../../../stores/ArticleStore";
 import * as utils from "../../../utils/utils.js";
 import { useNavigate } from "react-router-dom";
 import { ARTICLE_DETAIL_ROUTE } from "../../router/Routes";
+import { PageCircularProgress } from "../../../components/ui/progress/PageCircularProgress";
 
 const Intro = ({ articleModel }) => {
   const isLoading = useArticleStore((state) => state.isLoading);
@@ -23,11 +24,7 @@ const Intro = ({ articleModel }) => {
   };
 
   if (isLoading) {
-    return (
-      <>
-        <Typography variant="h1">Loading....</Typography>
-      </>
-    );
+    return <PageCircularProgress />;
   } else {
     return (
       <Card sx={{ height: 1, width: 1 }}>
@@ -94,7 +91,7 @@ const Intro = ({ articleModel }) => {
                   }}
                 />
               }
-              href="https://www.instagram.com/sincerelyjules/"
+              href="https://www.instagram.com"
             />
             <SocialMediaItem
               icon={
@@ -110,7 +107,7 @@ const Intro = ({ articleModel }) => {
                   }}
                 />
               }
-              href="https://twitter.com/sincerelyJules"
+              href="https://twitter.com"
             />
             <SocialMediaItem
               icon={
@@ -126,7 +123,7 @@ const Intro = ({ articleModel }) => {
                   }}
                 />
               }
-              href="https://www.pinterest.com/sincerelyjules1/"
+              href="https://www.pinterest.com"
             />
           </Box>
         </Box>

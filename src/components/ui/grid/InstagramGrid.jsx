@@ -40,7 +40,7 @@ export default function InstagramGrid() {
             },
           }}
         >
-          @SincerlyJules
+          @TheStylishLife
         </Typography>
         <Divider
           sx={{

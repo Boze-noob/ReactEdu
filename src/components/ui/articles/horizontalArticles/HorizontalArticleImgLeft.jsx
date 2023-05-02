@@ -199,7 +199,7 @@ function HorizontalList({ articlesForSale }) {
               transition: "0.7s",
             }}
           >
-            <a href={item.url}>
+            <a href={item.url} target="_blank">
               <img
                 src={item.img}
                 srcSet={item.img}

@@ -1,6 +1,6 @@
 import { Typography, Box, Grid } from "@mui/material";
 import VerticalLineButton from "../buttons/VerticalLineButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Categorys } from "../../../types/enumerations/categorys";
 import { useNavigate } from "react-router-dom";
 import { ARTICLE_DETAIL_ROUTE } from "../../../pages/router/Routes";
@@ -12,6 +12,11 @@ export default function VerticalGalleryArticleList({
 }) {
   const navigate = useNavigate();
   const [itemData, setItemData] = useState([]);
+
+  useEffect(() => {
+    setItemData([]);
+  }, [articles]);
+
   for (let i = 0; i < articles.length && itemData.length < 3; i++) {
     if (articles[i]) {
       itemData.push(articles[i]);
@@ -47,6 +52,7 @@ export default function VerticalGalleryArticleList({
       },
       { state: articleModel }
     );
+    window.scrollTo(0, 0);
   };
 
   return (

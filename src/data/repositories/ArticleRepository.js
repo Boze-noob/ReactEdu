@@ -5,6 +5,13 @@ export function getArticles() {
   useArticleStore.setState({ isLoading: false, articles: articleData.slice() });
 }
 
+export function getArticlesForSeeMore(articleId, categoryId) {
+  const filteredArticles = articleData.slice().filter((article) => {
+    return article.category === categoryId && article.id !== articleId;
+  });
+  return filteredArticles;
+}
+
 export function getFashionArticles() {
   useArticleStore.setState({
     isLoading: false,
