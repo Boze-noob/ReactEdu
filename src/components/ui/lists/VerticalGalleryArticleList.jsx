@@ -12,9 +12,13 @@ export default function VerticalGalleryArticleList({
 }) {
   const navigate = useNavigate();
   const [itemData, setItemData] = useState([]);
+  const [counter, setCounter] = useState(3);
+  const [hasLoadMore, setHasLoadMore] = useState(loadMoreFlag);
 
   useEffect(() => {
     setItemData([]);
+    setHasLoadMore(loadMoreFlag);
+    setCounter(3);
   }, [articles]);
 
   for (let i = 0; i < articles.length && itemData.length < 3; i++) {
@@ -22,8 +26,6 @@ export default function VerticalGalleryArticleList({
       itemData.push(articles[i]);
     }
   }
-  const [counter, setCounter] = useState(3);
-  const [hasLoadMore, setHasLoadMore] = useState(loadMoreFlag);
 
   const loadMore = () => {
     setCounter(counter + 3);
