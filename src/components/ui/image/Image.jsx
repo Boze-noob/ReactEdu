@@ -21,6 +21,7 @@ export const CustomImage = ({
       style={{ objectFit: imgFit }}
       mt={marginTop ?? "5%"}
       p={padding ?? "0%"}
+      loading="lazy"
     />
   );
 };

@@ -115,6 +115,7 @@ function Item(props) {
         }}
         src={props.item.images[0]}
         style={{ objectFit: "cover", padding: 10 }}
+        loading="lazy"
       />
       <Typography
         className="description"

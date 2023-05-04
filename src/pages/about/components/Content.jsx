@@ -95,6 +95,7 @@ function Image({ url, top, right, bottom, left, width, height, visibility }) {
       right={right}
       bottom={bottom}
       left={left}
+      loading="lazy"
     />
   );
 }

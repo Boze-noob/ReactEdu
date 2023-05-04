@@ -108,6 +108,7 @@ function Article({ imageUrl, title, description, link }) {
             component="img"
             image={imageUrl}
             sx={{ height: { xs: 120, sm: 150, md: 190 }, objectFit: "contain" }}
+            loading="lazy"
           />
           <CardContent>
             <Typography

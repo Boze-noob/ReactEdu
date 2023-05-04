@@ -123,6 +123,7 @@ function Image() {
         mt: { xs: "13%", sm: "6%" },
         width: { xs: "80%", sm: "50%" },
       }}
+      loading="lazy"
     />
   );
 }

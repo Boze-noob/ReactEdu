@@ -51,6 +51,7 @@ export default function HorizontalTwoImgArticle({ marginTop, articles }) {
             opacity: 0.6,
             height: { xs: 500, md: 900 },
           }}
+          loading="lazy"
         />
 
         <Box

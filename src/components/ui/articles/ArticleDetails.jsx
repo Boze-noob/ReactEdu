@@ -11,6 +11,7 @@ import { Categorys } from "../../../types/enumerations/categorys";
 import { Link } from "react-router-dom";
 import { getPathFromCategory } from "../../../types/enumerations/categorys";
 import { getArticlesForSeeMore } from "../../../data/repositories/ArticleRepository";
+import LazyLoad from "react-lazy-load";
 
 export default function ArticleDetails() {
   const { state } = useLocation();
@@ -174,13 +175,15 @@ function HorizontalList(articlesForSale) {
         {articles.map((item) => (
           <ImageListItem key={item.img} sx={{ width: 200 }}>
             <a href={item.url} target="_blank">
-              <img
-                src={item.img}
-                srcSet={item.img}
-                loading="lazy"
-                style={{ height: 210, objectFit: "contain" }}
-                width={200}
-              />
+              <LazyLoad>
+                <img
+                  src={item.img}
+                  srcSet={item.img}
+                  loading="lazy"
+                  style={{ height: 210, objectFit: "contain" }}
+                  width={200}
+                />
+              </LazyLoad>
             </a>
             <ImageListItemBar
               position="below"

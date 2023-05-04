@@ -91,6 +91,7 @@ export default function VerticalGalleryArticleList({
                   transition: "0.7s",
                 }}
                 src={item.galleryImages[0]}
+                loading="lazy"
               />
               <Typography
                 sx={{

@@ -50,6 +50,7 @@ export default function ArticleWithImgBackground({ marginTop, article }) {
           height: { xs: 450, sm: 700 },
           opacity: 0.7,
         }}
+        loading="lazy"
       />
 
       <Box

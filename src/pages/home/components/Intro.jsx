@@ -39,6 +39,7 @@ const Intro = ({ articleModel }) => {
             component="img"
             image={articleModel.galleryImages[0]}
             sx={{ opacity: 0.7, height: "100vh", objectFit: "cover" }}
+            loading="lazy"
           />
           <Box style={{ position: "absolute", top: "35%", left: "5%" }}>
             <Typography

@@ -77,6 +77,7 @@ function Image({ src }) {
       src={src}
       style={{ objectFit: "fill" }}
       mt="5%"
+      loading="lazy"
     />
   );
 }

@@ -4,6 +4,7 @@ import { useFooterStore } from "../../../stores/FooterStore";
 import { useEffect } from "react";
 import { getFooter } from "../../../data/repositories/FooterRepository";
 import { useMediaQuery } from "@mui/material";
+import LazyLoad from "react-lazy-load";
 
 export default function InstagramGrid() {
   useEffect(() => {
@@ -80,7 +81,10 @@ function ImagesGrid({ data }) {
             },
           }}
         >
-          <img src={data[0].imageUrl} height="100%" />
+          <LazyLoad>
+            <img src={data[0].imageUrl} height="100%" />
+          </LazyLoad>
+
           <div className="overlay">
             <Typography
               sx={{
@@ -111,11 +115,15 @@ function ImagesGrid({ data }) {
               style={{ position: "relative" }}
               className={"container"}
             >
-              <img
-                src={item.imageUrl}
-                className={"image"}
-                style={{ objectFit: "cover" }}
-              />
+              <LazyLoad>
+                <img
+                  src={item.imageUrl}
+                  className={"image"}
+                  style={{ objectFit: "cover" }}
+                  loading="lazy"
+                />
+              </LazyLoad>
+
               <div className="overlay">
                 <Typography
                   sx={{

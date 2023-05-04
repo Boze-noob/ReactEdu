@@ -13,6 +13,7 @@ import {
 } from "../../../../types/enumerations/categorys";
 import { useLocation } from "react-router-dom";
 import { getArticleModel } from "../../../../domain/models/ArticleModel";
+import LazyLoad from "react-lazy-load";
 
 export default function HorizontalArticleImgLeft({ marginTop, article }) {
   const navigate = useNavigate();
@@ -48,6 +49,7 @@ export default function HorizontalArticleImgLeft({ marginTop, article }) {
         }}
         src={src}
         style={{ objectFit: "fill" }}
+        loading="lazy"
       />
     );
   }
@@ -200,13 +202,15 @@ function HorizontalList({ articlesForSale }) {
             }}
           >
             <a href={item.url} target="_blank">
-              <img
-                src={item.img}
-                srcSet={item.img}
-                alt={""}
-                loading="lazy"
-                style={{ height: 210, objectFit: "contain" }}
-              />
+              <LazyLoad>
+                <img
+                  src={item.img}
+                  srcSet={item.img}
+                  alt={""}
+                  loading="lazy"
+                  style={{ height: 210, objectFit: "contain" }}
+                />
+              </LazyLoad>
             </a>
             <ImageListItemBar
               position="below"
