@@ -81,9 +81,7 @@ function ImagesGrid({ data }) {
             },
           }}
         >
-          <LazyLoad>
-            <img src={data[0].imageUrl} height="100%" />
-          </LazyLoad>
+          <img src={data[0].imageUrl} height="100%" loading="lazy" />
 
           <div className="overlay">
             <Typography
@@ -115,14 +113,12 @@ function ImagesGrid({ data }) {
               style={{ position: "relative" }}
               className={"container"}
             >
-              <LazyLoad>
-                <img
-                  src={item.imageUrl}
-                  className={"image"}
-                  style={{ objectFit: "cover" }}
-                  loading="lazy"
-                />
-              </LazyLoad>
+              <img
+                src={item.imageUrl}
+                className={"image"}
+                style={{ objectFit: "cover" }}
+                loading="lazy"
+              />
 
               <div className="overlay">
                 <Typography
