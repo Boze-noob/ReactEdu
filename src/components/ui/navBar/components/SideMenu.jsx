@@ -85,7 +85,7 @@ function SideMenuItem({ items, toggleSlider }) {
                 primary={
                   <Typography
                     sx={{
-                      fontSize: { xs: 10, sm: 14 },
+                      fontSize: { xs: 13, sm: 16 },
                       fontWeight: "600",
                       fontFamily: "Work Sans",
                       color: "black",
@@ -116,7 +116,7 @@ function SocialMediaSideMenuItem({ items }) {
                 primary={
                   <Typography
                     sx={{
-                      fontSize: { xs: 10, sm: 14 },
+                      fontSize: { xs: 13, sm: 16 },
                       fontWeight: "600",
                       fontFamily: "Work Sans",
                       color: "black",
