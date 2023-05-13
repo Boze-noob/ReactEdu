@@ -107,7 +107,9 @@ function Article({ imageUrl, title, description, link }) {
           <CardMedia
             component="img"
             image={imageUrl}
-            sx={{ height: { xs: 120, sm: 150, md: 190 }, objectFit: "contain" }}
+            sx={{
+              objectFit: "contain",
+            }}
             loading="lazy"
           />
           <CardContent>

@@ -5,14 +5,17 @@ import {
 } from "../data/repositories/ShoppeRepository";
 import { SHOPPE_LOAD_MORE_NUMBER } from "../data/constants/Articles";
 import { getAllShoppe } from "../data/repositories/ShoppeRepository";
+import * as Categorys from "../types/enumerations/shopMenu";
 
 export const getAllShoppeService = () => {
   useShoppeStore.setState({
     articles: getAllShoppe(),
+    selectedCategory: Categorys.ShopMenuEnum.SHOP_ALL,
   });
 };
 
 export const changeCategoryShoppeService = (category) => {
+  console.log("Selected category is " + category);
   useShoppeStore.setState({
     selectedCategory: category,
     articles: changeCategoryShoppe(category),
