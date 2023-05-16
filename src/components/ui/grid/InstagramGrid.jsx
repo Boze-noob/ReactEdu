@@ -4,7 +4,6 @@ import { useFooterStore } from "../../../stores/FooterStore";
 import { useEffect } from "react";
 import { getFooter } from "../../../data/repositories/FooterRepository";
 import { useMediaQuery } from "@mui/material";
-import LazyLoad from "react-lazy-load";
 
 export default function InstagramGrid() {
   useEffect(() => {

@@ -11,7 +11,7 @@ import { Categorys } from "../../../types/enumerations/categorys";
 import { Link } from "react-router-dom";
 import { getPathFromCategory } from "../../../types/enumerations/categorys";
 import { getArticlesForSeeMore } from "../../../data/repositories/ArticleRepository";
-import LazyLoad from "react-lazy-load";
+import { CustomArticleDetailsImage } from "../image/Image";
 
 export default function ArticleDetails() {
   const { state } = useLocation();
@@ -133,23 +133,26 @@ function GalleryImages({ images }) {
         padding={"0%"}
       />
       <Box display="flex" flexDirection={"column"}>
-        <CustomImage
+        <CustomArticleDetailsImage
           src={images[1]}
           width="100%"
+          height={"100%"}
           marginTop={"0%"}
           paddingLeft={"2%"}
           paddingBottom={"2%"}
         />
-        <CustomImage
+        <CustomArticleDetailsImage
           src={images[2]}
           width="100%"
+          height={"100%"}
           marginTop={"0%"}
           paddingLeft={"2%"}
           paddingBottom={"2%"}
         />
-        <CustomImage
+        <CustomArticleDetailsImage
           src={images[3]}
           width="100%"
+          height={"100%"}
           marginTop={"0%"}
           paddingLeft={"2%"}
         />
@@ -175,15 +178,13 @@ function HorizontalList(articlesForSale) {
         {articles.map((item) => (
           <ImageListItem key={item.img} sx={{ width: 200 }}>
             <a href={item.url} target="_blank">
-              <LazyLoad>
-                <img
-                  src={item.img}
-                  srcSet={item.img}
-                  loading="lazy"
-                  style={{ height: 210, objectFit: "contain" }}
-                  width={200}
-                />
-              </LazyLoad>
+              <img
+                src={item.img}
+                srcSet={item.img}
+                loading="lazy"
+                style={{ height: 210, objectFit: "contain" }}
+                width={200}
+              />
             </a>
             <ImageListItemBar
               position="below"
